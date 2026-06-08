@@ -133,6 +133,8 @@ Before reporting completion, verify:
 [ ] HANDOFF_COMMENT.md exists
 [ ] HANDOFF_COMMENT.md includes Question for ChatGPT
 [ ] commit SHA is written in HANDOFF_COMMENT.md
+[ ] final response to the user includes the repo-relative HANDOFF_COMMENT.md path
+[ ] final response to the user includes a copy-paste ChatGPT sync command
 ```
 
 If any item is missing, say it is missing instead of claiming completion.
@@ -141,17 +143,33 @@ If any item is missing, say it is missing instead of claiming completion.
 
 ## 6. ChatGPT sync command
 
-The user can ask ChatGPT:
+Codex must give the user the exact repo-relative path to the generated handoff file after every completed task.
+
+Final Codex response must include this copy-paste command for the user:
 
 ```text
-Read <package_root>/HANDOFF_COMMENT.md and post it to issue #1, then analyze the handoff and write the next Codex prompt.
+读取 <package_root>/HANDOFF_COMMENT.md，分析并写下一步 Codex prompt。
 ```
+
+Example:
+
+```text
+读取 examples/TM_comsol_no_thermal_micro/runs/20260608_full_drive_broadening/HANDOFF_COMMENT.md，分析并写下一步 Codex prompt。
+```
+
+If the package is not under `runs/`, still provide the actual repo-relative path, for example:
+
+```text
+读取 examples/TM_comsol_no_thermal_micro/recent_debug_true_staggered_20260607/HANDOFF_COMMENT.md，分析并写下一步 Codex prompt。
+```
+
+The user can paste that command to ChatGPT.
 
 ChatGPT should then:
 
 ```text
 1. fetch HANDOFF_COMMENT.md from GitHub;
-2. add it as a comment to issue #1;
+2. add it as a comment to issue #1 if it has not already been posted;
 3. read the listed files;
 4. analyze the evidence;
 5. reply with a ChatGPT response comment and a next Codex prompt.
