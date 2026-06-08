@@ -1,6 +1,6 @@
 ## Codex handoff: full D0020 unit-box candidate
 
-Commit: PENDING
+Commit: db36df8573ff498bd764abbb229f4187ca5130f7
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_full_D0020_unitbox_candidate
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_full_D0020_unitbox_candidate/REPORT.md
 
@@ -50,4 +50,3 @@ D:\anaconda3\envs\torch_env\python.exe -m py_compile analyze_drive_broadening_st
 - Do not impose `alpha=1` on the geometric notch unless explicitly testing an alternative model.
 - Do not change TM split/material parameters unless a clear bug is found.
 - Do not claim physical validation from a single seed.
-
