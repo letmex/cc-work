@@ -1,6 +1,6 @@
 ## Codex handoff: coord-normalization / alpha-init 2x2 near-production comparison
 
-Commit: PENDING
+Commit: 4f7dbe3e21fb68ad94b9078f67b82f6b71bfe838
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_coordnorm_alpha_2x2_comparison
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_coordnorm_alpha_2x2_comparison/REPORT.md
 
@@ -52,4 +52,3 @@ D:\anaconda3\envs\torch_env\python.exe -m py_compile analyze_drive_broadening_st
 - Do not impose `alpha=1` on the geometric notch unless explicitly testing an alternative model.
 - Do not change TM split/material parameters unless a clear bug is found.
 - Do not claim physical validation from medium/diagnostic runs.
-
