@@ -1,6 +1,6 @@
-## Codex handoff: drive broadening and top-u-free smoke
+﻿## Codex handoff: drive broadening and top-u-free smoke
 
-Commit: PENDING
+Commit: 2aeae5742a49bc8a6bde49aab0c4e0b29ef283bc
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/REPORT.md`
 
@@ -58,3 +58,4 @@ gh auth status
 - Do not impose `alpha=1` on the geometric notch unless explicitly testing an alternative model.
 - Do not change TM split/material parameters unless a clear bug is found.
 - Do not claim physical validation from medium/diagnostic runs or this one-seed package.
+
