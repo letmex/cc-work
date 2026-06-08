@@ -1,6 +1,6 @@
 ## Codex handoff: handoff sync command encoding fix
 
-Commit: PENDING
+Commit: 9cf83deb35798787866276f11b786aae772726ba
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_encoding_fix
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_encoding_fix/REPORT.md
 
@@ -35,4 +35,3 @@ rg "璇诲彇|锛|銆|读取 .*HANDOFF_COMMENT" examples\TM_comsol_no_thermal_mi
 - Do not impose `alpha=1` on the geometric notch unless explicitly testing an alternative model.
 - Do not change TM split/material parameters unless a clear bug is found.
 - Do not claim physical validation from medium/diagnostic runs.
-
