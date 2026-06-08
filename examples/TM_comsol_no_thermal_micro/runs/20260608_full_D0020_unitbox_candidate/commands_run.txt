@@ -1,0 +1,28 @@
+git pull origin main
+
+Read workflow docs:
+
+Get-Content -Raw examples\TM_comsol_no_thermal_micro\AGENT_HANDOFF_WORKFLOW.md
+Get-Content -Raw examples\TM_comsol_no_thermal_micro\CODEX_NO_GH_HANDOFF.md
+
+Primary full run:
+
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --full --pff-model AT2 --mixed-mechanics-mode history --alpha-init-intact --top-u-mode free --coord-normalization unit_box --load-schedule-file load_schedule_D0020_extended.csv --run-suffix full_D0020_seed2_history_intact_unitbox
+
+Optional default-alpha full run:
+
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --full --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization unit_box --load-schedule-file load_schedule_D0020_extended.csv --run-suffix full_D0020_seed2_history_default_unitbox
+
+Per-case analysis:
+
+D:\anaconda3\envs\torch_env\python.exe analyze_drive_broadening_stepwise.py --run-dir <result_dir> --out <package>\tables\stepwise_<case>.csv --events-out <package>\tables\broadening_events_<case>.csv --summary <package>\artifacts\summary_<case>.md --case <case>
+
+Per-case figure generation:
+
+D:\anaconda3\envs\torch_env\python.exe plot_clean_tm_results.py --result-dir <result_dir> --out-dir <package>\figures\<case> --run-label <case> --dpi 180
+
+Verification:
+
+D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_no_thermal_micro\tests -q
+D:\anaconda3\envs\torch_env\python.exe -m py_compile analyze_drive_broadening_stepwise.py plot_clean_tm_results.py config.py field_computation.py train_mixed_tm.py
+

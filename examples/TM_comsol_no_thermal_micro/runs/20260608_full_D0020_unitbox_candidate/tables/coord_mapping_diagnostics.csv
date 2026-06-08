@@ -1,0 +1,3 @@
+case,alpha_init,coord_normalization,steps,x_hat_min_min,x_hat_max_max,y_hat_min_min,y_hat_max_max,final_x_hat_min,final_x_hat_max,final_y_hat_min,final_y_hat_max,t3_gradients_use_physical_xy,final_top_u_abs_max,final_top_v_error_max,final_bottom_u_abs_max,final_bottom_v_abs_max
+intact_unitbox_full,alpha-init-intact,unit_box,34,-1.0,1.0,-1.0,1.0,-1.0,1.0,-1.0,1.0,True,4.0773720684228465e-06,0.0,0.0,0.0
+default_unitbox_full,default,unit_box,34,-1.0,1.0,-1.0,1.0,-1.0,1.0,-1.0,1.0,True,4.975473530066665e-06,0.0,0.0,0.0
