@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "free_random_init_energy_energy_end_target_vs_after_energy_He.png",
+    "case_id": "free_random_init_energy_energy_end"
+  },
+  {
+    "filename": "free_disp_global_prefit_then_energy_prefit_end_target_vs_after_energy_He.png",
+    "case_id": "free_disp_global_prefit_then_energy_prefit_end"
+  },
+  {
+    "filename": "free_disp_global_prefit_then_energy_energy_end_target_vs_after_energy_He.png",
+    "case_id": "free_disp_global_prefit_then_energy_energy_end"
+  },
+  {
+    "filename": "free_disp_strain_global_prefit_then_energy_prefit_end_target_vs_after_energy_He.png",
+    "case_id": "free_disp_strain_global_prefit_then_energy_prefit_end"
+  },
+  {
+    "filename": "free_disp_strain_global_prefit_then_energy_energy_end_target_vs_after_energy_He.png",
+    "case_id": "free_disp_strain_global_prefit_then_energy_energy_end"
+  },
+  {
+    "filename": "free_global_curriculum_curriculum_end_target_vs_after_energy_He.png",
+    "case_id": "free_global_curriculum_curriculum_end"
+  }
+]
