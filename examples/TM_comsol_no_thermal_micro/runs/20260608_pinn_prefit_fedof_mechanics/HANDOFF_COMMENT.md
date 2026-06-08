@@ -1,6 +1,6 @@
-## Codex handoff: PINN prefit to FE-DOF mechanics
+﻿## Codex handoff: PINN prefit to FE-DOF mechanics
 
-Commit: PENDING_COMMIT_SHA
+Commit: 29d88ca470789aac78bf48c3d234afb07925129d
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/REPORT.md`
 
@@ -56,3 +56,4 @@ gh auth status
 - Do not change TM split/material parameters unless a clear bug is found.
 - Keep phase-field notch behavior, alpha seeding, and history update logic unchanged.
 - Do not claim physical validation from this diagnostic package.
+
