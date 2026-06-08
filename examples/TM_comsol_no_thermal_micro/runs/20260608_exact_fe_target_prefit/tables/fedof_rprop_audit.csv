@@ -1,0 +1,7 @@
+check,status,evidence,conclusion
+boundary_conditions,not_primary_failure,Nodal BC transformation enforces bottom u/v and top v; exact FE and old target boundary residuals are checked separately.,Boundary assignment syntax is not the main explanation for 1e7 energy ratio.
+objective_sign,not_negated,"old objective log10(E)=-3.40096, exact FE log10(E)=-10.4345; exact FE is far lower.",Old RPROP field is not preferred by the objective; this is optimizer/scale failure rather than energy sign reversal.
+units_and_delta,consistent_inputs_but_bad_optimizer_scale,"Delta=1e-06, E=81.5, coordinates in mm; RPROP lr=0.001, lr/Delta=1000.","Input units are consistent with direct FE audit, but RPROP step scale is too large for Delta=1e-6 nodal DOFs."
+dof_initialization_optimizer,root_cause_candidate,"raw nodal DOFs start at zero and RPROP sign step starts at 0.001, about 1000 times Delta.","The old FE-DOF RPROP baseline is an optimization diagnostic, not an exact FE solve; it converged to a high-energy branch."
+energy_evaluation,failed_guard,"old standard energy ratio=1.19037e+07, old PINN mechanics energy ratio=1.08025e+07.",Exact FE has the lower standard and current PINN alpha=0 mechanics energies.
+residual_checks,failed_guard,"old free residual L2=0.0379182, exact free residual L2=1.79763e-18.",Old FE-DOF RPROP field is not an equilibrated mechanics target.

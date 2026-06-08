@@ -1,0 +1,156 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_target_prefit",
+  "files": [
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and read-first guide.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main diagnostic report.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Machine-readable package manifest.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands used for generation, verification, and handoff.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "commands_run.json",
+      "type": "command_log",
+      "description": "JSON command metadata emitted by the diagnostic script.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "next_questions.md",
+      "type": "handoff",
+      "description": "Open questions for the next diagnostic step.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "GitHub issue handoff comment content.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/fedof_rprop_audit.csv",
+      "type": "table",
+      "description": "Audit of why the old FE-DOF RPROP target failed.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/exact_fe_target_summary.csv",
+      "type": "table",
+      "description": "Accepted direct sparse FE target summary.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/exact_target_prefit_metrics.csv",
+      "type": "table",
+      "description": "Global-only PINN prefit metrics against exact FE target.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/exact_target_energy_continuation.csv",
+      "type": "table",
+      "description": "Short mechanics-only energy continuation metrics from exact-target prefit.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/target_guard_check_summary.csv",
+      "type": "table",
+      "description": "Guard check accepting direct FE target and rejecting old FE-DOF RPROP target.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/validate_old_fedof_against_exact.csv",
+      "type": "table",
+      "description": "Standalone validate_mechanics_target.py output for the old FE-DOF target.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "logs/loss_trace.csv",
+      "type": "table",
+      "description": "Training trace for prefit and energy-continuation diagnostics.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Figure summary; no PNG figures generated.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "artifacts/exact_fe_topufree_alpha0_Delta1e-6_fields.npz",
+      "type": "artifact",
+      "description": "Accepted direct sparse FE alpha=0 top-u-free target fields and metadata.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/debug_exact_fe_target_prefit.py",
+      "type": "artifact",
+      "description": "Snapshot of the exact FE target prefit diagnostic script.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/validate_mechanics_target.py",
+      "type": "artifact",
+      "description": "Snapshot of reusable mechanics target guard checker.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/disp_global_prefit_end_fields.npz",
+      "type": "artifact",
+      "description": "Displacement-only prefit field.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/disp_strain_global_prefit_end_fields.npz",
+      "type": "artifact",
+      "description": "Displacement-plus-strain prefit field.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/energy_continuation_from_disp_strain_global_raw_fields.npz",
+      "type": "artifact",
+      "description": "Raw-energy continuation field.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/energy_continuation_from_disp_strain_global_log10_fields.npz",
+      "type": "artifact",
+      "description": "Log10-energy continuation field.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/energy_continuation_from_disp_strain_global_normalized_fields.npz",
+      "type": "artifact",
+      "description": "Normalized-energy continuation field.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/disp_global_prefit_state.pt",
+      "type": "artifact",
+      "description": "Displacement-only prefit checkpoint.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/disp_strain_global_prefit_state.pt",
+      "type": "artifact",
+      "description": "Displacement-plus-strain prefit checkpoint.",
+      "required_for_chatgpt": false
+    }
+  ]
+}
+
