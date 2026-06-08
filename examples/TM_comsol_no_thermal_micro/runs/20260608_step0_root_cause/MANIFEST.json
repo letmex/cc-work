@@ -1,0 +1,145 @@
+﻿{
+    "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause",
+    "generated_by":  "Codex",
+    "purpose":  "Minimal diagnostics for alpha-init history step-0 broad/background drive",
+    "files":  [
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/artifacts/debug_step0_root_cause.py",
+                      "type":  "artifact",
+                      "description":  "Snapshot of diagnostic script used to generate tables",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/artifacts/source_patch_notes.md",
+                      "type":  "artifact",
+                      "description":  "Notes on diagnostic-only source addition",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/commands_run.txt",
+                      "type":  "command_log",
+                      "description":  "Commands executed for this diagnostic",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/figures/figure_summary.md",
+                      "type":  "figure_summary",
+                      "description":  "Figure summary; no figures generated",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/HANDOFF_COMMENT.md",
+                      "type":  "handoff",
+                      "description":  "Markdown-only handoff comment for GitHub issue #1",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/logs/step0_budget_rprop0.log",
+                      "type":  "command_log",
+                      "description":  "Small command log from optimizer budget sweep",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/logs/step0_budget_rprop1.log",
+                      "type":  "command_log",
+                      "description":  "Small command log from optimizer budget sweep",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/logs/step0_budget_rprop10.log",
+                      "type":  "command_log",
+                      "description":  "Small command log from optimizer budget sweep",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/logs/step0_budget_rprop100.log",
+                      "type":  "command_log",
+                      "description":  "Small command log from optimizer budget sweep",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/next_questions.md",
+                      "type":  "artifact",
+                      "description":  "Questions for ChatGPT next-step decision",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/README.md",
+                      "type":  "artifact",
+                      "description":  "Package overview and read-first guidance",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/REPORT.md",
+                      "type":  "report",
+                      "description":  "Main diagnostic report and interpretation",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/reports/step0_root_cause_summary.md",
+                      "type":  "report",
+                      "description":  "Script-generated step-0 diagnostic summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/fedof_step0_alpha_zero_fixed.csv",
+                      "type":  "table",
+                      "description":  "Per-case FE-DOF alpha-zero baseline table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/fedof_step0_alpha_zero_free.csv",
+                      "type":  "table",
+                      "description":  "Per-case FE-DOF alpha-zero baseline table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/fedof_step0_summary.csv",
+                      "type":  "table",
+                      "description":  "FE-DOF alpha-zero step-0 baseline summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/notch_lip_node_pairs.csv",
+                      "type":  "table",
+                      "description":  "Nearest upper/lower explicit notch-lip displacement pair diagnostics",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/optimizer_budget_step0_summary.csv",
+                      "type":  "table",
+                      "description":  "Step-0 alpha-init optimizer budget sweep summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/recompute_he_step0_alpha_intact_topufixed.csv",
+                      "type":  "table",
+                      "description":  "Per-case He_current recomputation table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/recompute_he_step0_alpha_intact_topufree.csv",
+                      "type":  "table",
+                      "description":  "Per-case He_current recomputation table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/recompute_he_step0_old_history.csv",
+                      "type":  "table",
+                      "description":  "Per-case He_current recomputation table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/recompute_he_step0_summary.csv",
+                      "type":  "table",
+                      "description":  "PINN saved-field He_current recomputation consistency summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/tables/step0_field_summary.csv",
+                      "type":  "table",
+                      "description":  "Saved full-run step-0 field, drive, ansatz, and strain proxy summary",
+                      "required_for_chatgpt":  true
+                  }
+              ]
+}

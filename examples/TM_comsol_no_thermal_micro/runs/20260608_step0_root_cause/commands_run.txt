@@ -1,0 +1,22 @@
+git pull origin main
+
+D:\anaconda3\envs\torch_env\python.exe debug_step0_root_cause.py --out-dir D:\Desktop\新建文件夹\cc-work\examples\TM_comsol_no_thermal_micro\runs\20260608_step0_root_cause --fixed-run <alpha-init-history-top-u-fixed-full-run> --topufree-run <alpha-init-history-top-u-free-full-run> --old-history-run <old-history-full-run> --rprop-budgets 0 1 10 100
+
+D:\anaconda3\envs\torch_env\python.exe debug_recompute_he_current.py --npz <alpha-init-history-top-u-fixed-step0-npz> --out <package>\tables\recompute_he_step0_alpha_intact_topufixed.csv --alpha-mode saved
+
+D:\anaconda3\envs\torch_env\python.exe debug_recompute_he_current.py --npz <alpha-init-history-top-u-free-step0-npz> --out <package>\tables\recompute_he_step0_alpha_intact_topufree.csv --alpha-mode saved
+
+D:\anaconda3\envs\torch_env\python.exe debug_recompute_he_current.py --npz <old-history-step0-npz> --out <package>\tables\recompute_he_step0_old_history.csv --alpha-mode saved
+
+D:\anaconda3\envs\torch_env\python.exe debug_fedof_energy_baseline.py --delta 1e-6 --epochs 300 --alpha-mode zero --top-u-mode fixed --out <package>\tables\fedof_step0_alpha_zero_fixed.csv --npz <package>\artifacts\fedof_step0_alpha_zero_fixed_fields.npz
+
+D:\anaconda3\envs\torch_env\python.exe debug_fedof_energy_baseline.py --delta 1e-6 --epochs 300 --alpha-mode zero --top-u-mode free --out <package>\tables\fedof_step0_alpha_zero_free.csv --npz <package>\artifacts\fedof_step0_alpha_zero_free_fields.npz
+
+D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q
+
+D:\anaconda3\envs\torch_env\python.exe -m py_compile debug_step0_root_cause.py debug_recompute_he_current.py debug_fedof_energy_baseline.py analyze_drive_broadening_stepwise.py config.py field_computation.py compute_energy_mixed_tm.py mixed_mode_tm.py history_field_mixed_tm.py train_mixed_tm.py main.py
+
+gh --version
+gh auth status
+& 'C:\Program Files\GitHub CLI\gh.exe' --version
+& 'C:\Program Files\GitHub CLI\gh.exe' auth status

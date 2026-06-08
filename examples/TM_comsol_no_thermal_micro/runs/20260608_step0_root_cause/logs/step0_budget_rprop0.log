@@ -1,0 +1,6 @@
+COMMAND: D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --full --pff-model AT2 --mixed-mechanics-mode history --alpha-init-intact --load-schedule-file load_schedule_D0020_extended.csv --n-rprop 0 --n-lbfgs 0 --max-steps 1 --run-suffix step0_budget_rprop0
+
+cuda
+mixedH_TM idx: 0; displacement: 1e-06
+
+RETURN_CODE: 0
