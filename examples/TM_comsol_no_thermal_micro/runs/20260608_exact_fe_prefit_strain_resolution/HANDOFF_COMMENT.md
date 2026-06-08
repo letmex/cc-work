@@ -1,6 +1,6 @@
 ## Codex handoff: exact FE prefit strain-resolution diagnostic
 
-Commit: PENDING_COMMIT_SHA
+Commit: 3821798166f1bbf7f09730a9d02d39693a28b46b
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_prefit_strain_resolution
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_prefit_strain_resolution/REPORT.md
 
