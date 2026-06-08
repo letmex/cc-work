@@ -1,0 +1,4 @@
+check,status,max_abs_eps_xx_diff,max_abs_eps_yy_diff,max_abs_eps_xy_diff,note,max_x,max_y
+target_t3_recompute_matches_stored_eps,pass,9.690056916589196e-19,2.9603801506537797e-18,2.0125502826762176e-18,Target strain is recomputed with the same T3 formula used for candidate displacement postprocessing.,,
+current_field_computation_input_scaling,not_scaled,,,,"Current FieldComputation passes physical millimeter coordinates directly to NeuralNet; coordinate_scaled_network tests a generic [-1,1] wrapper.",0.01,0.01
+baseline_artifact_connectivity_order_matches_target,pass,,,,d:\Desktop\新建文件夹\cc-work\examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_target_prefit\artifacts\disp_global_prefit_end_fields.npz,,

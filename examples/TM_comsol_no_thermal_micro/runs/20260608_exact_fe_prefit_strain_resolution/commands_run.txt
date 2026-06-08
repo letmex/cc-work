@@ -1,0 +1,29 @@
+git pull origin main
+# workdir: d:\Desktop\新建文件夹\cc-work
+# result: already up to date
+
+Get-Content examples/TM_comsol_no_thermal_micro/AGENT_HANDOFF_WORKFLOW.md
+Get-Content examples/TM_comsol_no_thermal_micro/CODEX_NO_GH_HANDOFF.md
+
+D:\anaconda3\envs\torch_env\python.exe -m py_compile examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution\artifacts\debug_exact_fe_prefit_strain_resolution.py
+# result: passed
+
+D:\anaconda3\envs\torch_env\python.exe examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution\artifacts\debug_exact_fe_prefit_strain_resolution.py --out-dir examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution_smoke --quick
+# result: passed; smoke folder removed
+
+D:\anaconda3\envs\torch_env\python.exe -X faulthandler examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution\artifacts\debug_exact_fe_prefit_strain_resolution.py --out-dir examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution --epochs 500 --capacity-epochs 300 --continuation-epochs 100
+# result: failed after about 40 seconds with exit code 1 and no Python traceback; reran minimal full matrix at 200/100 epochs
+
+D:\anaconda3\envs\torch_env\python.exe -X faulthandler examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution\artifacts\debug_exact_fe_prefit_strain_resolution.py --out-dir examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution --epochs 200 --capacity-epochs 100 --continuation-epochs 100
+# result: passed
+
+D:\anaconda3\envs\torch_env\python.exe -m py_compile examples\TM_comsol_no_thermal_micro\runs\20260608_exact_fe_prefit_strain_resolution\artifacts\debug_exact_fe_prefit_strain_resolution.py
+# result: passed
+
+D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_no_thermal_micro\tests -q
+# workdir: D:\ProgramData\PINN\FEM-PINN-main
+# result: 13 passed in 0.07s
+
+D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q
+# workdir: D:\ProgramData\PINN\FEM-PINN-main
+# result: failed during collection; missing ref_files.Chinese_SENT_reproduction in six Chinese_SENT test modules

@@ -1,0 +1,33 @@
+{
+  "script": "D:\\Desktop\\\u65b0\u5efa\u6587\u4ef6\u5939\\cc-work\\examples\\TM_comsol_no_thermal_micro\\runs\\20260608_exact_fe_prefit_strain_resolution\\artifacts\\debug_exact_fe_prefit_strain_resolution.py",
+  "device": "cuda",
+  "args": {
+    "out_dir": "examples\\TM_comsol_no_thermal_micro\\runs\\20260608_exact_fe_prefit_strain_resolution",
+    "repo_root": "d:\\Desktop\\\u65b0\u5efa\u6587\u4ef6\u5939\\cc-work",
+    "sim_root": "D:\\ProgramData\\PINN\\FEM-PINN-main\\examples\\TM_comsol_no_thermal_micro",
+    "target": "d:\\Desktop\\\u65b0\u5efa\u6587\u4ef6\u5939\\cc-work\\examples\\TM_comsol_no_thermal_micro\\runs\\20260608_exact_fe_target_prefit\\artifacts\\exact_fe_topufree_alpha0_Delta1e-6_fields.npz",
+    "old_fedof_target": "d:\\Desktop\\\u65b0\u5efa\u6587\u4ef6\u5939\\cc-work\\examples\\TM_comsol_no_thermal_micro\\runs\\20260608_mechanics_only_notch_ansatz\\artifacts\\fedof_free_log10_energy_e300_fields.npz",
+    "reuse_baseline": "d:\\Desktop\\\u65b0\u5efa\u6587\u4ef6\u5939\\cc-work\\examples\\TM_comsol_no_thermal_micro\\runs\\20260608_exact_fe_target_prefit\\artifacts\\disp_global_prefit_end_fields.npz",
+    "delta": 1e-06,
+    "E": 81.5,
+    "nu": 0.38,
+    "l0": 0.00015,
+    "tm_eps_r": 1e-05,
+    "eta_residual": 1e-05,
+    "seed": 2,
+    "hidden_layers": 8,
+    "neurons": 400,
+    "activation": "TrainableReLU",
+    "init_coeff": 3.0,
+    "epochs": 200,
+    "capacity_epochs": 100,
+    "continuation_epochs": 100,
+    "lr": 0.001,
+    "quick": false
+  },
+  "constraints": [
+    "alpha fixed to zero",
+    "accepted exact FE target only",
+    "no notch/lip loss, masks, local weights, enrichment, geometry labels, or coupled phase-field run"
+  ]
+}

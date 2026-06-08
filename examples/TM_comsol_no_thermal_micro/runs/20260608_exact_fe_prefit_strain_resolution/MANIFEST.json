@@ -1,0 +1,188 @@
+﻿[
+    {
+        "path":  "MANIFEST.json",
+        "type":  "artifact",
+        "description":  "Package manifest listing files, types, descriptions, and ChatGPT priority",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "artifacts/activation_TrainableTanh_w1_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/baseline_global_disp_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/capacity_10x500_w1_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/coordinate_scaled_network_w1_energy_log10_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/coordinate_scaled_network_w1_energy_normalized_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/coordinate_scaled_network_w1_energy_raw_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/coordinate_scaled_network_w1_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/debug_exact_fe_prefit_strain_resolution.py",
+        "type":  "artifact",
+        "description":  "Diagnostic script used to generate package tables and artifacts",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "artifacts/normalized_global_disp_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/normalized_global_strain_w0p0001_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/normalized_global_strain_w0p001_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/normalized_global_strain_w0p01_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/normalized_global_strain_w0p1_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/normalized_global_strain_w1_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "artifacts/normalized_global_strain_w10_fields.npz",
+        "type":  "artifact",
+        "description":  "Compact predicted/target field artifact for one variant",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "commands_run.json",
+        "type":  "command_log",
+        "description":  "Machine-readable script invocation and constraints",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "commands_run.txt",
+        "type":  "command_log",
+        "description":  "Human-readable command log",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "figures/figure_summary.md",
+        "type":  "figure_summary",
+        "description":  "Text summary for figure directory; no PNG figures generated",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "HANDOFF_COMMENT.md",
+        "type":  "handoff",
+        "description":  "GitHub issue handoff comment for ChatGPT",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "logs/prefit_loss_trace.csv",
+        "type":  "command_log",
+        "description":  "Compact training loss trace",
+        "required_for_chatgpt":  false
+    },
+    {
+        "path":  "next_questions.md",
+        "type":  "handoff",
+        "description":  "Open questions for next diagnostic decision",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "README.md",
+        "type":  "report",
+        "description":  "Package overview and read order",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "REPORT.md",
+        "type":  "report",
+        "description":  "Main diagnostic report with interpretation and answers",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/coordinate_and_connectivity_checks.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/element_quality_error_correlation.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/he_error_distribution.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/optional_energy_continuation.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/prefit_variant_comparison.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/strain_error_distribution.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    },
+    {
+        "path":  "tables/target_guard_check_summary.csv",
+        "type":  "table",
+        "description":  "Diagnostic CSV table",
+        "required_for_chatgpt":  true
+    }
+]
