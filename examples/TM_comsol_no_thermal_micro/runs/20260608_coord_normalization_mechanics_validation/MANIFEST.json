@@ -1,5 +1,6 @@
 ﻿{
     "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_coord_normalization_mechanics_validation",
+    "evidence_commit":  "07693252c7c95a6f75011466e6bc297e8c429875",
     "files":  [
                   {
                       "path":  "artifacts/code_snapshot/config.py",
@@ -161,6 +162,12 @@
                       "path":  "figures/figure_summary.md",
                       "type":  "figure_summary",
                       "description":  "Text summary for included figures",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "HANDOFF_COMMENT.md",
+                      "type":  "handoff",
+                      "description":  "GitHub issue handoff comment body",
                       "required_for_chatgpt":  true
                   },
                   {
