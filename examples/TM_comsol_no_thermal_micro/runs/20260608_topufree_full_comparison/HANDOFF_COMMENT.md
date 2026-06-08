@@ -1,6 +1,6 @@
-## Codex handoff: top-u-free full comparison
+﻿## Codex handoff: top-u-free full comparison
 
-Commit: PENDING
+Commit: ba469209093210e5d5e4b7fdfc0f02216d49372b
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/REPORT.md`
 
@@ -62,3 +62,4 @@ gh auth status
 - Do not change TM split/material parameters unless a clear bug is found.
 - Do not change thermal field, thermal expansion, or history update logic based on this one-seed diagnostic.
 - Do not claim physical validation from this package.
+
