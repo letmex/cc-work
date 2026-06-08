@@ -1,6 +1,6 @@
 ## Codex handoff: global anchor energy continuation
 
-Commit: PENDING_COMMIT_SHA
+Commit: `45f1e890cb84e454bcff41af11dfbddbffee956b`
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_global_anchor_energy_continuation`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_global_anchor_energy_continuation/REPORT.md`
 
