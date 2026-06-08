@@ -47,3 +47,21 @@ tests/test_chinese_sent_postprocess_contract.py
 tests/test_chinese_sent_reaction_force.py
 tests/test_chinese_sent_training_config.py
 ```
+
+```powershell
+Get-Command gh -ErrorAction SilentlyContinue
+& 'C:\Program Files\GitHub CLI\gh.exe' --version
+& 'C:\Program Files\GitHub CLI\gh.exe' auth status
+```
+
+Result:
+
+```text
+gh is not in PATH.
+C:\Program Files\GitHub CLI\gh.exe exists and reports gh version 2.93.0.
+gh auth status reports no logged-in GitHub host.
+GH_TOKEN_present=False
+GITHUB_TOKEN_present=False
+```
+
+Handoff mode: markdown-only. No issue comment was posted automatically.

@@ -1,6 +1,6 @@
 ## Codex handoff: global prefit to mechanics-energy continuation
 
-Commit: PENDING_COMMIT_SHA
+Commit: `ec2ec2f2c37656803e6602f1072ede9f5b31aac7`
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_global_prefit_energy_continuation`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_global_prefit_energy_continuation/REPORT.md`
 
@@ -33,6 +33,8 @@ D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q
 ```
 
 Result: failed during collection because `ref_files.Chinese_SENT_reproduction` is missing in the current environment. See `commands_run.txt`.
+
+GitHub CLI status: `gh` is not in PATH; `C:\Program Files\GitHub CLI\gh.exe` exists but `gh auth status` reports no logged-in GitHub host. No `GH_TOKEN` or `GITHUB_TOKEN` was present, so this package uses markdown-only handoff.
 
 ### Key results
 - `disp_global` prefit reached displacement relative RMSE `0.006716`, `He_current_corr=0.926113`, classification `target-like`.
