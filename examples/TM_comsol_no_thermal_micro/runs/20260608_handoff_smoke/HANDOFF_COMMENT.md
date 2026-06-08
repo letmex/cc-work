@@ -1,6 +1,6 @@
 ## Codex handoff: handoff smoke test
 
-Commit: PENDING
+Commit: `27423fc34c16671a9194cfbbabeafcfa508b5b1c`
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_smoke
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_smoke/REPORT.md
 

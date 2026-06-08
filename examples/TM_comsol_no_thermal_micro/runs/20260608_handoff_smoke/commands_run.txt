@@ -66,3 +66,7 @@ git commit -m "Add handoff smoke test package"
 git push origin main
 
 Status: pending at first creation; final status recorded in HANDOFF_COMMENT.md after commit.
+
+Evidence package commit:
+
+27423fc34c16671a9194cfbbabeafcfa508b5b1c
