@@ -1,0 +1,10 @@
+field_id,field_type,top_u_mode,bottom_u_abs_max,bottom_v_abs_max,top_v_minus_delta_abs_max,top_u_abs_max,top_u_abs_mean,top_u_expected
+exact_fe_free,exact_fe,free,0.0,0.0,0.0,1.8513284487762511e-07,7.87122775084897e-08,nan
+exact_fe_fixed,exact_fe,fixed,0.0,0.0,0.0,0.0,0.0,0.0
+fedof_rprop_free,candidate,free,0.0,0.0,2.5247572468697606e-15,0.0006234158645384014,0.0003565674768651661,nan
+pinn_prefit_disp_global,candidate,free,0.0,0.0,2.5247572468697606e-15,0.0006217911140993237,0.00035474061041895766,nan
+pinn_prefit_disp_strain,candidate,free,0.0,0.0,2.5247572468697606e-15,0.0006223368109203875,0.00035579409459387536,nan
+pinn_collapsed_pure_energy_log10,candidate,free,0.0,0.0,2.5247572468697606e-15,3.331821005758684e-07,1.8128367500480637e-07,nan
+pinn_collapsed_energy_raw,candidate,free,0.0,0.0,2.5247572468697606e-15,2.9631732445523085e-07,1.325951203945408e-07,nan
+pinn_collapsed_energy_normalized,candidate,free,0.0,0.0,2.5247572468697606e-15,3.1692027846474957e-07,1.838944431398204e-07,nan
+pinn_strong_displacement_anchor,candidate,free,0.0,0.0,2.5247572468697606e-15,0.00020462162501644343,0.0001539232391223777,nan

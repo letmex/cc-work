@@ -1,0 +1,143 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_mechanics_audit",
+  "files": [
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and read-first guide.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main exact FE mechanics audit report and interpretation.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Machine-readable package manifest.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "commands_run.json",
+      "type": "command_log",
+      "description": "JSON command metadata emitted by the audit script.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands used to generate, verify, and hand off the package.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "next_questions.md",
+      "type": "handoff",
+      "description": "Open questions for the next diagnostic step.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "GitHub issue handoff comment content.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/exact_fe_summary.csv",
+      "type": "table",
+      "description": "Direct sparse FE top-u-free and top-u-fixed baseline metrics.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/mechanics_field_comparison.csv",
+      "type": "table",
+      "description": "Field comparison against exact FE for FE-DOF RPROP, supervised PINN prefit, and collapsed PINN fields.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/energy_decomposition_comparison.csv",
+      "type": "table",
+      "description": "Standard FE internal energy and current PINN mechanics energy decomposition.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/residual_comparison.csv",
+      "type": "table",
+      "description": "Free/constrained residual norms and vertical reaction checks.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/boundary_residuals.csv",
+      "type": "table",
+      "description": "Boundary displacement residuals and reaction summaries.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary noting that no PNG figures are included and tables are primary evidence.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "artifacts/debug_exact_fe_elastic_solve.py",
+      "type": "artifact",
+      "description": "Snapshot of the exact FE mechanics audit script.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/exact_fe_free_fields.npz",
+      "type": "artifact",
+      "description": "Exact FE top-u-free nodal and element fields.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/exact_fe_fixed_fields.npz",
+      "type": "artifact",
+      "description": "Exact FE top-u-fixed nodal and element fields.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/fedof_rprop_free_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed FE-DOF RPROP target field quantities under audit postprocessing.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/pinn_prefit_disp_global_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed supervised PINN displacement-prefit field quantities.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/pinn_prefit_disp_strain_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed supervised PINN displacement-plus-strain-prefit field quantities.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/pinn_collapsed_pure_energy_log10_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed pure-energy collapsed PINN field quantities.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/pinn_collapsed_energy_raw_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed raw energy-normalization collapsed PINN field quantities.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/pinn_collapsed_energy_normalized_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed normalized energy-continuation PINN field quantities.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/pinn_strong_displacement_anchor_recomputed_fields.npz",
+      "type": "artifact",
+      "description": "Recomputed strong displacement-anchor PINN field quantities.",
+      "required_for_chatgpt": false
+    }
+  ]
+}
