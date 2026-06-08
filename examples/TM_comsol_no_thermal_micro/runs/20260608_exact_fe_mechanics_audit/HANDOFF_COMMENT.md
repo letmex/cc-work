@@ -1,6 +1,6 @@
 ## Codex handoff: exact alpha=0 FE mechanics audit
 
-Commit: PENDING_COMMIT_SHA
+Commit: 195def39453a794124cee399a5f60f3dbb876bd9
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_mechanics_audit
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_mechanics_audit/REPORT.md
 
