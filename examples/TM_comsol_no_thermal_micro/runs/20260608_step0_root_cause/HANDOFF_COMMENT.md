@@ -1,6 +1,6 @@
-## Codex handoff: step-0 root-cause diagnostic
+﻿## Codex handoff: step-0 root-cause diagnostic
 
-Commit: PENDING
+Commit: cd1ccb1e295199b52bea7c641b0f00437fe7d161
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_step0_root_cause/REPORT.md`
 
@@ -67,3 +67,4 @@ gh auth status
 - Do not change TM split/material parameters unless a clear bug is found.
 - Do not change thermal field, thermal expansion, phase-field notch behavior, or history update logic based on this diagnostic.
 - Do not claim physical validation from this package.
+
