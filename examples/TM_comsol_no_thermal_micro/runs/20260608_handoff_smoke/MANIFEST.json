@@ -1,0 +1,29 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_smoke",
+  "purpose": "handoff workflow smoke test",
+  "physical_validation": false,
+  "local_project": "D:\\ProgramData\\PINN\\FEM-PINN-main\\examples\\TM_comsol_no_thermal_micro",
+  "training_mode": "history",
+  "alpha_init": "intact",
+  "run_suffix": "handoff_smoke",
+  "files": [
+    "README.md",
+    "REPORT.md",
+    "commands_run.txt",
+    "next_questions.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/diagnostics_mixed_tm_summary.csv",
+    "tables/displacement_list.csv",
+    "figures/figure_summary.md",
+    "artifacts/fields_mixed_tm_step_0000.npz"
+  ],
+  "status": {
+    "short_training": "passed",
+    "pytest": "passed",
+    "py_compile": "passed",
+    "diagnostics_csv": "found",
+    "fields_npz": "found",
+    "figures": "not_generated"
+  }
+}

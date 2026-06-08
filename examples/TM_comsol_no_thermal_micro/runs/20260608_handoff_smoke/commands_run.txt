@@ -1,0 +1,68 @@
+Working directory for GitHub handoff repository:
+
+D:\Desktop\新建文件夹\cc-work
+
+Commands:
+
+1. Update handoff repository
+
+git -C D:\Desktop\新建文件夹\cc-work pull origin main
+
+Status: passed
+
+2. Read handoff workflow files
+
+Get-Content D:\Desktop\新建文件夹\cc-work\examples\TM_comsol_no_thermal_micro\AGENT_HANDOFF_WORKFLOW.md
+Get-Content D:\Desktop\新建文件夹\cc-work\examples\TM_comsol_no_thermal_micro\CODEX_NO_GH_HANDOFF.md
+
+Status: passed
+
+3. Run short smoke training
+
+Working directory:
+
+D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro
+
+Command:
+
+D:\anaconda3\envs\torch_env\python.exe main.py 2 20 2 TrainableReLU 3.0 --smoke --pff-model AT2 --mixed-mechanics-mode history --alpha-init-intact --n-rprop 1 --n-lbfgs 0 --max-steps 1 --delta-max 1e-6 --run-suffix handoff_smoke
+
+Status: passed
+
+4. Run tests
+
+D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q
+
+Status: passed
+Output summary: 11 passed in 0.06s
+
+5. Run syntax compilation check
+
+D:\anaconda3\envs\torch_env\python.exe -m py_compile config.py field_computation.py compute_energy_mixed_tm.py mixed_mode_tm.py history_field_mixed_tm.py train_mixed_tm.py plot_clean_tm_results.py debug_recompute_he_current.py main.py
+
+Status: passed
+
+6. Copy compact outputs into evidence package
+
+Copied:
+
+tables/diagnostics_mixed_tm_summary.csv
+tables/displacement_list.csv
+artifacts/fields_mixed_tm_step_0000.npz
+
+Status: passed
+
+7. GitHub CLI checks
+
+gh --version
+gh auth status
+
+Status: gh available; gh unauthenticated
+
+8. Commit and push evidence package
+
+git add examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_smoke
+git commit -m "Add handoff smoke test package"
+git push origin main
+
+Status: pending at first creation; final status recorded in HANDOFF_COMMENT.md after commit.
