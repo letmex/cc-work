@@ -1,5 +1,6 @@
 ﻿{
     "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_unitbox_coupled_smoke_comparison",
+    "evidence_commit":  "414d35914d6e7224b2a027e4db6a583a65c0b6d5",
     "files":  [
                   {
                       "path":  "artifacts/none_m12/diagnostics_mixed_tm_summary.csv",
@@ -252,6 +253,12 @@
                       "type":  "figure",
                       "description":  "Rendered final-field or stress/reaction figure",
                       "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "HANDOFF_COMMENT.md",
+                      "type":  "handoff",
+                      "description":  "GitHub issue handoff comment body",
+                      "required_for_chatgpt":  true
                   },
                   {
                       "path":  "next_questions.md",
