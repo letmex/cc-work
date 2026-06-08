@@ -1,0 +1,353 @@
+﻿{
+    "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_unitbox_coupled_smoke_comparison",
+    "files":  [
+                  {
+                      "path":  "artifacts/none_m12/diagnostics_mixed_tm_summary.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/none_m12/displacement_list.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/none_m12/fields_mixed_tm_step_0011.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/none_m12/model_settings.txt",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/smoke_unitbox/diagnostics_mixed_tm_summary.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/smoke_unitbox/displacement_list.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/smoke_unitbox/fields_mixed_tm_step_0000.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/smoke_unitbox/model_settings.txt",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unitbox_m12/diagnostics_mixed_tm_summary.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unitbox_m12/displacement_list.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unitbox_m12/fields_mixed_tm_step_0011.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unitbox_m12/model_settings.txt",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "commands_run.txt",
+                      "type":  "command_log",
+                      "description":  "Commands run",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/figure_summary.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "figures/none_m12/final_alpha_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_disp_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_fields_panel_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_He_current_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_He_history_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_He_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_HI_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_HII_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_mechanics_drive_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_u_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/final_v_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/reaction_strain_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/stress_strain_data_none_m12.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/none_m12/stress_strain_none_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_alpha_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_disp_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_fields_panel_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_He_current_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_He_history_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_He_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_HI_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_HII_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_mechanics_drive_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_u_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/final_v_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/reaction_strain_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/stress_strain_data_unitbox_m12.csv",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/unitbox_m12/stress_strain_unitbox_m12.png",
+                      "type":  "figure",
+                      "description":  "Rendered final-field or stress/reaction figure",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "next_questions.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "none_m12_summary.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "README.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "REPORT.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "smoke_unitbox_summary.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/broadening_events.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/coupled_smoke_summary.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/final_case_comparison.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/none_m12_broadening_events.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/none_m12_stepwise_summary.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/smoke_unitbox_broadening_events.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/smoke_unitbox_stepwise_summary.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/stepwise_summary.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/unitbox_m12_broadening_events.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/unitbox_m12_stepwise_summary.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "unitbox_m12_summary.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  false
+                  }
+              ]
+}
