@@ -1,0 +1,192 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_coordnorm_alpha_2x2_comparison",
+  "run_level": "near-production diagnostic, not validation",
+  "files": [
+    {
+      "path": "artifacts/model_settings_default_none.txt",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/model_settings_default_unitbox.txt",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/model_settings_intact_none.txt",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/model_settings_intact_unitbox.txt",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_default_none.md",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_default_unitbox.md",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_intact_none.md",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_intact_unitbox.md",
+      "type": "artifact",
+      "description": "Traceability artifact or per-case summary",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands run for simulations, analysis, and verification",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary of included figures",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/final_alpha_2x2.png",
+      "type": "figure",
+      "description": "Diagnostic figure",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_He_current_2x2.png",
+      "type": "figure",
+      "description": "Diagnostic figure",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_mechanics_drive_2x2.png",
+      "type": "figure",
+      "description": "Diagnostic figure",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_comparison.png",
+      "type": "figure",
+      "description": "Diagnostic figure",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff comment for issue #1",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Open questions for ChatGPT",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and run level",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main diagnostic report",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/broadening_events.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/broadening_events_default_none.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/broadening_events_default_unitbox.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/broadening_events_intact_none.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/broadening_events_intact_unitbox.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/coord_mapping_diagnostics.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/final_case_comparison.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/reaction_comparison.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stepwise_default_none.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stepwise_default_unitbox.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stepwise_intact_none.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stepwise_intact_unitbox.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stepwise_summary.csv",
+      "type": "table",
+      "description": "Diagnostic CSV table",
+      "required_for_chatgpt": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+git pull origin main
+
+Read workflow files:
+
+Get-Content -Raw examples\TM_comsol_no_thermal_micro\AGENT_HANDOFF_WORKFLOW.md
+Get-Content -Raw examples\TM_comsol_no_thermal_micro\CODEX_NO_GH_HANDOFF.md
+
+Run cases from:
+D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro
+
+Case default_none:
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --max-steps 12 --n-rprop 300 --n-lbfgs 0 --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization none --load-schedule-file load_schedule_D0020_extended.csv --run-suffix coordnorm2x2_default_none
+
+Case default_unitbox:
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --max-steps 12 --n-rprop 300 --n-lbfgs 0 --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization unit_box --load-schedule-file load_schedule_D0020_extended.csv --run-suffix coordnorm2x2_default_unitbox
+
+Case intact_none:
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --max-steps 12 --n-rprop 300 --n-lbfgs 0 --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization none --alpha-init-intact --load-schedule-file load_schedule_D0020_extended.csv --run-suffix coordnorm2x2_intact_none
+
+Case intact_unitbox:
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 2 TrainableReLU 3.0 --max-steps 12 --n-rprop 300 --n-lbfgs 0 --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization unit_box --alpha-init-intact --load-schedule-file load_schedule_D0020_extended.csv --run-suffix coordnorm2x2_intact_unitbox
+
+Per-case analysis:
+D:\anaconda3\envs\torch_env\python.exe analyze_drive_broadening_stepwise.py --run-dir <result_dir> --out <package>\tables\stepwise_<case>.csv --events-out <package>\tables\broadening_events_<case>.csv --summary <package>\artifacts\summary_<case>.md --case <case>
+
+Verification:
+D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_no_thermal_micro\tests -q
+D:\anaconda3\envs\torch_env\python.exe -m py_compile analyze_drive_broadening_stepwise.py plot_clean_tm_results.py config.py field_computation.py train_mixed_tm.py
+
