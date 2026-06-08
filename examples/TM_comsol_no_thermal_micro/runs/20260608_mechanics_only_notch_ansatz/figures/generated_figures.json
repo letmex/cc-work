@@ -1,0 +1,18 @@
+[
+  {
+    "filename": "pinn_fixed_log10_energy_e300_He_current.png",
+    "case_id": "pinn_fixed_log10_energy_e300"
+  },
+  {
+    "filename": "fedof_fixed_log10_energy_e300_He_current.png",
+    "case_id": "fedof_fixed_log10_energy_e300"
+  },
+  {
+    "filename": "pinn_free_log10_energy_e300_He_current.png",
+    "case_id": "pinn_free_log10_energy_e300"
+  },
+  {
+    "filename": "fedof_free_log10_energy_e300_He_current.png",
+    "case_id": "fedof_free_log10_energy_e300"
+  }
+]

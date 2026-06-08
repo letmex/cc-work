@@ -1,0 +1,205 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz",
+  "generated_by": "Codex",
+  "purpose": "Mechanics-only alpha-zero PINN vs FE-DOF diagnostic for narrow explicit notch displacement/strain ansatz",
+  "files": [
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/debug_mechanics_only_notch_ansatz.py",
+      "type": "artifact",
+      "description": "Snapshot of diagnostic script used to generate package",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/fedof_fixed_log10_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/fedof_fixed_raw_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/fedof_free_log10_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/fedof_free_raw_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_fixed_log10_energy_e0_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_fixed_log10_energy_e100_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_fixed_log10_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_fixed_raw_energy_e0_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_fixed_raw_energy_e100_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_fixed_raw_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_free_log10_energy_e0_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_free_log10_energy_e100_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_free_log10_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_free_raw_energy_e0_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_free_raw_energy_e100_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/artifacts/pinn_free_raw_energy_e300_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/commands_run.json",
+      "type": "artifact",
+      "description": "Machine-readable command/config snapshot from diagnostic script",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/commands_run.txt",
+      "type": "command_log",
+      "description": "Commands executed for this diagnostic and verification",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/figures/fedof_fixed_log10_energy_e300_He_current.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/figures/fedof_free_log10_energy_e300_He_current.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary of included figures",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/figures/generated_figures.json",
+      "type": "artifact",
+      "description": "List of generated representative figures",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/figures/pinn_fixed_log10_energy_e300_He_current.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/figures/pinn_free_log10_energy_e300_He_current.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff comment for GitHub issue #1",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/next_questions.md",
+      "type": "artifact",
+      "description": "Questions for ChatGPT next-step decision",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/README.md",
+      "type": "artifact",
+      "description": "Package overview and read-first guidance",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/REPORT.md",
+      "type": "report",
+      "description": "Main mechanics-only notch ansatz diagnostic report",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/tables/key_metrics_summary.csv",
+      "type": "table",
+      "description": "Compact PINN vs FE-DOF representative ratios",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/tables/mechanics_only_comparison.csv",
+      "type": "table",
+      "description": "Full per-case mechanics-only summary table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/tables/notch_lip_comparison.csv",
+      "type": "table",
+      "description": "Per-case notch-lip displacement jump summary",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/tables/notch_lip_node_pairs.csv",
+      "type": "table",
+      "description": "Underlying upper/lower notch-lip node pair displacement rows",
+      "required_for_chatgpt": false
+    }
+  ]
+}
