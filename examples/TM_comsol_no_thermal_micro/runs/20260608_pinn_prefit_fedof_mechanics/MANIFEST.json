@@ -1,0 +1,169 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics",
+  "generated_by": "Codex",
+  "purpose": "Mechanics prefit diagnostic: current PINN displacement ansatz supervised against FE-DOF alpha-zero fields",
+  "files": [
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/debug_pinn_prefit_fedof_mechanics.py",
+      "type": "artifact",
+      "description": "Snapshot of diagnostic script used to generate package",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/prefit_fixed_disp_lip_e1000_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/prefit_fixed_disp_only_e1000_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/prefit_fixed_disp_strain_e1000_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/prefit_free_disp_lip_e1000_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/prefit_free_disp_only_e1000_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/artifacts/prefit_free_disp_strain_e1000_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/commands_run.json",
+      "type": "artifact",
+      "description": "Machine-readable command/config snapshot",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/commands_run.txt",
+      "type": "command_log",
+      "description": "Commands executed for diagnostic and verification",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary of included figures",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/figures/generated_figures.json",
+      "type": "artifact",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/figures/prefit_free_disp_lip_e1000_target_vs_pred_He.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/figures/prefit_free_disp_only_e1000_target_vs_pred_He.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/figures/prefit_free_disp_strain_e1000_target_vs_pred_He.png",
+      "type": "figure",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff comment for GitHub issue #1",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/logs/prefit_fixed_disp_lip_e1000_loss_trace.csv",
+      "type": "table",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/logs/prefit_fixed_disp_only_e1000_loss_trace.csv",
+      "type": "table",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/logs/prefit_fixed_disp_strain_e1000_loss_trace.csv",
+      "type": "table",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/logs/prefit_free_disp_lip_e1000_loss_trace.csv",
+      "type": "table",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/logs/prefit_free_disp_only_e1000_loss_trace.csv",
+      "type": "table",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/logs/prefit_free_disp_strain_e1000_loss_trace.csv",
+      "type": "table",
+      "description": "Diagnostic output artifact",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/next_questions.md",
+      "type": "artifact",
+      "description": "Questions for ChatGPT next-step decision",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/README.md",
+      "type": "artifact",
+      "description": "Package overview and read-first guidance",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/REPORT.md",
+      "type": "report",
+      "description": "Main diagnostic report answering required questions",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/tables/notch_lip_prefit_metrics.csv",
+      "type": "table",
+      "description": "Notch-lip jump target vs prediction metrics",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/tables/prefit_case_comparison.csv",
+      "type": "table",
+      "description": "Main per-case prefit metrics table",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "examples/TM_comsol_no_thermal_micro/runs/20260608_pinn_prefit_fedof_mechanics/tables/strain_he_reconstruction_metrics.csv",
+      "type": "table",
+      "description": "Strain and He reconstruction/correlation metrics",
+      "required_for_chatgpt": true
+    }
+  ]
+}

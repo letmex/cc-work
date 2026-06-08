@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "prefit_free_disp_only_e1000_target_vs_pred_He.png",
+    "case_id": "prefit_free_disp_only_e1000"
+  },
+  {
+    "filename": "prefit_free_disp_lip_e1000_target_vs_pred_He.png",
+    "case_id": "prefit_free_disp_lip_e1000"
+  },
+  {
+    "filename": "prefit_free_disp_strain_e1000_target_vs_pred_He.png",
+    "case_id": "prefit_free_disp_strain_e1000"
+  }
+]
