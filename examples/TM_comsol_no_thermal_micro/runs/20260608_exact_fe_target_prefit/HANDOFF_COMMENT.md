@@ -1,6 +1,6 @@
 ## Codex handoff: exact FE target prefit diagnostic
 
-Commit: PENDING_COMMIT_SHA
+Commit: 80c358b8a6f480e2cb1b19c264709dd77ed84e36
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_target_prefit
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_exact_fe_target_prefit/REPORT.md
 
