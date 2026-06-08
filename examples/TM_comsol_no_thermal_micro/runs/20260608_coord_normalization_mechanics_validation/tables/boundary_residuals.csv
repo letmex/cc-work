@@ -1,0 +1,16 @@
+case_id,stage,coord_normalization,boundary_residual_abs_max,bottom_u_abs_max,bottom_v_abs_max,top_v_minus_delta_abs_max,reaction_N,reaction_ratio,reaction_sign_match
+none_random_init_energy_log10_e300,energy_end,none,0.0,nan,nan,nan,0.07813574379226296,1.612182502648578,True
+unit_box_random_init_energy_log10_e300,energy_end,unit_box,0.0,nan,nan,nan,0.0370400940744075,0.7642519116728508,True
+unit_box_disp_strain_prefit,prefit_end,unit_box,0.0,nan,nan,nan,0.04824585110240521,0.9954614008600277,True
+unit_box_prefit_energy_raw_e10,energy_end,unit_box,0.0,nan,nan,nan,0.07160021139021279,1.477334218461368,True
+unit_box_prefit_energy_raw_e30,energy_end,unit_box,0.0,nan,nan,nan,0.06741955082005359,1.3910742368754387,True
+unit_box_prefit_energy_raw_e100,energy_end,unit_box,0.0,nan,nan,nan,0.036894553726240585,0.761248963324808,True
+unit_box_prefit_energy_raw_e300,energy_end,unit_box,0.0,nan,nan,nan,0.03753189230842397,0.7743992331064677,True
+unit_box_prefit_energy_log10_e10,energy_end,unit_box,0.0,nan,nan,nan,0.10335084121762604,2.1324480930015413,True
+unit_box_prefit_energy_log10_e30,energy_end,unit_box,0.0,nan,nan,nan,0.07312054066520499,1.5087033222344548,True
+unit_box_prefit_energy_log10_e100,energy_end,unit_box,0.0,nan,nan,nan,0.03718008781833231,0.7671404163888985,True
+unit_box_prefit_energy_log10_e300,energy_end,unit_box,0.0,nan,nan,nan,0.036268274413281995,0.7483268805350541,True
+unit_box_prefit_energy_normalized_e10,energy_end,unit_box,0.0,nan,nan,nan,0.1033494871852316,2.132420155117695,True
+unit_box_prefit_energy_normalized_e30,energy_end,unit_box,0.0,nan,nan,nan,0.0675005536504929,1.3927455762594532,True
+unit_box_prefit_energy_normalized_e100,energy_end,unit_box,0.0,nan,nan,nan,0.03709381677752911,0.7653603775012163,True
+unit_box_prefit_energy_normalized_e300,energy_end,unit_box,0.0,nan,nan,nan,0.03667155000973985,0.7566477056632192,True

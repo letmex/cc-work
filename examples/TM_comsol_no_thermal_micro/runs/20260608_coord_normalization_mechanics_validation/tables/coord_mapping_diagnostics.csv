@@ -1,0 +1,4 @@
+case_id,coord_normalization,x_hat_min,x_hat_max,y_hat_min,y_hat_max,t3_gradients_use_physical_xy,physical_x_min,physical_x_max,physical_y_min,physical_y_max
+none_random_init_energy_log10_e300,none,0.0,0.009999999776482582,0.0,0.009999999776482582,True,0.0,0.009999999776482582,0.0,0.009999999776482582
+unit_box_random_init_energy_log10_e300,unit_box,-1.0,1.0,-1.0,1.0,True,0.0,0.009999999776482582,0.0,0.009999999776482582
+unit_box_disp_strain_prefit,unit_box,-1.0,1.0,-1.0,1.0,True,0.0,0.009999999776482582,0.0,0.009999999776482582

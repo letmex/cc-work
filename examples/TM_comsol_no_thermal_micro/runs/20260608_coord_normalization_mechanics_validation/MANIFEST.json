@@ -1,0 +1,221 @@
+﻿{
+    "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_coord_normalization_mechanics_validation",
+    "files":  [
+                  {
+                      "path":  "artifacts/code_snapshot/config.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/debug_coord_normalization_mechanics_validation.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/debug_prefit_then_energy_mechanics.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/field_computation.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/history_field_mixed_tm.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/main.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/test_coord_normalization.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/code_snapshot/train_mixed_tm.py",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/none_random_init_energy_log10_e300_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_disp_strain_prefit_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_disp_strain_prefit_state.pt",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_log10_e10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_log10_e100_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_log10_e30_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_log10_e300_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_normalized_e10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_normalized_e100_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_normalized_e30_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_normalized_e300_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_raw_e10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_raw_e100_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_raw_e30_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_prefit_energy_raw_e300_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/unit_box_random_init_energy_log10_e300_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Small diagnostic artifact or code snapshot",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "commands_run.json",
+                      "type":  "command_log",
+                      "description":  "Commands and run metadata",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "commands_run.txt",
+                      "type":  "command_log",
+                      "description":  "Commands and run metadata",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "figures/figure_summary.md",
+                      "type":  "figure_summary",
+                      "description":  "Text summary for included figures",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "logs/loss_trace.csv",
+                      "type":  "command_log",
+                      "description":  "Commands and run metadata",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "next_questions.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "README.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "REPORT.md",
+                      "type":  "report",
+                      "description":  "Package documentation",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/boundary_residuals.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "tables/coord_mapping_diagnostics.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/coord_normalization_case_comparison.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/energy_continuation_drift.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/mechanics_validation_metrics.csv",
+                      "type":  "table",
+                      "description":  "CSV diagnostic table",
+                      "required_for_chatgpt":  false
+                  }
+              ]
+}
