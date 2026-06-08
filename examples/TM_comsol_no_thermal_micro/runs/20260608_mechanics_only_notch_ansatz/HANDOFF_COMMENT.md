@@ -1,6 +1,6 @@
 ﻿## Codex handoff: mechanics-only notch ansatz diagnostic
 
-Commit: PENDING_COMMIT_SHA
+Commit: 92f187ca00bc91eeec9f6cb6f856a21dd0589f74
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260608_mechanics_only_notch_ansatz/REPORT.md`
 
@@ -56,4 +56,5 @@ gh auth status
 - Do not change TM split/material parameters unless a clear bug is found.
 - Keep phase-field notch behavior, alpha seeding, and history update logic unchanged.
 - Do not claim physical validation from this diagnostic package.
+
 
