@@ -1,15 +1,19 @@
-# Codex Handoff Without GitHub CLI
+# Codex Markdown-Only Handoff
 
-Codex environment note:
+For `TM_comsol_no_thermal_micro`, Codex should use markdown-only handoff by default.
+
+Do **not** spend time checking `gh --version` or `gh auth status` at the end of every task unless the user explicitly asks for GitHub CLI auto-commenting.
+
+Default rule:
 
 ```text
-gh is not installed or not available in PATH.
-gh --version and gh auth status return command not found.
+Generate HANDOFF_COMMENT.md.
+Commit and push the evidence package.
+Give the user the copy-paste ChatGPT sync command.
+Do not try to post the issue comment directly with gh.
 ```
 
-Therefore Codex should not try to post directly to GitHub issues with the GitHub CLI.
-
-Use this no-`gh` workflow instead.
+Reason: the current environment has GitHub CLI installed in some shells, but it is not authenticated and no `GH_TOKEN` / `GITHUB_TOKEN` is available. Re-checking it each task wastes time. ChatGPT can sync `HANDOFF_COMMENT.md` to issue #1 after the user provides the handoff path.
 
 ---
 
@@ -37,10 +41,10 @@ Do not claim the handoff is complete if `HANDOFF_COMMENT.md` is missing.
 
 ## 2. Who posts the issue comment?
 
-Since Codex cannot use `gh`, issue comments are handled by one of these routes:
+Issue comments are handled by one of these routes:
 
 ```text
-Route A:
+Route A, preferred:
     ChatGPT reads HANDOFF_COMMENT.md from GitHub and posts it to issue #1 using the GitHub connector.
 
 Route B:
@@ -54,6 +58,8 @@ Communication issue:
 ```text
 https://github.com/letmex/cc-work/issues/1
 ```
+
+Codex should not attempt Route A directly unless the user explicitly says GitHub CLI authentication has been configured and asks Codex to use it.
 
 ---
 
@@ -138,6 +144,8 @@ Before reporting completion, verify:
 ```
 
 If any item is missing, say it is missing instead of claiming completion.
+
+Do not include repetitive `gh` status in the final response unless it was explicitly requested or actually relevant to a failure.
 
 ---
 
