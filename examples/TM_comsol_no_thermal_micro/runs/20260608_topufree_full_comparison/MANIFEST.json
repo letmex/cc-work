@@ -1,0 +1,133 @@
+﻿{
+    "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison",
+    "generated_by":  "Codex",
+    "purpose":  "Controlled full D0020 seed2 top-u-free boundary-equivalence diagnostic",
+    "files":  [
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/artifacts/analyze_drive_broadening_stepwise.py",
+                      "type":  "artifact",
+                      "description":  "Snapshot of analysis script used to generate tables",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/artifacts/source_patch_notes.md",
+                      "type":  "artifact",
+                      "description":  "Notes on analysis-script changes",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/commands_run.txt",
+                      "type":  "command_log",
+                      "description":  "Commands executed for this diagnostic",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/figures/figure_summary.md",
+                      "type":  "figure_summary",
+                      "description":  "Figure summary; no figures generated",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/HANDOFF_COMMENT.md",
+                      "type":  "handoff",
+                      "description":  "Markdown-only handoff comment for GitHub issue #1",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/next_questions.md",
+                      "type":  "artifact",
+                      "description":  "Questions for ChatGPT next-step decision",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/README.md",
+                      "type":  "artifact",
+                      "description":  "Package overview and read-first guidance",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/REPORT.md",
+                      "type":  "report",
+                      "description":  "Main diagnostic report answering required questions",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/reports/drive_broadening_alpha_intact_history_topufixed_full_seed2.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/reports/drive_broadening_alpha_intact_history_topufree_full_seed2.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/reports/drive_broadening_old_history_full_seed2_reference.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/reports/topufree_full_comparison.md",
+                      "type":  "report",
+                      "description":  "Focused fixed vs free interpretation report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/broadening_events_alpha_intact_history_topufixed_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-case broadening event table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/broadening_events_alpha_intact_history_topufree_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-case broadening event table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/broadening_events_old_history_full_seed2_reference.csv",
+                      "type":  "table",
+                      "description":  "Per-case broadening event table",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/broadening_events_topufixed_vs_topufree.csv",
+                      "type":  "table",
+                      "description":  "Combined event table with absolute-drive and ratio-validity events",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/final_case_comparison.csv",
+                      "type":  "table",
+                      "description":  "Final comparison of top-u fixed, top-u free, and old history reference",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/stepwise_summary_alpha_intact_history_topufixed_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-case stepwise alpha, drive, ratio, reaction, and boundary summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/stepwise_summary_alpha_intact_history_topufree_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-case stepwise alpha, drive, ratio, reaction, and boundary summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/stepwise_summary_old_history_full_seed2_reference.csv",
+                      "type":  "table",
+                      "description":  "Per-case stepwise alpha, drive, ratio, reaction, and boundary summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_topufree_full_comparison/tables/stepwise_summary_topufixed_vs_topufree.csv",
+                      "type":  "table",
+                      "description":  "Combined stepwise summary for fixed/free comparison and reference",
+                      "required_for_chatgpt":  true
+                  }
+              ]
+}
