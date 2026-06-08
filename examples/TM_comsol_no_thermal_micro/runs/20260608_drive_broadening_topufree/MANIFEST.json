@@ -1,0 +1,175 @@
+﻿{
+    "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree",
+    "generated_by":  "Codex",
+    "purpose":  "Drive-broadening stepwise analysis and top-u-free smoke diagnostic handoff",
+    "files":  [
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/artifacts/analyze_drive_broadening_stepwise.py",
+                      "type":  "artifact",
+                      "description":  "Snapshot of stepwise analysis script",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/artifacts/history_field_mixed_tm.py",
+                      "type":  "artifact",
+                      "description":  "Snapshot of summary diagnostics source with boundary stats",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/artifacts/source_patch_notes.md",
+                      "type":  "artifact",
+                      "description":  "Summary of local source changes represented by artifact snapshots",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/artifacts/test_history_mode_controls.py",
+                      "type":  "artifact",
+                      "description":  "Snapshot of regression tests covering diagnostics",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/artifacts/train_mixed_tm.py",
+                      "type":  "artifact",
+                      "description":  "Snapshot of training source passing top-u diagnostics to summary",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/commands_run.txt",
+                      "type":  "command_log",
+                      "description":  "Commands executed for this diagnostic package",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/figures/figure_summary.md",
+                      "type":  "figure_summary",
+                      "description":  "Text summary of figures; no figures generated in this package",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/HANDOFF_COMMENT.md",
+                      "type":  "handoff",
+                      "description":  "Markdown-only handoff comment for GitHub issue #1",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/MANIFEST.json",
+                      "type":  "artifact",
+                      "description":  "Machine-readable package file inventory",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/next_questions.md",
+                      "type":  "artifact",
+                      "description":  "Questions for ChatGPT next-step decision",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/README.md",
+                      "type":  "artifact",
+                      "description":  "Package overview, scope, and read-first guidance",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/REPORT.md",
+                      "type":  "report",
+                      "description":  "Main diagnostic report and interpretation boundaries",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/reports/drive_broadening_alpha_intact_current_split_full_seed2.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/reports/drive_broadening_alpha_intact_history_full_seed2.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/reports/drive_broadening_old_current_split_full_seed2.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/reports/drive_broadening_old_history_full_seed2.md",
+                      "type":  "report",
+                      "description":  "Per-case drive-broadening event report",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/reports/topufree_ansatz_notes.md",
+                      "type":  "report",
+                      "description":  "Notes and interpretation for top-u-free smoke diagnostic",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/broadening_events_alpha_intact_current_split_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Detected event ordering thresholds for drive broadening and alpha growth",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/broadening_events_alpha_intact_history_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Detected event ordering thresholds for drive broadening and alpha growth",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/broadening_events_old_current_split_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Detected event ordering thresholds for drive broadening and alpha growth",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/broadening_events_old_history_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Detected event ordering thresholds for drive broadening and alpha growth",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/final_case_comparison.csv",
+                      "type":  "table",
+                      "description":  "Final comparison across four full D0020 seed2 cases",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/stepwise_summary.csv",
+                      "type":  "table",
+                      "description":  "Combined stepwise summary across all analyzed cases",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/stepwise_summary_alpha_intact_current_split_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-step alpha, drive, region, ratio, energy, and reaction summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/stepwise_summary_alpha_intact_history_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-step alpha, drive, region, ratio, energy, and reaction summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/stepwise_summary_old_current_split_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-step alpha, drive, region, ratio, energy, and reaction summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/stepwise_summary_old_history_full_seed2.csv",
+                      "type":  "table",
+                      "description":  "Per-step alpha, drive, region, ratio, energy, and reaction summary",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "examples/TM_comsol_no_thermal_micro/runs/20260608_drive_broadening_topufree/tables/topufree_smoke_summary.csv",
+                      "type":  "table",
+                      "description":  "Boundary diagnostic summary from top-u-free smoke run",
+                      "required_for_chatgpt":  true
+                  }
+              ]
+}
