@@ -1,0 +1,31 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260608_handoff_encoding_fix",
+  "run_level": "documentation-only encoding fix",
+  "files": [
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Encoding fix report",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands used while diagnosing the encoding issue",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff comment",
+      "required_for_chatgpt": true
+    }
+  ]
+}
+

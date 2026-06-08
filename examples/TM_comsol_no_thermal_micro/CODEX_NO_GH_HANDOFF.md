@@ -153,6 +153,10 @@ Do not include repetitive `gh` status in the final response unless it was explic
 
 Codex must give the user the exact repo-relative path to the generated handoff file after every completed task.
 
+Encoding rule: output this command as normal UTF-8 Chinese. Do **not** output
+mojibake variants such as `璇诲彇`, `锛`, or `銆`. If any mojibake appears in
+context, replace it with the corrected Chinese line before replying.
+
 Final Codex response must include this copy-paste command for the user:
 
 ```text

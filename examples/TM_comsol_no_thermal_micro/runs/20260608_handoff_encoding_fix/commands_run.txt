@@ -1,0 +1,11 @@
+rg "璇诲彇|锛|銆|读取 .*HANDOFF_COMMENT" examples\TM_comsol_no_thermal_micro -n
+
+Read workflow file as UTF-8 with Python:
+
+D:\anaconda3\envs\torch_env\python.exe - <<python script reading CODEX_NO_GH_HANDOFF.md>
+
+Patched:
+
+examples\TM_comsol_no_thermal_micro\CODEX_NO_GH_HANDOFF.md
+examples\TM_comsol_no_thermal_micro\AGENT_HANDOFF_WORKFLOW.md
+

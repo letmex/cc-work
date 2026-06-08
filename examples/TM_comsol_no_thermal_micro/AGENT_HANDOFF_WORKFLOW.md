@@ -130,6 +130,10 @@ Question for ChatGPT
 
 Without this section, ChatGPT can read the evidence but may not know what decision Codex needs.
 
+Encoding note: final copy-paste commands for the user must be emitted as normal
+UTF-8 Chinese, for example `读取 <package_root>/HANDOFF_COMMENT.md，分析并写下一步 Codex prompt。`.
+Do not emit mojibake variants such as `璇诲彇`, `锛`, or `銆`.
+
 ---
 
 ## 5. ChatGPT response format
