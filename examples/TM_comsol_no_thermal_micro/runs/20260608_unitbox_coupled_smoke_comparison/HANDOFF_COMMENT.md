@@ -1,6 +1,6 @@
-## Codex handoff: unit-box coupled smoke and controlled comparison
+﻿## Codex handoff: unit-box coupled smoke and controlled comparison
 
-Commit: 414d35914d6e7224b2a027e4db6a583a65c0b6d5
+Commit: 100451003581f81d321853285b903493d6ab5158
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_unitbox_coupled_smoke_comparison
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_unitbox_coupled_smoke_comparison/REPORT.md
 
