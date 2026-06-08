@@ -1,0 +1,252 @@
+{
+    "package":  "examples/TM_comsol_no_thermal_micro/runs/20260608_global_anchor_energy_continuation",
+    "description":  "Mechanics-only alpha=0 global-anchor energy continuation diagnostic without geometry-specific training loss guidance.",
+    "files":  [
+                  {
+                      "path":  "artifacts/debug_global_anchor_energy_continuation.py",
+                      "type":  "artifact",
+                      "description":  "Diagnostic script snapshot.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/disp_global_prefit_state.pt",
+                      "type":  "artifact",
+                      "description":  "Saved global prefit model checkpoint.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/disp_global_start_displacement_anchor_lamU_1e-02_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/disp_strain_global_prefit_state.pt",
+                      "type":  "artifact",
+                      "description":  "Saved global prefit model checkpoint.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/energy_normalization_normalized_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/energy_normalization_raw_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_disp_strain_anchor_lamU_1e-01_lamEps_1e-03_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_disp_strain_anchor_lamU_1e-02_lamEps_1e-04_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_disp_strain_anchor_lamU_1e-03_lamEps_1e-05_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_disp_strain_anchor_lamU_1e-04_lamEps_1e-06_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_displacement_anchor_lamU_1e-01_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_displacement_anchor_lamU_1e-02_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_displacement_anchor_lamU_1e-03_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_displacement_anchor_lamU_1e-04_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_displacement_anchor_lamU_1e-05_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_displacement_anchor_lamU_1e-06_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_strain_anchor_lamEps_1e-03_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_strain_anchor_lamEps_1e-04_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_strain_anchor_lamEps_1e-05_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_strain_anchor_lamEps_1e-06_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_strain_anchor_lamEps_1e-07_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/global_strain_anchor_lamEps_1e-08_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/prefit_disp_global_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/prefit_disp_strain_global_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/pure_energy_baseline_log10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/trust_region_lamU_1e-01_chunk_10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/trust_region_lamU_1e-02_chunk_10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "artifacts/trust_region_lamU_1e-03_chunk_10_fields.npz",
+                      "type":  "artifact",
+                      "description":  "Saved target/predicted field arrays for one diagnostic case.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "commands_run.json",
+                      "type":  "command_log",
+                      "description":  "Commands and run configuration.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "commands_run.txt",
+                      "type":  "command_log",
+                      "description":  "Commands and run configuration.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "figures/figure_summary.md",
+                      "type":  "figure_summary",
+                      "description":  "Text summary of figure policy; no PNGs generated.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "HANDOFF_COMMENT.md",
+                      "type":  "handoff",
+                      "description":  "Markdown-only GitHub issue handoff.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "logs/loss_trace.csv",
+                      "type":  "command_log",
+                      "description":  "Sparse training trace.",
+                      "required_for_chatgpt":  false
+                  },
+                  {
+                      "path":  "MANIFEST.json",
+                      "type":  "artifact",
+                      "description":  "Manifest listing all package files.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "next_questions.md",
+                      "type":  "handoff",
+                      "description":  "Questions for ChatGPT and next-step constraints.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "README.md",
+                      "type":  "report",
+                      "description":  "Package overview and scope.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "REPORT.md",
+                      "type":  "report",
+                      "description":  "Main diagnostic report and interpretation.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/anchor_case_comparison.csv",
+                      "type":  "table",
+                      "description":  "Diagnostic CSV table.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/anchor_sweep_metrics.csv",
+                      "type":  "table",
+                      "description":  "Diagnostic CSV table.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/continuation_checkpoint_metrics.csv",
+                      "type":  "table",
+                      "description":  "Diagnostic CSV table.",
+                      "required_for_chatgpt":  true
+                  },
+                  {
+                      "path":  "tables/success_threshold_summary.csv",
+                      "type":  "table",
+                      "description":  "Diagnostic CSV table.",
+                      "required_for_chatgpt":  true
+                  }
+              ]
+}
