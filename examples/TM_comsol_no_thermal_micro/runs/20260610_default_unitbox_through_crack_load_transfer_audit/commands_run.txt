@@ -1,0 +1,6 @@
+git pull origin main
+Read softening-gate HANDOFF_COMMENT.md, REPORT.md, extended_softening_summary.csv, alpha_connectivity_by_case.csv, reaction_consistency_audit.csv
+No new training run.
+D:\anaconda3\envs\torch_env\python.exe artifacts\build_through_crack_load_transfer_audit.py
+D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_no_thermal_micro\tests -q
+D:\anaconda3\envs\torch_env\python.exe -m py_compile examples\TM_comsol_no_thermal_micro\runs\20260610_default_unitbox_through_crack_load_transfer_audit\artifacts\build_through_crack_load_transfer_audit.py

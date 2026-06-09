@@ -1,0 +1,191 @@
+{
+  "package": "20260610_default_unitbox_through_crack_load_transfer_audit",
+  "files": [
+    {
+      "path": "artifacts/build_through_crack_load_transfer_audit.py",
+      "type": "artifact",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/cutline_alpha_g_stress_final_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/cutline_alpha_g_stress_final_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/cutline_alpha_g_stress_final_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/displacement_jump_proxy_final_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/displacement_jump_proxy_final_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/displacement_jump_proxy_final_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text explanation of diagnostic figures.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/final_alpha_through_path_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_alpha_through_path_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_alpha_through_path_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_decomposition_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_decomposition_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_decomposition_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_with_through_onset_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_with_through_onset_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_with_through_onset_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_alpha0p8_band_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_alpha0p8_band_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_alpha0p8_band_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff for ChatGPT issue sync.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and reading order.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main through-crack load-transfer audit report.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/crack_section_load_transfer_audit.csv",
+      "type": "table",
+      "description": "Cut-line traction and displacement jump proxy audit.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/mechanics_training_path_audit.csv",
+      "type": "table",
+      "description": "Code-path audit for mechanics training, saved stress, and reaction.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/reaction_decomposition_audit.csv",
+      "type": "table",
+      "description": "Stepwise top-boundary reaction decomposition.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stress_split_sanity_audit.csv",
+      "type": "table",
+      "description": "Final stress split sanity metrics inside/near crack band.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/through_crack_geometry_audit.csv",
+      "type": "table",
+      "description": "Stepwise through-crack connectivity and onset reaction audit.",
+      "required_for_chatgpt": true
+    }
+  ]
+}
