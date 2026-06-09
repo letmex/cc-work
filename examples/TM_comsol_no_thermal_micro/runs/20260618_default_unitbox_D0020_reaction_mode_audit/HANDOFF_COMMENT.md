@@ -1,6 +1,6 @@
 ## Codex handoff: D0020 reaction-mode audit
 
-Commit: UNSET
+Commit: 89adb0ac828358c4bcdc88bce340665317a29083
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260618_default_unitbox_D0020_reaction_mode_audit
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260618_default_unitbox_D0020_reaction_mode_audit/REPORT.md
 
