@@ -1282,7 +1282,7 @@ def write_reports(
     handoff = [
         "## Codex handoff: D0020 energy-stress conjugacy audit",
         "",
-        "Commit: COMMIT_PLACEHOLDER",
+        "Commit: 9e0b9f1",
         "Data folder: examples/TM_comsol_no_thermal_micro/runs/20260619_default_unitbox_D0020_energy_stress_conjugacy_audit",
         "Main report: examples/TM_comsol_no_thermal_micro/runs/20260619_default_unitbox_D0020_energy_stress_conjugacy_audit/REPORT.md",
         "",
