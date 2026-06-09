@@ -1,6 +1,6 @@
 ## Codex handoff: negative-branch ablation and frozen-alpha replay
 
-Commit: PENDING
+Commit: 3f5bda9
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260611_default_unitbox_negative_branch_ablation
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260611_default_unitbox_negative_branch_ablation/REPORT.md
 
