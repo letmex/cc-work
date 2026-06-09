@@ -1,6 +1,6 @@
 ## Codex handoff: default unit_box softening gate
 
-Commit: PENDING
+Commit: 51cebc736f6e8676aa0bb2bcb58d142e1a22839c
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260609_default_unitbox_softening_gate
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260609_default_unitbox_softening_gate/REPORT.md
 
