@@ -1,0 +1,128 @@
+[
+  {
+    "path": "artifacts/run_fedof_reaction_reference.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Commands executed for this package.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/boundary_condition_sensitivity_top_reaction.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/energy_conjugate_reaction_vs_top_sigma_integral.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/fedof_displacement_field_seed7_fedof_continuous_crack_band_void_original_top_bottom_bc.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/fedof_displacement_field_seed7_fedof_piecewise_upper_lower_crack_band_void_minimal_rigid_body_bc.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/fedof_stress_map_seed7_fedof_continuous_crack_band_void_original_top_bottom_bc.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/fedof_stress_map_seed7_fedof_piecewise_upper_lower_crack_band_void_minimal_rigid_body_bc.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary for all included figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/internal_cut_force_vs_top_reaction.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_metric_comparison_by_seed_variant.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/upper_lower_free_body_residual_fedof.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff for issue #1.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Questions to guide ChatGPT review.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order and scope.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main FE-DOF reaction reference report.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/boundary_condition_sensitivity.csv",
+    "type": "table",
+    "description": "Original versus minimal rigid-body boundary sensitivity.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/energy_conjugate_reaction_audit.csv",
+    "type": "table",
+    "description": "Energy-conjugate reaction compared with top/bottom/cut reactions.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/fedof_free_body_consistency.csv",
+    "type": "table",
+    "description": "Whole/upper/lower free-body residuals for FE-DOF references.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/fedof_reference_solve_summary.csv",
+    "type": "table",
+    "description": "FE-DOF variant, BC, solve, and reaction summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_metric_comparison.csv",
+    "type": "table",
+    "description": "Top/bottom stress, constrained DOF, energy, cut, and crack-interface metrics.",
+    "required_for_chatgpt": true
+  }
+]
