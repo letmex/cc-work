@@ -1,6 +1,6 @@
 ## Codex handoff: FE-DOF energy-conjugate reaction reference audit
 
-Commit: PENDING
+Commit: d11194e73e82c06b0f9ce882b7259d7f44700943
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260615_default_unitbox_fedof_reaction_reference
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260615_default_unitbox_fedof_reaction_reference/REPORT.md
 
