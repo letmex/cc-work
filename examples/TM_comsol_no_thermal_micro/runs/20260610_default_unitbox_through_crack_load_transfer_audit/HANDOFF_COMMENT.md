@@ -1,6 +1,6 @@
 ## Codex handoff: through-crack load-transfer audit
 
-Commit: PENDING
+Commit: 89bb0ce10affff6f71ed9a7e2572ca7fcc0ae14d
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260610_default_unitbox_through_crack_load_transfer_audit
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260610_default_unitbox_through_crack_load_transfer_audit/REPORT.md
 
