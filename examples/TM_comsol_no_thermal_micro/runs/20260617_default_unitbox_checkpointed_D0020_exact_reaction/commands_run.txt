@@ -1,0 +1,6 @@
+git pull origin main
+Read AGENT_HANDOFF_WORKFLOW.md and CODEX_NO_GH_HANDOFF.md.
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 42 TrainableReLU 3.0 --full --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization unit_box --load-schedule-file load_schedule_D0020_extended.csv --run-suffix checkpointed_D0020_seed42_history_default_unitbox --save-step-checkpoints true --checkpoint-every-step true
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 7 TrainableReLU 3.0 --full --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization unit_box --load-schedule-file load_schedule_D0020_extended.csv --run-suffix checkpointed_D0020_seed7_history_default_unitbox --save-step-checkpoints true --checkpoint-every-step true
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 13 TrainableReLU 3.0 --full --pff-model AT2 --mixed-mechanics-mode history --top-u-mode free --coord-normalization unit_box --load-schedule-file load_schedule_D0020_extended.csv --run-suffix checkpointed_D0020_seed13_history_default_unitbox --save-step-checkpoints true --checkpoint-every-step true
+D:\anaconda3\envs\torch_env\python.exe artifacts\run_checkpointed_d0020_exact_reaction.py

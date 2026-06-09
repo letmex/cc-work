@@ -1,0 +1,158 @@
+[
+  {
+    "path": "artifacts/run_checkpointed_d0020_exact_reaction.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary for all figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/post_peak_drop_exact_vs_legacy.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_exact_vs_legacy_seed13.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_exact_vs_legacy_seed42.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_exact_vs_legacy_seed7.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff for issue sync.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "logs/seed13_checkpointed.pid",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed13_checkpointed_stderr_tail.log",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed13_checkpointed_stdout.log",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed42_checkpointed.pid",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed42_checkpointed_stderr_tail.log",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed42_checkpointed_stdout.log",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed7_checkpointed.pid",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed7_checkpointed_stderr_tail.log",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/seed7_checkpointed_stdout.log",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "MANIFEST.json",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main checkpointed D0020 exact reaction report.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/acceptance_criteria_check.csv",
+    "type": "table",
+    "description": "Acceptance criteria details for exact collapse, pre-through agreement, and FD checks.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/checkpoint_availability.csv",
+    "type": "table",
+    "description": "Model/result/checkpoint availability by seed.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/exact_reaction_summary_by_seed.csv",
+    "type": "table",
+    "description": "Seed-level exact vs legacy reaction summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/pinn_energy_conjugate_reaction_by_checkpoint.csv",
+    "type": "table",
+    "description": "Exact autograd reaction and boundary/cut metrics by checkpoint.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/pinn_energy_reaction_finite_difference_check.csv",
+    "type": "table",
+    "description": "Finite-difference dPi/dDelta checks by checkpoint and eps.",
+    "required_for_chatgpt": true
+  }
+]
