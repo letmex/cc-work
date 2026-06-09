@@ -1,0 +1,13 @@
+case,seed,state,variant,kinematic_mode,final_reaction_proxy,baseline_reaction_proxy,reaction_removed_percent_vs_baseline,reaction_drop_ge_10pct,reaction_drop_ge_30pct,reaction_drop_ge_50pct,previous_frozen_alpha_baseline_reaction_proxy,continuous_vs_previous_baseline_reaction_diff_percent
+D0040_seed7_default_unitbox,7,final_D0040,continuous_baseline,continuous,0.8268415412807539,0.8268415412807539,0.0,False,False,False,0.8268415412807539,0.0
+D0040_seed7_default_unitbox,7,final_D0040,split_domain_current_split,split_domain,0.8593358645745034,0.8268415412807539,-3.9299335690629045,False,False,False,0.8268415412807539,
+D0040_seed7_default_unitbox,7,final_D0040,split_domain_minus_degraded_crack_band,split_domain,0.8861588645195153,0.8268415412807539,-7.173965055853452,False,False,False,0.8268415412807539,
+D0040_seed7_default_unitbox,7,final_D0040,split_domain_crack_band_void,split_domain,0.8748153820744621,0.8268415412807539,-5.802059814193423,False,False,False,0.8268415412807539,
+D0040_seed13_default_unitbox,13,final_D0040,continuous_baseline,continuous,0.7632701414476601,0.7632701414476601,0.0,False,False,False,0.7632701414476601,0.0
+D0040_seed13_default_unitbox,13,final_D0040,split_domain_current_split,split_domain,0.805386629864821,0.7632701414476601,-5.517900692051233,False,False,False,0.7632701414476601,
+D0040_seed13_default_unitbox,13,final_D0040,split_domain_minus_degraded_crack_band,split_domain,0.8850917831614769,0.7632701414476601,-15.960488311879079,False,False,False,0.7632701414476601,
+D0040_seed13_default_unitbox,13,final_D0040,split_domain_crack_band_void,split_domain,0.7423446573767921,0.7632701414476601,2.7415567483328513,False,False,False,0.7632701414476601,
+D0040_seed42_default_unitbox,42,final_D0040,continuous_baseline,continuous,0.7977702680234195,0.7977702680234195,0.0,False,False,False,0.7977702680234195,0.0
+D0040_seed42_default_unitbox,42,final_D0040,split_domain_current_split,split_domain,0.7556920660086988,0.7977702680234195,5.274476086828236,False,False,False,0.7977702680234195,
+D0040_seed42_default_unitbox,42,final_D0040,split_domain_minus_degraded_crack_band,split_domain,0.8266204990586229,0.7977702680234195,-3.6163582664823517,False,False,False,0.7977702680234195,
+D0040_seed42_default_unitbox,42,final_D0040,split_domain_crack_band_void,split_domain,0.3961012860024469,0.7977702680234195,50.34895359238697,True,True,True,0.7977702680234195,

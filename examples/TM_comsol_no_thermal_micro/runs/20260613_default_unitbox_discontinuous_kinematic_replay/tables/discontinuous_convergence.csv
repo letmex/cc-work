@@ -1,0 +1,13 @@
+case,seed,state,variant,kinematic_mode,convergence_status,iterations,final_mechanics_loss,prefit_disp_mse,prefit_iterations
+D0040_seed7_default_unitbox,7,final_D0040,continuous_baseline,continuous,converged_trace_tol,250,-7.399862289428711,7.965292006973258e-15,250
+D0040_seed7_default_unitbox,7,final_D0040,split_domain_current_split,split_domain,converged_trace_tol,250,-7.399877548217773,2.1458764449475967e-15,250
+D0040_seed7_default_unitbox,7,final_D0040,split_domain_minus_degraded_crack_band,split_domain,converged_trace_tol,250,-7.399878978729248,2.1458764449475967e-15,250
+D0040_seed7_default_unitbox,7,final_D0040,split_domain_crack_band_void,split_domain,converged_trace_tol,250,-7.41481351852417,2.1458764449475967e-15,250
+D0040_seed13_default_unitbox,13,final_D0040,continuous_baseline,continuous,converged_trace_tol,250,-7.403454303741455,1.6626355723304274e-15,250
+D0040_seed13_default_unitbox,13,final_D0040,split_domain_current_split,split_domain,converged_trace_tol,250,-7.4034624099731445,1.2636794542836261e-15,250
+D0040_seed13_default_unitbox,13,final_D0040,split_domain_minus_degraded_crack_band,split_domain,converged_trace_tol,250,-7.403463363647461,1.2636794542836261e-15,250
+D0040_seed13_default_unitbox,13,final_D0040,split_domain_crack_band_void,split_domain,converged_trace_tol,250,-7.416905879974365,1.2636794542836261e-15,250
+D0040_seed42_default_unitbox,42,final_D0040,continuous_baseline,continuous,converged_trace_tol,250,-7.402618408203125,2.992997060111938e-15,250
+D0040_seed42_default_unitbox,42,final_D0040,split_domain_current_split,split_domain,converged_trace_tol,250,-7.402631759643555,3.045978335687984e-15,250
+D0040_seed42_default_unitbox,42,final_D0040,split_domain_minus_degraded_crack_band,split_domain,converged_trace_tol,250,-7.402631759643555,3.045978335687984e-15,250
+D0040_seed42_default_unitbox,42,final_D0040,split_domain_crack_band_void,split_domain,converged_trace_tol,250,-7.416671276092529,3.045978335687984e-15,250

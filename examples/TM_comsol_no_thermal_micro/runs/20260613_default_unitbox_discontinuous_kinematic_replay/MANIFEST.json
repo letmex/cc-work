@@ -1,0 +1,326 @@
+[
+  {
+    "path": "artifacts/__pycache__/run_discontinuous_kinematic_replay.cpython-39.pyc",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_continuous_baseline_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_split_domain_crack_band_void_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_split_domain_current_split_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_split_domain_minus_degraded_crack_band_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_continuous_baseline_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_split_domain_crack_band_void_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_split_domain_current_split_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_split_domain_minus_degraded_crack_band_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_continuous_baseline_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_split_domain_crack_band_void_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_split_domain_current_split_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_split_domain_minus_degraded_crack_band_fields.npz",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/run_discontinuous_kinematic_replay.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Commands used for this package.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/crack_band_traction_comparison_by_variant.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/crack_opening_v_jump_map_along_crack_path.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/energy_contribution_comparison_by_variant.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary for all generated figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/final_alpha_mask_domain_labels_D0040_seed13_default_unitbox.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_alpha_mask_domain_labels_D0040_seed42_default_unitbox.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_alpha_mask_domain_labels_D0040_seed7_default_unitbox.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_cont.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_split-g.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_split-void.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_split.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_cont.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_split-g.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_split-void.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_split.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_cont.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_split-g.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_split-void.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_split.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_comparison_by_variant_seed.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_removal_percent_by_variant_seed.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/stress_transmission_maps_D0040_seed13_default_unitbox.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/stress_transmission_maps_D0040_seed42_default_unitbox.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/stress_transmission_maps_D0040_seed7_default_unitbox.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/upper_lower_separation_by_variant_seed.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff comment for issue #1.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "logs/loss_trace.csv",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "logs/run_config.json",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "MANIFEST.json",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Questions for the next ChatGPT review.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order and diagnostic scope.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main diagnostic report and interpretation.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/discontinuous_convergence.csv",
+    "type": "table",
+    "description": "Optimization convergence statuses.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/discontinuous_crack_band_traction.csv",
+    "type": "table",
+    "description": "Crack-band traction proxy by cut line.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/discontinuous_displacement_jump.csv",
+    "type": "table",
+    "description": "Displacement jump proxy by cut line.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/discontinuous_energy_comparison.csv",
+    "type": "table",
+    "description": "Energy contribution comparison.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/discontinuous_reaction_comparison.csv",
+    "type": "table",
+    "description": "Reaction proxy and reaction removal criteria.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/discontinuous_replay_summary.csv",
+    "type": "table",
+    "description": "Main per-seed/state/variant metric table.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/domain_split_geometry_audit.csv",
+    "type": "table",
+    "description": "Connected crack-band and upper/lower domain split audit.",
+    "required_for_chatgpt": true
+  }
+]
