@@ -1,6 +1,6 @@
 ## Codex handoff: discontinuous/split-domain frozen-alpha kinematic replay
 
-Commit: PENDING
+Commit: e13e490
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260613_default_unitbox_discontinuous_kinematic_replay
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260613_default_unitbox_discontinuous_kinematic_replay/REPORT.md
 
