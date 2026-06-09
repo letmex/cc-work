@@ -1,6 +1,6 @@
 ## Codex handoff: checkpointed D0020 exact reaction diagnostic
 
-Commit: PENDING
+Commit: 334e0f23fffa991675e364d59d2ee00ddc7379bf
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260617_default_unitbox_checkpointed_D0020_exact_reaction
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260617_default_unitbox_checkpointed_D0020_exact_reaction/REPORT.md
 
