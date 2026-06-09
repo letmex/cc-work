@@ -1,6 +1,6 @@
 ## Codex handoff: boundary/reaction/free-body audit
 
-Commit: PENDING
+Commit: fdeb8f52e9504d81e992166fd79a767ab96da990
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260614_default_unitbox_boundary_reaction_audit
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260614_default_unitbox_boundary_reaction_audit/REPORT.md
 
