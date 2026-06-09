@@ -1,0 +1,158 @@
+[
+  {
+    "path": "artifacts/run_boundary_reaction_audit.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/all_boundary_force_vectors_seed13.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/all_boundary_force_vectors_seed42.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/all_boundary_force_vectors_seed7.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/boundary_condition_map.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary for all figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/rigid_body_sanity_reaction_comparison.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/split_domain_labels_boundaries_seed13.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/split_domain_labels_boundaries_seed42.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/split_domain_labels_boundaries_seed7.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/stress_map_void_high_reaction_seed13.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/stress_map_void_high_reaction_seed42.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/stress_map_void_high_reaction_seed7.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/top_reaction_vs_internal_cut_force.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/upper_lower_subdomain_free_body_residual.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff for issue #1.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main audit report and answers.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/all_boundary_force_balance.csv",
+    "type": "table",
+    "description": "Top/bottom/left/right force integrals and residual sums.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/boundary_condition_overconstraint_audit.csv",
+    "type": "table",
+    "description": "Boundary ansatz and overconstraint notes.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_definition_audit.csv",
+    "type": "table",
+    "description": "Static audit of reaction/reporting code paths.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_vs_internal_cut_consistency.csv",
+    "type": "table",
+    "description": "Top reaction compared with internal cut forces.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/rigid_body_sanity_audit.csv",
+    "type": "table",
+    "description": "Synthetic displacement field sanity tests.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/subdomain_free_body_audit.csv",
+    "type": "table",
+    "description": "Upper/lower subdomain free-body force and moment proxies.",
+    "required_for_chatgpt": true
+  }
+]
