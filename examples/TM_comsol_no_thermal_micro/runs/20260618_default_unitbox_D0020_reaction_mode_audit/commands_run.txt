@@ -1,0 +1,5 @@
+git pull origin main
+Read previous D0020 exact-reaction handoff/report/tables.
+D:\anaconda3\envs\torch_env\python.exe -m py_compile artifacts\run_d0020_reaction_mode_audit.py
+D:\anaconda3\envs\torch_env\python.exe artifacts\run_d0020_reaction_mode_audit.py
+D:\anaconda3\envs\torch_env\python.exe -m pytest D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro\tests -q

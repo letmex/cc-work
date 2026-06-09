@@ -1,0 +1,158 @@
+[
+  {
+    "path": "artifacts/run_d0020_reaction_mode_audit.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/boundary_work_decomposition.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/delta_loading_mode_du_dv_maps_seed42.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/exact_reaction_energy_term_decomposition.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary of all diagnostic figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/postthrough_collapse_by_loading_mode.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/prethrough_exact_legacy_ratio_by_step.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/prethrough_linear_sanity.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_by_loading_mode_curves.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/virtual_work_identity_check.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff for issue sync.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "MANIFEST.json",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main reaction-mode audit report.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/base_checkpoint_reactions.csv",
+    "type": "table",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/boundary_work_decomposition.csv",
+    "type": "table",
+    "description": "Boundary work components for each diagnostic mode.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/checkpoint_availability.csv",
+    "type": "table",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/delta_loading_mode_decomposition.csv",
+    "type": "table",
+    "description": "du/dDelta, dv/dDelta, and strain derivative stats by pre-through region.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/exact_reaction_energy_term_decomposition.csv",
+    "type": "table",
+    "description": "Global exact reaction energy-term and history-branch derivative decomposition.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/prethrough_linear_sanity_check.csv",
+    "type": "table",
+    "description": "Pre-through linear reaction and quadratic energy fits.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_by_loading_mode.csv",
+    "type": "table",
+    "description": "Reaction metrics for global, pure top-vertical, no-horizontal, and affine modes.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_by_loading_mode_summary.csv",
+    "type": "table",
+    "description": "Seed-level mode ratios and post-through collapse.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_unit_scaling_audit.csv",
+    "type": "table",
+    "description": "Static audit of units and conversion factors.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/virtual_work_identity_check.csv",
+    "type": "table",
+    "description": "Energy derivative versus current-stress virtual work and boundary/cut reactions.",
+    "required_for_chatgpt": true
+  }
+]
