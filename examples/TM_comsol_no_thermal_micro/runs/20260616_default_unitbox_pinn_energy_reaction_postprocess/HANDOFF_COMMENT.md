@@ -1,6 +1,6 @@
 ## Codex handoff: actual saved-PINN reaction postprocessing
 
-Commit: PENDING
+Commit: d19afb68218ed08515b7c9cff3f1b8a69d6d569c
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260616_default_unitbox_pinn_energy_reaction_postprocess
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260616_default_unitbox_pinn_energy_reaction_postprocess/REPORT.md
 
