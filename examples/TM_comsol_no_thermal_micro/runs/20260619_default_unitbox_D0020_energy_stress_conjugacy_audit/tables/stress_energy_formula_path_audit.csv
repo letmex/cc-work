@@ -1,0 +1,7 @@
+file,function,formula,uses_current_trial_energy,uses_committed_history,uses_g_alpha_He_trial_plus_psi_minus,uses_g_alpha_H_old_plus_psi_minus,uses_sigma_total_plus_g_minus_1_sigma_plus,expected_conjugate_to_exact_reaction
+compute_energy_mixed_tm.py,compute_mixed_tm_fields,"history mechanics: elastic_density = g_alpha * (max(HI_old, psiI) + beta*max(HII_old, psiII)) + psi_minus",False,True,True,only inactive max branches,False,True
+mixed_mode_tm.py,tm_source_effective_stress_fields,sigma_eff = sigma_total + (g_alpha - 1) * sigma_plus,True,False,False,False,True,False
+mixed_mode_tm.py,_tm_source_split,eps_zz = -nu/(1-nu)*(eps_xx+eps_yy); psiI=0.5*lambda*tr_pos^2; psiII=mu*eps_plus_contract,True,False,False,False,False,only after differentiating full density including eps_zz chain and history masks
+field_computation.py,FieldComputation.fieldCalculation,"top-u-free: u=Delta*raw_u*(eta+bubble), v=Delta*(eta + bubble*raw_v), alpha independent of Delta",False,False,False,False,False,defines displacement mode only
+history_field_mixed_tm.py,_top_reaction_force_N,reaction_N_tm_eff = 1000*sum_top_edges(sigma_yy_tm_eff * edge_length * unit_thickness),False,False,False,False,True,False
+history_field_mixed_tm.py / train_mixed_tm.py,history update,"HI,HII are committed after each step and previous-step histories are used in the next objective",False,True,True,inactive max branches,False,True

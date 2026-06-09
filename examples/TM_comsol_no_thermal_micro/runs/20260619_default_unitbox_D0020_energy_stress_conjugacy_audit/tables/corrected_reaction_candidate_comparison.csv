@@ -1,0 +1,715 @@
+seed,step,Delta,candidate,reaction_N,ratio_to_legacy_abs,agreement_with_exact_abs_error_N,agreement_with_exact_rel_error,legacy_top_sigma_integral_N,physical_interpretability,future_reliable,alpha0p8_through_crack
+7,0,1e-06,R_energy_exact,0.07881747296778485,2.116461312206909,0.0,0.0,0.03724021436782092,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,0,1e-06,R_virtual_energy_autograd_sigma,0.07881746569182724,2.1164611168278613,7.275957614183426e-09,9.231401794824526e-08,0.03724021436782092,same as exact energy derivative if autograd stress is correct,True,False
+7,0,1e-06,R_current_trial_energy,0.07881747296778485,2.116461312206909,0.0,0.0,0.03724021436782092,"current-strain mechanics diagnostic, not training history branch",True,False
+7,0,1e-06,R_history_branch_energy,0.07881747296778485,2.116461312206909,0.0,0.0,0.03724021436782092,training-objective energy reaction,True,False
+7,0,1e-06,R_legacy_top_sigma,0.03724021436782092,1.0,0.04157725859996393,0.527513215463757,0.03724021436782092,legacy top-boundary postprocessed sigma integral,False,False
+7,0,1e-06,R_energy_consistent_top_boundary_sigma,0.08158239500817242,2.190706911683821,0.0027649220403875713,0.03508006456281186,0.03724021436782092,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,0,1e-06,R_postprocessed_sigma_virtual_work,0.05421896275947802,1.4559250981736653,0.024598510208306834,0.3120946318383109,0.03724021436782092,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,1,5e-06,R_energy_exact,0.427455612225458,2.1913183809639576,0.0,0.0,0.19506778017232757,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,1,5e-06,R_virtual_energy_autograd_sigma,0.42745558312162757,2.191318231765405,2.9103830456733704e-08,6.808620503357229e-08,0.19506778017232757,same as exact energy derivative if autograd stress is correct,True,False
+7,1,5e-06,R_current_trial_energy,0.427455612225458,2.1913183809639576,0.0,0.0,0.19506778017232757,"current-strain mechanics diagnostic, not training history branch",True,False
+7,1,5e-06,R_history_branch_energy,0.427455612225458,2.1913183809639576,0.0,0.0,0.19506778017232757,training-objective energy reaction,True,False
+7,1,5e-06,R_legacy_top_sigma,0.19506778017232757,1.0,0.23238783205313046,0.5436537160975661,0.19506778017232757,legacy top-boundary postprocessed sigma integral,False,False
+7,1,5e-06,R_energy_consistent_top_boundary_sigma,0.3679734520960271,1.8863876534143698,0.05948216012943092,0.13915400436491995,0.19506778017232757,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,1,5e-06,R_postprocessed_sigma_virtual_work,0.2691335103008896,1.3796922795918967,0.15832210192456841,0.3703825552793601,0.19506778017232757,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,2,1e-05,R_energy_exact,0.8481868426315486,2.2259586823955533,0.0,0.0,0.3810433901310059,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,2,1e-05,R_virtual_energy_autograd_sigma,0.8481867262162268,2.2259583768783213,1.1641532182693481e-07,1.3725197795541083e-07,0.3810433901310059,same as exact energy derivative if autograd stress is correct,True,False
+7,2,1e-05,R_current_trial_energy,0.8481868426315486,2.2259586823955533,0.0,0.0,0.3810433901310059,"current-strain mechanics diagnostic, not training history branch",True,False
+7,2,1e-05,R_history_branch_energy,0.8481868426315486,2.2259586823955533,0.0,0.0,0.3810433901310059,training-objective energy reaction,True,False
+7,2,1e-05,R_legacy_top_sigma,0.3810433901310059,1.0,0.46714345250054273,0.5507553631122162,0.3810433901310059,legacy top-boundary postprocessed sigma integral,False,False
+7,2,1e-05,R_energy_consistent_top_boundary_sigma,0.7687666296349666,2.017530416603364,0.07942021299658208,0.09363528058296246,0.3810433901310059,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,2,1e-05,R_postprocessed_sigma_virtual_work,0.5298277828842402,1.3904657490635932,0.3183590597473085,0.3753407194570257,0.3810433901310059,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,3,1.5e-05,R_energy_exact,1.2412937358021736,2.331339159247863,0.0,0.0,0.5324380757206686,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,3,1.5e-05,R_virtual_energy_autograd_sigma,1.2412938522174954,2.3313393778936122,1.1641532182693481e-07,9.378547435567504e-08,0.5324380757206686,same as exact energy derivative if autograd stress is correct,True,False
+7,3,1.5e-05,R_current_trial_energy,1.2412957148626447,2.331342876225595,1.979060471057892e-06,1.5943530640464756e-06,0.5324380757206686,"current-strain mechanics diagnostic, not training history branch",True,False
+7,3,1.5e-05,R_history_branch_energy,1.2412937358021736,2.331339159247863,0.0,0.0,0.5324380757206686,training-objective energy reaction,True,False
+7,3,1.5e-05,R_legacy_top_sigma,0.5324380757206686,1.0,0.708855660081505,0.5710619812508876,0.5324380757206686,legacy top-boundary postprocessed sigma integral,False,False
+7,3,1.5e-05,R_energy_consistent_top_boundary_sigma,1.189683318870228,2.2344069162596254,0.05161041693194557,0.04157792426028224,0.5324380757206686,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,3,1.5e-05,R_postprocessed_sigma_virtual_work,0.7674339576624334,1.4413581459659732,0.47385977813974023,0.3817466925614614,0.5324380757206686,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,4,2e-05,R_energy_exact,1.5864964807406068,2.474722688295301,0.0,0.0,0.6410805090381484,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,4,2e-05,R_virtual_energy_autograd_sigma,1.586496364325285,2.4747225067029426,1.1641532182693481e-07,7.337887177196254e-08,0.6410805090381484,same as exact energy derivative if autograd stress is correct,True,False
+7,4,2e-05,R_current_trial_energy,1.586527214385569,2.4747706286780287,3.073364496231079e-05,1.937202214779811e-05,0.6410805090381484,"current-strain mechanics diagnostic, not training history branch",True,False
+7,4,2e-05,R_history_branch_energy,1.5864964807406068,2.474722688295301,0.0,0.0,0.6410805090381484,training-objective energy reaction,True,False
+7,4,2e-05,R_legacy_top_sigma,0.6410805090381484,1.0,0.9454159717024584,0.5959143201257655,0.6410805090381484,legacy top-boundary postprocessed sigma integral,False,False
+7,4,2e-05,R_energy_consistent_top_boundary_sigma,1.5963495595979227,2.490092175775273,0.0098530788573159,0.0062105897976630214,0.6410805090381484,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,4,2e-05,R_postprocessed_sigma_virtual_work,0.9621469653211534,1.5008208044957103,0.6243495154194534,0.39353980484595535,0.6410805090381484,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,5,2.5e-05,R_energy_exact,1.7821155488491058,2.597424845983088,0.0,0.0,0.6861086093039972,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,5,2.5e-05,R_virtual_energy_autograd_sigma,1.7821155488491058,2.597424845983088,0.0,0.0,0.6861086093039972,same as exact energy derivative if autograd stress is correct,True,False
+7,5,2.5e-05,R_current_trial_energy,1.8142890185117722,2.644317523361534,0.03217346966266632,0.01805352614954963,0.6861086093039972,"current-strain mechanics diagnostic, not training history branch",True,False
+7,5,2.5e-05,R_history_branch_energy,1.7821155488491058,2.597424845983088,0.0,0.0,0.6861086093039972,training-objective energy reaction,True,False
+7,5,2.5e-05,R_legacy_top_sigma,0.6861086093039972,1.0,1.0960069395451086,0.6150032977675955,0.6861086093039972,legacy top-boundary postprocessed sigma integral,False,False
+7,5,2.5e-05,R_energy_consistent_top_boundary_sigma,1.6929121173711912,2.467411273396666,0.08920343147791465,0.05005479669122601,0.6861086093039972,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,5,2.5e-05,R_postprocessed_sigma_virtual_work,0.9398891124874353,1.3698838634904733,0.8422264363616705,0.4725992301147825,0.6861086093039972,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,6,3e-05,R_energy_exact,1.8339642556384206,2.6439108949213646,0.0,0.0,0.6936558486752507,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,6,3e-05,R_virtual_energy_autograd_sigma,1.8339641392230988,2.6439107270927185,1.1641532182693481e-07,6.34774213668682e-08,0.6936558486752507,same as exact energy derivative if autograd stress is correct,True,False
+7,6,3e-05,R_current_trial_energy,1.9407698418945074,2.797885789618879,0.10680558625608683,0.05823755066529733,0.6936558486752507,"current-strain mechanics diagnostic, not training history branch",True,False
+7,6,3e-05,R_history_branch_energy,1.8339642556384206,2.6439108949213646,0.0,0.0,0.6936558486752507,training-objective energy reaction,True,False
+7,6,3e-05,R_legacy_top_sigma,0.6936558486752507,1.0,1.14030840696317,0.6217724273836611,0.6936558486752507,legacy top-boundary postprocessed sigma integral,False,False
+7,6,3e-05,R_energy_consistent_top_boundary_sigma,1.7623367905554466,2.5406500845068503,0.07162746508297402,0.03905608566947768,0.6936558486752507,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,6,3e-05,R_postprocessed_sigma_virtual_work,0.4658364341594279,0.671567081931315,1.3681278214789927,0.7459948127520808,0.6936558486752507,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,7,3.5e-05,R_energy_exact,1.731373369693756,2.517545072718763,0.0,0.0,0.6877228886408776,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,7,3.5e-05,R_virtual_energy_autograd_sigma,1.731373369693756,2.517545072718763,0.0,0.0,0.6877228886408776,same as exact energy derivative if autograd stress is correct,True,False
+7,7,3.5e-05,R_current_trial_energy,1.9654149655252695,2.857858881808412,0.2340415958315134,0.1351768485805638,0.6877228886408776,"current-strain mechanics diagnostic, not training history branch",True,False
+7,7,3.5e-05,R_history_branch_energy,1.731373369693756,2.517545072718763,0.0,0.0,0.6877228886408776,training-objective energy reaction,True,False
+7,7,3.5e-05,R_legacy_top_sigma,0.6877228886408776,1.0,1.0436504810528784,0.6027876478413656,0.6877228886408776,legacy top-boundary postprocessed sigma integral,False,False
+7,7,3.5e-05,R_energy_consistent_top_boundary_sigma,1.7471458295615792,2.540479397180457,0.015772459867823052,0.009109796964598613,0.6877228886408776,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,7,3.5e-05,R_postprocessed_sigma_virtual_work,-0.7361004827544093,1.0703446037824023,2.4674738524481654,1.4251540976887096,0.6877228886408776,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,8,4e-05,R_energy_exact,1.4293115818873048,2.1327430247987955,0.0,0.0,0.6701752462756956,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,8,4e-05,R_virtual_energy_autograd_sigma,1.4293116983026266,2.1327431985075718,1.1641532182693481e-07,8.144852620113567e-08,0.6701752462756956,same as exact energy derivative if autograd stress is correct,True,False
+7,8,4e-05,R_current_trial_energy,1.8960180459544063,2.8291376867333975,0.4667064640671015,0.32652534967277647,0.6701752462756956,"current-strain mechanics diagnostic, not training history branch",True,False
+7,8,4e-05,R_history_branch_energy,1.4293115818873048,2.1327430247987955,0.0,0.0,0.6701752462756956,training-objective energy reaction,True,False
+7,8,4e-05,R_legacy_top_sigma,0.6701752462756956,1.0,0.7591363356116092,0.5311202576342545,0.6701752462756956,legacy top-boundary postprocessed sigma integral,False,False
+7,8,4e-05,R_energy_consistent_top_boundary_sigma,1.3209714724310393,1.971083652778814,0.10834010945626549,0.07579880470373719,0.6701752462756956,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,8,4e-05,R_postprocessed_sigma_virtual_work,-2.9465779662132263,4.396727546396227,4.375889548100531,3.061536479206639,0.6701752462756956,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,9,4.5e-05,R_energy_exact,1.007041078992188,1.4600756943598838,0.0,0.0,0.6897184049308401,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,9,4.5e-05,R_virtual_energy_autograd_sigma,1.007041078992188,1.4600756943598838,0.0,0.0,0.6897184049308401,same as exact energy derivative if autograd stress is correct,True,False
+7,9,4.5e-05,R_current_trial_energy,1.7477304209023714,2.533976777200285,0.7406893419101834,0.7355105539998823,0.6897184049308401,"current-strain mechanics diagnostic, not training history branch",True,False
+7,9,4.5e-05,R_history_branch_energy,1.007041078992188,1.4600756943598838,0.0,0.0,0.6897184049308401,training-objective energy reaction,True,False
+7,9,4.5e-05,R_legacy_top_sigma,0.6897184049308401,1.0,0.31732267406134784,0.3151040018932628,0.6897184049308401,legacy top-boundary postprocessed sigma integral,False,False
+7,9,4.5e-05,R_energy_consistent_top_boundary_sigma,0.9805140554993659,1.4216150366433742,0.0265270234928221,0.026341550554590514,0.6897184049308401,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,9,4.5e-05,R_postprocessed_sigma_virtual_work,-6.195499561727047,8.982650770858124,7.202540640719235,7.152181565351127,0.6897184049308401,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,10,4.7e-05,R_energy_exact,0.8521633571945131,1.194997280954907,0.0,0.0,0.713109034451995,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,10,4.7e-05,R_virtual_energy_autograd_sigma,0.852163415402174,1.1949973625800976,5.820766091346741e-08,6.83057543158137e-08,0.713109034451995,same as exact energy derivative if autograd stress is correct,True,False
+7,10,4.7e-05,R_current_trial_energy,1.6764310421422124,2.3508761790271024,0.8242676849476993,0.9672648770786721,0.713109034451995,"current-strain mechanics diagnostic, not training history branch",True,False
+7,10,4.7e-05,R_history_branch_energy,0.8521633571945131,1.194997280954907,0.0,0.0,0.713109034451995,training-objective energy reaction,True,False
+7,10,4.7e-05,R_legacy_top_sigma,0.713109034451995,1.0,0.13905432274251806,0.16317801225379114,0.713109034451995,legacy top-boundary postprocessed sigma integral,False,False
+7,10,4.7e-05,R_energy_consistent_top_boundary_sigma,0.503200535690493,0.7056431925269169,0.34896282150402014,0.40950226099004466,0.713109034451995,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,10,4.7e-05,R_postprocessed_sigma_virtual_work,-7.978897541761398,11.188888593864142,8.831060898955911,10.363107993788274,0.713109034451995,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,11,4.9e-05,R_energy_exact,0.6778757669962943,0.9480312009541955,0.0,0.0,0.7150352924186576,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,11,4.9e-05,R_virtual_energy_autograd_sigma,0.6778757087886333,0.9480311195488976,5.820766091346741e-08,8.586774118123272e-08,0.7150352924186576,same as exact energy derivative if autograd stress is correct,True,False
+7,11,4.9e-05,R_current_trial_energy,1.6020399052649736,2.2405046607503247,0.9241641382686794,1.3633237582215143,0.7150352924186576,"current-strain mechanics diagnostic, not training history branch",True,False
+7,11,4.9e-05,R_history_branch_energy,0.6778757669962943,0.9480312009541955,0.0,0.0,0.7150352924186576,training-objective energy reaction,True,False
+7,11,4.9e-05,R_legacy_top_sigma,0.7150352924186576,1.0,0.03715952542236334,0.05481760409731017,0.7150352924186576,legacy top-boundary postprocessed sigma integral,False,False
+7,11,4.9e-05,R_energy_consistent_top_boundary_sigma,0.4993644264899859,0.6983773133782674,0.17851134050630835,0.2633393155464196,0.7150352924186576,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,11,4.9e-05,R_postprocessed_sigma_virtual_work,-10.01704391092062,14.009160131155566,10.694919677916914,15.777108724961074,0.7150352924186576,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,12,5.1e-05,R_energy_exact,0.4787435755133629,0.6715837203089304,0.0,0.0,0.7128576245015877,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,12,5.1e-05,R_virtual_energy_autograd_sigma,0.47874351730570197,0.6715836386549523,5.820766091346741e-08,1.2158421311669945e-07,0.7128576245015877,same as exact energy derivative if autograd stress is correct,True,False
+7,12,5.1e-05,R_current_trial_energy,1.5212635044008493,2.1340355382527876,1.0425199288874865,2.177616540899957,0.7128576245015877,"current-strain mechanics diagnostic, not training history branch",True,False
+7,12,5.1e-05,R_history_branch_energy,0.4787435755133629,0.6715837203089304,0.0,0.0,0.7128576245015877,training-objective energy reaction,True,False
+7,12,5.1e-05,R_legacy_top_sigma,0.7128576245015877,1.0,0.23411404898822485,0.4890176306536988,0.7128576245015877,legacy top-boundary postprocessed sigma integral,False,False
+7,12,5.1e-05,R_energy_consistent_top_boundary_sigma,0.5017737399364286,0.7038905423607642,0.023030164423065713,0.04810542762557215,0.7128576245015877,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,12,5.1e-05,R_postprocessed_sigma_virtual_work,-12.233088724315166,17.16063391040846,12.71183229982853,26.55248644579192,0.7128576245015877,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,13,5.3e-05,R_energy_exact,0.2679606550373137,0.37447160948703556,0.0,0.0,0.7155700145182586,energy-conjugate to actual checkpoint mechanics objective,True,False
+7,13,5.3e-05,R_virtual_energy_autograd_sigma,0.2679605386219919,0.374471446798103,1.1641532182693481e-07,4.3444931051808295e-07,0.7155700145182586,same as exact energy derivative if autograd stress is correct,True,False
+7,13,5.3e-05,R_current_trial_energy,1.4326958917081356,2.0021742983077147,1.164735236670822,4.346665134508765,0.7155700145182586,"current-strain mechanics diagnostic, not training history branch",True,False
+7,13,5.3e-05,R_history_branch_energy,0.2679606550373137,0.37447160948703556,0.0,0.0,0.7155700145182586,training-objective energy reaction,True,False
+7,13,5.3e-05,R_legacy_top_sigma,0.7155700145182586,1.0,0.44760935948094493,1.670429412178497,0.7155700145182586,legacy top-boundary postprocessed sigma integral,False,False
+7,13,5.3e-05,R_energy_consistent_top_boundary_sigma,0.26104962354494765,0.3648135308194732,0.006911031492366049,0.02579121733899211,0.7155700145182586,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+7,13,5.3e-05,R_postprocessed_sigma_virtual_work,-14.832749031484127,20.7285782390839,15.10070968652144,56.35420500229281,0.7155700145182586,virtual work from existing postprocessed sigma_tm_eff,True,False
+7,14,5.5e-05,R_energy_exact,0.15983432240318507,0.2259895207484542,0.0,0.0,0.7072643097513112,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,14,5.5e-05,R_virtual_energy_autograd_sigma,0.15983422053977847,0.22598937672392871,1.0186340659856796e-07,6.373062122515564e-07,0.7072643097513112,same as exact energy derivative if autograd stress is correct,True,True
+7,14,5.5e-05,R_current_trial_energy,1.352899707853794,1.9128629696152797,1.193065385450609,7.464387920643723,0.7072643097513112,"current-strain mechanics diagnostic, not training history branch",True,True
+7,14,5.5e-05,R_history_branch_energy,0.15983432240318507,0.2259895207484542,0.0,0.0,0.7072643097513112,training-objective energy reaction,True,True
+7,14,5.5e-05,R_legacy_top_sigma,0.7072643097513112,1.0,0.5474299873481261,3.4249839403530844,0.7072643097513112,legacy top-boundary postprocessed sigma integral,False,True
+7,14,5.5e-05,R_energy_consistent_top_boundary_sigma,0.5014673368436846,0.7090239531809699,0.34163301444049954,2.137419606151449,0.7072643097513112,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,14,5.5e-05,R_postprocessed_sigma_virtual_work,-17.60835014283657,24.896421182383758,17.768184465239756,111.16626390431448,0.7072643097513112,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,15,5.7e-05,R_energy_exact,0.11356447066646069,0.16127819608684546,0.0,0.0,0.7041526593297722,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,15,5.7e-05,R_virtual_energy_autograd_sigma,0.11356449249433354,0.1612782270856247,2.1827872842550278e-08,1.9220688226213662e-07,0.7041526593297722,same as exact energy derivative if autograd stress is correct,True,True
+7,15,5.7e-05,R_current_trial_energy,1.2962331529706717,1.840841095742583,1.182668682304211,10.4140729522503,0.7041526593297722,"current-strain mechanics diagnostic, not training history branch",True,True
+7,15,5.7e-05,R_history_branch_energy,0.11356447066646069,0.16127819608684546,0.0,0.0,0.7041526593297722,training-objective energy reaction,True,True
+7,15,5.7e-05,R_legacy_top_sigma,0.7041526593297722,1.0,0.5905881886633115,5.20046617747087,0.7041526593297722,legacy top-boundary postprocessed sigma integral,False,True
+7,15,5.7e-05,R_energy_consistent_top_boundary_sigma,-0.004002555630004158,0.005684215740680263,0.11756702629646484,1.0352447874455355,0.7041526593297722,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,15,5.7e-05,R_postprocessed_sigma_virtual_work,-20.227305591106415,28.72573911793389,20.340870061772875,179.11297382360098,0.7041526593297722,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,16,5.9e-05,R_energy_exact,0.07449212716892362,0.10816425594967274,0.0,0.0,0.688694490752876,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,16,5.9e-05,R_virtual_energy_autograd_sigma,0.07449212716892362,0.10816425594967274,0.0,0.0,0.688694490752876,same as exact energy derivative if autograd stress is correct,True,True
+7,16,5.9e-05,R_current_trial_energy,1.2289575533941388,1.7844742043030588,1.1544654262252152,15.497817958765868,0.688694490752876,"current-strain mechanics diagnostic, not training history branch",True,True
+7,16,5.9e-05,R_history_branch_energy,0.07449212716892362,0.10816425594967274,0.0,0.0,0.688694490752876,training-objective energy reaction,True,True
+7,16,5.9e-05,R_legacy_top_sigma,0.688694490752876,1.0,0.6142023635839524,8.245198344130296,0.688694490752876,legacy top-boundary postprocessed sigma integral,False,True
+7,16,5.9e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.07449212716892362,1.0,0.688694490752876,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,16,5.9e-05,R_postprocessed_sigma_virtual_work,-23.43406341969967,34.026790883838366,23.508555546868593,315.58443073533033,0.688694490752876,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,17,6.1e-05,R_energy_exact,0.03537354859872721,0.05106669369061632,0.0,0.0,0.6926931438529224,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,17,6.1e-05,R_virtual_energy_autograd_sigma,0.035373544960748404,0.051066688438682124,3.637978807091713e-09,1.0284460991913637e-07,0.6926931438529224,same as exact energy derivative if autograd stress is correct,True,True
+7,17,6.1e-05,R_current_trial_energy,1.1704900534823537,1.689767054675628,1.1351165048836265,32.089415674978945,0.6926931438529224,"current-strain mechanics diagnostic, not training history branch",True,True
+7,17,6.1e-05,R_history_branch_energy,0.03537354859872721,0.05106669369061632,0.0,0.0,0.6926931438529224,training-objective energy reaction,True,True
+7,17,6.1e-05,R_legacy_top_sigma,0.6926931438529224,1.0,0.6573195952541951,18.582235068093972,0.6926931438529224,legacy top-boundary postprocessed sigma integral,False,True
+7,17,6.1e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.03537354859872721,1.0,0.6926931438529224,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,17,6.1e-05,R_postprocessed_sigma_virtual_work,-26.847772300243378,38.75853621260021,26.883145848842105,759.9787670103699,0.6926931438529224,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,18,6.3e-05,R_energy_exact,0.03455582555034198,0.05075567107051966,0.0,0.0,0.6808268873507809,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,18,6.3e-05,R_virtual_energy_autograd_sigma,0.03455580736044794,0.050755644353164084,1.8189894035458565e-08,5.263915344450091e-07,0.6808268873507809,same as exact energy derivative if autograd stress is correct,True,True
+7,18,6.3e-05,R_current_trial_energy,1.125974697060883,1.6538340626385246,1.091418871510541,31.58422217175882,0.6808268873507809,"current-strain mechanics diagnostic, not training history branch",True,True
+7,18,6.3e-05,R_history_branch_energy,0.03455582555034198,0.05075567107051966,0.0,0.0,0.6808268873507809,training-objective energy reaction,True,True
+7,18,6.3e-05,R_legacy_top_sigma,0.6808268873507809,1.0,0.6462710618004389,18.702231867067727,0.6808268873507809,legacy top-boundary postprocessed sigma integral,False,True
+7,18,6.3e-05,R_energy_consistent_top_boundary_sigma,-0.001985251102191207,0.002915941099089335,0.036541076652533186,1.0574505476449705,0.6808268873507809,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,18,6.3e-05,R_postprocessed_sigma_virtual_work,-30.131354928016663,44.25699908131295,30.165910753567005,872.9616576406311,0.6808268873507809,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,19,6.5e-05,R_energy_exact,0.037712903576903045,0.053782775193831,0.0,0.0,0.7012078391452883,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,19,6.5e-05,R_virtual_energy_autograd_sigma,0.037712918128818274,0.05378279594647296,1.4551915228366852e-08,3.858603779656746e-07,0.7012078391452883,same as exact energy derivative if autograd stress is correct,True,True
+7,19,6.5e-05,R_current_trial_energy,1.0636417428031564,1.5168708668454758,1.0259288392262533,27.20365556404877,0.7012078391452883,"current-strain mechanics diagnostic, not training history branch",True,True
+7,19,6.5e-05,R_history_branch_energy,0.037712903576903045,0.053782775193831,0.0,0.0,0.7012078391452883,training-objective energy reaction,True,True
+7,19,6.5e-05,R_legacy_top_sigma,0.7012078391452883,1.0,0.6634949355683852,17.59331349853256,0.7012078391452883,legacy top-boundary postprocessed sigma integral,False,True
+7,19,6.5e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.037712903576903045,1.0,0.7012078391452883,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,19,6.5e-05,R_postprocessed_sigma_virtual_work,-34.48311984539032,49.17674606636209,34.52083274896722,915.3586564495984,0.7012078391452883,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,20,6.7e-05,R_energy_exact,0.02155911897716578,0.030786623048513595,0.0,0.0,0.7002755366573624,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,20,6.7e-05,R_virtual_energy_autograd_sigma,0.021559129891102202,0.030786638633716633,1.0913936421275139e-08,5.062329510233963e-07,0.7002755366573624,same as exact energy derivative if autograd stress is correct,True,True
+7,20,6.7e-05,R_current_trial_energy,1.0187642183154821,1.4548048089447296,0.9972050993383164,46.254445758868926,0.7002755366573624,"current-strain mechanics diagnostic, not training history branch",True,True
+7,20,6.7e-05,R_history_branch_energy,0.02155911897716578,0.030786623048513595,0.0,0.0,0.7002755366573624,training-objective energy reaction,True,True
+7,20,6.7e-05,R_legacy_top_sigma,0.7002755366573624,1.0,0.6787164176801966,31.481639783103162,0.7002755366573624,legacy top-boundary postprocessed sigma integral,False,True
+7,20,6.7e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.02155911897716578,1.0,0.7002755366573624,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,20,6.7e-05,R_postprocessed_sigma_virtual_work,-38.275014609098434,54.65707797218968,38.2965737280756,1776.351518289648,0.7002755366573624,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,21,6.9e-05,R_energy_exact,0.01816071744542569,0.02500961996383424,0.0,0.0,0.7261492766258516,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,21,6.9e-05,R_virtual_energy_autograd_sigma,0.01816073381633032,0.025009642508654097,1.6370904631912708e-08,9.014459192544841e-07,0.7261492766258516,same as exact energy derivative if autograd stress is correct,True,True
+7,21,6.9e-05,R_current_trial_energy,0.9810372721403837,1.35101321962187,0.962876554694958,53.019742066274304,0.7261492766258516,"current-strain mechanics diagnostic, not training history branch",True,True
+7,21,6.9e-05,R_history_branch_energy,0.01816071744542569,0.02500961996383424,0.0,0.0,0.7261492766258516,training-objective energy reaction,True,True
+7,21,6.9e-05,R_legacy_top_sigma,0.7261492766258516,1.0,0.7079885591804259,38.984613978384075,0.7261492766258516,legacy top-boundary postprocessed sigma integral,False,True
+7,21,6.9e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.01816071744542569,1.0,0.7261492766258516,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,21,6.9e-05,R_postprocessed_sigma_virtual_work,-42.15223714709282,58.04899695412319,42.170397864538245,2322.066735043009,0.7261492766258516,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,22,7.1e-05,R_energy_exact,0.012927604075230192,0.017913094600029735,0.0,0.0,0.7216845756628077,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,22,7.1e-05,R_virtual_energy_autograd_sigma,0.012927615898661315,0.0179131109831305,1.1823431123048067e-08,9.145879665128541e-07,0.7216845756628077,same as exact energy derivative if autograd stress is correct,True,True
+7,22,7.1e-05,R_current_trial_energy,0.941432430408895,1.304492935219333,0.9285048263336648,71.82342690342112,0.7216845756628077,"current-strain mechanics diagnostic, not training history branch",True,True
+7,22,7.1e-05,R_history_branch_energy,0.012927604075230192,0.017913094600029735,0.0,0.0,0.7216845756628077,training-objective energy reaction,True,True
+7,22,7.1e-05,R_legacy_top_sigma,0.7216845756628077,1.0,0.7087569715875776,54.8250834000698,0.7216845756628077,legacy top-boundary postprocessed sigma integral,False,True
+7,22,7.1e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.012927604075230192,1.0,0.7216845756628077,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,22,7.1e-05,R_postprocessed_sigma_virtual_work,-46.20829224586487,64.02837722203826,46.2212198499401,3575.3894983914156,0.7216845756628077,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,23,7.3e-05,R_energy_exact,0.012206155588501133,0.016613292255324014,0.0,0.0,0.7347222573893782,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,23,7.3e-05,R_virtual_energy_autograd_sigma,0.012206146493554115,0.01661327987656874,9.094947017729282e-09,7.451115096629786e-07,0.7347222573893782,same as exact energy derivative if autograd stress is correct,True,True
+7,23,7.3e-05,R_current_trial_energy,0.8906674338504672,1.2122505135684807,0.8784612782619661,71.96871053237473,0.7347222573893782,"current-strain mechanics diagnostic, not training history branch",True,True
+7,23,7.3e-05,R_history_branch_energy,0.012206155588501133,0.016613292255324014,0.0,0.0,0.7347222573893782,training-objective energy reaction,True,True
+7,23,7.3e-05,R_legacy_top_sigma,0.7347222573893782,1.0,0.7225161018008771,59.1927652045929,0.7347222573893782,legacy top-boundary postprocessed sigma integral,False,True
+7,23,7.3e-05,R_energy_consistent_top_boundary_sigma,-0.0005000811819088773,0.0006806397613239189,0.012706236770410011,1.0409695893422808,0.7347222573893782,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,23,7.3e-05,R_postprocessed_sigma_virtual_work,-51.193393766880035,69.677205572594,51.20559992246854,4195.063675143304,0.7347222573893782,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,24,7.5e-05,R_energy_exact,0.010817901966220234,0.014339310364035926,0.0,0.0,0.7544227505774859,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,24,7.5e-05,R_virtual_energy_autograd_sigma,0.010817899237736128,0.014339306747384515,2.7284841053187847e-09,2.5221934103661645e-07,0.7544227505774859,same as exact energy derivative if autograd stress is correct,True,True
+7,24,7.5e-05,R_current_trial_energy,0.853856501635164,1.1318011035345432,0.8430385996689438,77.92995372868043,0.7544227505774859,"current-strain mechanics diagnostic, not training history branch",True,True
+7,24,7.5e-05,R_history_branch_energy,0.010817901966220234,0.014339310364035926,0.0,0.0,0.7544227505774859,training-objective energy reaction,True,True
+7,24,7.5e-05,R_legacy_top_sigma,0.7544227505774859,1.0,0.7436048486112656,68.73836081462296,0.7544227505774859,legacy top-boundary postprocessed sigma integral,False,True
+7,24,7.5e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.010817901966220234,1.0,0.7544227505774859,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,24,7.5e-05,R_postprocessed_sigma_virtual_work,-55.64584955573082,73.75950620939751,55.65666745769704,5144.867057539387,0.7544227505774859,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,25,7.7e-05,R_energy_exact,0.0076982360042165965,0.010023111945481571,0.0,0.0,0.7680484909366865,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,25,7.7e-05,R_virtual_energy_autograd_sigma,0.007698232366237789,0.010023107208829068,3.637978807091713e-09,4.7257304207081505e-07,0.7680484909366865,same as exact energy derivative if autograd stress is correct,True,True
+7,25,7.7e-05,R_current_trial_energy,0.822022499050945,1.07027421933794,0.8143242630467284,105.78063112129769,0.7680484909366865,"current-strain mechanics diagnostic, not training history branch",True,True
+7,25,7.7e-05,R_history_branch_energy,0.0076982360042165965,0.010023111945481571,0.0,0.0,0.7680484909366865,training-objective energy reaction,True,True
+7,25,7.7e-05,R_legacy_top_sigma,0.7680484909366865,1.0,0.7603502549324699,98.76941347550259,0.7680484909366865,legacy top-boundary postprocessed sigma integral,False,True
+7,25,7.7e-05,R_energy_consistent_top_boundary_sigma,-0.0005364187444120933,0.0006984178092165701,0.00823465474862869,1.0696807351863826,0.7680484909366865,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,25,7.7e-05,R_postprocessed_sigma_virtual_work,-59.86389145255089,77.9428540762353,59.871589688555105,7777.312835792683,0.7680484909366865,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,26,8e-05,R_energy_exact,0.010056619430542924,0.013039756059132455,0.0,0.0,0.7712275739621465,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,26,8e-05,R_virtual_energy_autograd_sigma,0.01005661215458531,0.013039746624877432,7.275957614183426e-09,7.234993493027727e-07,0.7712275739621465,same as exact energy derivative if autograd stress is correct,True,True
+7,26,8e-05,R_current_trial_energy,0.79261016799137,1.0277254013615869,0.782553548560827,77.81477204796438,0.7712275739621465,"current-strain mechanics diagnostic, not training history branch",True,True
+7,26,8e-05,R_history_branch_energy,0.010056619430542924,0.013039756059132455,0.0,0.0,0.7712275739621465,training-objective energy reaction,True,True
+7,26,8e-05,R_legacy_top_sigma,0.7712275739621465,1.0,0.7611709545316035,75.68855118648061,0.7712275739621465,legacy top-boundary postprocessed sigma integral,False,True
+7,26,8e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.010056619430542924,1.0,0.7712275739621465,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,26,8e-05,R_postprocessed_sigma_virtual_work,-65.39946794509888,84.79918269663531,65.40952456452942,6504.126462802637,0.7712275739621465,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,27,8.3e-05,R_energy_exact,0.014326344171422534,0.01811883286160343,0.0,0.0,0.7906880250428405,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,27,8.3e-05,R_virtual_energy_autograd_sigma,0.014326327800517902,0.01811881215697137,1.6370904631912708e-08,1.142713342359076e-06,0.7906880250428405,same as exact energy derivative if autograd stress is correct,True,True
+7,27,8.3e-05,R_current_trial_energy,0.7433515856973827,0.9401325961109718,0.7290252415259602,50.887039484935926,0.7906880250428405,"current-strain mechanics diagnostic, not training history branch",True,True
+7,27,8.3e-05,R_history_branch_energy,0.014326344171422534,0.01811883286160343,0.0,0.0,0.7906880250428405,training-objective energy reaction,True,True
+7,27,8.3e-05,R_legacy_top_sigma,0.7906880250428405,1.0,0.776361680871418,54.19119292276008,0.7906880250428405,legacy top-boundary postprocessed sigma integral,False,True
+7,27,8.3e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.014326344171422534,1.0,0.7906880250428405,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,27,8.3e-05,R_postprocessed_sigma_virtual_work,-72.810597717762,92.08511500324926,72.82492406193342,5083.287347458879,0.7906880250428405,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,28,8.6e-05,R_energy_exact,0.009630443855712656,0.012289398665440132,0.0,0.0,0.7836383307179295,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,28,8.6e-05,R_virtual_energy_autograd_sigma,0.009630443855712656,0.012289398665440132,0.0,0.0,0.7836383307179295,same as exact energy derivative if autograd stress is correct,True,True
+7,28,8.6e-05,R_current_trial_energy,0.7022558129392564,0.8961478598116626,0.6926253690835438,71.92039946037247,0.7836383307179295,"current-strain mechanics diagnostic, not training history branch",True,True
+7,28,8.6e-05,R_history_branch_energy,0.009630443855712656,0.012289398665440132,0.0,0.0,0.7836383307179295,training-objective energy reaction,True,True
+7,28,8.6e-05,R_legacy_top_sigma,0.7836383307179295,1.0,0.7740078868622169,80.37094639237063,0.7836383307179295,legacy top-boundary postprocessed sigma integral,False,True
+7,28,8.6e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.009630443855712656,1.0,0.7836383307179295,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,28,8.6e-05,R_postprocessed_sigma_virtual_work,-79.64875549077988,101.63968806606198,79.65838593463559,8271.517608960801,0.7836383307179295,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,29,8.9e-05,R_energy_exact,0.010214579560852144,0.012896971151949984,0.0,0.0,0.7920138333648773,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,29,8.9e-05,R_virtual_energy_autograd_sigma,0.010214570465905126,0.012896959668631594,9.094947017729282e-09,8.903887784658405e-07,0.7920138333648773,same as exact energy derivative if autograd stress is correct,True,True
+7,29,8.9e-05,R_current_trial_energy,0.6716902717016637,0.8480789645402809,0.6614756921408116,64.75799500117932,0.7920138333648773,"current-strain mechanics diagnostic, not training history branch",True,True
+7,29,8.9e-05,R_history_branch_energy,0.010214579560852144,0.012896971151949984,0.0,0.0,0.7920138333648773,training-objective energy reaction,True,True
+7,29,8.9e-05,R_legacy_top_sigma,0.7920138333648773,1.0,0.7817992538040252,76.53758523750773,0.7920138333648773,legacy top-boundary postprocessed sigma integral,False,True
+7,29,8.9e-05,R_energy_consistent_top_boundary_sigma,-0.002882192624433579,0.0036390685402407177,0.013096772185285724,1.2821645871240475,0.7920138333648773,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,29,8.9e-05,R_postprocessed_sigma_virtual_work,-86.55279129743576,109.28191863734945,86.56300587699661,8474.456081261866,0.7920138333648773,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,30,9.2e-05,R_energy_exact,0.005637236881739227,0.007117763810700898,0.0,0.0,0.7919954962911475,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,30,9.2e-05,R_virtual_energy_autograd_sigma,0.005637240974465385,0.007117768978313816,4.092726157978177e-09,7.260163523083085e-07,0.7919954962911475,same as exact energy derivative if autograd stress is correct,True,True
+7,30,9.2e-05,R_current_trial_energy,0.6502614705823362,0.8210418791867623,0.644624233700597,114.35109916859028,0.7919954962911475,"current-strain mechanics diagnostic, not training history branch",True,True
+7,30,9.2e-05,R_history_branch_energy,0.005637236881739227,0.007117763810700898,0.0,0.0,0.7919954962911475,training-objective energy reaction,True,True
+7,30,9.2e-05,R_legacy_top_sigma,0.7919954962911475,1.0,0.7863582594094083,139.49356323071478,0.7919954962911475,legacy top-boundary postprocessed sigma integral,False,True
+7,30,9.2e-05,R_energy_consistent_top_boundary_sigma,-0.003693577461103925,0.004663634425196427,0.009330814342843153,1.6552106180012727,0.7919954962911475,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,30,9.2e-05,R_postprocessed_sigma_virtual_work,-92.50069409608841,116.7944698287577,92.50633133297015,16409.87123188438,0.7919954962911475,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,31,9.5e-05,R_energy_exact,0.0075711191129812505,0.009512949826728973,0.0,0.0,0.7958750178318326,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,31,9.5e-05,R_virtual_energy_autograd_sigma,0.007571107744297478,0.009512935542220078,1.1368683772161603e-08,1.5015856444087827e-06,0.7958750178318326,same as exact energy derivative if autograd stress is correct,True,True
+7,31,9.5e-05,R_current_trial_energy,0.6184644298627973,0.7770873767939755,0.610893310749816,80.6873200161907,0.7958750178318326,"current-strain mechanics diagnostic, not training history branch",True,True
+7,31,9.5e-05,R_history_branch_energy,0.0075711191129812505,0.009512949826728973,0.0,0.0,0.7958750178318326,training-objective energy reaction,True,True
+7,31,9.5e-05,R_legacy_top_sigma,0.7958750178318326,1.0,0.7883038987188513,104.11986483837578,0.7958750178318326,legacy top-boundary postprocessed sigma integral,False,True
+7,31,9.5e-05,R_energy_consistent_top_boundary_sigma,-0.0004372640730887839,0.0005494129898435602,0.008008383186070035,1.057754219232803,0.7958750178318326,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,31,9.5e-05,R_postprocessed_sigma_virtual_work,-99.89199042320251,125.51215729240238,99.8995615423155,13194.8210101503,0.7958750178318326,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,32,9.8e-05,R_energy_exact,0.005487802354764426,0.007060076927429418,0.0,0.0,0.7773006457540883,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,32,9.8e-05,R_virtual_energy_autograd_sigma,0.005487805992743233,0.00706008160770188,3.637978807091713e-09,6.62920887435619e-07,0.7773006457540883,same as exact energy derivative if autograd stress is correct,True,True
+7,32,9.8e-05,R_current_trial_energy,0.5925206933170557,0.7622799447725008,0.5870328909622913,106.97048709355181,0.7773006457540883,"current-strain mechanics diagnostic, not training history branch",True,True
+7,32,9.8e-05,R_history_branch_energy,0.005487802354764426,0.007060076927429418,0.0,0.0,0.7773006457540883,training-objective energy reaction,True,True
+7,32,9.8e-05,R_legacy_top_sigma,0.7773006457540883,1.0,0.7718128433993239,140.64151613063248,0.7773006457540883,legacy top-boundary postprocessed sigma integral,False,True
+7,32,9.8e-05,R_energy_consistent_top_boundary_sigma,-0.0017744457817379803,0.0022828307057644655,0.007262248136502406,1.3233436022340406,0.7773006457540883,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,32,9.8e-05,R_postprocessed_sigma_virtual_work,-106.64232075214386,137.19571871535777,106.64780855449862,19433.609605475063,0.7773006457540883,virtual work from existing postprocessed sigma_tm_eff,True,True
+7,33,0.0001,R_energy_exact,0.00784211079007946,0.009927738645958783,0.0,0.0,0.7899191416840626,energy-conjugate to actual checkpoint mechanics objective,True,True
+7,33,0.0001,R_virtual_energy_autograd_sigma,0.007842094419174828,0.009927717921173461,1.6370904631912708e-08,2.0875635489137017e-06,0.7899191416840626,same as exact energy derivative if autograd stress is correct,True,True
+7,33,0.0001,R_current_trial_energy,0.581293017603457,0.7358892662914502,0.5734509068133775,73.12456074183659,0.7899191416840626,"current-strain mechanics diagnostic, not training history branch",True,True
+7,33,0.0001,R_history_branch_energy,0.00784211079007946,0.009927738645958783,0.0,0.0,0.7899191416840626,training-objective energy reaction,True,True
+7,33,0.0001,R_legacy_top_sigma,0.7899191416840626,1.0,0.7820770308939832,99.72787325108153,0.7899191416840626,legacy top-boundary postprocessed sigma integral,False,True
+7,33,0.0001,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.00784211079007946,1.0,0.7899191416840626,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+7,33,0.0001,R_postprocessed_sigma_virtual_work,-110.92320084571838,140.4234876613275,110.93104295650846,14145.559266625009,0.7899191416840626,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,0,1e-06,R_energy_exact,0.07881042984081432,2.104853392727016,0.0,0.0,0.037442241874484535,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,0,1e-06,R_virtual_energy_autograd_sigma,0.07881042984081432,2.104853392727016,0.0,0.0,0.037442241874484535,same as exact energy derivative if autograd stress is correct,True,False
+13,0,1e-06,R_current_trial_energy,0.07881042984081432,2.104853392727016,0.0,0.0,0.037442241874484535,"current-strain mechanics diagnostic, not training history branch",True,False
+13,0,1e-06,R_history_branch_energy,0.07881042984081432,2.104853392727016,0.0,0.0,0.037442241874484535,training-objective energy reaction,True,False
+13,0,1e-06,R_legacy_top_sigma,0.037442241874484535,1.0,0.04136818796632979,0.524907528735569,0.037442241874484535,legacy top-boundary postprocessed sigma integral,False,False
+13,0,1e-06,R_energy_consistent_top_boundary_sigma,0.07851587257595921,2.0969864154813016,0.0002945572648551109,0.00373754166104758,0.037442241874484535,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,0,1e-06,R_postprocessed_sigma_virtual_work,0.05400784721132368,1.4424309151244485,0.024802582629490644,0.31471193190531094,0.037442241874484535,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,1,5e-06,R_energy_exact,0.4279795102775097,2.233291999980622,0.0,0.0,0.19163616324297192,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,1,5e-06,R_virtual_energy_autograd_sigma,0.4279794229660183,2.233291544369896,8.731149137020111e-08,2.0400857815269417e-07,0.19163616324297192,same as exact energy derivative if autograd stress is correct,True,False
+13,1,5e-06,R_current_trial_energy,0.42797948117367923,2.23329184811038,2.9103830456733704e-08,6.800285938423138e-08,0.19163616324297192,"current-strain mechanics diagnostic, not training history branch",True,False
+13,1,5e-06,R_history_branch_energy,0.4279795102775097,2.233291999980622,0.0,0.0,0.19163616324297192,training-objective energy reaction,True,False
+13,1,5e-06,R_legacy_top_sigma,0.19163616324297192,1.0,0.23634334703453777,0.5522305188893002,0.19163616324297192,legacy top-boundary postprocessed sigma integral,False,False
+13,1,5e-06,R_energy_consistent_top_boundary_sigma,0.42685483303196,2.2274231846875305,0.00112467724554971,0.0026278763785220673,0.19163616324297192,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,1,5e-06,R_postprocessed_sigma_virtual_work,0.26951514882966876,1.4063898184392032,0.15846436144784093,0.37026156075810673,0.19163616324297192,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,2,1e-05,R_energy_exact,0.8477876544930041,2.2624333662201037,0.0,0.0,0.3747238116052988,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,2,1e-05,R_virtual_energy_autograd_sigma,0.847787712700665,2.262433521554937,5.820766091346741e-08,6.865830211726412e-08,0.3747238116052988,same as exact energy derivative if autograd stress is correct,True,False
+13,2,1e-05,R_current_trial_energy,0.847788352984935,2.2624352302381068,6.984919309616089e-07,8.238996254071695e-07,0.3747238116052988,"current-strain mechanics diagnostic, not training history branch",True,False
+13,2,1e-05,R_history_branch_energy,0.8477876544930041,2.2624333662201037,0.0,0.0,0.3747238116052988,training-objective energy reaction,True,False
+13,2,1e-05,R_legacy_top_sigma,0.3747238116052988,1.0,0.4730638428877053,0.5579980321494632,0.3747238116052988,legacy top-boundary postprocessed sigma integral,False,False
+13,2,1e-05,R_energy_consistent_top_boundary_sigma,0.8723915127131397,2.3280920125568123,0.024603858220135666,0.029021250887227557,0.3747238116052988,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,2,1e-05,R_postprocessed_sigma_virtual_work,0.5285026854835451,1.4103792422997221,0.319284969009459,0.37660959948797385,0.3747238116052988,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,3,1.5e-05,R_energy_exact,1.2407952453941107,2.3541599954099577,0.0,0.0,0.5270649606710509,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,3,1.5e-05,R_virtual_energy_autograd_sigma,1.2407953618094325,2.3541602162846704,1.1641532182693481e-07,9.38231527394015e-08,0.5270649606710509,same as exact energy derivative if autograd stress is correct,True,False
+13,3,1.5e-05,R_current_trial_energy,1.2407972244545817,2.3541637502800756,1.979060471057892e-06,1.5949935965698256e-06,0.5270649606710509,"current-strain mechanics diagnostic, not training history branch",True,False
+13,3,1.5e-05,R_history_branch_energy,1.2407952453941107,2.3541599954099577,0.0,0.0,0.5270649606710509,training-objective energy reaction,True,False
+13,3,1.5e-05,R_legacy_top_sigma,0.5270649606710509,1.0,0.7137302847230598,0.5752200351931228,0.5270649606710509,legacy top-boundary postprocessed sigma integral,False,False
+13,3,1.5e-05,R_energy_consistent_top_boundary_sigma,1.1900666499921815,2.257912665029007,0.0507285954019292,0.040883937611975944,0.5270649606710509,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,3,1.5e-05,R_postprocessed_sigma_virtual_work,0.7649355684407055,1.451311746215877,0.47585967695340514,0.38351184751861217,0.5270649606710509,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,4,2e-05,R_energy_exact,1.583916717208922,2.484247029209222,0.0,0.0,0.637584225153772,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,4,2e-05,R_virtual_energy_autograd_sigma,1.5839164843782783,2.4842466640329293,2.3283064365386963e-07,1.4699677143641056e-07,0.637584225153772,same as exact energy derivative if autograd stress is correct,True,False
+13,4,2e-05,R_current_trial_energy,1.58395292237401,2.484303814122744,3.620516508817673e-05,2.285799795836184e-05,0.637584225153772,"current-strain mechanics diagnostic, not training history branch",True,False
+13,4,2e-05,R_history_branch_energy,1.583916717208922,2.484247029209222,0.0,0.0,0.637584225153772,training-objective energy reaction,True,False
+13,4,2e-05,R_legacy_top_sigma,0.637584225153772,1.0,0.9463324920551499,0.597463541973796,0.637584225153772,legacy top-boundary postprocessed sigma integral,False,False
+13,4,2e-05,R_energy_consistent_top_boundary_sigma,1.5755072373391779,2.471057430818961,0.008409479869744052,0.005309294218803819,0.637584225153772,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,4,2e-05,R_postprocessed_sigma_virtual_work,0.9546114597469568,1.4972319296587435,0.6293052574619651,0.3973095621914308,0.637584225153772,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,5,2.5e-05,R_energy_exact,1.7816273029893637,2.586203628590126,0.0,0.0,0.6888967609873091,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,5,2.5e-05,R_virtual_energy_autograd_sigma,1.7816271865740418,2.586203459602074,1.1641532182693481e-07,6.53421294294286e-08,0.6888967609873091,same as exact energy derivative if autograd stress is correct,True,False
+13,5,2.5e-05,R_current_trial_energy,1.812312169931829,2.630745668385013,0.030684866942465305,0.017222943817138223,0.6888967609873091,"current-strain mechanics diagnostic, not training history branch",True,False
+13,5,2.5e-05,R_history_branch_energy,1.7816273029893637,2.586203628590126,0.0,0.0,0.6888967609873091,training-objective energy reaction,True,False
+13,5,2.5e-05,R_legacy_top_sigma,0.6888967609873091,1.0,1.0927305420020546,0.6133328447361464,0.6888967609873091,legacy top-boundary postprocessed sigma integral,False,False
+13,5,2.5e-05,R_energy_consistent_top_boundary_sigma,1.8293541769066013,2.6554837829180933,0.04772687391723762,0.0267883601902359,0.6888967609873091,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,5,2.5e-05,R_postprocessed_sigma_virtual_work,0.9285788401030004,1.3479216229325641,0.8530484628863633,0.47880298054202863,0.6888967609873091,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,6,3e-05,R_energy_exact,1.8477900885045528,2.6595086531138343,0.0,0.0,0.6947862667568702,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,6,3e-05,R_virtual_energy_autograd_sigma,1.8477902049198747,2.659508820669423,1.1641532182693481e-07,6.300246037208245e-08,0.6947862667568702,same as exact energy derivative if autograd stress is correct,True,False
+13,6,3e-05,R_current_trial_energy,1.942655653692782,2.7960478590930244,0.09486556518822908,0.051340011930145896,0.6947862667568702,"current-strain mechanics diagnostic, not training history branch",True,False
+13,6,3e-05,R_history_branch_energy,1.8477900885045528,2.6595086531138343,0.0,0.0,0.6947862667568702,training-objective energy reaction,True,False
+13,6,3e-05,R_legacy_top_sigma,0.6947862667568702,1.0,1.1530038217476828,0.6239906951123587,0.6947862667568702,legacy top-boundary postprocessed sigma integral,False,False
+13,6,3e-05,R_energy_consistent_top_boundary_sigma,1.8293679021710658,2.6329937560657415,0.018422186333487023,0.009969848008220676,0.6947862667568702,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,6,3e-05,R_postprocessed_sigma_virtual_work,0.48740406055003405,0.7015165438216608,1.3603860279545188,0.7362232519904367,0.6947862667568702,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,7,3.5e-05,R_energy_exact,1.738204387947917,2.5340085763755043,0.0,0.0,0.6859504755244915,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,7,3.5e-05,R_virtual_energy_autograd_sigma,1.7382045043632388,2.5340087460893916,1.1641532182693481e-07,6.69744724119423e-08,0.6859504755244915,same as exact energy derivative if autograd stress is correct,True,False
+13,7,3.5e-05,R_current_trial_energy,1.9678506068885326,2.8687939976772734,0.22964621894061565,0.13211692510552833,0.6859504755244915,"current-strain mechanics diagnostic, not training history branch",True,False
+13,7,3.5e-05,R_history_branch_energy,1.738204387947917,2.5340085763755043,0.0,0.0,0.6859504755244915,training-objective energy reaction,True,False
+13,7,3.5e-05,R_legacy_top_sigma,0.6859504755244915,1.0,1.0522539124234256,0.6053683443209412,0.6859504755244915,legacy top-boundary postprocessed sigma integral,False,False
+13,7,3.5e-05,R_energy_consistent_top_boundary_sigma,1.5471074728663312,2.255421532703774,0.19109691508158577,0.10993926629490924,0.6859504755244915,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,7,3.5e-05,R_postprocessed_sigma_virtual_work,-0.6807290483266115,0.992388040559506,2.4189334362745285,1.3916277355220947,0.6859504755244915,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,8,4e-05,R_energy_exact,1.4651683159172535,2.136396606789671,0.0,0.0,0.6858128828986199,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,8,4e-05,R_virtual_energy_autograd_sigma,1.4651684323325753,2.136396776537608,1.1641532182693481e-07,7.945525477327443e-08,0.6858128828986199,same as exact energy derivative if autograd stress is correct,True,False
+13,8,4e-05,R_current_trial_energy,1.8999214516952634,2.770320446103546,0.4347531357780099,0.29672572840604816,0.6858128828986199,"current-strain mechanics diagnostic, not training history branch",True,False
+13,8,4e-05,R_history_branch_energy,1.4651683159172535,2.136396606789671,0.0,0.0,0.6858128828986199,training-objective energy reaction,True,False
+13,8,4e-05,R_legacy_top_sigma,0.6858128828986199,1.0,0.7793554330186336,0.5319221174467769,0.6858128828986199,legacy top-boundary postprocessed sigma integral,False,False
+13,8,4e-05,R_energy_consistent_top_boundary_sigma,1.6397357614037928,2.3909375316389125,0.17456744548653935,0.11914497712657211,0.6858128828986199,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,8,4e-05,R_postprocessed_sigma_virtual_work,-2.7262321673333645,3.975183662066566,4.191400483250618,2.860695551300285,0.6858128828986199,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,9,4.5e-05,R_energy_exact,0.9582097991369665,1.3016413615609694,0.0,0.0,0.7361550020105776,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,9,4.5e-05,R_virtual_energy_autograd_sigma,0.9582098573446274,1.3016414406308132,5.820766091346741e-08,6.074625929091256e-08,0.7361550020105776,same as exact energy derivative if autograd stress is correct,True,False
+13,9,4.5e-05,R_current_trial_energy,1.729809446260333,2.3497897067002174,0.7715996471233666,0.8052512589814104,0.7361550020105776,"current-strain mechanics diagnostic, not training history branch",True,False
+13,9,4.5e-05,R_history_branch_energy,0.9582097991369665,1.3016413615609694,0.0,0.0,0.7361550020105776,training-objective energy reaction,True,False
+13,9,4.5e-05,R_legacy_top_sigma,0.7361550020105776,1.0,0.22205479712638887,0.23173922592566637,0.7361550020105776,legacy top-boundary postprocessed sigma integral,False,False
+13,9,4.5e-05,R_energy_consistent_top_boundary_sigma,0.7459073345153007,1.0132476618077546,0.2123024646216658,0.2215615670105658,0.7361550020105776,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,9,4.5e-05,R_postprocessed_sigma_virtual_work,-6.183522287756205,8.39975585422614,7.141732086893171,7.45320293460319,0.7361550020105776,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,10,4.7e-05,R_energy_exact,0.7826319779269397,1.0338299738097632,0.0,0.0,0.7570219453425842,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,10,4.7e-05,R_virtual_energy_autograd_sigma,0.7826319779269397,1.0338299738097632,0.0,0.0,0.7570219453425842,same as exact energy derivative if autograd stress is correct,True,False
+13,10,4.7e-05,R_current_trial_energy,1.6584009863436222,2.190690767350379,0.8757690084166825,1.1190048875033793,0.7570219453425842,"current-strain mechanics diagnostic, not training history branch",True,False
+13,10,4.7e-05,R_history_branch_energy,0.7826319779269397,1.0338299738097632,0.0,0.0,0.7570219453425842,training-objective energy reaction,True,False
+13,10,4.7e-05,R_legacy_top_sigma,0.7570219453425842,1.0,0.02561003258435557,0.03272295703044518,0.7570219453425842,legacy top-boundary postprocessed sigma integral,False,False
+13,10,4.7e-05,R_energy_consistent_top_boundary_sigma,0.9586974028408987,1.2664063555080267,0.17606542491395893,0.22496579475365494,0.7570219453425842,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,10,4.7e-05,R_postprocessed_sigma_virtual_work,-7.862860336899757,10.386568560230423,8.645492314826697,11.046689323540228,0.7570219453425842,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,11,4.9e-05,R_energy_exact,0.593646545894444,0.7815024446492876,0.0,0.0,0.7596221226932346,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,11,4.9e-05,R_virtual_energy_autograd_sigma,0.5936464876867831,0.7815023680221607,5.820766091346741e-08,9.805103948809513e-08,0.7596221226932346,same as exact energy derivative if autograd stress is correct,True,False
+13,11,4.9e-05,R_current_trial_energy,1.5855500241741538,2.0872878458997457,0.9919034782797098,1.670865408279626,0.7596221226932346,"current-strain mechanics diagnostic, not training history branch",True,False
+13,11,4.9e-05,R_history_branch_energy,0.593646545894444,0.7815024446492876,0.0,0.0,0.7596221226932346,training-objective energy reaction,True,False
+13,11,4.9e-05,R_legacy_top_sigma,0.7596221226932346,1.0,0.1659755767987906,0.27958652829136926,0.7596221226932346,legacy top-boundary postprocessed sigma integral,False,False
+13,11,4.9e-05,R_energy_consistent_top_boundary_sigma,0.4950437561202361,0.6516973918098411,0.09860278977420789,0.1660967969175052,0.7596221226932346,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,11,4.9e-05,R_postprocessed_sigma_virtual_work,-9.630377404391766,12.677852733208104,10.22402395028621,17.222409565075004,0.7596221226932346,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,12,5.1e-05,R_energy_exact,0.40310126496478915,0.5185277708470638,0.0,0.0,0.7773957107567939,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,12,5.1e-05,R_virtual_energy_autograd_sigma,0.40310132317245007,0.5185278457222658,5.820766091346741e-08,1.4439959874239502e-07,0.7773957107567939,same as exact energy derivative if autograd stress is correct,True,False
+13,12,5.1e-05,R_current_trial_energy,1.496985787525773,1.9256419437514762,1.093884522560984,2.71367176844889,0.7773957107567939,"current-strain mechanics diagnostic, not training history branch",True,False
+13,12,5.1e-05,R_history_branch_energy,0.40310126496478915,0.5185277708470638,0.0,0.0,0.7773957107567939,training-objective energy reaction,True,False
+13,12,5.1e-05,R_legacy_top_sigma,0.7773957107567939,1.0,0.37429444579200477,0.9285370161879778,0.7773957107567939,legacy top-boundary postprocessed sigma integral,False,False
+13,12,5.1e-05,R_energy_consistent_top_boundary_sigma,0.230119506505197,0.2960133472838124,0.17298175845959216,0.42912730247746084,0.7773957107567939,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,12,5.1e-05,R_postprocessed_sigma_virtual_work,-11.98564562946558,15.417689425887836,12.38874689443037,30.733584761914663,0.7773957107567939,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,13,5.3e-05,R_energy_exact,0.2251024270663038,0.28869027639594813,0.0,0.0,0.7797367818428649,energy-conjugate to actual checkpoint mechanics objective,True,False
+13,13,5.3e-05,R_virtual_energy_autograd_sigma,0.22510233975481242,0.2886901644203515,8.731149137020111e-08,3.878745001024958e-07,0.7797367818428649,same as exact energy derivative if autograd stress is correct,True,False
+13,13,5.3e-05,R_current_trial_energy,1.40476378146559,1.8015871691284182,1.1796613543992862,5.240553688263066,0.7797367818428649,"current-strain mechanics diagnostic, not training history branch",True,False
+13,13,5.3e-05,R_history_branch_energy,0.2251024270663038,0.28869027639594813,0.0,0.0,0.7797367818428649,training-objective energy reaction,True,False
+13,13,5.3e-05,R_legacy_top_sigma,0.7797367818428649,1.0,0.5546343547765611,2.4639199230543785,0.7797367818428649,legacy top-boundary postprocessed sigma integral,False,False
+13,13,5.3e-05,R_energy_consistent_top_boundary_sigma,0.24941635964606276,0.31987250756156577,0.024313932579758973,0.10801275177987005,0.7797367818428649,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+13,13,5.3e-05,R_postprocessed_sigma_virtual_work,-14.422045089304447,18.496043055989663,14.647147516370751,65.06881203931418,0.7797367818428649,virtual work from existing postprocessed sigma_tm_eff,True,False
+13,14,5.5e-05,R_energy_exact,0.13405503705143929,0.17156469885102862,0.0,0.0,0.7813672506594183,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,14,5.5e-05,R_virtual_energy_autograd_sigma,0.1340549351880327,0.17156456848543356,1.0186340659856796e-07,7.598625821085796e-07,0.7813672506594183,same as exact energy derivative if autograd stress is correct,True,True
+13,14,5.5e-05,R_current_trial_energy,1.3346885098144412,1.7081449327292118,1.200633472763002,8.956272730746385,0.7813672506594183,"current-strain mechanics diagnostic, not training history branch",True,True
+13,14,5.5e-05,R_history_branch_energy,0.13405503705143929,0.17156469885102862,0.0,0.0,0.7813672506594183,training-objective energy reaction,True,True
+13,14,5.5e-05,R_legacy_top_sigma,0.7813672506594183,1.0,0.647312213607979,4.828704894987227,0.7813672506594183,legacy top-boundary postprocessed sigma integral,False,True
+13,14,5.5e-05,R_energy_consistent_top_boundary_sigma,0.2638720551774856,0.3377055474935715,0.1298170181260463,0.9683859777401218,0.7813672506594183,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,14,5.5e-05,R_postprocessed_sigma_virtual_work,-16.985373571515083,21.738015711793192,17.119428608566523,127.70447858663823,0.7813672506594183,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,15,5.7e-05,R_energy_exact,0.07404191273963079,0.09592481836632608,0.0,0.0,0.7718744116551054,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,15,5.7e-05,R_virtual_energy_autograd_sigma,0.07404194184346125,0.09592485607172221,2.9103830456733704e-08,3.93072374549232e-07,0.7718744116551054,same as exact energy derivative if autograd stress is correct,True,True
+13,15,5.7e-05,R_current_trial_energy,1.2622876092791557,1.6353536148095298,1.188245696539525,16.048284715685348,0.7718744116551054,"current-strain mechanics diagnostic, not training history branch",True,True
+13,15,5.7e-05,R_history_branch_energy,0.07404191273963079,0.09592481836632608,0.0,0.0,0.7718744116551054,training-objective energy reaction,True,True
+13,15,5.7e-05,R_legacy_top_sigma,0.7718744116551054,1.0,0.6978324989154746,9.424830789682735,0.7718744116551054,legacy top-boundary postprocessed sigma integral,False,True
+13,15,5.7e-05,R_energy_consistent_top_boundary_sigma,-0.0025963772275912865,0.0033637301462344873,0.07663828996722208,1.0350663175966492,0.7718744116551054,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,15,5.7e-05,R_postprocessed_sigma_virtual_work,-19.96435597538948,25.86477239552553,20.03839788812911,270.63587563701066,0.7718744116551054,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,16,5.9e-05,R_energy_exact,0.05405606862041168,0.06986440865080693,0.0,0.0,0.7737282783082333,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,16,5.9e-05,R_virtual_energy_autograd_sigma,0.054056086810305715,0.06986443216021525,1.8189894035458565e-08,3.3650049845818837e-07,0.7737282783082333,same as exact energy derivative if autograd stress is correct,True,True
+13,16,5.9e-05,R_current_trial_energy,1.177566940896213,1.52193861063341,1.1235108722758014,20.784176521700683,0.7737282783082333,"current-strain mechanics diagnostic, not training history branch",True,True
+13,16,5.9e-05,R_history_branch_energy,0.05405606862041168,0.06986440865080693,0.0,0.0,0.7737282783082333,training-objective energy reaction,True,True
+13,16,5.9e-05,R_legacy_top_sigma,0.7737282783082333,1.0,0.7196722096878216,13.313439694282021,0.7737282783082333,legacy top-boundary postprocessed sigma integral,False,True
+13,16,5.9e-05,R_energy_consistent_top_boundary_sigma,-0.00026052859767743044,0.00033671846432584775,0.05431659721808911,1.0048195994330793,0.7737282783082333,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,16,5.9e-05,R_postprocessed_sigma_virtual_work,-23.63445609807968,30.54619659211205,23.688512166700093,438.22114281087886,0.7737282783082333,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,17,6.1e-05,R_energy_exact,0.03251622183597647,0.04204865953364723,0.0,0.0,0.7732998434815043,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,17,6.1e-05,R_virtual_energy_autograd_sigma,0.032516236387891695,0.04204867835159392,1.4551915228366852e-08,4.47527861686144e-07,0.7732998434815043,same as exact energy derivative if autograd stress is correct,True,True
+13,17,6.1e-05,R_current_trial_energy,1.1138272238895297,1.4403561998343664,1.0813110020535532,33.25450931870484,0.7732998434815043,"current-strain mechanics diagnostic, not training history branch",True,True
+13,17,6.1e-05,R_history_branch_energy,0.03251622183597647,0.04204865953364723,0.0,0.0,0.7732998434815043,training-objective energy reaction,True,True
+13,17,6.1e-05,R_legacy_top_sigma,0.7732998434815043,1.0,0.7407836216455278,22.781970961519058,0.7732998434815043,legacy top-boundary postprocessed sigma integral,False,True
+13,17,6.1e-05,R_energy_consistent_top_boundary_sigma,-0.0011411260941166287,0.001475657991832921,0.0336573479300931,1.035094055510904,0.7732998434815043,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,17,6.1e-05,R_postprocessed_sigma_virtual_work,-27.51394547522068,35.579918588046056,27.546461697056657,847.1605906741236,0.7732998434815043,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,18,6.3e-05,R_energy_exact,0.025583425667718984,0.032988907780239746,0.0,0.0,0.7755159958052136,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,18,6.3e-05,R_virtual_energy_autograd_sigma,0.025583383830962703,0.03298885383324638,4.18367562815547e-08,1.6353070470286578e-06,0.7755159958052136,same as exact energy derivative if autograd stress is correct,True,True
+13,18,6.3e-05,R_current_trial_energy,1.0571839520707726,1.3632007048070038,1.0316005264030537,40.32300207961286,0.7755159958052136,"current-strain mechanics diagnostic, not training history branch",True,True
+13,18,6.3e-05,R_history_branch_energy,0.025583425667718984,0.032988907780239746,0.0,0.0,0.7755159958052136,training-objective energy reaction,True,True
+13,18,6.3e-05,R_legacy_top_sigma,0.7755159958052136,1.0,0.7499325701374946,29.313219420953274,0.7755159958052136,legacy top-boundary postprocessed sigma integral,False,True
+13,18,6.3e-05,R_energy_consistent_top_boundary_sigma,-0.0004664973005662852,0.0006015315004327201,0.02604992296828527,1.0182343563612324,0.7755159958052136,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,18,6.3e-05,R_postprocessed_sigma_virtual_work,-30.869372189044952,39.80494581158635,30.89495561471267,1207.616056425772,0.7755159958052136,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,19,6.5e-05,R_energy_exact,0.022594618712901138,0.030734945896008017,0.0,0.0,0.7351442488088394,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,19,6.5e-05,R_virtual_energy_autograd_sigma,0.022594669644604437,0.03073501517724552,5.093170329928398e-08,2.2541519264586152e-06,0.7351442488088394,same as exact energy derivative if autograd stress is correct,True,True
+13,19,6.5e-05,R_current_trial_energy,0.9971365798264742,1.3563822085830681,0.974541961113573,43.131595779358136,0.7351442488088394,"current-strain mechanics diagnostic, not training history branch",True,True
+13,19,6.5e-05,R_history_branch_energy,0.022594618712901138,0.030734945896008017,0.0,0.0,0.7351442488088394,training-objective energy reaction,True,True
+13,19,6.5e-05,R_legacy_top_sigma,0.7351442488088394,1.0,0.7125496300959383,31.53625379343466,0.7351442488088394,legacy top-boundary postprocessed sigma integral,False,True
+13,19,6.5e-05,R_energy_consistent_top_boundary_sigma,0.012888654690075552,0.017532143808455483,0.009705964022825586,0.42956971950509826,0.7351442488088394,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,19,6.5e-05,R_postprocessed_sigma_virtual_work,-34.9242202937603,47.50662247626682,34.9468149124732,1546.6875257567046,0.7351442488088394,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,20,6.7e-05,R_energy_exact,0.017220436347997747,0.022966554161262198,0.0,0.0,0.7498049653893462,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,20,6.7e-05,R_virtual_energy_autograd_sigma,0.017220425434061326,0.022966539605561817,1.0913936421275139e-08,6.33778157575207e-07,0.7498049653893462,same as exact energy derivative if autograd stress is correct,True,True
+13,20,6.7e-05,R_current_trial_energy,0.9636224713176489,1.285164163746602,0.9464020349696511,54.95807515235763,0.7498049653893462,"current-strain mechanics diagnostic, not training history branch",True,True
+13,20,6.7e-05,R_history_branch_energy,0.017220436347997747,0.022966554161262198,0.0,0.0,0.7498049653893462,training-objective energy reaction,True,True
+13,20,6.7e-05,R_legacy_top_sigma,0.7498049653893462,1.0,0.7325845290413484,42.54157759054273,0.7498049653893462,legacy top-boundary postprocessed sigma integral,False,True
+13,20,6.7e-05,R_energy_consistent_top_boundary_sigma,0.01296528397073505,0.017291541893167717,0.004255152377262697,0.24709898699851768,0.7498049653893462,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,20,6.7e-05,R_postprocessed_sigma_virtual_work,-38.424935191869736,51.246573396479285,38.44215562821773,2232.3566517922454,0.7498049653893462,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,21,6.9e-05,R_energy_exact,0.010329118595109321,0.01353978313439067,0.0,0.0,0.7628717899383225,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,21,6.9e-05,R_virtual_energy_autograd_sigma,0.010329120414098725,0.013539785518787928,1.8189894035458565e-09,1.76103061146681e-07,0.7628717899383225,same as exact energy derivative if autograd stress is correct,True,True
+13,21,6.9e-05,R_current_trial_energy,0.9177365573123097,1.20300235166188,0.9074074387172004,87.8494549522206,0.7628717899383225,"current-strain mechanics diagnostic, not training history branch",True,True
+13,21,6.9e-05,R_history_branch_energy,0.010329118595109321,0.01353978313439067,0.0,0.0,0.7628717899383225,training-objective energy reaction,True,True
+13,21,6.9e-05,R_legacy_top_sigma,0.7628717899383225,1.0,0.7525426713432132,72.85642665575847,0.7628717899383225,legacy top-boundary postprocessed sigma integral,False,True
+13,21,6.9e-05,R_energy_consistent_top_boundary_sigma,0.00804876541751591,0.010550613515498648,0.002280353177593411,0.2207693867193202,0.7628717899383225,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,21,6.9e-05,R_postprocessed_sigma_virtual_work,-42.43190586566925,55.62128056812775,42.44223498426436,4108.9890287792905,0.7628717899383225,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,22,7.1e-05,R_energy_exact,0.013577569916378707,0.017816206960815626,0.0,0.0,0.7620909403578867,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,22,7.1e-05,R_virtual_energy_autograd_sigma,0.013577570825873408,0.017816208154235798,9.094947017729282e-10,6.698508697611633e-08,0.7620909403578867,same as exact energy derivative if autograd stress is correct,True,True
+13,22,7.1e-05,R_current_trial_energy,0.8666118374094367,1.1371501634732277,0.853034267493058,62.82672619229436,0.7620909403578867,"current-strain mechanics diagnostic, not training history branch",True,True
+13,22,7.1e-05,R_history_branch_energy,0.013577569916378707,0.017816206960815626,0.0,0.0,0.7620909403578867,training-objective energy reaction,True,True
+13,22,7.1e-05,R_legacy_top_sigma,0.7620909403578867,1.0,0.748513370441508,55.12866993515325,0.7620909403578867,legacy top-boundary postprocessed sigma integral,False,True
+13,22,7.1e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.013577569916378707,1.0,0.7620909403578867,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,22,7.1e-05,R_postprocessed_sigma_virtual_work,-47.23585024476051,61.98190759567095,47.24942781467689,3479.9620333885828,0.7620909403578867,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,23,7.3e-05,R_energy_exact,0.009299897101300303,0.01222310648837511,0.0,0.0,0.7608456254672288,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,23,7.3e-05,R_virtual_energy_autograd_sigma,0.009299911653215531,0.012223125614351184,1.4551915228366852e-08,1.5647393804316628e-06,0.7608456254672288,same as exact energy derivative if autograd stress is correct,True,True
+13,23,7.3e-05,R_current_trial_energy,0.8292074198834598,1.0898497568074346,0.8199075227821595,88.16307469332331,0.7608456254672288,"current-strain mechanics diagnostic, not training history branch",True,True
+13,23,7.3e-05,R_history_branch_energy,0.009299897101300303,0.01222310648837511,0.0,0.0,0.7608456254672288,training-objective energy reaction,True,True
+13,23,7.3e-05,R_legacy_top_sigma,0.7608456254672288,1.0,0.7515457283659285,80.81226277878366,0.7608456254672288,legacy top-boundary postprocessed sigma integral,False,True
+13,23,7.3e-05,R_energy_consistent_top_boundary_sigma,0.2505977875821297,0.3293674553602641,0.2412978904808294,25.94629680871322,0.7608456254672288,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,23,7.3e-05,R_postprocessed_sigma_virtual_work,-51.309119910001755,67.43696512481526,51.318419807103055,5518.170711795055,0.7608456254672288,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,24,7.5e-05,R_energy_exact,0.007034250756987603,0.008799111140873032,0.0,0.0,0.7994274244716129,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,24,7.5e-05,R_virtual_energy_autograd_sigma,0.007034273494355148,0.008799139582939002,2.2737367544323206e-08,3.2323794430752443e-06,0.7994274244716129,same as exact energy derivative if autograd stress is correct,True,True
+13,24,7.5e-05,R_current_trial_energy,0.7894276641309261,0.9874913468883105,0.7823934133739385,111.22626138920816,0.7994274244716129,"current-strain mechanics diagnostic, not training history branch",True,True
+13,24,7.5e-05,R_history_branch_energy,0.007034250756987603,0.008799111140873032,0.0,0.0,0.7994274244716129,training-objective energy reaction,True,True
+13,24,7.5e-05,R_legacy_top_sigma,0.7994274244716129,1.0,0.7923931737146253,112.64784283208652,0.7994274244716129,legacy top-boundary postprocessed sigma integral,False,True
+13,24,7.5e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.007034250756987603,1.0,0.7994274244716129,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,24,7.5e-05,R_postprocessed_sigma_virtual_work,-55.941857397556305,69.97740593466814,55.94889164831329,7953.781231460283,0.7994274244716129,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,25,7.7e-05,R_energy_exact,0.0049249620133196,0.005814445999082909,0.0,0.0,0.8470217135211844,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,25,7.7e-05,R_virtual_energy_autograd_sigma,0.004924963832309004,0.005814448146595038,1.8189894035458565e-09,3.6934079869578376e-07,0.8470217135211844,same as exact energy derivative if autograd stress is correct,True,True
+13,25,7.7e-05,R_current_trial_energy,0.739263603463769,0.8727799909527109,0.7343386414504494,149.10544273527887,0.8470217135211844,"current-strain mechanics diagnostic, not training history branch",True,True
+13,25,7.7e-05,R_history_branch_energy,0.0049249620133196,0.005814445999082909,0.0,0.0,0.8470217135211844,training-objective energy reaction,True,True
+13,25,7.7e-05,R_legacy_top_sigma,0.8470217135211844,1.0,0.8420967515078648,170.98543079731522,0.8470217135211844,legacy top-boundary postprocessed sigma integral,False,True
+13,25,7.7e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.0049249620133196,1.0,0.8470217135211844,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,25,7.7e-05,R_postprocessed_sigma_virtual_work,-61.25044822692871,72.31272498588291,61.25537318894203,12437.735158824853,0.8470217135211844,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,26,8e-05,R_energy_exact,0.0052449063332460355,0.0061442797255793925,0.0,0.0,0.8536242761557299,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,26,8e-05,R_virtual_energy_autograd_sigma,0.005244893600320211,0.006144264809267637,1.2732925824820995e-08,2.4276745886023626e-06,0.8536242761557299,same as exact energy derivative if autograd stress is correct,True,True
+13,26,8e-05,R_current_trial_energy,0.7129446603357792,0.8351972644762437,0.7076997540025332,134.9308660703084,0.8536242761557299,"current-strain mechanics diagnostic, not training history branch",True,True
+13,26,8e-05,R_history_branch_energy,0.0052449063332460355,0.0061442797255793925,0.0,0.0,0.8536242761557299,training-objective energy reaction,True,True
+13,26,8e-05,R_legacy_top_sigma,0.8536242761557299,1.0,0.8483793698224839,161.75300680678274,0.8536242761557299,legacy top-boundary postprocessed sigma integral,False,True
+13,26,8e-05,R_energy_consistent_top_boundary_sigma,-0.0022251128527100462,0.002606665385303675,0.007470019185956082,1.424242629197334,0.8536242761557299,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,26,8e-05,R_postprocessed_sigma_virtual_work,-66.92816317081451,78.40470923838225,66.93340807714776,12761.602176358247,0.8536242761557299,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,27,8.3e-05,R_energy_exact,0.008484421414323151,0.009652571133008415,0.0,0.0,0.8789804599636047,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,27,8.3e-05,R_virtual_energy_autograd_sigma,0.008484425052301958,0.009652575271870396,3.637978807091713e-09,4.287833700657754e-07,0.8789804599636047,same as exact energy derivative if autograd stress is correct,True,True
+13,27,8.3e-05,R_current_trial_energy,0.6773817003704607,0.7706447767889044,0.6688972789561376,78.83829035494688,0.8789804599636047,"current-strain mechanics diagnostic, not training history branch",True,True
+13,27,8.3e-05,R_history_branch_energy,0.008484421414323151,0.009652571133008415,0.0,0.0,0.8789804599636047,training-objective energy reaction,True,True
+13,27,8.3e-05,R_legacy_top_sigma,0.8789804599636047,1.0,0.8704960385492816,102.59934013646891,0.8789804599636047,legacy top-boundary postprocessed sigma integral,False,True
+13,27,8.3e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.008484421414323151,1.0,0.8789804599636047,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,27,8.3e-05,R_postprocessed_sigma_virtual_work,-73.95104318857193,84.13274988119072,73.95952760998625,8717.097371557942,0.8789804599636047,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,28,8.6e-05,R_energy_exact,0.005340447387425229,0.005806535781430997,0.0,0.0,0.9197303845958731,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,28,8.6e-05,R_virtual_energy_autograd_sigma,0.005340451480151387,0.00580654023135048,4.092726157978177e-09,7.66363913183571e-07,0.9197303845958731,same as exact energy derivative if autograd stress is correct,True,True
+13,28,8.6e-05,R_current_trial_energy,0.6240212242119014,0.6784827756735411,0.6186807768244762,115.84811757180489,0.9197303845958731,"current-strain mechanics diagnostic, not training history branch",True,True
+13,28,8.6e-05,R_history_branch_energy,0.005340447387425229,0.005806535781430997,0.0,0.0,0.9197303845958731,training-objective energy reaction,True,True
+13,28,8.6e-05,R_legacy_top_sigma,0.9197303845958731,1.0,0.9143899372084479,171.21972577831153,0.9197303845958731,legacy top-boundary postprocessed sigma integral,False,True
+13,28,8.6e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.005340447387425229,1.0,0.9197303845958731,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,28,8.6e-05,R_postprocessed_sigma_virtual_work,-81.94948732852936,89.10164185185393,81.95482777591678,15346.060326123608,0.9197303845958731,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,29,8.9e-05,R_energy_exact,0.005860965757165104,0.006544254835796454,0.0,0.0,0.8955894756888404,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,29,8.9e-05,R_virtual_energy_autograd_sigma,0.005860962573933648,0.006544251281454266,3.183231456205249e-09,5.431240495329134e-07,0.8955894756888404,same as exact energy derivative if autograd stress is correct,True,True
+13,29,8.9e-05,R_current_trial_energy,0.5952076171524823,0.6645987177268691,0.5893466513953172,100.55452903385991,0.8955894756888404,"current-strain mechanics diagnostic, not training history branch",True,True
+13,29,8.9e-05,R_history_branch_energy,0.005860965757165104,0.006544254835796454,0.0,0.0,0.8955894756888404,training-objective energy reaction,True,True
+13,29,8.9e-05,R_legacy_top_sigma,0.8955894756888404,1.0,0.8897285099316753,151.80578539363944,0.8955894756888404,legacy top-boundary postprocessed sigma integral,False,True
+13,29,8.9e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.005860965757165104,1.0,0.8955894756888404,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,29,8.9e-05,R_postprocessed_sigma_virtual_work,-87.87801861763,98.12310327791519,87.88387958338717,14994.777861643028,0.8955894756888404,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,30,9.2e-05,R_energy_exact,0.004513426574703772,0.005003378486260859,0.0,0.0,0.9020757848117064,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,30,9.2e-05,R_virtual_energy_autograd_sigma,0.004513424755714368,0.005003376469812314,1.8189894035458565e-09,4.030173912079741e-07,0.9020757848117064,same as exact energy derivative if autograd stress is correct,True,True
+13,30,9.2e-05,R_current_trial_energy,0.5809199647046626,0.6439813311538123,0.5764065381299588,127.70929771196951,0.9020757848117064,"current-strain mechanics diagnostic, not training history branch",True,True
+13,30,9.2e-05,R_history_branch_energy,0.004513426574703772,0.005003378486260859,0.0,0.0,0.9020757848117064,training-objective energy reaction,True,True
+13,30,9.2e-05,R_legacy_top_sigma,0.9020757848117064,1.0,0.8975623582370026,198.86495180126244,0.9020757848117064,legacy top-boundary postprocessed sigma integral,False,True
+13,30,9.2e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.004513426574703772,1.0,0.9020757848117064,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,30,9.2e-05,R_postprocessed_sigma_virtual_work,-93.40191632509232,103.5410969873096,93.40642975166702,20695.236358818474,0.9020757848117064,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,31,9.5e-05,R_energy_exact,0.005423521997727221,0.005866855685617553,0.0,0.0,0.9244341924112514,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,31,9.5e-05,R_virtual_energy_autograd_sigma,0.005423517905001063,0.00586685125834064,4.092726157978177e-09,7.546251604940984e-07,0.9244341924112514,same as exact energy derivative if autograd stress is correct,True,True
+13,31,9.5e-05,R_current_trial_energy,0.5505811423063278,0.5955871676167857,0.5451576203086006,100.51726913563809,0.9244341924112514,"current-strain mechanics diagnostic, not training history branch",True,True
+13,31,9.5e-05,R_history_branch_energy,0.005423521997727221,0.005866855685617553,0.0,0.0,0.9244341924112514,training-objective energy reaction,True,True
+13,31,9.5e-05,R_legacy_top_sigma,0.9244341924112514,1.0,0.9190106704135241,169.44905373273022,0.9244341924112514,legacy top-boundary postprocessed sigma integral,False,True
+13,31,9.5e-05,R_energy_consistent_top_boundary_sigma,-0.0024402155162550534,0.002639685481440391,0.007863737513982274,1.4499318924635411,0.9244341924112514,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,31,9.5e-05,R_postprocessed_sigma_virtual_work,-101.52079164981842,109.81938193460401,101.52621517181615,18719.60973226654,0.9244341924112514,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,32,9.8e-05,R_energy_exact,0.0050294484026380815,0.00545125196691695,0.0,0.0,0.9226226256209128,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,32,9.8e-05,R_virtual_energy_autograd_sigma,0.005029442945669871,0.005451246052290472,5.4569682106375694e-09,1.0850033192059873e-06,0.9226226256209128,same as exact energy derivative if autograd stress is correct,True,True
+13,32,9.8e-05,R_current_trial_energy,0.5323953810147941,0.5770456590054889,0.527365932612156,104.85562041665213,0.9226226256209128,"current-strain mechanics diagnostic, not training history branch",True,True
+13,32,9.8e-05,R_history_branch_energy,0.0050294484026380815,0.00545125196691695,0.0,0.0,0.9226226256209128,training-objective energy reaction,True,True
+13,32,9.8e-05,R_legacy_top_sigma,0.9226226256209128,1.0,0.9175931772182747,182.444097992331,0.9226226256209128,legacy top-boundary postprocessed sigma integral,False,True
+13,32,9.8e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.0050294484026380815,1.0,0.9226226256209128,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,32,9.8e-05,R_postprocessed_sigma_virtual_work,-107.90063440799713,116.94991149320822,107.90566385639977,21454.771024154525,0.9226226256209128,virtual work from existing postprocessed sigma_tm_eff,True,True
+13,33,0.0001,R_energy_exact,0.009264996151614469,0.009662823317521151,0.0,0.0,0.9588290965451763,energy-conjugate to actual checkpoint mechanics objective,True,True
+13,33,0.0001,R_virtual_energy_autograd_sigma,0.009264999789593276,0.009662827111710147,3.637978807091713e-09,3.9265842614060644e-07,0.9588290965451763,same as exact energy derivative if autograd stress is correct,True,True
+13,33,0.0001,R_current_trial_energy,0.5205663619562984,0.542918820290276,0.5113013658046839,55.18635490372948,0.9588290965451763,"current-strain mechanics diagnostic, not training history branch",True,True
+13,33,0.0001,R_history_branch_energy,0.009264996151614469,0.009662823317521151,0.0,0.0,0.9588290965451763,training-objective energy reaction,True,True
+13,33,0.0001,R_legacy_top_sigma,0.9588290965451763,1.0,0.9495641003935619,102.4894219980972,0.9588290965451763,legacy top-boundary postprocessed sigma integral,False,True
+13,33,0.0001,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.009264996151614469,1.0,0.9588290965451763,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+13,33,0.0001,R_postprocessed_sigma_virtual_work,-111.55984550714493,116.35008356454132,111.56911050329654,12042.002897524691,0.9588290965451763,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,0,1e-06,R_energy_exact,0.07883151556598023,2.117240291217175,0.0,0.0,0.037233145379384866,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,0,1e-06,R_virtual_energy_autograd_sigma,0.07883152284193784,2.1172404866333165,7.275957614183426e-09,9.229757365369452e-08,0.037233145379384866,same as exact energy derivative if autograd stress is correct,True,False
+42,0,1e-06,R_current_trial_energy,0.07883151556598023,2.117240291217175,0.0,0.0,0.037233145379384866,"current-strain mechanics diagnostic, not training history branch",True,False
+42,0,1e-06,R_history_branch_energy,0.07883151556598023,2.117240291217175,0.0,0.0,0.037233145379384866,training-objective energy reaction,True,False
+42,0,1e-06,R_legacy_top_sigma,0.037233145379384866,1.0,0.04159837018659536,0.5276870536857616,0.037233145379384866,legacy top-boundary postprocessed sigma integral,False,False
+42,0,1e-06,R_energy_consistent_top_boundary_sigma,0.08138277695599197,2.185761533889955,0.0025512613900117442,0.03236347001189385,0.037233145379384866,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,0,1e-06,R_postprocessed_sigma_virtual_work,0.05417403735918924,1.4549949193705283,0.024657478206790984,0.31278706275985807,0.037233145379384866,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,1,5e-06,R_energy_exact,0.42663587373681366,2.197456991969729,0.0,0.0,0.1941498174006997,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,1,5e-06,R_virtual_energy_autograd_sigma,0.4266358446329832,2.197456842065748,2.9103830456733704e-08,6.821702591912721e-08,0.1941498174006997,same as exact energy derivative if autograd stress is correct,True,False
+42,1,5e-06,R_current_trial_energy,0.4266359028406441,2.197457141873709,2.9103830456733704e-08,6.821702591912721e-08,0.1941498174006997,"current-strain mechanics diagnostic, not training history branch",True,False
+42,1,5e-06,R_history_branch_energy,0.42663587373681366,2.197456991969729,0.0,0.0,0.1941498174006997,training-objective energy reaction,True,False
+42,1,5e-06,R_legacy_top_sigma,0.1941498174006997,1.0,0.23248605633611397,0.544928522535664,0.1941498174006997,legacy top-boundary postprocessed sigma integral,False,False
+42,1,5e-06,R_energy_consistent_top_boundary_sigma,0.4084888759491556,2.103987948163187,0.018146997787658048,0.042535095862221615,0.1941498174006997,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,1,5e-06,R_postprocessed_sigma_virtual_work,0.2679198805708438,1.3799646281298963,0.15871599316596985,0.3720174578284051,0.1941498174006997,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,2,1e-05,R_energy_exact,0.8483928395435214,2.260241149479863,0.0,0.0,0.3753550101230382,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,2,1e-05,R_virtual_energy_autograd_sigma,0.8483927813358605,2.260240994406241,5.820766091346741e-08,6.860932601079719e-08,0.3753550101230382,same as exact energy derivative if autograd stress is correct,True,False
+42,2,1e-05,R_current_trial_energy,0.8483928395435214,2.260241149479863,0.0,0.0,0.3753550101230382,"current-strain mechanics diagnostic, not training history branch",True,False
+42,2,1e-05,R_history_branch_energy,0.8483928395435214,2.260241149479863,0.0,0.0,0.3753550101230382,training-objective energy reaction,True,False
+42,2,1e-05,R_legacy_top_sigma,0.3753550101230382,1.0,0.4730378294204832,0.5575693327103063,0.3753550101230382,legacy top-boundary postprocessed sigma integral,False,False
+42,2,1e-05,R_energy_consistent_top_boundary_sigma,0.8171198019963111,2.176925257314312,0.031273037547210336,0.03686150576664087,0.3753550101230382,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,2,1e-05,R_postprocessed_sigma_virtual_work,0.527596625033766,1.4055936668084552,0.3207962145097554,0.3781222560557679,0.3753550101230382,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,3,1.5e-05,R_energy_exact,1.2411816278472543,2.335805390070607,0.0,0.0,0.5313720197425076,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,3,1.5e-05,R_virtual_energy_autograd_sigma,1.2411815114319324,2.335805170986204,1.1641532182693481e-07,9.37939453944781e-08,0.5313720197425076,same as exact energy derivative if autograd stress is correct,True,False
+42,3,1.5e-05,R_current_trial_energy,1.2411836069077253,2.335809114505462,1.979060471057892e-06,1.5944970717061278e-06,0.5313720197425076,"current-strain mechanics diagnostic, not training history branch",True,False
+42,3,1.5e-05,R_history_branch_energy,1.2411816278472543,2.335805390070607,0.0,0.0,0.5313720197425076,training-objective energy reaction,True,False
+42,3,1.5e-05,R_legacy_top_sigma,0.5313720197425076,1.0,0.7098096081047467,0.5718821421292414,0.5313720197425076,legacy top-boundary postprocessed sigma integral,False,False
+42,3,1.5e-05,R_energy_consistent_top_boundary_sigma,1.1071636871682298,2.083594254181354,0.1340179406790245,0.10797609122805787,0.5313720197425076,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,3,1.5e-05,R_postprocessed_sigma_virtual_work,0.7652240456081927,1.4400909667374002,0.4759575822390616,0.38347134018135437,0.5313720197425076,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,4,2e-05,R_energy_exact,1.585787977091968,2.478963692737214,0.0,0.0,0.639697943837563,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,4,2e-05,R_virtual_energy_autograd_sigma,1.5857880935072899,2.4789638747220444,1.1641532182693481e-07,7.341165622936444e-08,0.639697943837563,same as exact energy derivative if autograd stress is correct,True,False
+42,4,2e-05,R_current_trial_energy,1.5858703991398215,2.4790925379971487,8.242204785346985e-05,5.197545261039003e-05,0.639697943837563,"current-strain mechanics diagnostic, not training history branch",True,False
+42,4,2e-05,R_history_branch_energy,1.585787977091968,2.478963692737214,0.0,0.0,0.639697943837563,training-objective energy reaction,True,False
+42,4,2e-05,R_legacy_top_sigma,0.639697943837563,1.0,0.9460900332544051,0.5966056288239449,0.639697943837563,legacy top-boundary postprocessed sigma integral,False,False
+42,4,2e-05,R_energy_consistent_top_boundary_sigma,1.5485505257000776,2.4207527015176673,0.0372374513918905,0.023481986198543935,0.639697943837563,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,4,2e-05,R_postprocessed_sigma_virtual_work,0.9579625329934061,1.4975232329911308,0.627825444098562,0.3959075571060097,0.639697943837563,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,5,2.5e-05,R_energy_exact,1.7874499317258596,2.586702116852088,0.0,0.0,0.6910149878027371,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,5,2.5e-05,R_virtual_energy_autograd_sigma,1.7874500481411815,2.5867022853221266,1.1641532182693481e-07,6.512927705590658e-08,0.6910149878027371,same as exact energy derivative if autograd stress is correct,True,False
+42,5,2.5e-05,R_current_trial_energy,1.8161889165639877,2.628291641457786,0.02873898483812809,0.016078204109683435,0.6910149878027371,"current-strain mechanics diagnostic, not training history branch",True,False
+42,5,2.5e-05,R_history_branch_energy,1.7874499317258596,2.586702116852088,0.0,0.0,0.6910149878027371,training-objective energy reaction,True,False
+42,5,2.5e-05,R_legacy_top_sigma,0.6910149878027371,1.0,1.0964349439231227,0.6134073600956574,0.6910149878027371,legacy top-boundary postprocessed sigma integral,False,False
+42,5,2.5e-05,R_energy_consistent_top_boundary_sigma,1.816267845107887,2.6284058626328584,0.028817913382027438,0.01612236117528758,0.6910149878027371,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,5,2.5e-05,R_postprocessed_sigma_virtual_work,0.9427054901607335,1.3642330583281734,0.8447444415651262,0.4725975405361364,0.6910149878027371,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,6,3e-05,R_energy_exact,1.8282063538208604,2.5715606121167007,0.0,0.0,0.7109326318060334,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,6,3e-05,R_virtual_energy_autograd_sigma,1.8282063538208604,2.5715606121167007,0.0,0.0,0.7109326318060334,same as exact energy derivative if autograd stress is correct,True,False
+42,6,3e-05,R_current_trial_energy,1.9403161713853478,2.7292546221379976,0.11210981756448746,0.06132229949326208,0.7109326318060334,"current-strain mechanics diagnostic, not training history branch",True,False
+42,6,3e-05,R_history_branch_energy,1.8282063538208604,2.5715606121167007,0.0,0.0,0.7109326318060334,training-objective energy reaction,True,False
+42,6,3e-05,R_legacy_top_sigma,0.7109326318060334,1.0,1.117273722014827,0.6111310792021811,0.7109326318060334,legacy top-boundary postprocessed sigma integral,False,False
+42,6,3e-05,R_energy_consistent_top_boundary_sigma,1.8994224261096255,2.6717333557813854,0.07121607228876514,0.03895406672224232,0.7109326318060334,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,6,3e-05,R_postprocessed_sigma_virtual_work,0.409427477279678,0.5759019335483024,1.4187788765411824,0.7760496366156945,0.7109326318060334,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,7,3.5e-05,R_energy_exact,1.7131951171904802,2.452786975799649,0.0,0.0,0.698468776169178,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,7,3.5e-05,R_virtual_energy_autograd_sigma,1.7131948843598366,2.4527866424552656,2.3283064365386963e-07,1.3590433530752502e-07,0.698468776169178,same as exact energy derivative if autograd stress is correct,True,False
+42,7,3.5e-05,R_current_trial_energy,1.9648780580610037,2.8131222541365046,0.25168294087052345,0.14690850933737531,0.698468776169178,"current-strain mechanics diagnostic, not training history branch",True,False
+42,7,3.5e-05,R_history_branch_energy,1.7131951171904802,2.452786975799649,0.0,0.0,0.698468776169178,training-objective energy reaction,True,False
+42,7,3.5e-05,R_legacy_top_sigma,0.698468776169178,1.0,1.0147263410213023,0.5923005096380278,0.698468776169178,legacy top-boundary postprocessed sigma integral,False,False
+42,7,3.5e-05,R_energy_consistent_top_boundary_sigma,1.75366000852177,2.510720691252505,0.04046489133128972,0.023619546264904902,0.698468776169178,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,7,3.5e-05,R_postprocessed_sigma_virtual_work,-0.9295455529354513,1.3308333667163148,2.6427406701259315,1.5425800853669491,0.698468776169178,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,8,4e-05,R_energy_exact,1.4617982087656856,2.1515995160878183,0.0,0.0,0.6794006960103917,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,8,4e-05,R_virtual_energy_autograd_sigma,1.4617984415963292,2.151599858787855,2.3283064365386963e-07,1.5927687026683892e-07,0.6794006960103917,same as exact energy derivative if autograd stress is correct,True,False
+42,8,4e-05,R_current_trial_energy,1.8993676640093327,2.7956516311550574,0.4375694552436471,0.2993364286669378,0.6794006960103917,"current-strain mechanics diagnostic, not training history branch",True,False
+42,8,4e-05,R_history_branch_energy,1.4617982087656856,2.1515995160878183,0.0,0.0,0.6794006960103917,training-objective energy reaction,True,False
+42,8,4e-05,R_legacy_top_sigma,0.6794006960103917,1.0,0.7823975127552939,0.5352294920486566,0.6794006960103917,legacy top-boundary postprocessed sigma integral,False,False
+42,8,4e-05,R_energy_consistent_top_boundary_sigma,1.4877927348943898,2.18986048090777,0.025994526128704232,0.01778256805407739,0.6794006960103917,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,8,4e-05,R_postprocessed_sigma_virtual_work,-3.1301917042583227,4.6072836289977035,4.591989913024008,3.1413295525251717,0.6794006960103917,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,9,4.5e-05,R_energy_exact,0.9847382316365838,1.348639030021648,0.0,0.0,0.7301718322810048,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,9,4.5e-05,R_virtual_energy_autograd_sigma,0.984738115221262,1.3486388705861334,1.1641532182693481e-07,1.1821956138887651e-07,0.7301718322810048,same as exact energy derivative if autograd stress is correct,True,False
+42,9,4.5e-05,R_current_trial_energy,1.7337314784526825,2.3744157221686146,0.7489932468160987,0.7606013687224379,0.7301718322810048,"current-strain mechanics diagnostic, not training history branch",True,False
+42,9,4.5e-05,R_history_branch_energy,0.9847382316365838,1.348639030021648,0.0,0.0,0.7301718322810048,training-objective energy reaction,True,False
+42,9,4.5e-05,R_legacy_top_sigma,0.7301718322810048,1.0,0.254566399355579,0.25851174573825864,0.7301718322810048,legacy top-boundary postprocessed sigma integral,False,False
+42,9,4.5e-05,R_energy_consistent_top_boundary_sigma,1.2072798249545849,1.6534187866205803,0.22254159331800105,0.22599060965486076,0.7301718322810048,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,9,4.5e-05,R_postprocessed_sigma_virtual_work,-6.9214641116559505,9.479226403508047,7.906202343292534,8.028735037688987,0.7301718322810048,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,10,4.7e-05,R_energy_exact,0.7980763330124319,1.0817058372642663,0.0,0.0,0.7377942371382967,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,10,4.7e-05,R_virtual_energy_autograd_sigma,0.7980765076354146,1.0817060739467639,1.7462298274040222e-07,2.1880486304019e-07,0.7377942371382967,same as exact energy derivative if autograd stress is correct,True,False
+42,10,4.7e-05,R_current_trial_energy,1.6620337264612317,2.2527063004826506,0.8639573934487998,1.0825498235083508,0.7377942371382967,"current-strain mechanics diagnostic, not training history branch",True,False
+42,10,4.7e-05,R_history_branch_energy,0.7980763330124319,1.0817058372642663,0.0,0.0,0.7377942371382967,training-objective energy reaction,True,False
+42,10,4.7e-05,R_legacy_top_sigma,0.7377942371382967,1.0,0.06028209587413513,0.07553424826744749,0.7377942371382967,legacy top-boundary postprocessed sigma integral,False,False
+42,10,4.7e-05,R_energy_consistent_top_boundary_sigma,0.9404078811155859,1.2746208004594513,0.14233154810315407,0.17834327647069437,0.7377942371382967,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,10,4.7e-05,R_postprocessed_sigma_virtual_work,-8.704385720193386,11.797849972311159,9.502462053205818,11.906708243480509,0.7377942371382967,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,11,4.9e-05,R_energy_exact,0.6068710354156792,0.8270119182099495,0.0,0.0,0.7338117166790525,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,11,4.9e-05,R_virtual_energy_autograd_sigma,0.6068709190003574,0.8270117595652737,1.1641532182693481e-07,1.9182876597034423e-07,0.7338117166790525,same as exact energy derivative if autograd stress is correct,True,False
+42,11,4.9e-05,R_current_trial_energy,1.5814421931281686,2.1551062175528664,0.9745711577124894,1.6058949938926517,0.7338117166790525,"current-strain mechanics diagnostic, not training history branch",True,False
+42,11,4.9e-05,R_history_branch_energy,0.6068710354156792,0.8270119182099495,0.0,0.0,0.7338117166790525,training-objective energy reaction,True,False
+42,11,4.9e-05,R_legacy_top_sigma,0.7338117166790525,1.0,0.12694068126337332,0.2091724169640502,0.7338117166790525,legacy top-boundary postprocessed sigma integral,False,False
+42,11,4.9e-05,R_energy_consistent_top_boundary_sigma,0.786398607095603,1.0716626475447113,0.17952757167992384,0.29582491370173164,0.7338117166790525,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,11,4.9e-05,R_postprocessed_sigma_virtual_work,-10.91871503740549,14.879450394740717,11.52558607282117,18.99182099690532,0.7338117166790525,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,12,5.1e-05,R_energy_exact,0.4469128034543246,0.614403921862499,0.0,0.0,0.7273924979182372,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,12,5.1e-05,R_virtual_energy_autograd_sigma,0.44691271614283323,0.614403801828966,8.731149137020111e-08,1.953658313105915e-07,0.7273924979182372,same as exact energy derivative if autograd stress is correct,True,False
+42,12,5.1e-05,R_current_trial_energy,1.4906692085787654,2.0493326681880686,1.0437564051244408,2.3354810984535037,0.7273924979182372,"current-strain mechanics diagnostic, not training history branch",True,False
+42,12,5.1e-05,R_history_branch_energy,0.4469128034543246,0.614403921862499,0.0,0.0,0.7273924979182372,training-objective energy reaction,True,False
+42,12,5.1e-05,R_legacy_top_sigma,0.7273924979182372,1.0,0.28047969446391263,0.6275937773453792,0.7273924979182372,legacy top-boundary postprocessed sigma integral,False,False
+42,12,5.1e-05,R_energy_consistent_top_boundary_sigma,0.24950463513244345,0.3430123844368946,0.19740816832188116,0.44171517753810935,0.7273924979182372,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,12,5.1e-05,R_postprocessed_sigma_virtual_work,-13.33847176283598,18.337378789319455,13.785384566290304,30.84580361032149,0.7273924979182372,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,13,5.3e-05,R_energy_exact,0.2916083321906626,0.3898955788345941,0.0,0.0,0.7479139236774265,energy-conjugate to actual checkpoint mechanics objective,True,False
+42,13,5.3e-05,R_virtual_energy_autograd_sigma,0.2916082739830017,0.38989550100790965,5.820766091346741e-08,1.9960904572304683e-07,0.7479139236774265,same as exact energy derivative if autograd stress is correct,True,False
+42,13,5.3e-05,R_current_trial_energy,1.398143358528614,1.8693907337011018,1.1065350263379514,3.7945933095439273,0.7479139236774265,"current-strain mechanics diagnostic, not training history branch",True,False
+42,13,5.3e-05,R_history_branch_energy,0.2916083321906626,0.3898955788345941,0.0,0.0,0.7479139236774265,training-objective energy reaction,True,False
+42,13,5.3e-05,R_legacy_top_sigma,0.7479139236774265,1.0,0.45630559148676386,1.5647892776548546,0.7479139236774265,legacy top-boundary postprocessed sigma integral,False,False
+42,13,5.3e-05,R_energy_consistent_top_boundary_sigma,0.25221970760211376,0.33723092941226684,0.03938862458854886,0.13507372814983679,0.7479139236774265,boundary integral of energy-autograd stress; diagnostic traction proxy,False,False
+42,13,5.3e-05,R_postprocessed_sigma_virtual_work,-16.264673322439194,21.746718181775833,16.556281654629856,56.77574961680053,0.7479139236774265,virtual work from existing postprocessed sigma_tm_eff,True,False
+42,14,5.5e-05,R_energy_exact,0.1125844064517878,0.14950813156787732,0.0,0.0,0.7530319941204937,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,14,5.5e-05,R_virtual_energy_autograd_sigma,0.11258437734795734,0.1495080929190142,2.9103830456733704e-08,2.585067628277357e-07,0.7530319941204937,same as exact energy derivative if autograd stress is correct,True,True
+42,14,5.5e-05,R_current_trial_energy,1.3148060534149408,1.746016190122935,1.202221646963153,10.678402852156816,0.7530319941204937,"current-strain mechanics diagnostic, not training history branch",True,True
+42,14,5.5e-05,R_history_branch_energy,0.1125844064517878,0.14950813156787732,0.0,0.0,0.7530319941204937,training-objective energy reaction,True,True
+42,14,5.5e-05,R_legacy_top_sigma,0.7530319941204937,1.0,0.6404475876687059,5.68859940601957,0.7530319941204937,legacy top-boundary postprocessed sigma integral,False,True
+42,14,5.5e-05,R_energy_consistent_top_boundary_sigma,-0.00044263783354607804,0.0005878074729919788,0.11302704428533387,1.0039316087147079,0.7530319941204937,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,14,5.5e-05,R_postprocessed_sigma_virtual_work,-19.290776923298836,25.617473193591945,19.403361329750624,172.34501598638136,0.7530319941204937,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,15,5.7e-05,R_energy_exact,0.07958788046380505,0.10661127923349348,0.0,0.0,0.7465240173086805,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,15,5.7e-05,R_virtual_energy_autograd_sigma,0.07958788773976266,0.10661128897994161,7.275957614183426e-09,9.142042195095751e-08,0.7465240173086805,same as exact energy derivative if autograd stress is correct,True,True
+42,15,5.7e-05,R_current_trial_energy,1.2316132197156549,1.6497971815505499,1.1520253392518498,14.474884021767203,0.7465240173086805,"current-strain mechanics diagnostic, not training history branch",True,True
+42,15,5.7e-05,R_history_branch_energy,0.07958788046380505,0.10661127923349348,0.0,0.0,0.7465240173086805,training-objective energy reaction,True,True
+42,15,5.7e-05,R_legacy_top_sigma,0.7465240173086805,1.0,0.6669361368448754,8.379870565194715,0.7465240173086805,legacy top-boundary postprocessed sigma integral,False,True
+42,15,5.7e-05,R_energy_consistent_top_boundary_sigma,-0.0003291544925150433,0.0004409161458752386,0.07991703495632009,1.0041357363784142,0.7465240173086805,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,15,5.7e-05,R_postprocessed_sigma_virtual_work,-22.485462948679924,30.12021372030741,22.56505082914373,283.5237060924855,0.7465240173086805,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,16,5.9e-05,R_energy_exact,0.04348266884335317,0.05863043427551773,0.0,0.0,0.7416398902832312,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,16,5.9e-05,R_virtual_energy_autograd_sigma,0.04348266156739555,0.05863042446488361,7.275957614183426e-09,1.6733006063623073e-07,0.7416398902832312,same as exact energy derivative if autograd stress is correct,True,True
+42,16,5.9e-05,R_current_trial_energy,1.18100899271667,1.5924291670255821,1.1375263238733169,26.160453213469232,0.7416398902832312,"current-strain mechanics diagnostic, not training history branch",True,True
+42,16,5.9e-05,R_history_branch_energy,0.04348266884335317,0.05863043427551773,0.0,0.0,0.7416398902832312,training-objective energy reaction,True,True
+42,16,5.9e-05,R_legacy_top_sigma,0.7416398902832312,1.0,0.698157221439878,16.055988282480953,0.7416398902832312,legacy top-boundary postprocessed sigma integral,False,True
+42,16,5.9e-05,R_energy_consistent_top_boundary_sigma,0.22799896360282068,0.3074254319245803,0.18451629475946751,4.243444564642287,0.7416398902832312,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,16,5.9e-05,R_postprocessed_sigma_virtual_work,-25.466008111834526,34.337430396454394,25.50949078067788,586.6588104924315,0.7416398902832312,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,17,6.1e-05,R_energy_exact,0.024003831640584394,0.031414070824080126,0.0,0.0,0.7641108271196903,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,17,6.1e-05,R_virtual_energy_autograd_sigma,0.024003873477340676,0.03141412557628988,4.18367562815547e-08,1.742919918285852e-06,0.7641108271196903,same as exact energy derivative if autograd stress is correct,True,True
+42,17,6.1e-05,R_current_trial_energy,1.1086732847616076,1.4509325681730527,1.0846694531210233,45.187346310458295,0.7641108271196903,"current-strain mechanics diagnostic, not training history branch",True,True
+42,17,6.1e-05,R_history_branch_energy,0.024003831640584394,0.031414070824080126,0.0,0.0,0.7641108271196903,training-objective energy reaction,True,True
+42,17,6.1e-05,R_legacy_top_sigma,0.7641108271196903,1.0,0.7401069954791059,30.832868958627945,0.7641108271196903,legacy top-boundary postprocessed sigma integral,False,True
+42,17,6.1e-05,R_energy_consistent_top_boundary_sigma,-0.0012998805981617547,0.0017011676212751027,0.02530371223874615,1.0541530459647113,0.7641108271196903,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,17,6.1e-05,R_postprocessed_sigma_virtual_work,-29.263339936733246,38.29724550173065,29.28734376837383,1220.1111975329954,0.7641108271196903,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,18,6.3e-05,R_energy_exact,0.01921121474879328,0.024463059543892336,0.0,0.0,0.7853152919946076,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,18,6.3e-05,R_virtual_energy_autograd_sigma,0.019211211110814475,0.024463054911385056,3.637978807091713e-09,1.893674530560451e-07,0.7853152919946076,same as exact energy derivative if autograd stress is correct,True,True
+42,18,6.3e-05,R_current_trial_energy,1.0539839277043939,1.3421156297967913,1.0347727129556006,53.8629507028231,0.7853152919946076,"current-strain mechanics diagnostic, not training history branch",True,True
+42,18,6.3e-05,R_history_branch_energy,0.01921121474879328,0.024463059543892336,0.0,0.0,0.7853152919946076,training-objective energy reaction,True,True
+42,18,6.3e-05,R_legacy_top_sigma,0.7853152919946076,1.0,0.7661040772458143,39.87796124625257,0.7853152919946076,legacy top-boundary postprocessed sigma integral,False,True
+42,18,6.3e-05,R_energy_consistent_top_boundary_sigma,0.009683000898613955,0.012330080666098177,0.009528213850179327,0.49597144036807067,0.7853152919946076,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,18,6.3e-05,R_postprocessed_sigma_virtual_work,-33.35406631231308,42.472197666745686,33.37327752706187,1737.176850264409,0.7853152919946076,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,19,6.5e-05,R_energy_exact,0.02296640377608128,0.029939016643202154,0.0,0.0,0.7671061494698741,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,19,6.5e-05,R_virtual_energy_autograd_sigma,0.022966421965975314,0.029939040355558062,1.8189894035458565e-08,7.920218686742204e-07,0.7671061494698741,same as exact energy derivative if autograd stress is correct,True,True
+42,19,6.5e-05,R_current_trial_energy,1.0000851470977068,1.3037115499449954,0.9771187433216255,42.545570166246975,0.7671061494698741,"current-strain mechanics diagnostic, not training history branch",True,True
+42,19,6.5e-05,R_history_branch_energy,0.02296640377608128,0.029939016643202154,0.0,0.0,0.7671061494698741,training-objective energy reaction,True,True
+42,19,6.5e-05,R_legacy_top_sigma,0.7671061494698741,1.0,0.7441397456937928,32.40123063885121,0.7671061494698741,legacy top-boundary postprocessed sigma integral,False,True
+42,19,6.5e-05,R_energy_consistent_top_boundary_sigma,0.2929298597681602,0.3818635269324799,0.26996345599207894,11.754711735636931,0.7671061494698741,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,19,6.5e-05,R_postprocessed_sigma_virtual_work,-37.05839812755585,48.30934826055805,37.08136453133193,1614.591683263485,0.7671061494698741,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,20,6.7e-05,R_energy_exact,0.0167453836183995,0.022060413088311765,0.0,0.0,0.7590693588268155,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,20,6.7e-05,R_virtual_energy_autograd_sigma,0.01674537270446308,0.022060398710262785,1.0913936421275139e-08,6.517579214657775e-07,0.7590693588268155,same as exact energy derivative if autograd stress is correct,True,True
+42,20,6.7e-05,R_current_trial_energy,0.9585191146470606,1.2627556408396012,0.9417737310286611,56.240797612654184,0.7590693588268155,"current-strain mechanics diagnostic, not training history branch",True,True
+42,20,6.7e-05,R_history_branch_energy,0.0167453836183995,0.022060413088311765,0.0,0.0,0.7590693588268155,training-objective energy reaction,True,True
+42,20,6.7e-05,R_legacy_top_sigma,0.7590693588268155,1.0,0.742323975208416,44.33006684855908,0.7590693588268155,legacy top-boundary postprocessed sigma integral,False,True
+42,20,6.7e-05,R_energy_consistent_top_boundary_sigma,0.006216646384995926,0.008189826545764018,0.010528737233403574,0.6287546152024134,0.7590693588268155,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,20,6.7e-05,R_postprocessed_sigma_virtual_work,-41.10199213027954,54.147874172928006,41.11873751389794,2455.526755966192,0.7590693588268155,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,21,6.9e-05,R_energy_exact,0.009191560820909217,0.01208591025320418,0.0,0.0,0.7605187055292238,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,21,6.9e-05,R_virtual_energy_autograd_sigma,0.009191556273435708,0.012085904273767415,4.547473508864641e-09,4.947444288808841e-07,0.7605187055292238,same as exact energy derivative if autograd stress is correct,True,True
+42,21,6.9e-05,R_current_trial_energy,0.9133252897299826,1.2009241627981062,0.9041337289090734,98.36563631851567,0.7605187055292238,"current-strain mechanics diagnostic, not training history branch",True,True
+42,21,6.9e-05,R_history_branch_energy,0.009191560820909217,0.01208591025320418,0.0,0.0,0.7605187055292238,training-objective energy reaction,True,True
+42,21,6.9e-05,R_legacy_top_sigma,0.7605187055292238,1.0,0.7513271447083146,81.74097515616442,0.7605187055292238,legacy top-boundary postprocessed sigma integral,False,True
+42,21,6.9e-05,R_energy_consistent_top_boundary_sigma,0.004004384509213041,0.0052653333574832996,0.005187176311696176,0.5643411834795504,0.7605187055292238,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,21,6.9e-05,R_postprocessed_sigma_virtual_work,-45.38596794009209,59.67764843930992,45.395159500912996,4938.786826895257,0.7605187055292238,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,22,7.1e-05,R_energy_exact,0.01115374925575452,0.013178049794356751,0.0,0.0,0.846388458824226,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,22,7.1e-05,R_virtual_energy_autograd_sigma,0.011153759260196239,0.013178061614510506,1.000444171950221e-08,8.969577395099366e-07,0.846388458824226,same as exact energy derivative if autograd stress is correct,True,True
+42,22,7.1e-05,R_current_trial_energy,0.873892568051815,1.0324958462522007,0.8627388187960605,77.34966951592088,0.846388458824226,"current-strain mechanics diagnostic, not training history branch",True,True
+42,22,7.1e-05,R_history_branch_energy,0.01115374925575452,0.013178049794356751,0.0,0.0,0.846388458824226,training-objective energy reaction,True,True
+42,22,7.1e-05,R_legacy_top_sigma,0.846388458824226,1.0,0.8352347095684715,74.88376243867518,0.846388458824226,legacy top-boundary postprocessed sigma integral,False,True
+42,22,7.1e-05,R_energy_consistent_top_boundary_sigma,0.004397180989716438,0.005195227964030667,0.0067565682660380814,0.6057665553627347,0.846388458824226,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,22,7.1e-05,R_postprocessed_sigma_virtual_work,-49.67990517616272,58.696340502062554,49.691058925418474,4455.099158678103,0.846388458824226,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,23,7.3e-05,R_energy_exact,0.014568017832061742,0.017602604324465043,0.0,0.0,0.8276058226119603,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,23,7.3e-05,R_virtual_energy_autograd_sigma,0.014568031474482268,0.0176026208086658,1.3642420526593924e-08,9.36463744337906e-07,0.8276058226119603,same as exact energy derivative if autograd stress is correct,True,True
+42,23,7.3e-05,R_current_trial_energy,0.841762637719512,1.0171057461423751,0.8271946198874502,56.781549104568974,0.8276058226119603,"current-strain mechanics diagnostic, not training history branch",True,True
+42,23,7.3e-05,R_history_branch_energy,0.014568017832061742,0.017602604324465043,0.0,0.0,0.8276058226119603,training-objective energy reaction,True,True
+42,23,7.3e-05,R_legacy_top_sigma,0.8276058226119603,1.0,0.8130378047798985,55.809775506352,0.8276058226119603,legacy top-boundary postprocessed sigma integral,False,True
+42,23,7.3e-05,R_energy_consistent_top_boundary_sigma,-0.0009129907960368972,0.0011031710641612672,0.015481008628098638,1.062670900500105,0.8276058226119603,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,23,7.3e-05,R_postprocessed_sigma_virtual_work,-53.88110131025314,65.10478761519829,53.895669328085205,3699.588368808141,0.8276058226119603,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,24,7.5e-05,R_energy_exact,0.006286295047175372,0.007275929973206352,0.0,0.0,0.8639850947335509,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,24,7.5e-05,R_virtual_energy_autograd_sigma,0.006286279131018091,0.007275911551410214,1.5916157281026244e-08,2.5318820006989443e-06,0.8639850947335509,same as exact energy derivative if autograd stress is correct,True,True
+42,24,7.5e-05,R_current_trial_energy,0.8003141265362501,0.9263054784331244,0.7940278314890747,126.31093919873457,0.8639850947335509,"current-strain mechanics diagnostic, not training history branch",True,True
+42,24,7.5e-05,R_history_branch_energy,0.006286295047175372,0.007275929973206352,0.0,0.0,0.8639850947335509,training-objective energy reaction,True,True
+42,24,7.5e-05,R_legacy_top_sigma,0.8639850947335509,1.0,0.8576987996863755,136.4394755972783,0.8639850947335509,legacy top-boundary postprocessed sigma integral,False,True
+42,24,7.5e-05,R_energy_consistent_top_boundary_sigma,0.06908984290330991,0.07996647549182188,0.06280354785613454,9.990550456958607,0.8639850947335509,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,24,7.5e-05,R_postprocessed_sigma_virtual_work,-58.80795046687126,68.06593172189778,58.81423676191844,9355.94596189778,0.8639850947335509,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,25,7.7e-05,R_energy_exact,0.00865524634718895,0.01010561287239302,0.0,0.0,0.8564791127942127,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,25,7.7e-05,R_virtual_energy_autograd_sigma,0.008655259989609476,0.010105628800884822,1.3642420526593924e-08,1.5762024533275946e-06,0.8564791127942127,same as exact energy derivative if autograd stress is correct,True,True
+42,25,7.7e-05,R_current_trial_energy,0.7672037463635206,0.8957646892993847,0.7585485000163317,87.64031312207457,0.8564791127942127,"current-strain mechanics diagnostic, not training history branch",True,True
+42,25,7.7e-05,R_history_branch_energy,0.00865524634718895,0.01010561287239302,0.0,0.0,0.8564791127942127,training-objective energy reaction,True,True
+42,25,7.7e-05,R_legacy_top_sigma,0.8564791127942127,1.0,0.8478238664470238,97.95490878458705,0.8564791127942127,legacy top-boundary postprocessed sigma integral,False,True
+42,25,7.7e-05,R_energy_consistent_top_boundary_sigma,0.143925912393743,0.16804369218554924,0.13527066604655405,15.628748232046249,0.8564791127942127,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,25,7.7e-05,R_postprocessed_sigma_virtual_work,-63.68565559387207,74.35751163399813,63.69431084021926,7359.0407811911555,0.8564791127942127,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,26,8e-05,R_energy_exact,0.0056470280469511636,0.006770318022595873,0.0,0.0,0.8340860840073184,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,26,8e-05,R_virtual_energy_autograd_sigma,0.005647039415634936,0.006770331652704312,1.1368683772161603e-08,2.0132153900492077e-06,0.8340860840073184,same as exact energy derivative if autograd stress is correct,True,True
+42,26,8e-05,R_current_trial_energy,0.7329662912525237,0.878765759681578,0.7273192632055725,128.7968214711193,0.8340860840073184,"current-strain mechanics diagnostic, not training history branch",True,True
+42,26,8e-05,R_history_branch_energy,0.0056470280469511636,0.006770318022595873,0.0,0.0,0.8340860840073184,training-objective energy reaction,True,True
+42,26,8e-05,R_legacy_top_sigma,0.8340860840073184,1.0,0.8284390559603673,146.7035490301208,0.8340860840073184,legacy top-boundary postprocessed sigma integral,False,True
+42,26,8e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.0056470280469511636,1.0,0.8340860840073184,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,26,8e-05,R_postprocessed_sigma_virtual_work,-70.28023153543472,84.26016556681705,70.28587856348167,12446.525496084458,0.8340860840073184,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,27,8.3e-05,R_energy_exact,0.0047866096792859025,0.005601214040993645,0.0,0.0,0.8545664643868468,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,27,8.3e-05,R_virtual_energy_autograd_sigma,0.004786599220096832,0.005601201801817986,1.0459189070388675e-08,2.185093369039659e-06,0.8545664643868468,same as exact energy derivative if autograd stress is correct,True,True
+42,27,8.3e-05,R_current_trial_energy,0.6996783195063472,0.818752371716772,0.6948917098270613,145.17409113891438,0.8545664643868468,"current-strain mechanics diagnostic, not training history branch",True,True
+42,27,8.3e-05,R_history_branch_energy,0.0047866096792859025,0.005601214040993645,0.0,0.0,0.8545664643868468,training-objective energy reaction,True,True
+42,27,8.3e-05,R_legacy_top_sigma,0.8545664643868468,1.0,0.8497798547075609,177.53272392043812,0.8545664643868468,legacy top-boundary postprocessed sigma integral,False,True
+42,27,8.3e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.0047866096792859025,1.0,0.8545664643868468,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,27,8.3e-05,R_postprocessed_sigma_virtual_work,-76.53973996639252,89.56557875379528,76.5445265760718,15991.386744425588,0.8545664643868468,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,28,8.6e-05,R_energy_exact,0.005723272352042841,0.006691779842531966,0.0,0.0,0.8552690744047743,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,28,8.6e-05,R_virtual_energy_autograd_sigma,0.005723264166590525,0.0066917702719154655,8.185452315956354e-09,1.4302049269129528e-06,0.8552690744047743,same as exact energy derivative if autograd stress is correct,True,True
+42,28,8.6e-05,R_current_trial_energy,0.6594050209969282,0.7709913063977463,0.6536817486448854,114.21468496280156,0.8552690744047743,"current-strain mechanics diagnostic, not training history branch",True,True
+42,28,8.6e-05,R_history_branch_energy,0.005723272352042841,0.006691779842531966,0.0,0.0,0.8552690744047743,training-objective energy reaction,True,True
+42,28,8.6e-05,R_legacy_top_sigma,0.8552690744047743,1.0,0.8495458020527314,148.43707407170623,0.8552690744047743,legacy top-boundary postprocessed sigma integral,False,True
+42,28,8.6e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.005723272352042841,1.0,0.8552690744047743,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,28,8.6e-05,R_postprocessed_sigma_virtual_work,-83.77949893474579,97.95689034243668,83.78522220709783,14639.391077936712,0.8552690744047743,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,29,8.9e-05,R_energy_exact,0.010388452210463583,0.012213462187234438,0.0,0.0,0.8505739037143487,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,29,8.9e-05,R_virtual_energy_autograd_sigma,0.010388438568043057,0.012213446148157213,1.3642420526593924e-08,1.3132293675907598e-06,0.8505739037143487,same as exact energy derivative if autograd stress is correct,True,True
+42,29,8.9e-05,R_current_trial_energy,0.6309593445621431,0.7418042592264157,0.6205708923516795,59.73660751181206,0.8505739037143487,"current-strain mechanics diagnostic, not training history branch",True,True
+42,29,8.9e-05,R_history_branch_energy,0.010388452210463583,0.012213462187234438,0.0,0.0,0.8505739037143487,training-objective energy reaction,True,True
+42,29,8.9e-05,R_legacy_top_sigma,0.8505739037143487,1.0,0.8401854515038851,80.87686543502826,0.8505739037143487,legacy top-boundary postprocessed sigma integral,False,True
+42,29,8.9e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.010388452210463583,1.0,0.8505739037143487,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,29,8.9e-05,R_postprocessed_sigma_virtual_work,-90.17553180456161,106.01728011026022,90.18592025677208,8681.362577375474,0.8505739037143487,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,30,9.2e-05,R_energy_exact,0.005886462531634606,0.0070582349292621464,0.0,0.0,0.8339850671774063,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,30,9.2e-05,R_virtual_energy_autograd_sigma,0.005886463441129308,0.007058236019802898,9.094947017729282e-10,1.5450615660682232e-07,0.8339850671774063,same as exact energy derivative if autograd stress is correct,True,True
+42,30,9.2e-05,R_current_trial_energy,0.5823287065140903,0.6982483613105469,0.5764422439824557,97.92676686287919,0.8339850671774063,"current-strain mechanics diagnostic, not training history branch",True,True
+42,30,9.2e-05,R_history_branch_energy,0.005886462531634606,0.0070582349292621464,0.0,0.0,0.8339850671774063,training-objective energy reaction,True,True
+42,30,9.2e-05,R_legacy_top_sigma,0.8339850671774063,1.0,0.8280986046457717,140.67848052976865,0.8339850671774063,legacy top-boundary postprocessed sigma integral,False,True
+42,30,9.2e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.005886462531634606,1.0,0.8339850671774063,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,30,9.2e-05,R_postprocessed_sigma_virtual_work,-98.80763292312622,118.4765013329762,98.81351938565786,16786.57068733918,0.8339850671774063,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,31,9.5e-05,R_energy_exact,0.006363127795339096,0.007094955705551362,0.0,0.0,0.8968523637660407,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,31,9.5e-05,R_virtual_energy_autograd_sigma,0.006363135980791412,0.007094964832418444,8.185452315956354e-09,1.2863881693452841e-06,0.8968523637660407,same as exact energy derivative if autograd stress is correct,True,True
+42,31,9.5e-05,R_current_trial_energy,0.5789917195215821,0.6455819741504545,0.572628591726243,89.99168492980537,0.8968523637660407,"current-strain mechanics diagnostic, not training history branch",True,True
+42,31,9.5e-05,R_history_branch_energy,0.006363127795339096,0.007094955705551362,0.0,0.0,0.8968523637660407,training-objective energy reaction,True,True
+42,31,9.5e-05,R_legacy_top_sigma,0.8968523637660407,1.0,0.8904892359707016,139.94520691898924,0.8968523637660407,legacy top-boundary postprocessed sigma integral,False,True
+42,31,9.5e-05,R_energy_consistent_top_boundary_sigma,-0.003982139481489703,0.00444012821103353,0.0103452672768288,1.6258147894509625,0.8968523637660407,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,31,9.5e-05,R_postprocessed_sigma_virtual_work,-103.23268920183182,115.10555513099125,103.23905232962716,16224.576285462685,0.8968523637660407,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,32,9.8e-05,R_energy_exact,0.0050426497182343155,0.005502848738572989,0.0,0.0,0.9163707668152237,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,32,9.8e-05,R_virtual_energy_autograd_sigma,0.005042642897024052,0.005502841294849868,6.821210263296962e-09,1.3527035674580643e-06,0.9163707668152237,same as exact energy derivative if autograd stress is correct,True,True
+42,32,9.8e-05,R_current_trial_energy,0.564620248042047,0.6161482540569702,0.5595775983238127,110.96896068358063,0.9163707668152237,"current-strain mechanics diagnostic, not training history branch",True,True
+42,32,9.8e-05,R_history_branch_energy,0.0050426497182343155,0.005502848738572989,0.0,0.0,0.9163707668152237,training-objective energy reaction,True,True
+42,32,9.8e-05,R_legacy_top_sigma,0.9163707668152237,1.0,0.9113281170969894,180.72405739419295,0.9163707668152237,legacy top-boundary postprocessed sigma integral,False,True
+42,32,9.8e-05,R_energy_consistent_top_boundary_sigma,0.0,0.0,0.0050426497182343155,1.0,0.9163707668152237,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,32,9.8e-05,R_postprocessed_sigma_virtual_work,-109.94958877563477,119.98373666780765,109.954631425353,21804.93144859041,0.9163707668152237,virtual work from existing postprocessed sigma_tm_eff,True,True
+42,33,0.0001,R_energy_exact,0.008283553142973687,0.009560979484652432,0.0,0.0,0.866391686779654,energy-conjugate to actual checkpoint mechanics objective,True,True
+42,33,0.0001,R_virtual_energy_autograd_sigma,0.008283552233478986,0.0095609784349024,9.094947017729282e-10,1.0979523956388013e-07,0.866391686779654,same as exact energy derivative if autograd stress is correct,True,True
+42,33,0.0001,R_current_trial_energy,0.5477693630382419,0.6322421733688148,0.5394858098952682,65.12734337352242,0.866391686779654,"current-strain mechanics diagnostic, not training history branch",True,True
+42,33,0.0001,R_history_branch_energy,0.008283553142973687,0.009560979484652432,0.0,0.0,0.866391686779654,training-objective energy reaction,True,True
+42,33,0.0001,R_legacy_top_sigma,0.866391686779654,1.0,0.8581081336366803,103.59179434546739,0.866391686779654,legacy top-boundary postprocessed sigma integral,False,True
+42,33,0.0001,R_energy_consistent_top_boundary_sigma,-0.00043578385266671276,0.0005029871123146453,0.008719336995640401,1.052608324609634,0.866391686779654,boundary integral of energy-autograd stress; diagnostic traction proxy,False,True
+42,33,0.0001,R_postprocessed_sigma_virtual_work,-114.45561796426773,132.10608978682038,114.4639015174107,13818.212974766968,0.866391686779654,virtual work from existing postprocessed sigma_tm_eff,True,True

@@ -1,0 +1,6 @@
+audit_item,finding,evidence,effect_on_conjugacy
+tensor_shear_strain,"compute_energy.gradients defines strain_12 = 0.5*(du_y + dv_x), i.e. tensor epsilon_xy.",source/compute_energy.py gradients(),"Energy derivative dW/depsilon_xy must be multiplied by deps_xy directly, or represented as 2*sigma_xy*deps_xy."
+virtual_work_shear_factor,Postprocessed sigma virtual work uses 2*sigma_xy*deps_xy; energy-autograd virtual work uses dW/deps_xy*deps_xy.,audit script compares both conventions,No missing shear factor is needed if dW/deps_xy = 2*sigma_xy_tensor.
+unit_box_gradient,coord_normalization maps NN inputs only; T3 gradients are computed from physical inp coordinates in mm.,FieldComputation.network_input and compute_energy.field_grads with inp[T],unit_box does not rescale element gradients used in energy/stress postprocessing.
+area_quadrature,Both energy and virtual work sum area_elem times elementwise one-point fields.,compute_mixed_tm_energy and audit area_reaction_N,No area/quadrature factor explains the exact/post sigma mismatch.
+kN_to_N,Energy reactions are d(kN*mm)/d(mm)*1000; boundary reactions are stress(kN/mm^2)*length(mm)*thickness(1mm)*1000.,previous exact-reaction script and boundary_force_metrics,No kN-to-N mismatch is identified.

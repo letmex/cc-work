@@ -1,0 +1,158 @@
+[
+  {
+    "path": "artifacts/run_d0020_energy_stress_conjugacy_audit.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/corrected_reaction_candidates.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/energy_autograd_stress_vs_postprocessed_sigma.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/energy_autograd_virtual_work_identity.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary for diagnostic figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/history_branch_reaction_comparison.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/local_patch_stress_comparison.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/postthrough_collapse_corrected_candidates.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/prethrough_ratio_corrected_candidates.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/shear_gradient_scaling_sanity.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff for issue sync.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main energy-stress conjugacy audit report.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/checkpoint_availability.csv",
+    "type": "table",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/corrected_reaction_candidate_comparison.csv",
+    "type": "table",
+    "description": "Candidate corrected reactions by checkpoint.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/corrected_reaction_candidate_summary.csv",
+    "type": "table",
+    "description": "Seed-level corrected reaction candidate summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/energy_autograd_stress_summary.csv",
+    "type": "table",
+    "description": "Selected-checkpoint stress-difference summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/energy_autograd_stress_vs_postprocessed_sigma.csv",
+    "type": "table",
+    "description": "Elementwise selected-checkpoint stress comparison.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/energy_autograd_virtual_work_identity.csv",
+    "type": "table",
+    "description": "Energy-autograd virtual work versus exact and postprocessed sigma virtual work.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/history_branch_conjugacy_audit.csv",
+    "type": "table",
+    "description": "Global-mode reactions by explicit energy branch.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/history_branch_conjugacy_summary.csv",
+    "type": "table",
+    "description": "Seed-level branch reaction summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/local_energy_stress_patch_tests.csv",
+    "type": "table",
+    "description": "Local patch energy/autograd/post sigma stress tests.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/shear_and_gradient_scaling_audit.csv",
+    "type": "table",
+    "description": "Shear and coordinate-gradient convention audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/stress_energy_formula_path_audit.csv",
+    "type": "table",
+    "description": "Static source formula path audit.",
+    "required_for_chatgpt": true
+  }
+]
