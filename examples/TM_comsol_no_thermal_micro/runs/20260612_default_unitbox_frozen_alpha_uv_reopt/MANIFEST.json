@@ -1,0 +1,365 @@
+{
+  "package": "20260612_default_unitbox_frozen_alpha_uv_reopt",
+  "files": [
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_baseline_current_split_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_full_degradation_all_energy_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_minus_degraded_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_final_D0040_minus_removed_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_through_alpha0p8_onset_baseline_current_split_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_through_alpha0p8_onset_full_degradation_all_energy_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_through_alpha0p8_onset_minus_degraded_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed13_default_unitbox_through_alpha0p8_onset_minus_removed_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_baseline_current_split_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_full_degradation_all_energy_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_minus_degraded_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_final_D0040_minus_removed_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_through_alpha0p8_onset_baseline_current_split_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_through_alpha0p8_onset_full_degradation_all_energy_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_through_alpha0p8_onset_minus_degraded_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed42_default_unitbox_through_alpha0p8_onset_minus_removed_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_baseline_current_split_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_full_degradation_all_energy_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_minus_degraded_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_final_D0040_minus_removed_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_through_alpha0p8_onset_baseline_current_split_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_through_alpha0p8_onset_full_degradation_all_energy_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_through_alpha0p8_onset_minus_degraded_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/D0040_seed7_default_unitbox_through_alpha0p8_onset_minus_removed_in_crack_band_saved_uv_prefit_fields.npz",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/run_frozen_alpha_uv_reopt.py",
+      "type": "artifact",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/crack_band_traction_comparison_by_variant.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/displacement_jump_proxy_comparison_by_variant.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/energy_contribution_comparison_by_variant.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary of generated figures.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/final_alpha_mask_overlay_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_alpha_mask_overlay_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_alpha_mask_overlay_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_baseline.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_minus_degraded.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed13_default_unitbox_minus_removed.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_baseline.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_minus_degraded.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed42_default_unitbox_minus_removed.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_baseline.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_minus_degraded.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_uv_fields_D0040_seed7_default_unitbox_minus_removed.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_comparison_by_variant_seed.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_removal_percent_by_variant_seed.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_maps_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_maps_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_maps_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff for ChatGPT issue sync.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "logs/loss_trace.csv",
+      "type": "command_log",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "logs/run_config.json",
+      "type": "command_log",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "report",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Diagnostic artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and reading order.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main frozen-alpha u/v re-optimization report.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_convergence.csv",
+      "type": "table",
+      "description": "Convergence status and loss summary.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_crack_band_traction.csv",
+      "type": "table",
+      "description": "Cut-line crack-band traction metrics.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_displacement_jump.csv",
+      "type": "table",
+      "description": "Displacement jump proxy metrics.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_energy_comparison.csv",
+      "type": "table",
+      "description": "Energy contribution comparison.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_reaction_comparison.csv",
+      "type": "table",
+      "description": "Reaction comparison and collapse flags.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_uv_reopt_summary.csv",
+      "type": "table",
+      "description": "Main per seed/state/variant re-optimization metrics.",
+      "required_for_chatgpt": true
+    }
+  ]
+}
