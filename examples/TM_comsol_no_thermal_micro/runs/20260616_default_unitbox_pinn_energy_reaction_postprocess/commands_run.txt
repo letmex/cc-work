@@ -1,0 +1,5 @@
+git pull origin main
+Read 20260615_default_unitbox_fedof_reaction_reference handoff/report/tables/figure summary.
+D:\anaconda3\envs\torch_env\python.exe artifacts\run_pinn_energy_reaction_postprocess.py
+D:\anaconda3\envs\torch_env\python.exe -m pytest D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro\tests -q
+D:\anaconda3\envs\torch_env\python.exe -m py_compile examples\TM_comsol_no_thermal_micro\runs\20260616_default_unitbox_pinn_energy_reaction_postprocess\artifacts\run_pinn_energy_reaction_postprocess.py

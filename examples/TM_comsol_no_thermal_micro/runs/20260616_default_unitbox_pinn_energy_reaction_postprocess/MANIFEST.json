@@ -1,0 +1,134 @@
+[
+  {
+    "path": "artifacts/run_pinn_energy_reaction_postprocess.py",
+    "type": "artifact",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/boundary_cut_consistency_summary.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary for figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/legacy_vs_energy_reaction_D0020_by_seed.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/legacy_vs_energy_reaction_D0040_by_seed.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_metric_curves_D0020.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_metric_curves_D0040.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/reaction_metric_drop_summary.png",
+    "type": "figure",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff for issue sync.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Generated diagnostic artifact.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package reading order.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main saved-PINN reaction postprocessing report.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/pinn_energy_conjugate_reaction_by_step.csv",
+    "type": "table",
+    "description": "Exact autograd reaction table with unavailable reasons.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/pinn_energy_reaction_finite_difference_check.csv",
+    "type": "table",
+    "description": "Exact finite-difference check table with unavailable reasons.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/pinn_reaction_boundary_cut_consistency.csv",
+    "type": "table",
+    "description": "Boundary, cut, and through-crack metrics by saved step.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/pinn_virtual_work_reaction.csv",
+    "type": "table",
+    "description": "Saved-field virtual-work proxy reactions.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/post_peak_drop_by_metric.csv",
+    "type": "table",
+    "description": "Peak/final/drop summary by metric.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_metric_curve_summary.csv",
+    "type": "table",
+    "description": "Long-form reaction curves by metric.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/saved_artifact_availability.csv",
+    "type": "table",
+    "description": "Checkpoint/model/field availability audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/saved_field_energy_proxy_reaction.csv",
+    "type": "table",
+    "description": "Saved-field energy finite-difference proxy reactions.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/through_crack_reaction_by_metric.csv",
+    "type": "table",
+    "description": "Reaction at first alpha>=0.8 through-crack by metric.",
+    "required_for_chatgpt": true
+  }
+]
