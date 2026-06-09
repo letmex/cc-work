@@ -1,6 +1,6 @@
 ## Codex handoff: frozen-alpha u/v re-optimization
 
-Commit: PENDING
+Commit: e6eb7ba
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260612_default_unitbox_frozen_alpha_uv_reopt
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260612_default_unitbox_frozen_alpha_uv_reopt/REPORT.md
 
