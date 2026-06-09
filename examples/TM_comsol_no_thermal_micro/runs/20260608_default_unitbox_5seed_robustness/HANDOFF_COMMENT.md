@@ -1,6 +1,6 @@
 ## Codex handoff: default-alpha unit_box 5-seed robustness
 
-Commit: PENDING
+Commit: 8342adf162220e989cc5d4b83238f74ae4ef7660
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260608_default_unitbox_5seed_robustness
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260608_default_unitbox_5seed_robustness/REPORT.md
 
