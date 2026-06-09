@@ -1,0 +1,155 @@
+{
+  "package": "20260611_default_unitbox_negative_branch_ablation",
+  "files": [
+    {
+      "path": "artifacts/build_negative_branch_ablation_package.py",
+      "type": "artifact",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/crack_band_cutline_traction_variants_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/crack_band_cutline_traction_variants_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/crack_band_cutline_traction_variants_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/displacement_jump_proxy_by_variant.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/energy_contribution_by_variant.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary of figures.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/final_alpha_ablation_mask_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_alpha_ablation_mask_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_alpha_ablation_mask_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_proxy_comparison_by_variant.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_maps_D0040_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_maps_D0040_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/stress_transmission_maps_D0040_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff for ChatGPT issue sync.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Diagnostic artifact or figure.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and reading order.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main negative-branch ablation diagnostic report.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/frozen_alpha_mechanics_replay_summary.csv",
+      "type": "table",
+      "description": "Deterministic frozen-alpha replay/evaluation summary.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/posthoc_crack_band_stress_ablation.csv",
+      "type": "table",
+      "description": "Cut-line stress ablation metrics by variant.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/variant_displacement_jump_proxy.csv",
+      "type": "table",
+      "description": "Displacement jump proxy by variant and cut line.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/variant_energy_comparison.csv",
+      "type": "table",
+      "description": "Energy contribution comparison by variant.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/variant_reaction_comparison.csv",
+      "type": "table",
+      "description": "Reaction proxy comparison by variant.",
+      "required_for_chatgpt": true
+    }
+  ]
+}
