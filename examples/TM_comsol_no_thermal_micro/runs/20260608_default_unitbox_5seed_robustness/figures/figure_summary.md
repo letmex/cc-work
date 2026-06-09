@@ -1,0 +1,50 @@
+# Figure Summary
+
+This package includes per-seed final field figures and combined evolution curves. Visual observations are diagnostic only and do not claim physical validation.
+
+| filename | what it plots | visual takeaway | conclusion support |
+|---|---|---|---|
+| `alpha_mean_evolution_by_seed.png` | alpha_mean versus Delta for seeds 7, 13, 21, 42, 99 plus seed 2 reference | All completed seeds follow closely grouped alpha_mean evolution. | Supports seed-trend diagnostic only. |
+| `alpha_max_evolution_by_seed.png` | alpha_max versus Delta | All completed seeds reach near-unity maximum alpha by the final D0020 steps. | Diagnostic observation. |
+| `alpha_gt_0p5_area_fraction_by_seed.png` | Area fraction with alpha > 0.5 versus Delta | Area fraction remains in a narrow band across seeds. | Diagnostic observation. |
+| `bulk_notch_he_ratio_by_seed.png` | bulk/notch He_current ratio versus Delta | Final ratios remain small for the completed seeds. | Supports branch-localization diagnostic. |
+| `bottom_notch_he_ratio_by_seed.png` | bottom-right/notch He_current ratio versus Delta | Final bottom-right ratios remain small for the completed seeds. | Supports absence of dominant bottom-right branch in these seeds. |
+| `reaction_evolution_by_seed.png` | reaction_N_tm_eff versus Delta | Reaction remains positive and comparable in order across seeds. | Diagnostic observation. |
+| `loss_log10_by_seed.png` | loss_log10 versus Delta | Loss levels remain comparable across completed seeds. | Optimization diagnostic. |
+| `reaction_strain_comparison_by_seed.png` | reaction versus engineering strain | Reaction curves have comparable order across seeds, with seed-to-seed spread. | Diagnostic observation. |
+| `seed7_default_unitbox/final_alpha_seed7_default_unitbox.png` | seed 7 new random seed: final alpha field | damage is notch-localized in the final snapshot. | Diagnostic support only, not physical validation. |
+| `seed7_default_unitbox/final_He_current_seed7_default_unitbox.png` | seed 7 new random seed: final He_current field | peak drive is located near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed7_default_unitbox/final_He_history_seed7_default_unitbox.png` | seed 7 new random seed: final He_history field | history-field peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed7_default_unitbox/final_mechanics_drive_seed7_default_unitbox.png` | seed 7 new random seed: final mechanics_drive field | training drive peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed7_default_unitbox/final_fields_panel_seed7_default_unitbox.png` | seed 7 new random seed: multi-field final panel | compact view of alpha, displacement and drive fields. | Diagnostic support only, not physical validation. |
+| `seed7_default_unitbox/reaction_strain_seed7_default_unitbox.png` | seed 7 new random seed: per-seed reaction-strain curve | reaction remains positive through the final step. | Diagnostic support only, not physical validation. |
+| `seed13_default_unitbox/final_alpha_seed13_default_unitbox.png` | seed 13 new random seed: final alpha field | damage is notch-localized in the final snapshot. | Diagnostic support only, not physical validation. |
+| `seed13_default_unitbox/final_He_current_seed13_default_unitbox.png` | seed 13 new random seed: final He_current field | peak drive is located near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed13_default_unitbox/final_He_history_seed13_default_unitbox.png` | seed 13 new random seed: final He_history field | history-field peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed13_default_unitbox/final_mechanics_drive_seed13_default_unitbox.png` | seed 13 new random seed: final mechanics_drive field | training drive peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed13_default_unitbox/final_fields_panel_seed13_default_unitbox.png` | seed 13 new random seed: multi-field final panel | compact view of alpha, displacement and drive fields. | Diagnostic support only, not physical validation. |
+| `seed13_default_unitbox/reaction_strain_seed13_default_unitbox.png` | seed 13 new random seed: per-seed reaction-strain curve | reaction remains positive through the final step. | Diagnostic support only, not physical validation. |
+| `seed21_default_unitbox/final_alpha_seed21_default_unitbox.png` | seed 21 new random seed: final alpha field | damage is notch-localized in the final snapshot. | Diagnostic support only, not physical validation. |
+| `seed21_default_unitbox/final_He_current_seed21_default_unitbox.png` | seed 21 new random seed: final He_current field | peak drive is located near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed21_default_unitbox/final_He_history_seed21_default_unitbox.png` | seed 21 new random seed: final He_history field | history-field peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed21_default_unitbox/final_mechanics_drive_seed21_default_unitbox.png` | seed 21 new random seed: final mechanics_drive field | training drive peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed21_default_unitbox/final_fields_panel_seed21_default_unitbox.png` | seed 21 new random seed: multi-field final panel | compact view of alpha, displacement and drive fields. | Diagnostic support only, not physical validation. |
+| `seed21_default_unitbox/reaction_strain_seed21_default_unitbox.png` | seed 21 new random seed: per-seed reaction-strain curve | reaction remains positive through the final step. | Diagnostic support only, not physical validation. |
+| `seed42_default_unitbox/final_alpha_seed42_default_unitbox.png` | seed 42 new random seed: final alpha field | damage is notch-localized in the final snapshot. | Diagnostic support only, not physical validation. |
+| `seed42_default_unitbox/final_He_current_seed42_default_unitbox.png` | seed 42 new random seed: final He_current field | peak drive is located near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed42_default_unitbox/final_He_history_seed42_default_unitbox.png` | seed 42 new random seed: final He_history field | history-field peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed42_default_unitbox/final_mechanics_drive_seed42_default_unitbox.png` | seed 42 new random seed: final mechanics_drive field | training drive peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed42_default_unitbox/final_fields_panel_seed42_default_unitbox.png` | seed 42 new random seed: multi-field final panel | compact view of alpha, displacement and drive fields. | Diagnostic support only, not physical validation. |
+| `seed42_default_unitbox/reaction_strain_seed42_default_unitbox.png` | seed 42 new random seed: per-seed reaction-strain curve | reaction remains positive through the final step. | Diagnostic support only, not physical validation. |
+| `seed99_default_unitbox/final_alpha_seed99_default_unitbox.png` | seed 99 new random seed: final alpha field | damage is notch-localized in the final snapshot. | Diagnostic support only, not physical validation. |
+| `seed99_default_unitbox/final_He_current_seed99_default_unitbox.png` | seed 99 new random seed: final He_current field | peak drive is located near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed99_default_unitbox/final_He_history_seed99_default_unitbox.png` | seed 99 new random seed: final He_history field | history-field peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed99_default_unitbox/final_mechanics_drive_seed99_default_unitbox.png` | seed 99 new random seed: final mechanics_drive field | training drive peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed99_default_unitbox/final_fields_panel_seed99_default_unitbox.png` | seed 99 new random seed: multi-field final panel | compact view of alpha, displacement and drive fields. | Diagnostic support only, not physical validation. |
+| `seed99_default_unitbox/reaction_strain_seed99_default_unitbox.png` | seed 99 new random seed: per-seed reaction-strain curve | reaction remains positive through the final step. | Diagnostic support only, not physical validation. |
+| `seed2_reference_default_unitbox/final_alpha_seed2_reference_default_unitbox.png` | seed 2 reference: final alpha field | damage is notch-localized in the final snapshot. | Diagnostic support only, not physical validation. |
+| `seed2_reference_default_unitbox/final_He_current_seed2_reference_default_unitbox.png` | seed 2 reference: final He_current field | peak drive is located near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed2_reference_default_unitbox/final_He_history_seed2_reference_default_unitbox.png` | seed 2 reference: final He_history field | history-field peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed2_reference_default_unitbox/final_mechanics_drive_seed2_reference_default_unitbox.png` | seed 2 reference: final mechanics_drive field | training drive peak remains near the notch-tip window. | Diagnostic support only, not physical validation. |
+| `seed2_reference_default_unitbox/final_fields_panel_seed2_reference_default_unitbox.png` | seed 2 reference: multi-field final panel | compact view of alpha, displacement and drive fields. | Diagnostic support only, not physical validation. |
+| `seed2_reference_default_unitbox/reaction_strain_seed2_reference_default_unitbox.png` | seed 2 reference: per-seed reaction-strain curve | reaction remains positive through the final step. | Diagnostic support only, not physical validation. |

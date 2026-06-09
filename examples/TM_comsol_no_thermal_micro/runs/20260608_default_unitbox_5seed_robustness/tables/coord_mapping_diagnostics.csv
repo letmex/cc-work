@@ -1,0 +1,7 @@
+case,seed,new_random_seed,reference_only,top_u_mode,top_u_abs_max,top_v_error_max,bottom_u_abs_max,bottom_v_abs_max,max_He_current_x,max_He_current_y,coord_normalization
+seed7_default_unitbox,7,yes,no,free,5.0901567192340735e-06,0.0,0.0,0.0,0.0052397302351891,0.0050164656713604,unit_box
+seed13_default_unitbox,13,yes,no,free,8.709379471838474e-06,0.0,0.0,0.0,0.0050459457561373,0.0050400774925947,unit_box
+seed21_default_unitbox,21,yes,no,free,5.730404154746793e-06,0.0,0.0,0.0,0.0050459457561373,0.0050400774925947,unit_box
+seed42_default_unitbox,42,yes,no,free,4.0329932744498365e-06,0.0,0.0,0.0,0.0050459457561373,0.0050400774925947,unit_box
+seed99_default_unitbox,99,yes,no,free,4.233422714605695e-06,0.0,0.0,0.0,0.0050459457561373,0.0050400774925947,unit_box
+seed2_reference_default_unitbox,2,no,yes,free,4.975473530066665e-06,0.0,0.0,0.0,0.0050459457561373,0.0050400774925947,unit_box

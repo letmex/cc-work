@@ -1,0 +1,16 @@
+case,event,metric,threshold,step,Delta,value
+seed7_default_unitbox,first_alpha_mean_gt_0p05,alpha_mean,0.05,6,3e-05,0.054407317330406574
+seed7_default_unitbox,first_alpha_mean_gt_0p1,alpha_mean,0.1,10,4.7e-05,0.10219351497924775
+seed7_default_unitbox,first_alpha_mean_gt_0p2,alpha_mean,0.2,,,
+seed7_default_unitbox,first_alpha_mean_gt_0p4,alpha_mean,0.4,,,
+seed7_default_unitbox,first_bulk_He_ratio_gt_0p25,bulk_He_current_p95_over_notch_tip_He_current_max_valid,0.25,,,
+seed7_default_unitbox,first_bulk_He_ratio_gt_0p5,bulk_He_current_p95_over_notch_tip_He_current_max_valid,0.5,,,
+seed7_default_unitbox,first_bulk_drive_ratio_gt_0p25,bulk_mechanics_drive_p95_over_notch_tip_mechanics_drive_max_valid,0.25,,,
+seed7_default_unitbox,first_bulk_drive_ratio_gt_0p5,bulk_mechanics_drive_p95_over_notch_tip_mechanics_drive_max_valid,0.5,,,
+seed7_default_unitbox,first_bottom_He_ratio_gt_0p5,bottom_right_He_current_max_over_notch_tip_He_current_max_valid,0.5,,,
+seed7_default_unitbox,first_bottom_drive_ratio_gt_0p5,bottom_right_mechanics_drive_max_over_notch_tip_mechanics_drive_max_valid,0.5,,,
+seed7_default_unitbox,first_notch_He_gt_1e-8,notch_tip_He_current_max,1e-08,0,1e-06,4.346950663602911e-05
+seed7_default_unitbox,first_notch_He_gt_1e-6,notch_tip_He_current_max,1e-06,0,1e-06,4.346950663602911e-05
+seed7_default_unitbox,first_bulk_He_p95_gt_1e-8,bulk_He_current_p95,1e-08,0,1e-06,8.540193732642361e-07
+seed7_default_unitbox,first_bulk_He_p95_gt_1e-6,bulk_He_current_p95,1e-06,1,5e-06,2.508827519704937e-05
+seed7_default_unitbox,first_step_where_ratio_valid,notch_tip_He_current_max,1e-08,0,1e-06,4.346950663602911e-05

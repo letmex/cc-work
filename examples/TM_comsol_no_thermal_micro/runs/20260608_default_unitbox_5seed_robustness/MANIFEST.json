@@ -1,0 +1,743 @@
+{
+  "package": "20260608_default_unitbox_5seed_robustness",
+  "files": [
+    {
+      "path": "artifacts/build_seed_robustness_package.py",
+      "type": "artifact",
+      "description": "Package generation script.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_seed13_default_unitbox.md",
+      "type": "report",
+      "description": "Per-run analysis summary from analyze_drive_broadening_stepwise.py.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_seed21_default_unitbox.md",
+      "type": "report",
+      "description": "Per-run analysis summary from analyze_drive_broadening_stepwise.py.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_seed2_reference_default_unitbox.md",
+      "type": "report",
+      "description": "Per-run analysis summary from analyze_drive_broadening_stepwise.py.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_seed42_default_unitbox.md",
+      "type": "report",
+      "description": "Per-run analysis summary from analyze_drive_broadening_stepwise.py.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_seed7_default_unitbox.md",
+      "type": "report",
+      "description": "Per-run analysis summary from analyze_drive_broadening_stepwise.py.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/summary_seed99_default_unitbox.md",
+      "type": "report",
+      "description": "Per-run analysis summary from analyze_drive_broadening_stepwise.py.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands executed for runs, diagnostics and verification.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/alpha_gt_0p5_area_fraction_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/alpha_max_evolution_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/alpha_mean_evolution_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/bottom_notch_he_ratio_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/bulk_notch_he_ratio_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Package artifact.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/loss_log10_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_evolution_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_strain_comparison_by_seed.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_alpha_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_disp_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_fields_panel_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_He_current_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_He_history_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_He_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_HI_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_HII_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_mechanics_drive_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_u_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/final_v_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/reaction_strain_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/stress_strain_data_seed13_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed13_default_unitbox/stress_strain_seed13_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_alpha_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_disp_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_fields_panel_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_He_current_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_He_history_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_He_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_HI_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_HII_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_mechanics_drive_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_u_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/final_v_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/reaction_strain_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/stress_strain_data_seed21_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed21_default_unitbox/stress_strain_seed21_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_alpha_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_disp_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_fields_panel_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_He_current_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_He_history_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_He_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_HI_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_HII_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_mechanics_drive_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_u_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/final_v_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/reaction_strain_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/stress_strain_data_seed2_reference_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed2_reference_default_unitbox/stress_strain_seed2_reference_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_alpha_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_disp_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_fields_panel_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_He_current_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_He_history_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_He_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_HI_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_HII_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_mechanics_drive_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_u_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/final_v_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/reaction_strain_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/stress_strain_data_seed42_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed42_default_unitbox/stress_strain_seed42_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_alpha_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_disp_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_fields_panel_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_He_current_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_He_history_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_He_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_HI_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_HII_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_mechanics_drive_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_u_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/final_v_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/reaction_strain_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/stress_strain_data_seed7_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed7_default_unitbox/stress_strain_seed7_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_alpha_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_disp_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_fields_panel_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_He_current_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_He_history_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_He_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_HI_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_HII_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_mechanics_drive_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_u_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/final_v_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/reaction_strain_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/stress_strain_data_seed99_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/seed99_default_unitbox/stress_strain_seed99_default_unitbox.png",
+      "type": "figure",
+      "description": "Diagnostic figure; see figures/figure_summary.md for interpretation.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff comment for GitHub issue sync.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Questions for ChatGPT after reading the package.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and reading order.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main seed robustness report.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/broadening_events_by_seed.csv",
+      "type": "table",
+      "description": "Per-seed threshold event timing diagnostics.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/broadening_events_seed13_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/broadening_events_seed21_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/broadening_events_seed2_reference_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/broadening_events_seed42_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/broadening_events_seed7_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/broadening_events_seed99_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/coord_mapping_diagnostics.csv",
+      "type": "table",
+      "description": "Boundary and coordinate mapping diagnostic values by seed.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/final_seed_comparison.csv",
+      "type": "table",
+      "description": "Final metrics and classification for five new seeds plus seed 2 reference.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/reaction_stress_strain_by_seed.csv",
+      "type": "table",
+      "description": "Reaction and stress-strain curves by seed.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/stepwise_seed13_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/stepwise_seed21_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/stepwise_seed2_reference_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/stepwise_seed42_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/stepwise_seed7_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/stepwise_seed99_default_unitbox.csv",
+      "type": "table",
+      "description": "Package artifact.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/stepwise_seed_summary.csv",
+      "type": "table",
+      "description": "Stepwise evolution metrics for five new seeds plus seed 2 reference.",
+      "required_for_chatgpt": true
+    }
+  ]
+}
