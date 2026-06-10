@@ -1,0 +1,40 @@
+# Commands Run
+
+```powershell
+# From D:\Desktop\新建文件夹\cc-work
+git pull origin main
+
+# From D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 23 TrainableReLU 3.0 --full --n-rprop 300 --n-lbfgs 1 --load-case shear --load-schedule-file load_schedules/load_schedule_S0050_shear.csv --run-suffix seed23_S0050_shear
+D:\anaconda3\envs\torch_env\python.exe postprocess_results.py --model-dir outputs\checkpoints\seed23_S0050_shear --result-dir outputs\results\seed23_S0050_shear --device cpu
+```
+
+Verification commands are appended after package generation.
+
+Verification commands:
+
+```powershell
+# Package generator syntax check; cache removed afterward
+D:\anaconda3\envs\torch_env\python.exe -m py_compile artifacts\generate_package.py
+
+# Real source syntax check; cache removed afterward
+D:\anaconda3\envs\torch_env\python.exe -m py_compile main.py config.py train_mixed_tm.py mixed_mode_tm.py history_field_mixed_tm.py postprocess_results.py plot_results.py field_computation.py
+
+# Focused shear tests
+D:\anaconda3\envs\torch_env\python.exe -m pytest -p no:cacheprovider tests\test_shear_load_case.py -q
+
+# Normal-output forbidden legacy/corrected scan; no matches
+rg -n "legacy_top_sigma|reaction_N_legacy|nominal_stress_energy_MPa" outputs\results\seed23_S0050_shear\curves outputs\results\seed23_S0050_shear\figures\stress_strain_source_seed23_shear.txt
+
+# Forbidden route scan in normal source/docs; no matches
+rg -n "phase_proximal|eta_eff|split_mode=|mechanics_mode=|legacy_top_sigma|reaction_N_legacy|corrected|clean|staggered|alpha_init_intact|apply_alpha_init_intact|voldev|current_split|MIXED_SPLIT_MODES|--mixed-mechanics-mode|--alpha-init-intact|--solve-scheme|--stagger-iters" config.py main.py mixed_mode_tm.py compute_energy_mixed_tm.py train_mixed_tm.py history_field_mixed_tm.py postprocess_results.py plot_results.py README.md POSTPROCESS_WORKFLOW.md PROJECT_STRUCTURE.md
+
+# Full tests with bytecode disabled after cache cleanup
+$env:PYTHONDONTWRITEBYTECODE='1'; D:\anaconda3\envs\torch_env\python.exe -B -m pytest -p no:cacheprovider tests -q
+```
+
+Verification results:
+- py_compile passed for package generator and real source scripts.
+- Focused shear tests passed: 6 passed.
+- Forbidden scans returned no matches.
+- Full tests passed after removing py_compile-created cache directories: 44 passed, 8 warnings.

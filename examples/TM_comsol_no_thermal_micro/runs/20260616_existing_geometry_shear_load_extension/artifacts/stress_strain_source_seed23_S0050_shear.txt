@@ -1,0 +1,4 @@
+source=energy_conjugate
+stress_strain_csv=outputs\results\seed23_S0050_shear\curves\stress_strain_by_step.csv
+selected_seed=23
+primary_metric=nominal_shear_stress_energy_MPa
