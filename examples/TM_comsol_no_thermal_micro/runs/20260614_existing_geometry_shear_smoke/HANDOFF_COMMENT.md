@@ -1,6 +1,6 @@
 ## Codex handoff: Existing-geometry shear smoke
 
-Commit: PENDING
+Commit: 324be2f801c3f8c44a5742cce2e0619235deb31a
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260614_existing_geometry_shear_smoke`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260614_existing_geometry_shear_smoke/REPORT.md`
 
