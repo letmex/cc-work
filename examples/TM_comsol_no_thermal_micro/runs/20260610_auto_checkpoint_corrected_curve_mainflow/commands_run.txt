@@ -1,0 +1,5 @@
+git pull origin main
+D:\anaconda3\envs\torch_env\python.exe -m pytest D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro\tests\test_history_mode_controls.py::test_save_step_checkpoints_defaults_to_true -q
+D:\anaconda3\envs\torch_env\python.exe -m py_compile config.py main.py train_mixed_tm.py corrected_reaction_postprocess.py plot_clean_tm_results.py tests\test_history_mode_controls.py tests\test_corrected_reaction_postprocess.py
+D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q
+D:\anaconda3\envs\torch_env\python.exe main.py 2 20 7 TrainableReLU 3.0 --smoke --max-steps 2 --delta-max 1e-6 --n-rprop 1 --n-lbfgs 0 --top-u-mode free --coord-normalization unit_box --run-suffix auto_ckpt_default_smoke

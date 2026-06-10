@@ -1,0 +1,44 @@
+diff --git a/examples/TM_comsol_no_thermal_micro/config.py b/examples/TM_comsol_no_thermal_micro/config.py
+--- a/examples/TM_comsol_no_thermal_micro/config.py
++++ b/examples/TM_comsol_no_thermal_micro/config.py
+@@
+     parser.add_argument(
+         "--save-step-checkpoints",
+         nargs="?",
+         const=True,
+-        default=False,
++        default=True,
+         type=_str_to_bool,
+-        help="Save composite per-loading-step checkpoints. Default false.",
++        help="Save composite per-loading-step checkpoints. Default true; pass false to disable.",
+     )
+
+diff --git a/examples/TM_comsol_no_thermal_micro/tests/test_history_mode_controls.py b/examples/TM_comsol_no_thermal_micro/tests/test_history_mode_controls.py
+--- a/examples/TM_comsol_no_thermal_micro/tests/test_history_mode_controls.py
++++ b/examples/TM_comsol_no_thermal_micro/tests/test_history_mode_controls.py
+@@
++import ast
+ from pathlib import Path
+@@
++def test_save_step_checkpoints_defaults_to_true():
++    config_path = ROOT / "config.py"
++    tree = ast.parse(config_path.read_text(encoding="utf-8"))
++    default_value = None
++    for node in ast.walk(tree):
++        if not isinstance(node, ast.Call):
++            continue
++        if not isinstance(node.func, ast.Attribute):
++            continue
++        if node.func.attr != "add_argument":
++            continue
++        if not node.args:
++            continue
++        first_arg = node.args[0]
++        if not isinstance(first_arg, ast.Constant) or first_arg.value != "--save-step-checkpoints":
++            continue
++        for keyword in node.keywords:
++            if keyword.arg == "default":
++                default_value = ast.literal_eval(keyword.value)
++                break
++        break
++    assert default_value is True

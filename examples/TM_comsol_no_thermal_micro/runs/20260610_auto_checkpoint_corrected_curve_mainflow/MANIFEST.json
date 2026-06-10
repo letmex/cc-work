@@ -1,0 +1,84 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260610_auto_checkpoint_corrected_curve_mainflow",
+  "purpose": "Evidence that TM_comsol_no_thermal_micro training now saves step checkpoints by default and automatically produces corrected stress-strain curves after training.",
+  "files": [
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and read order.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Root cause, code change, verification, and interpretation.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands executed for pull, tests, compile, and smoke run.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Follow-up questions for ChatGPT.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Machine-readable package manifest.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only issue handoff.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/default_checkpoint_smoke_summary.csv",
+      "type": "table",
+      "description": "Summary proving default training wrote checkpoints and corrected curve outputs.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/smoke_corrected_reaction_availability.csv",
+      "type": "table",
+      "description": "Postprocessor availability status for the smoke run.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/smoke_corrected_stress_strain_by_step.csv",
+      "type": "table",
+      "description": "Corrected stress-strain table generated automatically after the smoke training run.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "States that no figures were generated.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "artifacts/source_patch.diff",
+      "type": "artifact",
+      "description": "Minimal source patch summary.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "artifacts/config_after.py",
+      "type": "artifact",
+      "description": "Snapshot of config.py after the change.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/test_history_mode_controls_after.py",
+      "type": "artifact",
+      "description": "Snapshot of the updated test file.",
+      "required_for_chatgpt": false
+    }
+  ]
+}
