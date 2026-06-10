@@ -1,6 +1,6 @@
 ## Codex handoff: single verified pipeline cleanup
 
-Commit: PENDING
+Commit: 00e52bcdb0750e924b8359d8b3db6c300a17907d
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260613_single_verified_pipeline_cleanup
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260613_single_verified_pipeline_cleanup/REPORT.md
 
