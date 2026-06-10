@@ -1,0 +1,2 @@
+﻿"seed","rows","exact_reaction_computable","corrected_csv_location","plot_auto_discovery","primary_metric","primary_status","primary_peak_MPa","primary_final_MPa","primary_final_over_peak","legacy_peak_MPa","legacy_final_MPa","legacy_final_over_peak"
+"42","34","True","result_dir/curves","True","nominal_stress_energy_exact_MPa","energy_conjugate_primary","182.820635382086","0.828355223347899","0.00453097223744288","91.6370766815224","86.6391686779654","0.945459761653825"

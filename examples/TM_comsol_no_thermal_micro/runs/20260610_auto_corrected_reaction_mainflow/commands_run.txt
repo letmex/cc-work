@@ -1,0 +1,15 @@
+git -C <cc-work> pull origin main
+
+D:/anaconda3/envs/torch_env/python.exe -m pytest D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/tests/test_corrected_reaction_postprocess.py -q
+
+D:/anaconda3/envs/torch_env/python.exe -m py_compile D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/corrected_reaction_postprocess.py D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/main.py D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/plot_clean_tm_results.py
+
+D:/anaconda3/envs/torch_env/python.exe D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/corrected_reaction_postprocess.py --model-dir <TM_comsol_no_thermal_micro>/<checkpointed_D0020_seed42_model_dir> --result-dir <TM_comsol_no_thermal_micro>/results/<checkpointed_D0020_seed42_result_dir> --out-dir <TM_comsol_no_thermal_micro>/results/corrected_reaction_postprocess_smoke_seed42 --device cpu
+
+D:/anaconda3/envs/torch_env/python.exe -m pytest D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/tests -q
+
+D:/anaconda3/envs/torch_env/python.exe D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/corrected_reaction_postprocess.py --model-dir <TM_comsol_no_thermal_micro>/<checkpointed_D0020_seed42_model_dir> --result-dir <TM_comsol_no_thermal_micro>/results/<checkpointed_D0020_seed42_result_dir> --device cpu
+
+D:/anaconda3/envs/torch_env/python.exe D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/plot_clean_tm_results.py --result-dir <TM_comsol_no_thermal_micro>/results/<checkpointed_D0020_seed42_result_dir> --out-dir <TM_comsol_no_thermal_micro>/results/corrected_reaction_postprocess_smoke_seed42 --run-label auto_corrected_chain_smoke_seed42 --dpi 80
+
+D:/anaconda3/envs/torch_env/python.exe D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/plot_clean_tm_results.py --result-dir <TM_comsol_no_thermal_micro>/results/<checkpointed_D0020_seed42_result_dir> --out-dir <TM_comsol_no_thermal_micro>/results/clean_figures/result_curves_auto_discovery_seed42 --run-label result_curves_auto_discovery_seed42 --dpi 80
