@@ -1,0 +1,8 @@
+path,type,action,reason
+alpha_initialization.py,source,deleted,"removed alpha-init-intact route"
+ALPHA_INIT_INTACT_COMPARISON_REPORT.md,root report,deleted,"obsolete diagnostic report"
+TRUE_STAGGERED_DIAGNOSTIC_REPORT.md,root report,deleted,"obsolete diagnostic report"
+UNIFORM_BACKGROUND_DAMAGE_ROOT_CAUSE_REPORT.md,root report,deleted,"obsolete diagnostic report"
+PLATFORM_EQUIVALENCE_DIAGNOSTIC_REPORT.md,root report,deleted,"obsolete diagnostic report"
+outputs/*,managed generated content,cleared,"keep managed directory skeleton only"
+tests/source cache dirs,cache,deleted,"root cleanliness"

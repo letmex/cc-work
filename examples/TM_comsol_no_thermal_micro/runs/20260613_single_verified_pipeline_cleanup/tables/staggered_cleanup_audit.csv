@@ -1,0 +1,4 @@
+old path / option,old behavior,new behavior,deleted / retained,reason,tests updated
+--solve-scheme,selected coupled vs alternate solver branch,"no normal selectable solver scheme",deleted,"only verified coupled training function remains",yes
+--stagger-iters,configured old inner alternations,"not available",deleted,"alternate branch removed",yes
+debug stagger reports,"root-level one-off reports","deleted from project root",deleted,"obsolete diagnostic material",yes

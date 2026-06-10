@@ -1,0 +1,4 @@
+entry point,old role,new role,deleted / retained,reason
+postprocess_results.py,"mixed compatibility plus primary postprocess","single normal postprocess entry",retained,"functional name and training auto-call"
+plot_results.py,"plot helper with compatibility fallbacks","functional plotting helper for normal tables",retained,"field/result plotting remains useful"
+old compatibility wrappers,"alternate script names or wrapper functions","not present in normal code",deleted,"avoid duplicate user-facing postprocess paths"

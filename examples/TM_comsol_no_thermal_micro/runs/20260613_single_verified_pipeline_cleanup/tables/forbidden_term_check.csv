@@ -1,0 +1,5 @@
+check,scope,result,notes
+forbidden old route terms,"normal source/docs",pass,"rg returned no matches"
+root artifact scan,"example root",pass,"no debug/run/cache root artifacts"
+postprocess old names,"postprocess_results.py and plot_results.py",pass,"no old compatibility names"
+alpha-init-intact route,"normal code",pass,"file and branch removed"

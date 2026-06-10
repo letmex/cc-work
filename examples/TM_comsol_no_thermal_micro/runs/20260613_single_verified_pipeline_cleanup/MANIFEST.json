@@ -1,0 +1,196 @@
+{
+    "files":  [
+                  {
+                      "path":  "README.md",
+                      "description":  "Package overview",
+                      "required_for_chatgpt":  true,
+                      "type":  "report"
+                  },
+                  {
+                      "path":  "REPORT.md",
+                      "description":  "Main cleanup report",
+                      "required_for_chatgpt":  true,
+                      "type":  "report"
+                  },
+                  {
+                      "path":  "commands_run.txt",
+                      "description":  "Commands and observed results",
+                      "required_for_chatgpt":  true,
+                      "type":  "command_log"
+                  },
+                  {
+                      "path":  "next_questions.md",
+                      "description":  "Open questions",
+                      "required_for_chatgpt":  true,
+                      "type":  "handoff"
+                  },
+                  {
+                      "path":  "HANDOFF_COMMENT.md",
+                      "description":  "Markdown-only issue handoff",
+                      "required_for_chatgpt":  true,
+                      "type":  "handoff"
+                  },
+                  {
+                      "path":  "figures/figure_summary.md",
+                      "description":  "No-figure note",
+                      "required_for_chatgpt":  true,
+                      "type":  "figure_summary"
+                  },
+                  {
+                      "path":  "tables/alpha_init_cleanup_audit.csv",
+                      "description":  "Audit table alpha_init_cleanup_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/cli_simplification_audit.csv",
+                      "description":  "Audit table cli_simplification_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/deleted_root_artifacts.csv",
+                      "description":  "Audit table deleted_root_artifacts",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/forbidden_term_check.csv",
+                      "description":  "Audit table forbidden_term_check",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/postprocess_entrypoint_cleanup_audit.csv",
+                      "description":  "Audit table postprocess_entrypoint_cleanup_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/reaction_metric_cleanup_audit.csv",
+                      "description":  "Audit table reaction_metric_cleanup_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/split_mode_cleanup_audit.csv",
+                      "description":  "Audit table split_mode_cleanup_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/staggered_cleanup_audit.csv",
+                      "description":  "Audit table staggered_cleanup_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "tables/test_pruning_audit.csv",
+                      "description":  "Audit table test_pruning_audit",
+                      "required_for_chatgpt":  true,
+                      "type":  "table"
+                  },
+                  {
+                      "path":  "artifacts/source/compute_energy_mixed_tm.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/config.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/history_field_mixed_tm.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/main.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/mixed_mode_tm.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/plot_results.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/postprocess_results.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/POSTPROCESS_WORKFLOW.md",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/PROJECT_STRUCTURE.md",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/README.md",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/source/train_mixed_tm.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/tests/test_coord_normalization.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/tests/test_history_mode_controls.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/tests/test_postprocess_results.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/tests/test_project_cleanup_interface.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/tests/test_project_directory_hygiene.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  },
+                  {
+                      "path":  "artifacts/tests/test_single_verified_pipeline.py",
+                      "description":  "Source/test snapshot",
+                      "required_for_chatgpt":  false,
+                      "type":  "artifact"
+                  }
+              ]
+}

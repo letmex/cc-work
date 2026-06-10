@@ -1,0 +1,4 @@
+old function / option,location,deleted / retained,reason,replacement behavior
+apply_alpha_init_intact,alpha_initialization.py,deleted,"not part of verified default route","default network initialization only"
+--alpha-init-intact,config.py,deleted,"removed alternative alpha initialization route","no CLI branch"
+alpha_init_intact training key,config/main,deleted,"no normal branch should trigger alpha rewrite","training_dict omits the key"

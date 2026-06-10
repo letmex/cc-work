@@ -1,0 +1,4 @@
+old metric,old file/table/figure usage,new metric,removed from normal output,retained only in audit/deprecated area,reason
+legacy top-boundary sigma integral,"normal postprocess CSV and plot compatibility columns",reaction_N_energy,yes,no,"normal stress-strain must use energy-conjugate checkpoint reaction"
+old nominal stress from top-boundary sigma,"parallel plotted curve",nominal_stress_energy_MPa,yes,no,"avoid ambiguous softening metric"
+old reaction status names,"compatibility table columns",reaction_metric_status,yes,no,"functional output contract"

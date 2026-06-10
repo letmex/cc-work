@@ -1,0 +1,6 @@
+old option / setting,old behavior,new behavior,normal command impact
+--mixed-mechanics-mode,"required/available for route selection","removed; history fixed in config","not needed"
+--pff-model,"selectable but only AT2 meaningful","AT2 fixed in config","not needed"
+--top-u-mode,"advanced override","default free remains; override retained for controlled diagnostics","not needed"
+--coord-normalization,"advanced override","default unit_box remains; override retained for controlled diagnostics","not needed"
+--solve-scheme,"selected alternate training scheme","removed","not needed"

@@ -1,0 +1,4 @@
+old symbol / option,old behavior,new behavior,deleted / retained,reason,tests updated
+MIXED_SPLIT_MODES,"exposed current/voldev/voldev_tension_only/tm_source choices","single tm_source implementation path",deleted,"avoid selectable unverified split branches",yes
+current split modes,"could be selected by config or code path","not available in normal code",deleted,"verified route uses history mechanics with tm_source split",yes
+mixed_mechanics CLI,"allowed selecting mechanics objective","mixed_mechanics_mode is fixed to history",deleted,"normal route should not expose divergent mechanics objectives",yes

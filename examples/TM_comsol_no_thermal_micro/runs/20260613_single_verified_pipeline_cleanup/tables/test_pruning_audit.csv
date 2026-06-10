@@ -1,0 +1,7 @@
+test file,old focus,new focus,action
+test_single_verified_pipeline.py,"new cleanup guard","single verified pipeline guard",retained
+test_history_mode_controls.py,"old alternatives existed","verified route and diagnostics only",rewritten
+test_project_cleanup_interface.py,"compatibility and old metric checks","functional names and energy metric",rewritten
+test_postprocess_results.py,"old metric promotion","energy reaction output contract",rewritten
+test_project_directory_hygiene.py,"root hygiene","root hygiene",retained
+test_coord_normalization.py,"coordinate normalization behavior","coordinate normalization behavior",retained
