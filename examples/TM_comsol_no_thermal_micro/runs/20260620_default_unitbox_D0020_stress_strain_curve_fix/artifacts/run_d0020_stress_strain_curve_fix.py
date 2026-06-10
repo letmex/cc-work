@@ -352,7 +352,7 @@ def write_reports(summary: pd.DataFrame) -> None:
     handoff = [
         "## Codex handoff: D0020 stress-strain curve fix",
         "",
-        "Commit: COMMIT_PLACEHOLDER",
+        "Commit: ae206f0",
         "Data folder: examples/TM_comsol_no_thermal_micro/runs/20260620_default_unitbox_D0020_stress_strain_curve_fix",
         "Main report: examples/TM_comsol_no_thermal_micro/runs/20260620_default_unitbox_D0020_stress_strain_curve_fix/REPORT.md",
         "",
