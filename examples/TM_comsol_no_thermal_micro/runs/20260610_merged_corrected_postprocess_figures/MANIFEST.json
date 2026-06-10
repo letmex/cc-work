@@ -1,0 +1,102 @@
+{
+  "package": "examples/TM_comsol_no_thermal_micro/runs/20260610_merged_corrected_postprocess_figures",
+  "purpose": "Evidence that corrected_reaction_postprocess.py now generates both corrected CSV files and clean PNG figures.",
+  "files": [
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "Package overview and read order.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "Main report for the merged postprocess-and-plot workflow.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "Commands used for pull, tests, compile, and seed23 verification.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "Follow-up questions.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "Machine-readable package manifest.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "Markdown-only handoff comment.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/merged_postprocess_summary.csv",
+      "type": "table",
+      "description": "Summary of the merged CSV+figure command behavior.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/seed23_generated_figures.csv",
+      "type": "table",
+      "description": "List of generated seed23 figure files.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/seed23_corrected_reaction_availability.csv",
+      "type": "table",
+      "description": "Corrected reaction availability for the seed23 run.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/seed23_corrected_stress_strain_by_step.csv",
+      "type": "table",
+      "description": "Corrected stress-strain data used by the generated stress-strain image.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "Text summary of included figure files.",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "figures/stress_strain_seed23_D0020_corrected.png",
+      "type": "figure",
+      "description": "Corrected stress-strain image.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/reaction_strain_seed23_D0020_corrected.png",
+      "type": "figure",
+      "description": "Reaction-strain image.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/final_fields_panel_seed23_D0020_corrected.png",
+      "type": "figure",
+      "description": "Final fields panel image.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/corrected_reaction_postprocess_after.py",
+      "type": "artifact",
+      "description": "Snapshot of merged postprocess script.",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/test_corrected_reaction_postprocess_after.py",
+      "type": "artifact",
+      "description": "Snapshot of updated test file.",
+      "required_for_chatgpt": false
+    }
+  ]
+}

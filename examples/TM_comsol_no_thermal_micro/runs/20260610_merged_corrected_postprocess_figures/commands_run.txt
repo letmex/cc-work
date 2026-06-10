@@ -1,0 +1,6 @@
+git pull origin main
+D:\anaconda3\envs\torch_env\python.exe -m pytest tests\test_corrected_reaction_postprocess.py::test_corrected_postprocess_generates_clean_figures_from_corrected_curve -q
+D:\anaconda3\envs\torch_env\python.exe -m py_compile corrected_reaction_postprocess.py plot_clean_tm_results.py tests\test_corrected_reaction_postprocess.py
+D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q
+$run='full_hl_8_Neurons_400_activation_TrainableReLU_coeff_3.0_Seed_23_PFFmodel_AT2_l0_0.00015_comsolMicroNoThermal_mixedH_TM_split_tm_source_mech_history_tmEpsR_1em05_topUfree_coordUnitBox_gradient_numerical_D0020_seed23_history_default_unitbox'
+D:\anaconda3\envs\torch_env\python.exe corrected_reaction_postprocess.py --model-dir $run --result-dir "results\$run" --out-dir "results\$run\curves" --figure-dir "results\$run\figures" --run-label "seed23_D0020_corrected" --device cpu --figure-dpi 160
