@@ -1,6 +1,6 @@
 ## Codex handoff: Project memory for next window
 
-Commit: TO_BE_FILLED_AFTER_COMMIT
+Commit: cbc83e6cfc9c732d1e92fabd253a46130e18b4a6
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260617_project_memory_handoff`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260617_project_memory_handoff/REPORT.md`
 
