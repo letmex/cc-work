@@ -1,0 +1,2 @@
+status,model_dir,result_dir,checkpoint_count,reaction_table,stress_strain_table,exact_reaction_computable
+energy_conjugate,outputs\checkpoints\seed23_S0030_shear,outputs\results\seed23_S0030_shear,21,outputs\results\seed23_S0030_shear\curves\reaction_by_step.csv,outputs\results\seed23_S0030_shear\curves\stress_strain_by_step.csv,True

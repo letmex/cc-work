@@ -1,0 +1,242 @@
+[
+  {
+    "path": "artifacts/diagnostics_mixed_tm_summary_seed23_S0030_shear.csv",
+    "type": "artifact",
+    "description": "artifacts/diagnostics mixed tm summary seed23 S0030 shear.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/model_settings_seed23_S0030_shear.txt",
+    "type": "artifact",
+    "description": "artifacts/model settings seed23 S0030 shear.txt",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/reaction_metric_availability_seed23_S0030_shear.csv",
+    "type": "artifact",
+    "description": "artifacts/reaction metric availability seed23 S0030 shear.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/config.py",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/config.py",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/field_computation.py",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/field computation.py",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/load_schedules__load_schedule_S0030_shear.csv",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/load schedules  load schedule S0030 shear.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/main.py",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/main.py",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/plot_results.py",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/plot results.py",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/postprocess_results.py",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/postprocess results.py",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/POSTPROCESS_WORKFLOW.md",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/POSTPROCESS WORKFLOW.md",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/README.md",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/README.md",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/tests__test_shear_load_case.py",
+    "type": "artifact",
+    "description": "artifacts/source snapshots/tests  test shear load case.py",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "commands run.txt",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "figures/figure summary.md",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/final_alpha_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final alpha seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_fields_panel_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final fields panel seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_HI_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final HI seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_HII_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final HII seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_mechanics_drive_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final mechanics drive seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_u_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final u seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/final_v_seed23_shear.png",
+    "type": "figure",
+    "description": "figures/final v seed23 shear.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/shear_alpha_max_by_step.png",
+    "type": "figure",
+    "description": "figures/shear alpha max by step.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/shear_HII_HI_ratio_by_step.png",
+    "type": "figure",
+    "description": "figures/shear HII HI ratio by step.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/shear_reaction_strain_seed23.png",
+    "type": "figure",
+    "description": "figures/shear reaction strain seed23.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/shear_stress_strain_seed23.png",
+    "type": "figure",
+    "description": "figures/shear stress strain seed23.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/shear_top_v_absmax_over_Delta_by_step.png",
+    "type": "figure",
+    "description": "figures/shear top v absmax over Delta by step.png",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "HANDOFF COMMENT.md",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "next questions.md",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "README.md",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "REPORT.md",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/shear_checkpoint_availability.csv",
+    "type": "table",
+    "description": "tables/shear checkpoint availability.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/shear_damage_drive_summary.csv",
+    "type": "table",
+    "description": "tables/shear damage drive summary.csv",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/shear_output_file_manifest.csv",
+    "type": "table",
+    "description": "tables/shear output file manifest.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/shear_reaction_by_step.csv",
+    "type": "table",
+    "description": "tables/shear reaction by step.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/shear_stress_strain_by_step.csv",
+    "type": "table",
+    "description": "tables/shear stress strain by step.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/shear_stronger_vs_smoke_comparison.csv",
+    "type": "table",
+    "description": "tables/shear stronger vs smoke comparison.csv",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/shear_top_v_free_diagnostic.csv",
+    "type": "table",
+    "description": "tables/shear top v free diagnostic.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/shear_training_loss_summary.csv",
+    "type": "table",
+    "description": "tables/shear training loss summary.csv",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/shear_training_run_summary.csv",
+    "type": "table",
+    "description": "tables/shear training run summary.csv",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "MANIFEST.json",
+    "type": "artifact",
+    "description": "Package file manifest",
+    "required_for_chatgpt": true
+  }
+]
