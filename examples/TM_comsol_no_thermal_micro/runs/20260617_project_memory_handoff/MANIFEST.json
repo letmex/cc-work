@@ -1,0 +1,26 @@
+[
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package overview for the memory-only handoff.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Memory task report with scope, files written, and next task.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Lightweight checks only; no training or postprocessing commands.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Markdown-only handoff comment for ChatGPT issue sync.",
+    "required_for_chatgpt": true
+  }
+]

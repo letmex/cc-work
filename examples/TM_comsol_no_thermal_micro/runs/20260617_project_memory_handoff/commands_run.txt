@@ -1,0 +1,11 @@
+# Commands Run
+
+```powershell
+# From D:\Desktop\新建文件夹\cc-work
+git pull origin main
+
+# Lightweight memory checks only; no training and no postprocessing.
+Test-Path examples\TM_comsol_no_thermal_micro\runs\CODEX_PROJECT_MEMORY_FOR_NEXT_WINDOW.md
+Test-Path examples\TM_comsol_no_thermal_micro\PROJECT_MEMORY.md
+rg -n "20260616_existing_geometry_shear_load_extension|29\.9647|1\.00034|S0070|shear_connectivity_extension|Do not run D0040" examples\TM_comsol_no_thermal_micro\runs\CODEX_PROJECT_MEMORY_FOR_NEXT_WINDOW.md
+```
