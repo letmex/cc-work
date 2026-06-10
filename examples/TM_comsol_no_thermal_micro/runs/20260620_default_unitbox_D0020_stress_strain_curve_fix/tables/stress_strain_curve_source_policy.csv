@@ -1,0 +1,5 @@
+curve_output,x_column,y_column,reaction_source,status,reason
+primary stress-strain curve,nominal_strain,nominal_stress_energy_exact_MPa,reaction_N_energy_exact,use,Energy-conjugate checkpoint reaction; produces the corrected softening response.
+energy virtual-work check curve,nominal_strain,nominal_stress_energy_virtual_work_MPa,reaction_N_energy_virtual_work,validation_equivalent,May overlay primary curve when it matches exact reaction within tolerance.
+legacy top-sigma diagnostic curve,nominal_strain,nominal_stress_legacy_top_sigma_MPa,reaction_N_legacy_top_sigma / old reaction_N_tm_eff,legacy_diagnostic_only,Not energy-conjugate; must not be labeled as primary stress-strain response.
+non-checkpointed old run curve,nominal_strain,not available for corrected primary metric,missing checkpoint dPi/dDelta,reaction_metric_unavailable,Do not infer no-softening from legacy top sigma without checkpoint exact reaction.

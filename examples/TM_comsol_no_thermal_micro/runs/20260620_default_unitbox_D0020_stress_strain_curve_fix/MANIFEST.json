@@ -1,0 +1,80 @@
+[
+  {
+    "path": "artifacts/run_d0020_stress_strain_curve_fix.py",
+    "type": "artifact",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_corrected_nominal_stress_strain.png",
+    "type": "figure",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_corrected_vs_legacy_stress_strain.png",
+    "type": "figure",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_stress_strain_softening_gate.png",
+    "type": "figure",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/corrected_stress_strain_by_step.csv",
+    "type": "table",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/stress_strain_curve_source_policy.csv",
+    "type": "table",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/stress_strain_softening_summary.csv",
+    "type": "table",
+    "description": "D0020 corrected stress-strain curve fix package file.",
+    "required_for_chatgpt": true
+  }
+]
