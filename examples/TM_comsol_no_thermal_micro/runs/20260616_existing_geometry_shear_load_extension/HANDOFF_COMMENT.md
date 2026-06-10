@@ -1,6 +1,6 @@
 ## Codex handoff: Existing-geometry shear load extension
 
-Commit: TO_BE_FILLED_AFTER_COMMIT
+Commit: 2004149e2be130250c15017f60e94eadb00c21aa
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260616_existing_geometry_shear_load_extension`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260616_existing_geometry_shear_load_extension/REPORT.md`
 
