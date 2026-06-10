@@ -1,6 +1,6 @@
 ## Codex handoff: stress-strain mainflow promotion
 
-Commit: COMMIT_PLACEHOLDER
+Commit: 210a09a
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260620_stress_strain_mainflow_promotion
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260620_stress_strain_mainflow_promotion/REPORT.md
 
