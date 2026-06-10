@@ -1,0 +1,3 @@
+seed,row_count,primary_metric,primary_status,legacy_status,primary_peak_MPa,primary_final_MPa,primary_final_over_peak,legacy_peak_MPa,legacy_final_MPa,legacy_final_over_peak,d0040_processed
+42,34,nominal_stress_energy_exact_MPa,energy_conjugate_primary,legacy_diagnostic_only,182.820635382086,0.82835531429736,0.00453097273492207,91.6370766815224,86.6391686779654,0.945459761653825,False
+

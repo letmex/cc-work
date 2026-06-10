@@ -1,0 +1,8 @@
+git -C <cc-work> pull origin main
+
+D:/anaconda3/envs/torch_env/python.exe -m py_compile D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/plot_clean_tm_results.py
+
+D:/anaconda3/envs/torch_env/python.exe D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/plot_clean_tm_results.py --result-dir <TM_comsol_no_thermal_micro>/results/full_hl_8_Neurons_400_activation_TrainableReLU_coeff_3.0_Seed_42_PFFmodel_AT2_l0_0.00015_comsolMicroNoThermal_mixedH_TM_split_tm_source_mech_history_tmEpsR_1em05_topUfree_coordUnitBox_gradient_numerical_full_D0020_seed42_history_default_unitbox --out-dir <TM_comsol_no_thermal_micro>/results/clean_figures/codex_corrected_curve_smoke_seed42 --run-label corrected_curve_smoke_seed42 --corrected-stress-strain-csv <cc-work>/examples/TM_comsol_no_thermal_micro/runs/20260620_default_unitbox_D0020_stress_strain_curve_fix/tables/corrected_stress_strain_by_step.csv --corrected-seed 42 --dpi 120
+
+D:/anaconda3/envs/torch_env/python.exe -m pytest D:/ProgramData/PINN/FEM-PINN-main/examples/TM_comsol_no_thermal_micro/tests -q
+

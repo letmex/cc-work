@@ -1,0 +1,5 @@
+source=corrected_energy_conjugate
+corrected_csv=corrected_stress_strain_by_step.csv (non-ASCII parent path omitted)
+selected_seed=42
+primary_metric=nominal_stress_energy_exact_MPa
+legacy_metric_status=diagnostic_only
