@@ -1,0 +1,4 @@
+seed,step_count,max_energy_virtual_abs_error_N,median_energy_virtual_rel_error,max_energy_virtual_rel_error,virtual_work_matches_exact_within_tolerance,max_exact_reproduction_abs_error_N,exact_reaction_reproduced_from_prior_audit
+7,34,1.1641532182693481e-07,2.2221311164937652e-07,2.0875635489137017e-06,True,2.220446049250313e-16,True
+13,34,2.3283064365386963e-07,3.786076493991398e-07,3.2323794430752443e-06,True,2.220446049250313e-16,True
+42,34,2.3283064365386963e-07,1.9748743851681917e-07,2.5318820006989443e-06,True,2.220446049250313e-16,True

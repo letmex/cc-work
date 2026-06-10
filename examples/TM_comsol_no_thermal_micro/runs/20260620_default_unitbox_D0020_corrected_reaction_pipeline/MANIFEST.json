@@ -1,0 +1,116 @@
+[
+  {
+    "path": "artifacts/run_d0020_corrected_reaction_pipeline.py",
+    "type": "artifact",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/D0020_corrected_primary_reaction_curves.png",
+    "type": "figure",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_corrected_softening_gate.png",
+    "type": "figure",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_legacy_vs_energy_reaction_curves.png",
+    "type": "figure",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_metric_disagreement_summary.png",
+    "type": "figure",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/D0020_through_crack_reaction_marker.png",
+    "type": "figure",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Text summary of generated diagnostic figures.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REACTION_METRIC_POLICY.md",
+    "type": "report",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Corrected reaction pipeline package file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/checkpoint_availability.csv",
+    "type": "table",
+    "description": "Checkpoint and exact reaction computability flags.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "tables/corrected_reaction_by_step.csv",
+    "type": "table",
+    "description": "Unified corrected and legacy reaction metrics by checkpointed D0020 step.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/corrected_softening_gate_summary.csv",
+    "type": "table",
+    "description": "Seed-level corrected primary softening gate summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/exact_reaction_reproduction_check.csv",
+    "type": "table",
+    "description": "Comparison against previous exact D0020 audit values.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/legacy_reaction_metric_policy.csv",
+    "type": "table",
+    "description": "Policy table demoting legacy reaction_N_tm_eff.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/virtual_work_agreement_summary.csv",
+    "type": "table",
+    "description": "Energy virtual-work agreement with exact autograd reaction.",
+    "required_for_chatgpt": true
+  }
+]
