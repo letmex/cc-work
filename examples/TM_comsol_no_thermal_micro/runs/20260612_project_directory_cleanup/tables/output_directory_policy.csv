@@ -1,0 +1,9 @@
+path,purpose,default_source,policy
+outputs/,managed generated output root,config.DEFAULT_OUTPUT_ROOT,ignored by .gitignore; no generated artifacts in example root
+outputs/checkpoints/<run_id>/,model checkpoints and step checkpoints,config.DEFAULT_CHECKPOINT_ROOT + run_id,training default
+outputs/results/<run_id>/,"field npz, diagnostics, displacement schedule, result package",config.DEFAULT_RESULTS_ROOT + run_id,training default
+outputs/results/<run_id>/curves/,stress-strain and reaction csv tables,postprocess_results.default_curve_dir,postprocess default
+outputs/results/<run_id>/figures/,generated png figures,postprocess_results.default_figure_dir,postprocess default
+outputs/logs/<run_id>/,TensorBoard logs,config.DEFAULT_LOG_ROOT + run_id,training default
+outputs/debug/<debug_task_id>/,temporary diagnostics,PROJECT_STRUCTURE.md,debug outputs must not be left in root
+runs/<date_task_name>/,small audit/handoff packages,PROJECT_STRUCTURE.md,commit only reduced reports/tables/summaries

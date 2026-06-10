@@ -1,0 +1,13 @@
+git pull origin main  # in cc-work
+python inventory script -> tables/root_directory_inventory.csv and tables/deleted_artifacts.csv
+pytest tests/test_project_directory_hygiene.py -q  # red: root artifacts + SummaryWriter Path issue
+pytest tests/test_project_cleanup_interface.py tests/test_postprocess_results.py -q  # 12 passed
+Remove-Item for 140 candidates from deleted_artifacts.csv with resolved-path root guard
+New-Item outputs/checkpoints outputs/results outputs/figures outputs/curves outputs/logs outputs/debug runs
+pytest tests/test_project_directory_hygiene.py -q  # 3 passed
+pytest -p no:cacheprovider tests -q  # first full run: 33 passed, 1 doc-token failure
+pytest -p no:cacheprovider tests -q  # after doc token fix: 34 passed, 8 warnings
+py_compile changed source/tests  # py_compile_ok=8
+pytest -p no:cacheprovider tests/test_project_directory_hygiene.py tests/test_project_cleanup_interface.py tests/test_postprocess_results.py -q  # 15 passed, 8 warnings
+pytest -p no:cacheprovider tests -q  # 34 passed, 8 warnings
+python final evidence update -> root_cleanliness_check.csv, test_cleanup_summary.csv, commands_run.txt

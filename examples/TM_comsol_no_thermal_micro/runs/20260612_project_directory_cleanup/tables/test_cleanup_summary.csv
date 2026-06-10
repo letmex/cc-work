@@ -1,0 +1,5 @@
+test_or_command,purpose,latest_status
+py_compile changed source/tests,syntax verification without root pycache,pass: py_compile_ok=8
+pytest -p no:cacheprovider tests/test_project_directory_hygiene.py tests/test_project_cleanup_interface.py tests/test_postprocess_results.py -q,focused hygiene/output-path/postprocess tests,"15 passed, 8 warnings"
+pytest -p no:cacheprovider tests -q,full local example test suite,"34 passed, 8 warnings"
+root cleanliness check after final tests,ensure verification did not recreate forbidden root artifacts,pass

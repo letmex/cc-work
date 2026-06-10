@@ -1,0 +1,11 @@
+script,status,replacement_or_reason
+corrected_reaction_postprocess.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+plot_clean_tm_results.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+debug_pinn_prefit_fedof_mechanics.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+debug_fedof_energy_baseline.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+analyze_drive_broadening_stepwise.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+mesh_l0_diagnostics.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+validate_mechanics_target.py,removed,postprocess_results.py / plot_results.py or formal tests/evidence tables
+postprocess_results.py,kept,functional workflow entry or formal root cleanliness test
+plot_results.py,kept,functional workflow entry or formal root cleanliness test
+tests/test_project_directory_hygiene.py,kept,functional workflow entry or formal root cleanliness test

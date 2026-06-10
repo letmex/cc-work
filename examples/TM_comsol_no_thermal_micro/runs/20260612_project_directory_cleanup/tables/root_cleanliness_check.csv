@@ -1,0 +1,3 @@
+check,status,details
+forbidden_root_patterns_after_final_tests,pass,
+root_allowlist_after_final_tests,pass,

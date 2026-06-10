@@ -1,0 +1,15 @@
+rule,present,reason
+outputs/,true,prevent generated artifacts from returning to root/source control
+results/,true,prevent generated artifacts from returning to root/source control
+full_hl_*/,true,prevent generated artifacts from returning to root/source control
+medium_hl_*/,true,prevent generated artifacts from returning to root/source control
+smoke_hl_*/,true,prevent generated artifacts from returning to root/source control
+*_runlogs/,true,prevent generated artifacts from returning to root/source control
+*logs/,true,prevent generated artifacts from returning to root/source control
+debug_*.csv,true,prevent generated artifacts from returning to root/source control
+debug_*.npz,true,prevent generated artifacts from returning to root/source control
+debug_*_fields.npz,true,prevent generated artifacts from returning to root/source control
+*.pyc,true,prevent generated artifacts from returning to root/source control
+__pycache__/,true,prevent generated artifacts from returning to root/source control
+.pytest_cache/,true,prevent generated artifacts from returning to root/source control
+runs/*/figures/*.png,true,prevent generated artifacts from returning to root/source control

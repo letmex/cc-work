@@ -1,0 +1,27 @@
+path,type,classification,action,reason,tracked_by_git_if_known
+.gitignore,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+ALPHA_INIT_INTACT_COMPARISON_REPORT.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+alpha_initialization.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+compute_energy_mixed_tm.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+config.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+field_computation.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+geo_coarse_with_groups_mm.msh,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+history_field_mixed_tm.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+load_schedule.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+load_schedule_D0020_extended.csv,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+load_schedule_D0040_softening_gate.csv,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+main.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+mixed_mode_tm.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+outputs,dir,source code to keep,keep,managed/source directory,not_applicable_real_project_not_git_repo
+PLATFORM_EQUIVALENCE_DIAGNOSTIC_REPORT.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+plot_results.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+postprocess_results.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+POSTPROCESS_WORKFLOW.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+PROJECT_STRUCTURE.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+README.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+runs,dir,source code to keep,keep,managed/source directory,not_applicable_real_project_not_git_repo
+source,dir,source code to keep,keep,managed/source directory,not_applicable_real_project_not_git_repo
+tests,dir,source code to keep,keep,managed/source directory,not_applicable_real_project_not_git_repo
+train_mixed_tm.py,file,source code to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+TRUE_STAGGERED_DIAGNOSTIC_REPORT.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo
+UNIFORM_BACKGROUND_DAMAGE_ROOT_CAUSE_REPORT.md,file,documentation to keep,keep,source/input/doc retained,not_applicable_real_project_not_git_repo

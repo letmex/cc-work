@@ -1,0 +1,15 @@
+outputs/
+results/
+full_hl_*/
+medium_hl_*/
+smoke_hl_*/
+*_runlogs/
+*logs/
+debug_*.csv
+debug_*.npz
+debug_*_fields.npz
+*.pyc
+__pycache__/
+.pytest_cache/
+runs/*/figures/*.png
+

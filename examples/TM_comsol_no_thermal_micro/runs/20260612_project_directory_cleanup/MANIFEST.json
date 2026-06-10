@@ -1,0 +1,178 @@
+{
+  "files": [
+    {
+      "path": "artifacts/source_snapshots/.gitignore",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/config.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/main.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/plot_results.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/postprocess_results.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/POSTPROCESS_WORKFLOW.md",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/PROJECT_STRUCTURE.md",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/source_snapshots/README.md",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/tests/test_history_mode_controls.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/tests/test_postprocess_results.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/tests/test_project_cleanup_interface.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "artifacts/tests/test_project_directory_hygiene.py",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "commands_run.txt",
+      "type": "command_log",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "figures/figure_summary.md",
+      "type": "figure_summary",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "HANDOFF_COMMENT.md",
+      "type": "handoff",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "MANIFEST.json",
+      "type": "artifact",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "next_questions.md",
+      "type": "report",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "README.md",
+      "type": "report",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "REPORT.md",
+      "type": "report",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/deleted_artifacts.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/gitignore_policy_audit.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/output_directory_policy.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/output_path_default_audit.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/remaining_root_files.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/root_cleanliness_check.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/root_directory_inventory.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/root_directory_inventory_after_cleanup.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": false
+    },
+    {
+      "path": "tables/script_cleanup_audit.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    },
+    {
+      "path": "tables/test_cleanup_summary.csv",
+      "type": "table",
+      "description": "project directory cleanup evidence file",
+      "required_for_chatgpt": true
+    }
+  ]
+}

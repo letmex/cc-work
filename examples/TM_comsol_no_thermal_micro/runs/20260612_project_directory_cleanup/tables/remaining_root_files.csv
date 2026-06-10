@@ -1,0 +1,27 @@
+path,type,status,reason
+.gitignore,file,allowed,"source, input, or documentation"
+ALPHA_INIT_INTACT_COMPARISON_REPORT.md,file,allowed,"source, input, or documentation"
+alpha_initialization.py,file,allowed,"source, input, or documentation"
+compute_energy_mixed_tm.py,file,allowed,"source, input, or documentation"
+config.py,file,allowed,"source, input, or documentation"
+field_computation.py,file,allowed,"source, input, or documentation"
+geo_coarse_with_groups_mm.msh,file,allowed,"source, input, or documentation"
+history_field_mixed_tm.py,file,allowed,"source, input, or documentation"
+load_schedule.py,file,allowed,"source, input, or documentation"
+load_schedule_D0020_extended.csv,file,allowed,"source, input, or documentation"
+load_schedule_D0040_softening_gate.csv,file,allowed,"source, input, or documentation"
+main.py,file,allowed,"source, input, or documentation"
+mixed_mode_tm.py,file,allowed,"source, input, or documentation"
+outputs,dir,allowed,managed/source directory
+PLATFORM_EQUIVALENCE_DIAGNOSTIC_REPORT.md,file,allowed,"source, input, or documentation"
+plot_results.py,file,allowed,"source, input, or documentation"
+postprocess_results.py,file,allowed,"source, input, or documentation"
+POSTPROCESS_WORKFLOW.md,file,allowed,"source, input, or documentation"
+PROJECT_STRUCTURE.md,file,allowed,"source, input, or documentation"
+README.md,file,allowed,"source, input, or documentation"
+runs,dir,allowed,managed/source directory
+source,dir,allowed,managed/source directory
+tests,dir,allowed,managed/source directory
+train_mixed_tm.py,file,allowed,"source, input, or documentation"
+TRUE_STAGGERED_DIAGNOSTIC_REPORT.md,file,allowed,"source, input, or documentation"
+UNIFORM_BACKGROUND_DAMAGE_ROOT_CAUSE_REPORT.md,file,allowed,"source, input, or documentation"

@@ -1,0 +1,8 @@
+check,status,evidence
+training default checkpoint path,pass,model_path defaults under outputs/checkpoints/<run_id>
+training default results path,pass,results_path defaults under outputs/results/<run_id>
+training default log path,pass,SummaryWriter uses managed outputs/logs path
+advanced path overrides,pass,CLI overrides retained
+main automatic postprocess,pass,main.py invokes functional postprocess with managed curve/figure dirs
+postprocess default curve dir,pass,postprocess_results.default_curve_dir(result_dir)
+plot default figure dir,pass,plot_results.default_plot_out_dir(label)
