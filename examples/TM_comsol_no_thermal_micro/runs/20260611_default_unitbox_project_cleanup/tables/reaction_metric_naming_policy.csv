@@ -1,0 +1,10 @@
+metric_name,role,primary_when_available,notes
+reaction_N_energy_exact,energy-conjugate reaction from checkpoint autograd,true,Primary stress-strain source when exact reaction computes.
+reaction_N_energy_virtual_work,virtual-work/conjugacy check,false,Validation check against exact energy derivative.
+reaction_N_legacy_top_sigma,legacy top-boundary sigma integral,false,Diagnostic only; not sufficient for no-softening claims.
+reaction_N_bottom_sigma_legacy,legacy bottom-boundary sigma integral,false,Diagnostic boundary check.
+reaction_N_internal_cut_above,internal cut force above crack,false,Diagnostic force consistency check.
+reaction_N_internal_cut_below,internal cut force below crack,false,Diagnostic force consistency check.
+nominal_stress_energy_exact_MPa,stress curve from energy-exact reaction,true,Primary y-axis source when available.
+nominal_stress_legacy_top_sigma_MPa,stress curve from legacy top sigma,false,Diagnostic overlay only.
+

@@ -1,0 +1,152 @@
+[
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Package overview and read-first guidance.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Main cleanup report answering required questions.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "MANIFEST.json",
+    "type": "artifact",
+    "description": "List of package files and their roles.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Commands run for pull, focused tests, py_compile, and full tests.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Open questions for ChatGPT review.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Issue #1 handoff comment for ChatGPT sync.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/default_cli_cleanup_audit.csv",
+    "type": "table",
+    "description": "Normal-route default CLI cleanup audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/program_file_rename_audit.csv",
+    "type": "table",
+    "description": "Program file old-to-new naming audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/output_filename_cleanup_audit.csv",
+    "type": "table",
+    "description": "Output filename cleanup audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/reaction_metric_naming_policy.csv",
+    "type": "table",
+    "description": "Explicit reaction metric role and primary/diagnostic policy.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/postprocess_cli_cleanup_audit.csv",
+    "type": "table",
+    "description": "Postprocess command/default cleanup audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/training_completion_postprocess_audit.csv",
+    "type": "table",
+    "description": "Training-completion postprocess path audit.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/test_cleanup_summary.csv",
+    "type": "table",
+    "description": "Verification command summary.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "States that no PNG figures are included and why.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "artifacts/source_snapshots/postprocess_results.py",
+    "type": "artifact",
+    "description": "Snapshot of the renamed postprocess entry point.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/plot_results.py",
+    "type": "artifact",
+    "description": "Snapshot of the renamed plotting helper.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/corrected_reaction_postprocess.py",
+    "type": "artifact",
+    "description": "Deprecated compatibility wrapper snapshot.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/plot_clean_tm_results.py",
+    "type": "artifact",
+    "description": "Deprecated compatibility wrapper snapshot.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/config.py",
+    "type": "artifact",
+    "description": "Config snapshot showing normal-route defaults.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/main.py",
+    "type": "artifact",
+    "description": "Training entry snapshot showing postprocess_results invocation.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/README.md",
+    "type": "artifact",
+    "description": "Updated project README snapshot.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/source_snapshots/POSTPROCESS_WORKFLOW.md",
+    "type": "artifact",
+    "description": "New postprocess workflow documentation snapshot.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/tests/test_project_cleanup_interface.py",
+    "type": "artifact",
+    "description": "Focused cleanup interface tests.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/tests/test_postprocess_results.py",
+    "type": "artifact",
+    "description": "Focused postprocess/plot integration tests.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/tests/test_history_mode_controls.py",
+    "type": "artifact",
+    "description": "Updated existing history/plot controls test snapshot.",
+    "required_for_chatgpt": false
+  }
+]

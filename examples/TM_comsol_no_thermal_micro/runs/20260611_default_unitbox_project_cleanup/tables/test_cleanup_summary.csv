@@ -1,0 +1,5 @@
+command,exit_code,result,notes
+"D:\anaconda3\envs\torch_env\python.exe -m pytest tests\test_project_cleanup_interface.py tests\test_postprocess_results.py -q",0,"12 passed","Focused cleanup and postprocess tests."
+"D:\anaconda3\envs\torch_env\python.exe -m py_compile postprocess_results.py plot_results.py corrected_reaction_postprocess.py plot_clean_tm_results.py main.py config.py tests\test_project_cleanup_interface.py tests\test_postprocess_results.py",0,passed,"Changed scripts and focused tests compile."
+"D:\anaconda3\envs\torch_env\python.exe -m pytest tests -q",0,"31 passed","Full local example test suite; 8 third-party deprecation warnings from pandas/numpy compatibility."
+

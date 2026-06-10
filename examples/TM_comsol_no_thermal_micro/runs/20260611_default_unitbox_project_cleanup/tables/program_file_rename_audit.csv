@@ -1,0 +1,4 @@
+old_file,new_file,updated_references,tests_updated,backward_compatibility_behavior,deprecated_wrapper_retained_or_removed
+corrected_reaction_postprocess.py,postprocess_results.py,"main.py, README.md, POSTPROCESS_WORKFLOW.md, tests",true,"Old file imports postprocess_results and warns with DeprecationWarning.",retained
+plot_clean_tm_results.py,plot_results.py,"README.md, POSTPROCESS_WORKFLOW.md, tests",true,"Old file imports plot_results and warns with DeprecationWarning.",retained
+

@@ -1,0 +1,8 @@
+option_name,old_behavior,new_default,still_exposed_as_advanced_override,normal_command_requires_it,reason
+pff-model,AT2 often passed explicitly,AT2,true,false,Only AT2 is retained for the normal TM route.
+mixed-mechanics-mode,history often passed explicitly,history,true,false,Normal source-model route uses dual history; other modes are diagnostics.
+top-u-mode,fixed default required users to pass free,free,true,false,Normal route uses top-u free; fixed remains old diagnostic behavior.
+coord-normalization,none default required users to pass unit_box,unit_box,true,false,Normal route uses unit-box NN input scaling; none remains diagnostic.
+alpha initialization,default alpha route retained,default alpha route retained,false,false,No alpha-init behavior change.
+l0,default 1.5e-4 retained,1.5e-4,true,false,No physics parameter change.
+

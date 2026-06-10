@@ -1,0 +1,4 @@
+file,old_behavior,new_behavior,short_label_behavior,physics_changed
+main.py,Imported run_corrected_reaction_postprocess from corrected_reaction_postprocess,Imports run_results_postprocess from postprocess_results,Passes run_label=run_suffix or None,false
+main.py,Training completed without a functional postprocess entry name,Training completion writes curves and figures through renamed path,Uses result_dir/figures and result_dir/curves,false
+

@@ -1,0 +1,10 @@
+old_output_name,new_output_name,reason,existing_tests_docs_updated
+corrected_stress_strain_by_step.csv,stress_strain_by_step.csv,Functional table name independent of temporary repair wording,true
+corrected_reaction_by_step.csv,reaction_by_step.csv,Functional reaction table name,true
+corrected_reaction_availability.csv,reaction_metric_availability.csv,Explicit metric availability policy,true
+results/clean_figures/<label>,<result_dir>/figures,Figures belong with the result directory and avoid temporary repair wording,true
+stress_strain_data_<label>.csv,stress_strain_data_<short_label>.csv,Direct plotting helper keeps copied plotting data with short labels,true
+stress_strain_<full_model_dir>.png,stress_strain_<short_label>.png,Figure filenames should not embed full model directory names,true
+reaction_strain_<full_model_dir>.png,reaction_strain_<short_label>.png,Figure filenames should not embed full model directory names,true
+final_fields_panel_<full_model_dir>.png,final_fields_panel_<short_label>.png,Figure filenames should not embed full model directory names,true
+

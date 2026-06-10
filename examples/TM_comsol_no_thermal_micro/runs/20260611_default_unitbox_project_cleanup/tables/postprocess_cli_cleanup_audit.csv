@@ -1,0 +1,10 @@
+item,new_behavior,notes
+normal_entry_point,postprocess_results.py,This is the user-facing postprocess command.
+normal_command,"python postprocess_results.py --model-dir <model_dir> --result-dir <result_dir>",No second plotting program required.
+out_dir_default,<result_dir>/curves,Writes stress/reaction tables.
+figure_dir_default,<result_dir>/figures,Writes figures by default.
+figures_default,enabled,Use --no-figures to disable.
+figure_failure_default,non-fatal,Use --fail-on-figure-error for strict mode.
+run_label_default,short label inferred from seed/load tokens,Full model directory name is not used in figure filenames.
+optional_arguments,"--out-dir; --figure-dir; --run-label; --device; --no-figures; --fail-on-figure-error; --seed",Deprecated --corrected-seed is hidden compatibility only.
+
