@@ -1,0 +1,36 @@
+# Commands Run
+
+```powershell
+# Read task and workflow context.
+git pull origin main
+Get-Content examples\TM_comsol_no_thermal_micro\AGENT_HANDOFF_WORKFLOW.md
+Get-Content examples\TM_comsol_no_thermal_micro\CODEX_NO_GH_HANDOFF.md
+
+# Focused shear tests.
+D:\anaconda3\envs\torch_env\python.exe -m pytest -p no:cacheprovider tests\test_shear_load_case.py -q
+# Result after implementation: 5 passed, 8 warnings.
+
+# One seed-only shear smoke training.
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 23 TrainableReLU 3.0 --full --n-rprop 20 --n-lbfgs 0 --load-case shear --load-schedule-file load_schedules/load_schedule_S0020_shear.csv --run-suffix seed23_S0020_shear
+# Result: completed 5 S0020 steps.
+
+# Postprocess with checkpointed energy-conjugate reaction.
+D:\anaconda3\envs\torch_env\python.exe postprocess_results.py --model-dir outputs\checkpoints\seed23_S0020_shear --result-dir outputs\results\seed23_S0020_shear --device cpu
+# Result: status=energy_conjugate, exact_reaction_computable=True, 5 checkpoints.
+
+# Compile changed scripts.
+D:\anaconda3\envs\torch_env\python.exe -m py_compile field_computation.py config.py main.py postprocess_results.py plot_results.py tests\test_shear_load_case.py
+# Result: exit 0.
+
+# Forbidden removed-route term scan.
+rg -n "phase_proximal|eta_eff|split_mode=|mechanics_mode=|legacy_top_sigma|reaction_N_legacy|corrected|clean|staggered|alpha_init_intact|apply_alpha_init_intact|voldev|current_split|MIXED_SPLIT_MODES|--mixed-mechanics-mode|--alpha-init-intact|--solve-scheme|--stagger-iters" config.py main.py mixed_mode_tm.py compute_energy_mixed_tm.py train_mixed_tm.py history_field_mixed_tm.py postprocess_results.py plot_results.py README.md POSTPROCESS_WORKFLOW.md PROJECT_STRUCTURE.md
+# Result: no matches.
+
+# Normal shear output scan for legacy/tension stress columns.
+rg -n "legacy_top_sigma|reaction_N_legacy|nominal_stress_energy_MPa" outputs\results\seed23_S0020_shear\curves outputs\results\seed23_S0020_shear\figures\stress_strain_source_seed23_shear.txt
+# Result: no matches.
+
+# Full tests first failed because ordinary pytest regenerated root __pycache__; rerun with bytecode disabled.
+$env:PYTHONDONTWRITEBYTECODE='1'; D:\anaconda3\envs\torch_env\python.exe -B -m pytest -p no:cacheprovider tests -q
+# Result: 43 passed, 8 warnings.
+```

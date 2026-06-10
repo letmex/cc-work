@@ -1,0 +1,6 @@
+step,Delta_s,checkpoint,checkpoint_exists_local,reaction_metric_status,is_energy_conjugate,reaction_N_energy,alpha0p8_through_crack
+0,1e-06,outputs\checkpoints\seed23_S0020_shear\best_models\step_checkpoints\checkpoint_mixedH_TM_step_0000.pt,False,energy_conjugate,True,0.0183414431376149,False
+1,5e-06,outputs\checkpoints\seed23_S0020_shear\best_models\step_checkpoints\checkpoint_mixedH_TM_step_0001.pt,False,energy_conjugate,True,0.0762595518608577,False
+2,1e-05,outputs\checkpoints\seed23_S0020_shear\best_models\step_checkpoints\checkpoint_mixedH_TM_step_0002.pt,False,energy_conjugate,True,0.1466988323954865,False
+3,1.5e-05,outputs\checkpoints\seed23_S0020_shear\best_models\step_checkpoints\checkpoint_mixedH_TM_step_0003.pt,False,energy_conjugate,True,0.2197792346123606,False
+4,2e-05,outputs\checkpoints\seed23_S0020_shear\best_models\step_checkpoints\checkpoint_mixedH_TM_step_0004.pt,False,energy_conjugate,True,0.2929704787675291,False
