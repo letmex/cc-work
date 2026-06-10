@@ -1,6 +1,6 @@
 ## Codex handoff: D0020 corrected reaction pipeline
 
-Commit: COMMIT_PLACEHOLDER
+Commit: 5b982f7
 Data folder: examples/TM_comsol_no_thermal_micro/runs/20260620_default_unitbox_D0020_corrected_reaction_pipeline
 Main report: examples/TM_comsol_no_thermal_micro/runs/20260620_default_unitbox_D0020_corrected_reaction_pipeline/REPORT.md
 
