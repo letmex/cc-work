@@ -1,6 +1,6 @@
 ## Codex handoff: Existing-geometry shear stronger training
 
-Commit: PENDING
+Commit: 3f3c30870f606e8d6917d61f528295a0e2e696f9
 Data folder: `examples/TM_comsol_no_thermal_micro/runs/20260615_existing_geometry_shear_stronger_training`
 Main report: `examples/TM_comsol_no_thermal_micro/runs/20260615_existing_geometry_shear_stronger_training/REPORT.md`
 
