@@ -1,0 +1,7 @@
+check,value,passed
+primary_status,energy_conjugate_primary,True
+primary_metric,nominal_stress_energy_exact_MPa,True
+legacy_metric,macro_stress,True
+macro_stress_strain_png,figures/validated_macro_stress_strain.png,True
+legacy_stress_strain_png,figures/validated_macro_stress_strain_legacy.png,True
+source_report,status=energy_conjugate_primary; primary_metric=nominal_stress_energy_exact_MPa; legacy_metric=macro_stress; legacy_status=diagnostic_only,True

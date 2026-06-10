@@ -1,0 +1,80 @@
+[
+  {
+    "path": "artifacts/postprocess_tm_after.py",
+    "type": "artifact",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/postprocess_tm_before.py",
+    "type": "artifact",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "artifacts/postprocess_tm_mainflow_promotion.diff",
+    "type": "artifact",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "artifacts/validate_postprocess_tm_curve_promotion.py",
+    "type": "artifact",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "commands_run.txt",
+    "type": "command_log",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/figure_summary.md",
+    "type": "figure_summary",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "figures/validated_macro_stress_strain.png",
+    "type": "figure",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "figures/validated_macro_stress_strain_legacy.png",
+    "type": "figure",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "HANDOFF_COMMENT.md",
+    "type": "handoff",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "next_questions.md",
+    "type": "report",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": false
+  },
+  {
+    "path": "README.md",
+    "type": "report",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "REPORT.md",
+    "type": "report",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": true
+  },
+  {
+    "path": "tables/mainflow_curve_source_selection.csv",
+    "type": "table",
+    "description": "Stress-strain mainflow promotion evidence file.",
+    "required_for_chatgpt": true
+  }
+]
