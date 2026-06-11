@@ -8,6 +8,7 @@ import torch
 from torch.utils.tensorboard import SummaryWriter
 
 from load_schedule import build_displacement_schedule
+from thermal_prescribed import DEFAULT_ALPHA_T, DEFAULT_T0_C, DEFAULT_TREF_K
 
 
 SPECIMEN_SIZE_MM = 0.01
@@ -162,6 +163,48 @@ def _parse_args():
         type=_str_to_bool,
         help="When --save-step-checkpoints is true, save every loading step.",
     )
+    parser.add_argument(
+        "--thermal-mode",
+        choices=["off", "uniform", "linear_y"],
+        default=os.getenv("TM_COMSOL_MICRO_THERMAL_MODE", "off"),
+        help="Prescribed-temperature thermal-strain mode. Default off preserves the no-thermal baseline.",
+    )
+    parser.add_argument(
+        "--thermal-temperature-K",
+        type=float,
+        default=None,
+        help="Optional uniform prescribed absolute temperature in K. Uses delta_T = T - Tref.",
+    )
+    parser.add_argument(
+        "--thermal-delta-T",
+        type=float,
+        default=None,
+        help="Optional uniform prescribed temperature change in K.",
+    )
+    parser.add_argument(
+        "--thermal-grad-y",
+        type=float,
+        default=0.0,
+        help="Gradient d(delta_T)/dy for --thermal-mode linear_y, in K/mm.",
+    )
+    parser.add_argument(
+        "--thermal-y0",
+        type=float,
+        default=0.0,
+        help="Reference y coordinate for --thermal-mode linear_y, in mm.",
+    )
+    parser.add_argument(
+        "--thermal-alpha-T",
+        type=float,
+        default=DEFAULT_ALPHA_T,
+        help="Isotropic thermal expansion coefficient in 1/K.",
+    )
+    parser.add_argument(
+        "--thermal-Tref-K",
+        type=float,
+        default=DEFAULT_TREF_K,
+        help="Reference temperature for delta_T = T - Tref, in K.",
+    )
     args, _ = parser.parse_known_args()
     return args
 
@@ -194,6 +237,10 @@ if GcII <= 0.0:
     raise ValueError("--GcII or --GcII-factor must produce a positive GcII")
 if args.tm_eps_r < 0.0:
     raise ValueError("--tm-eps-r must be non-negative")
+if args.thermal_temperature_K is not None and args.thermal_delta_T is not None:
+    raise ValueError("Use either --thermal-temperature-K or --thermal-delta-T, not both")
+if args.thermal_alpha_T < 0.0:
+    raise ValueError("--thermal-alpha-T must be non-negative")
 
 history_mode = "mixedH_TM"
 mixed_split_mode = "tm_source"
@@ -252,6 +299,15 @@ training_dict = {
     "coord_normalization": args.coord_normalization,
     "save_step_checkpoints": bool(args.save_step_checkpoints),
     "checkpoint_every_step": bool(args.checkpoint_every_step),
+    "thermal_mode": args.thermal_mode,
+    "thermal_temperature": args.thermal_temperature_K,
+    "thermal_delta_T": args.thermal_delta_T,
+    "thermal_delta_T0": 0.0 if args.thermal_delta_T is None else float(args.thermal_delta_T),
+    "thermal_grad_y": float(args.thermal_grad_y),
+    "thermal_y0": float(args.thermal_y0),
+    "thermal_alpha_T": float(args.thermal_alpha_T),
+    "thermal_Tref": float(args.thermal_Tref_K),
+    "thermal_T0_C": float(DEFAULT_T0_C),
 }
 
 numr_dict = {"alpha_constraint": "nonsmooth", "gradient_type": "numerical"}
@@ -294,6 +350,14 @@ tm_eps_r_label = f"_tmEpsR_{args.tm_eps_r:g}".replace(".", "p").replace("-", "m"
 load_case_label = "" if args.load_case == "tension" else f"_{args.load_case}"
 top_u_label = "" if args.top_u_mode == "free" else "_topUfixed"
 coord_norm_label = "" if args.coord_normalization == "unit_box" else "_coordRaw"
+thermal_label = ""
+if args.thermal_temperature_K is not None:
+    thermal_label = f"_thermalT_{args.thermal_temperature_K:g}K"
+elif args.thermal_delta_T is not None:
+    thermal_label = f"_thermalDeltaT_{args.thermal_delta_T:g}K"
+elif args.thermal_mode != "off":
+    thermal_label = f"_thermal_{args.thermal_mode}"
+thermal_label = thermal_label.replace(".", "p").replace("-", "m")
 optimizer_label = ""
 if args.n_rprop is not None or args.n_lbfgs is not None:
     optimizer_label = (
@@ -315,6 +379,7 @@ model_name = (
     f"{tm_eps_r_label}"
     f"{top_u_label}"
     f"{coord_norm_label}"
+    f"{thermal_label}"
     f"{optimizer_label}"
     f"_gradient_{numr_dict['gradient_type']}"
     f"{run_suffix_label}"
@@ -375,6 +440,15 @@ with open(model_path / Path("model_settings.txt"), "w", encoding="utf-8") as fil
     file.write(f"\ncoord_normalization: {training_dict['coord_normalization']}")
     file.write(f"\nsave_step_checkpoints: {training_dict['save_step_checkpoints']}")
     file.write(f"\ncheckpoint_every_step: {training_dict['checkpoint_every_step']}")
+    file.write(f"\nthermal_mode: {training_dict['thermal_mode']}")
+    file.write(f"\nthermal_temperature_K: {training_dict['thermal_temperature']}")
+    file.write(f"\nthermal_delta_T_K: {training_dict['thermal_delta_T']}")
+    file.write(f"\nthermal_delta_T0_K: {training_dict['thermal_delta_T0']}")
+    file.write(f"\nthermal_grad_y_K_per_mm: {training_dict['thermal_grad_y']}")
+    file.write(f"\nthermal_y0_mm: {training_dict['thermal_y0']}")
+    file.write(f"\nthermal_alpha_T_1_per_K: {training_dict['thermal_alpha_T']}")
+    file.write(f"\nthermal_Tref_K: {training_dict['thermal_Tref']}")
+    file.write(f"\nthermal_T0_C: {training_dict['thermal_T0_C']}")
     file.write(f"\neta_residual: {training_dict['eta_residual']}")
     file.write(f"\nGcII_arg: {args.GcII}")
     file.write(f"\nGcII_factor: {GcII_factor}")

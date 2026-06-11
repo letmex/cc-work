@@ -1,8 +1,8 @@
 # Project Structure
 
-This is a sibling scaffold copied from `examples/TM_comsol_no_thermal_micro`.
-The initial source is intentionally no-thermal and is expected to match the
-verified baseline before prescribed-temperature thermal-strain work begins.
+This is a sibling subproject copied from `examples/TM_comsol_no_thermal_micro`.
+The default source route still matches the verified no-thermal baseline, while
+an optional prescribed-temperature thermal-strain branch lives only here.
 
 ```text
 examples/TM_comsol_thermal_micro/
@@ -10,6 +10,7 @@ examples/TM_comsol_thermal_micro/
     config.py
     train_mixed_tm.py
     compute_energy_mixed_tm.py
+    thermal_prescribed.py
     mixed_mode_tm.py
     history_field_mixed_tm.py
     postprocess_results.py
@@ -47,7 +48,9 @@ energy-conjugate reaction/stress-strain outputs with functional filenames.
 
 ## Thermal Work Boundary
 
-Thermal strain, heat PDE, and damage-dependent conductivity are not implemented
-in this scaffold. Future thermal changes should be made only in this copied
+Prescribed-temperature thermal strain is implemented here by subtracting
+`alpha_T*(T - Tref)` from normal strains before the existing split/history/energy
+route. Heat PDEs, thermal transport solves, and damage-dependent conductivity
+are not implemented. Future thermal changes should be made only in this copied
 subproject while keeping `examples/TM_comsol_no_thermal_micro` as the frozen
 baseline.

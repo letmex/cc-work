@@ -72,6 +72,13 @@ def to_float(settings: dict[str, str], key: str, default: float = math.nan) -> f
     return float(value)
 
 
+def to_optional_float(settings: dict[str, str], key: str) -> float | None:
+    value = settings.get(key)
+    if value is None or value == "None" or value == "":
+        return None
+    return float(value)
+
+
 def _as_step(path: Path) -> int:
     return int(path.stem.split("_")[-1])
 
@@ -445,6 +452,14 @@ def _energy_and_fields(
         gcII_factor=to_float(settings, "GcII_factor", 1.0),
         tm_eps_r=to_float(settings, "tm_eps_r", 1.0e-5),
         alpha_old=alpha_old,
+        thermal_temperature=to_optional_float(settings, "thermal_temperature_K"),
+        thermal_delta_T=to_optional_float(settings, "thermal_delta_T_K"),
+        thermal_mode=settings.get("thermal_mode", "off"),
+        thermal_delta_T0=to_float(settings, "thermal_delta_T0_K", 0.0),
+        thermal_grad_y=to_float(settings, "thermal_grad_y_K_per_mm", 0.0),
+        thermal_y0=to_float(settings, "thermal_y0_mm", 0.0),
+        thermal_alpha_T=to_float(settings, "thermal_alpha_T_1_per_K", 18.9e-6),
+        thermal_Tref=to_float(settings, "thermal_Tref_K", 273.15),
     )
     return delta, e_el, e_d, fields, u, v, alpha
 

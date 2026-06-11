@@ -21,6 +21,10 @@ LOCAL_DIAGNOSTIC_FIELDS = (
     ("eps_xx", "eps_xx"),
     ("eps_yy", "eps_yy"),
     ("eps_xy", "eps_xy"),
+    ("eps_xx_elastic", "eps_xx_elastic"),
+    ("eps_yy_elastic", "eps_yy_elastic"),
+    ("eps_xy_elastic", "eps_xy_elastic"),
+    ("delta_T", "delta_T"),
     ("psiI", "psiI"),
     ("psiII", "psiII"),
     ("psi_minus", "psi_minus"),
@@ -186,6 +190,14 @@ def commit_mixed_tm_history_from_model(
     gcII=None,
     gcII_factor=1.0,
     tm_eps_r=0.0,
+    thermal_temperature=None,
+    thermal_delta_T=None,
+    thermal_mode="off",
+    thermal_delta_T0=0.0,
+    thermal_grad_y=0.0,
+    thermal_y0=0.0,
+    thermal_alpha_T=18.9e-6,
+    thermal_Tref=273.15,
 ):
     if T_conn is None:
         inp_eval = inp.detach().clone().requires_grad_(True)
@@ -211,6 +223,14 @@ def commit_mixed_tm_history_from_model(
         gcII_factor=gcII_factor,
         tm_eps_r=tm_eps_r,
         alpha_old=history_old.get("alpha_old"),
+        thermal_temperature=thermal_temperature,
+        thermal_delta_T=thermal_delta_T,
+        thermal_mode=thermal_mode,
+        thermal_delta_T0=thermal_delta_T0,
+        thermal_grad_y=thermal_grad_y,
+        thermal_y0=thermal_y0,
+        thermal_alpha_T=thermal_alpha_T,
+        thermal_Tref=thermal_Tref,
     )
     ratio = float(fields["mixed_mode_ratio"][0].detach().cpu()) if fields["mixed_mode_ratio"].numel() else 1.0
     history_new = commit_mixed_history_from_fields(
@@ -467,6 +487,20 @@ def save_mixed_tm_step_fields(results_path, step, displacement, inp, T_conn, alp
             "history_elastic_energy_density",
             "phase_history_energy_density",
             "phase_history_total_density",
+            "eps_xx_total",
+            "eps_yy_total",
+            "eps_xy_total",
+            "eps_xx_elastic",
+            "eps_yy_elastic",
+            "eps_xy_elastic",
+            "delta_T",
+            "thermal_delta_T",
+            "thermal_eps_xx",
+            "thermal_eps_yy",
+            "thermal_eps_xy",
+            "thermal_alpha_T",
+            "thermal_Tref",
+            "thermal_active",
         )
         if key in fields
     }

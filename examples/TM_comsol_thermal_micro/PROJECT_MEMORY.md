@@ -13,7 +13,7 @@ Current state:
 - shear ansatz: top-v-free inherited route
 - coordinate normalization: unit-box input
 - reaction policy: checkpointed energy-conjugate `reaction_N_energy`
-- thermal strain: not implemented
+- prescribed thermal strain: implemented and default-off
 - heat PDE: not implemented
 - damage-dependent conductivity: not implemented
 
@@ -27,4 +27,15 @@ Reference scope for future thermal work:
 The original `examples/TM_comsol_no_thermal_micro` project is the frozen
 baseline and should not be modified by thermal experiments.
 
-Next task: add a prescribed-temperature thermal-strain branch with patch tests.
+Current thermal branch:
+
+- `delta_T = T - Tref`
+- `exx_e = exx - alpha_T*delta_T`
+- `eyy_e = eyy - alpha_T*delta_T`
+- `exy_e = exy`
+- thermal strain enters before the existing TM split/history/energy route
+- no-thermal defaults remain the baseline
+
+Next task: run a small prescribed-temperature micro-notch diagnostic only after
+reviewing the patch-test handoff. Do not start heat PDE or damage-dependent
+conductivity work next.

@@ -53,7 +53,12 @@ reaction/stress values.
 
 ## Thermal Status
 
-This copied scaffold does not yet include thermal strain, heat equation
-postprocessing, or damage-dependent conductivity outputs. Future prescribed-
-temperature thermal-strain patch tests should keep this energy-conjugate
+The prescribed-temperature thermal-strain branch is part of the mechanics energy
+route when enabled by model settings. The postprocessor reuses the same
+`delta_T = T - Tref` correction before recomputing checkpoint energies, so
+energy-conjugate reactions remain consistent with training for prescribed
+thermal-strain runs.
+
+Heat equation postprocessing and damage-dependent conductivity outputs are not
+implemented. Future heat-transfer work should keep this energy-conjugate
 reaction route unless a separate validated replacement is introduced.

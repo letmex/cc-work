@@ -15,6 +15,20 @@ from input_data_from_mesh import prep_input_data
 from optim import get_optimizer
 
 
+def _thermal_energy_kwargs(training_dict):
+    training_dict = training_dict or {}
+    return {
+        "thermal_temperature": training_dict.get("thermal_temperature", None),
+        "thermal_delta_T": training_dict.get("thermal_delta_T", None),
+        "thermal_mode": training_dict.get("thermal_mode", "off"),
+        "thermal_delta_T0": training_dict.get("thermal_delta_T0", 0.0),
+        "thermal_grad_y": training_dict.get("thermal_grad_y", 0.0),
+        "thermal_y0": training_dict.get("thermal_y0", 0.0),
+        "thermal_alpha_T": training_dict.get("thermal_alpha_T", 18.9e-6),
+        "thermal_Tref": training_dict.get("thermal_Tref", 273.15),
+    }
+
+
 class EarlyStopping:
     def __init__(self, tol_steps=10, min_delta=1e-3, device="cpu"):
         self.tol_steps = torch.tensor([tol_steps], dtype=torch.int, device=device)
@@ -54,6 +68,7 @@ def fit_mixed_tm(
     gcII = training_dict.get("GcII", None)
     gcII_factor = training_dict.get("GcII_factor", 1.0)
     tm_eps_r = training_dict.get("tm_eps_r", 0.0)
+    thermal_kwargs = _thermal_energy_kwargs(training_dict)
     loss_data = []
 
     for epoch in range(num_epochs):
@@ -81,6 +96,7 @@ def fit_mixed_tm(
                     gcII_factor=gcII_factor,
                     tm_eps_r=tm_eps_r,
                     alpha_old=history_old.get("alpha_old"),
+                    **thermal_kwargs,
                 )
                 loss_var = torch.log10(loss_E_el + loss_E_d)
 
@@ -145,6 +161,7 @@ def fit_mixed_tm_with_early_stopping(
     gcII = training_dict.get("GcII", None)
     gcII_factor = training_dict.get("GcII_factor", 1.0)
     tm_eps_r = training_dict.get("tm_eps_r", 0.0)
+    thermal_kwargs = _thermal_energy_kwargs(training_dict)
     loss_data = []
     early_stopping = EarlyStopping(tol_steps=10, min_delta=min_delta, device=area_T.device)
     loss_prev = torch.tensor([0.0], device=area_T.device)
@@ -172,6 +189,7 @@ def fit_mixed_tm_with_early_stopping(
                 gcII_factor=gcII_factor,
                 tm_eps_r=tm_eps_r,
                 alpha_old=history_old.get("alpha_old"),
+                **thermal_kwargs,
             )
             loss_var = torch.log10(loss_E_el + loss_E_d)
 
@@ -350,6 +368,7 @@ def train_mixed_tm(
     gcII = training_dict.get("GcII", None)
     gcII_factor = training_dict.get("GcII_factor", 1.0)
     tm_eps_r = training_dict.get("tm_eps_r", 0.0)
+    thermal_kwargs = _thermal_energy_kwargs(training_dict)
     results_path = training_dict["results_path"]
 
     inp, T_conn, area_T, _ = prep_input_data(
@@ -438,6 +457,7 @@ def train_mixed_tm(
             gcII=gcII,
             gcII_factor=gcII_factor,
             tm_eps_r=tm_eps_r,
+            **thermal_kwargs,
         )
         history_old["alpha_old"] = alpha.detach().clone()
         save_mixed_tm_step_fields(results_path, j, disp_i, inp, T_conn, alpha, u, v, fields)

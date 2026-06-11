@@ -35,21 +35,24 @@ std1`. `comp4` and `TFinal` are excluded from this single-notch branch.
 FEM and PINN implementation details may differ when the physical meaning is
 preserved and documented. Exact COMSOL line-by-line matching is not required.
 
-## Thermal constants reserved for future work
+## Thermal constants
 
-- `alpha_T = 18.9 ppm/K`
+- `alpha_T = 18.9e-6 1/K`
+- `Tref = 273.15 K`
+- `T0 = 0 degC`
+
+Transport constants are reserved for future heat-transfer work only:
+
 - `rho = 1040 kg/m^3`
 - `k0 = 418 W/m/K`
 - `c = 170 J/kg/K`
-- `Tref = 273.15 K`
-- `T0 = 0 degC`
 
 ## Step 1: scaffold only
 
 Create this sibling subproject and document the copied files, excluded artifacts,
 and validation checks. Do not implement thermal physics in this step.
 
-## Step 2: prescribed-temperature thermal-strain branch
+## Step 2: prescribed-temperature thermal-strain branch - completed
 
 Add a controlled temperature input and apply the thermoelastic correction before
 the TM split:
@@ -60,7 +63,11 @@ eyy_e = eyy - alpha_T*(T - Tref)
 exy_e = exy
 ```
 
-## Step 3: patch tests
+Implementation status: this branch is implemented as an optional prescribed
+temperature or prescribed `delta_T` correction. It defaults to off, and
+`delta_T = 0` is equivalent to the no-thermal route.
+
+## Step 3: patch tests - completed
 
 Add patch tests before micro-notch diagnostics:
 
@@ -69,11 +76,13 @@ Add patch tests before micro-notch diagnostics:
 - constrained uniform temperature change with expected stress sign and scale;
 - shear strain unchanged by isotropic thermal expansion;
 - history unchanged when thermal strain produces no crack-driving increment.
+- guard scans showing no heat PDE, no trainable/PDE temperature field, and no
+  active damage-dependent conductivity.
 
 ## Step 4: micro-notch thermal-mechanical diagnostic
 
-After patch tests pass, run a small prescribed-temperature micro-notch diagnostic
-that keeps the no-thermal route available for comparison.
+After patch tests pass, the next safe task is a small prescribed-temperature
+micro-notch diagnostic that keeps the no-thermal route available for comparison.
 
 ## Step 5: heat PDE, only after patch tests
 
@@ -90,7 +99,7 @@ Introduce `k_d = g(d)*k0` only after the heat PDE branch is stable and tested.
 - no S0110 or further shear extension;
 - no D0040;
 - no seed study;
-- no full heat PDE in this scaffold task;
-- no damage-dependent conductivity in this scaffold task;
+- no full heat PDE in the prescribed-strain branch;
+- no damage-dependent conductivity in the prescribed-strain branch;
 - no COMSOL exact matching;
 - no source change to the original no-thermal project.

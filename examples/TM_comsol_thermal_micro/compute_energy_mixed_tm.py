@@ -6,6 +6,13 @@ from mixed_mode_tm import (
     mixed_mode_ratio,
     tm_source_effective_stress_fields,
 )
+from thermal_prescribed import (
+    DEFAULT_ALPHA_T,
+    DEFAULT_TREF_K,
+    apply_thermal_strain,
+    delta_T_from_temperature,
+    prescribed_delta_T,
+)
 
 
 TM_STRESS_FIELD_KEYS = (
@@ -41,6 +48,62 @@ def _optional_alpha_old_on_elements(alpha_old, alpha_elem, T_conn):
     return (alpha_old[T_conn[:, 0]] + alpha_old[T_conn[:, 1]] + alpha_old[T_conn[:, 2]]) / 3.0
 
 
+def _element_centroids(inp, T_conn):
+    if T_conn is None:
+        return inp[:, 0], inp[:, 1]
+    x = (inp[T_conn[:, 0], 0] + inp[T_conn[:, 1], 0] + inp[T_conn[:, 2], 0]) / 3.0
+    y = (inp[T_conn[:, 0], 1] + inp[T_conn[:, 1], 1] + inp[T_conn[:, 2], 1]) / 3.0
+    return x, y
+
+
+def _thermal_value_on_elements(value, reference, T_conn, name):
+    value = torch.as_tensor(value, device=reference.device, dtype=reference.dtype)
+    if value.ndim == 0 or value.numel() == 1:
+        return torch.zeros_like(reference) + value.reshape(())
+    if value.shape == reference.shape:
+        return value
+    if T_conn is not None and value.ndim == 1 and value.numel() > int(torch.max(T_conn).detach().cpu()):
+        return (value[T_conn[:, 0]] + value[T_conn[:, 1]] + value[T_conn[:, 2]]) / 3.0
+    raise ValueError(f"{name} must be scalar, element-sized, or nodal-sized")
+
+
+def _resolve_delta_T(
+    inp,
+    strain_11,
+    T_conn,
+    thermal_temperature=None,
+    thermal_delta_T=None,
+    thermal_mode="off",
+    thermal_delta_T0=0.0,
+    thermal_grad_y=0.0,
+    thermal_y0=0.0,
+    thermal_Tref=DEFAULT_TREF_K,
+):
+    if thermal_temperature is not None and thermal_delta_T is not None:
+        raise ValueError("Specify either thermal_temperature or thermal_delta_T, not both")
+    if thermal_temperature is not None:
+        temperature = torch.as_tensor(thermal_temperature, device=strain_11.device, dtype=strain_11.dtype)
+        delta_T = delta_T_from_temperature(
+            temperature,
+            Tref=torch.as_tensor(thermal_Tref, device=strain_11.device, dtype=strain_11.dtype),
+        )
+        return _thermal_value_on_elements(delta_T, strain_11, T_conn, "thermal_temperature")
+    if thermal_delta_T is not None:
+        return _thermal_value_on_elements(thermal_delta_T, strain_11, T_conn, "thermal_delta_T")
+    if thermal_mode in {None, "off"}:
+        return torch.zeros_like(strain_11)
+    x_elem, y_elem = _element_centroids(inp, T_conn)
+    delta_T = prescribed_delta_T(
+        mode=thermal_mode,
+        x=x_elem,
+        y=y_elem,
+        delta_T0=thermal_delta_T0,
+        grad_y=thermal_grad_y,
+        y0=thermal_y0,
+    )
+    return _thermal_value_on_elements(delta_T, strain_11, None, "prescribed thermal delta_T")
+
+
 def compute_mixed_tm_fields(
     inp,
     u,
@@ -57,6 +120,14 @@ def compute_mixed_tm_fields(
     gcII_factor=1.0,
     tm_eps_r=0.0,
     alpha_old=None,
+    thermal_temperature=None,
+    thermal_delta_T=None,
+    thermal_mode="off",
+    thermal_delta_T0=0.0,
+    thermal_grad_y=0.0,
+    thermal_y0=0.0,
+    thermal_alpha_T=DEFAULT_ALPHA_T,
+    thermal_Tref=DEFAULT_TREF_K,
 ):
     if HI_old.shape != area_elem.shape:
         raise ValueError(
@@ -71,10 +142,33 @@ def compute_mixed_tm_fields(
         inp, u, v, alpha, area_elem, T_conn
     )
     alpha_elem = _alpha_on_elements(alpha, T_conn)
-    split = mixed_mode_energy_split(
+    delta_T = _resolve_delta_T(
+        inp,
+        strain_11,
+        T_conn,
+        thermal_temperature=thermal_temperature,
+        thermal_delta_T=thermal_delta_T,
+        thermal_mode=thermal_mode,
+        thermal_delta_T0=thermal_delta_T0,
+        thermal_grad_y=thermal_grad_y,
+        thermal_y0=thermal_y0,
+        thermal_Tref=thermal_Tref,
+    )
+    elastic_strain = apply_thermal_strain(
         strain_11,
         strain_22,
         strain_12,
+        delta_T=delta_T,
+        alpha_T=thermal_alpha_T,
+        Tref=thermal_Tref,
+    )
+    eps_xx_elastic = elastic_strain["eps_xx"]
+    eps_yy_elastic = elastic_strain["eps_yy"]
+    eps_xy_elastic = elastic_strain["eps_xy"]
+    split = mixed_mode_energy_split(
+        eps_xx_elastic,
+        eps_yy_elastic,
+        eps_xy_elastic,
         matprop,
         eps_r=tm_eps_r,
     )
@@ -103,11 +197,11 @@ def compute_mixed_tm_fields(
     max_principal_strain = 0.5 * (strain_11 + strain_22) + torch.sqrt(
         (0.5 * (strain_11 - strain_22)) ** 2 + strain_12**2
     )
-    _, sigma_yy, _ = stress(strain_11, strain_22, strain_12, alpha_elem, matprop, pffmodel)
+    _, sigma_yy, _ = stress(eps_xx_elastic, eps_yy_elastic, eps_xy_elastic, alpha_elem, matprop, pffmodel)
     tm_stress = tm_source_effective_stress_fields(
-        strain_11,
-        strain_22,
-        strain_12,
+        eps_xx_elastic,
+        eps_yy_elastic,
+        eps_xy_elastic,
         alpha_elem,
         matprop,
         eta_residual=eta_residual,
@@ -123,6 +217,20 @@ def compute_mixed_tm_fields(
         "eps_xx": strain_11,
         "eps_yy": strain_22,
         "eps_xy": strain_12,
+        "eps_xx_total": strain_11,
+        "eps_yy_total": strain_22,
+        "eps_xy_total": strain_12,
+        "eps_xx_elastic": eps_xx_elastic,
+        "eps_yy_elastic": eps_yy_elastic,
+        "eps_xy_elastic": eps_xy_elastic,
+        "delta_T": delta_T,
+        "thermal_delta_T": delta_T,
+        "thermal_eps_xx": elastic_strain["thermal_eps_xx"],
+        "thermal_eps_yy": elastic_strain["thermal_eps_yy"],
+        "thermal_eps_xy": elastic_strain["thermal_eps_xy"],
+        "thermal_alpha_T": torch.full_like(delta_T, float(thermal_alpha_T)),
+        "thermal_Tref": torch.full_like(delta_T, float(thermal_Tref)),
+        "thermal_active": torch.full_like(delta_T, float(torch.any(delta_T != 0.0).detach().cpu())),
         "eps_zz": split["eps_zz"],
         "grad_alpha_x": grad_alpha_x,
         "grad_alpha_y": grad_alpha_y,
@@ -175,6 +283,14 @@ def compute_mixed_tm_energy(
     gcII_factor=1.0,
     tm_eps_r=0.0,
     alpha_old=None,
+    thermal_temperature=None,
+    thermal_delta_T=None,
+    thermal_mode="off",
+    thermal_delta_T0=0.0,
+    thermal_grad_y=0.0,
+    thermal_y0=0.0,
+    thermal_alpha_T=DEFAULT_ALPHA_T,
+    thermal_Tref=DEFAULT_TREF_K,
 ):
     fields = compute_mixed_tm_fields(
         inp,
@@ -192,6 +308,14 @@ def compute_mixed_tm_energy(
         gcII_factor=gcII_factor,
         tm_eps_r=tm_eps_r,
         alpha_old=alpha_old,
+        thermal_temperature=thermal_temperature,
+        thermal_delta_T=thermal_delta_T,
+        thermal_mode=thermal_mode,
+        thermal_delta_T0=thermal_delta_T0,
+        thermal_grad_y=thermal_grad_y,
+        thermal_y0=thermal_y0,
+        thermal_alpha_T=thermal_alpha_T,
+        thermal_Tref=thermal_Tref,
     )
     E_el = torch.sum(area_elem * fields["elastic_energy_density"])
     E_d = torch.sum(area_elem * fields["fracture_energy_density"])

@@ -1,0 +1,12 @@
+name,value,unit,status,comment
+E,81.5,kN/mm^2,preserved,"Same mechanics stiffness convention as copied baseline."
+nu,0.38,dimensionless,preserved,"Same Poisson ratio as copied baseline."
+Gf0,2.4e-6,kN/mm,preserved,"Same fracture energy as copied baseline."
+l0,1.5e-4,mm,preserved,"Not changed."
+eps_r,1.0e-5,dimensionless,preserved,"Default TM source split regularization."
+alpha_T,18.9e-6,1/K,implemented,"Used only for prescribed thermal strain."
+Tref,273.15,K,implemented,"Used for delta_T=T-Tref."
+T0,0,degC,documented,"Reference initial temperature label; no heat PDE implemented."
+rho,1040,kg/m^3,future_work_only,"Documented transport constant; unused by active source."
+k0,418,W/m/K,future_work_only,"Documented transport constant; no damage-dependent conductivity implemented."
+c,170,J/kg/K,future_work_only,"Documented transport constant; unused by active source."

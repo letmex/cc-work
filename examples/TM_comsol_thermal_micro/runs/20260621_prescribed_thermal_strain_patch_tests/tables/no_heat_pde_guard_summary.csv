@@ -1,0 +1,9 @@
+guard_item,expected_status,observed_status,passed,comment
+heat_equation_residual,absent,absent in active Python source,true,"No heat PDE residual function or loss term was added."
+thermal_pde_residual,absent,absent in active Python source,true,"No alternate thermal PDE residual was added."
+temperature_pde,absent,absent in active Python source,true,"No PDE temperature field path was added."
+trainable_temperature,absent,absent in active Python source,true,"Temperature is prescribed only; no trainable temperature output was introduced."
+damage_dependent_conductivity,absent,absent in active Python source,true,"No active damage-dependent conductivity flag or implementation was added."
+k_d_equals_g_d_k0,absent,absent in active Python source,true,"No active k_d=g(d)*k0 coupling was implemented."
+training_runs,not_run,not_run,true,"Only py_compile and pytest were run."
+postprocess_large_checkpoints,not_run,not_run,true,"No large checkpoint postprocessing was run."

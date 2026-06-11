@@ -1,0 +1,55 @@
+{
+  "package": "examples/TM_comsol_thermal_micro/runs/20260621_prescribed_thermal_strain_patch_tests",
+  "classification": "prescribed thermal strain branch implemented and patch tests passed",
+  "original_no_thermal_project_modified": false,
+  "thermal_strain_implemented": true,
+  "thermal_branch_type": "prescribed temperature only",
+  "heat_pde_implemented": false,
+  "damage_dependent_conductivity_implemented": false,
+  "training_run": false,
+  "d0040_run": false,
+  "seed_study_run": false,
+  "shear_continuation_run": false,
+  "s0110_run": false,
+  "material_parameters_changed": false,
+  "l0_changed": false,
+  "default_no_thermal_behavior_changed": false,
+  "comsol_reference_scope": "comp3 / solid3 / ht3 / c / state3 / std1",
+  "ignored_comsol_scope": ["comp4", "solid2", "ht2", "c2", "state4", "TFinal", "multi-pore settings"],
+  "thermal_rule": {
+    "delta_T": "T - Tref",
+    "exx_e": "exx - alpha_T * delta_T",
+    "eyy_e": "eyy - alpha_T * delta_T",
+    "exy_e": "exy"
+  },
+  "thermal_constants": {
+    "alpha_T_1_per_K": 1.89e-5,
+    "Tref_K": 273.15,
+    "T0_degC": 0.0
+  },
+  "validation": [
+    {
+      "command": "D:\\anaconda3\\envs\\torch_env\\python.exe recursive py_compile under examples\\TM_comsol_thermal_micro",
+      "status": "passed"
+    },
+    {
+      "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m pytest examples\\TM_comsol_thermal_micro\\tests\\test_prescribed_thermal_strain_patch.py -q",
+      "status": "passed",
+      "result": "8 passed"
+    },
+    {
+      "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m pytest examples\\TM_comsol_thermal_micro\\tests -q --ignore=examples\\TM_comsol_thermal_micro\\tests\\test_project_directory_hygiene.py",
+      "status": "passed",
+      "result": "55 passed, 8 warnings"
+    }
+  ],
+  "files": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/thermal_strain_patch_test_summary.csv",
+    "tables/thermal_branch_change_summary.csv",
+    "tables/no_heat_pde_guard_summary.csv",
+    "tables/thermal_constants_summary.csv"
+  ]
+}
