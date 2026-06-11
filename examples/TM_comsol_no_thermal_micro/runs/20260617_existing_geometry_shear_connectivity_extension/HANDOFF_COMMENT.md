@@ -1,6 +1,6 @@
 ## Codex handoff: Existing-geometry shear connectivity extension
 
-Commit: TO_BE_FILLED_AFTER_COMMIT
+Commit: d503ad8
 Package folder: `examples/TM_comsol_no_thermal_micro/runs/20260617_existing_geometry_shear_connectivity_extension`
 Memory file read confirmation: read `CODEX_PROJECT_MEMORY_FOR_NEXT_WINDOW.md`, project-memory handoff files, and the S0050 shear extension report/tables before this package was built.
 
