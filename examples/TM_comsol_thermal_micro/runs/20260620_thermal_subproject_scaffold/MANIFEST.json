@@ -1,0 +1,36 @@
+{
+  "package": "examples/TM_comsol_thermal_micro/runs/20260620_thermal_subproject_scaffold",
+  "source_project": "D:\\ProgramData\\PINN\\FEM-PINN-main\\examples\\TM_comsol_no_thermal_micro",
+  "new_project_path": "examples/TM_comsol_thermal_micro",
+  "classification": "thermal subproject scaffold created from verified no-thermal baseline",
+  "copied_baseline_file_count": 39,
+  "excluded_artifact_count": 1858,
+  "original_no_thermal_project_modified": false,
+  "thermal_strain_implemented": false,
+  "heat_pde_implemented": false,
+  "damage_dependent_conductivity_implemented": false,
+  "training_run": false,
+  "D0040_run": false,
+  "seed_study_run": false,
+  "shear_extension_run": false,
+  "validation": {
+    "pre_copy_git_status": "clean and up to date with origin/main",
+    "heavy_artifact_scan": "passed: no copied outputs/checkpoints/results directories, field NPZ files, checkpoint weights, pyc files, __pycache__, or .pytest_cache",
+    "py_compile": "passed: recursive compile of copied Python files",
+    "pytest": "passed: retained lightweight copied tests, excluding directory-hygiene test that imports config.py and creates managed output directories"
+  },
+  "files": [
+    "README.md",
+    "PROJECT_STRUCTURE.md",
+    "POSTPROCESS_WORKFLOW.md",
+    "PROJECT_MEMORY.md",
+    "THERMAL_REINTRODUCTION_PLAN.md",
+    "runs/20260620_thermal_subproject_scaffold/REPORT.md",
+    "runs/20260620_thermal_subproject_scaffold/HANDOFF_COMMENT.md",
+    "runs/20260620_thermal_subproject_scaffold/MANIFEST.json",
+    "runs/20260620_thermal_subproject_scaffold/tables/copied_file_manifest.csv",
+    "runs/20260620_thermal_subproject_scaffold/tables/excluded_artifact_manifest.csv"
+  ],
+  "commit_hash": "PENDING_HANDOFF_UPDATE",
+  "pushed": "PENDING_HANDOFF_UPDATE"
+}

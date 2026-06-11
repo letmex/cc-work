@@ -1,0 +1,6 @@
+excluded_source_path_or_pattern,file_count,reason
+outputs/,1850,generated checkpoints results figures curves logs and field artifacts are not part of scaffold
+source/__pycache__/*.pyc,8,Python bytecode cache is not source and was removed from copied scaffold
+runs/,0,previous no-thermal run packages are not copied wholesale
+recent_debug_true_staggered_20260607/,0,old debug package is not part of thermal scaffold
+.pytest_cache/,0,test cache is not copied
