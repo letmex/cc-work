@@ -1,0 +1,70 @@
+{
+  "cases": {
+    "A": {
+      "delta_T_K": 0.0,
+      "purpose": "moderate no-thermal damage-evolution baseline inside the thermal subproject",
+      "run_id": "20260625_damage_probe_A_off_seed23",
+      "thermal_mode": "off"
+    },
+    "B": {
+      "delta_T_K": 0.0,
+      "purpose": "active prescribed-temperature branch at zero thermal strain",
+      "run_id": "20260625_damage_probe_B_deltaT0_seed23",
+      "thermal_mode": "uniform"
+    },
+    "C": {
+      "delta_T_K": 20.0,
+      "purpose": "positive uniform thermal strain damage-evolution probe",
+      "run_id": "20260625_damage_probe_C_deltaT20_seed23",
+      "thermal_mode": "uniform"
+    }
+  },
+  "classification": "moderate prescribed-temperature damage probe passed",
+  "connectivity_method": "Element graph from shared raw mesh triangle edges.",
+  "figures": [
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/reaction_vs_displacement.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/nominal_stress_vs_strain.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/reaction_shift_C_minus_A.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/alpha_max_vs_step.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/notch_alpha_vs_displacement.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/HI_HII_peaks_vs_step.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/energy_terms_vs_step.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/alpha_threshold_area_vs_step.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/final_alpha_global_scale.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/final_alpha_low_range_scale.png",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/figures/final_alpha_high_threshold_masks.png"
+  ],
+  "generated_at": "2026-06-11T19:03:12",
+  "guards": {
+    "D0040_run": false,
+    "damage_dependent_conductivity_implemented_or_run": false,
+    "heat_pde_implemented_or_run": false,
+    "no_thermal_project_touched": false,
+    "physics_model_boundary_material_l0_history_loss_changed": false,
+    "seed_study_run": false,
+    "shear_extension_or_S0110_run": false,
+    "source_code_modified": false,
+    "training_run": true
+  },
+  "notch_window": {
+    "center_x_mm": 0.005,
+    "center_y_mm": 0.005,
+    "half_window_mm": 0.0003
+  },
+  "package": "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe",
+  "schedule": "examples/TM_comsol_thermal_micro/load_schedules/load_schedule_D0020_tension_thermal_damage_probe.csv",
+  "tables": [
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/damage_probe_case_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/damage_probe_case_comparison.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/reaction_stress_by_step.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/alpha_notch_metrics_by_step.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/alpha_threshold_connectivity_by_step.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/damage_delay_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/HI_HII_drive_by_step.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/energy_terms_by_step.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/no_heat_pde_guard_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/training_diagnostics_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/tables/changed_files_summary.csv"
+  ],
+  "training_settings": "hidden_layers=8; neurons=400; seed=23; activation=TrainableReLU; init_coeff=3.0; full mesh; n_rprop=300; n_lbfgs=1; load_case=tension; checkpointed energy-conjugate reaction"
+}

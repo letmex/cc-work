@@ -39,3 +39,14 @@ Current thermal branch:
 Next task: run a small prescribed-temperature micro-notch diagnostic only after
 reviewing the patch-test handoff. Do not start heat PDE or damage-dependent
 conductivity work next.
+
+Finalization rule for future thermal diagnostic tasks:
+
+- do not use `git add .`
+- do not perform full-repo staging
+- stage exact thermal schedule/package paths only
+- force-add package PNG figures only when project ignore rules hide required figures
+- always check `examples/TM_comsol_no_thermal_micro` has no unstaged or staged changes
+- run package schema/compile/focused validation once after package generation
+- do not chase self-referential handoff commit hashes indefinitely
+- use at most one handoff-sync commit if the generated handoff still contains pending commit or push status

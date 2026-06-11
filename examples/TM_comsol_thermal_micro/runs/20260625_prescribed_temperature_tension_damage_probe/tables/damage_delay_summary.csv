@@ -1,0 +1,12 @@
+metric,threshold_or_quantity,case_A_displacement,case_B_displacement,case_C_displacement,C_minus_A_displacement_shift,interpretation
+first displacement where alpha_max >= threshold,0.02,7.5e-06,7.5e-06,1.25e-05,5e-06,positive shift means Case C reaches this alpha threshold later than A; NaN means threshold was not reached
+first displacement where alpha_max >= threshold,0.03,7.5e-06,7.5e-06,1.5e-05,7.5e-06,positive shift means Case C reaches this alpha threshold later than A; NaN means threshold was not reached
+first displacement where alpha_max >= threshold,0.05,1e-05,1e-05,1.75e-05,7.499999999999998e-06,positive shift means Case C reaches this alpha threshold later than A; NaN means threshold was not reached
+first displacement where alpha_max >= threshold,0.1,1.25e-05,1.25e-05,,,positive shift means Case C reaches this alpha threshold later than A; NaN means threshold was not reached
+first displacement where notch_window_alpha_max >= threshold,0.02,7.5e-06,7.5e-06,1.25e-05,5e-06,positive shift means Case C reaches this alpha threshold later than A; NaN means threshold was not reached
+first displacement where notch_window_alpha_max >= threshold,0.05,1e-05,1e-05,1.75e-05,7.499999999999998e-06,positive shift means Case C reaches this alpha threshold later than A; NaN means threshold was not reached
+first displacement where nominal stress exceeds threshold,50 MPa,7.5e-06,7.5e-06,1e-05,2.5000000000000006e-06,positive shift means prescribed +20 K reaches the stress level later than A
+first displacement where nominal stress exceeds threshold,100 MPa,1.25e-05,1.25e-05,1.75e-05,4.999999999999998e-06,positive shift means prescribed +20 K reaches the stress level later than A
+first displacement where nominal stress exceeds threshold,150 MPa,2e-05,2e-05,,,positive shift means prescribed +20 K reaches the stress level later than A
+reaction shift at final displacement,reaction_N_energy at 2.0e-5 mm,1.5858918195590377,1.5858918195590377,1.334361033514142,-0.25153078604489565,negative value means Case C reaction remains shifted downward at final displacement
+final notch alpha reduction,notch_window_alpha_max at 2.0e-5 mm,0.3446520268917084,0.3446520268917084,0.07818233966827393,-0.26646968722343445,negative value means Case C has lower final notch-window alpha than A

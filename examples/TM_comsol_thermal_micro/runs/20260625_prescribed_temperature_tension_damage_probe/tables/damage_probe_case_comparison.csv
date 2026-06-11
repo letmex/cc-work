@@ -1,0 +1,16 @@
+comparison,metric,case_left,case_right,left_value,right_value,absolute_difference,relative_difference,tolerance_or_interpretation,passed,comment
+B_vs_A,max abs reaction curve difference,B,A,0.0,0.0,0.0,,<= 1e-12,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs nominal stress curve difference,B,A,0.0,0.0,0.0,,<= 1e-10,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs alpha_max by step difference,B,A,0.0,0.0,0.0,,<= 1e-12,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs notch alpha by step difference,B,A,0.0,0.0,0.0,,<= 1e-12,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs HI peak by step difference,B,A,0.0,0.0,0.0,,<= 1e-12,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs HII peak by step difference,B,A,0.0,0.0,0.0,,<= 1e-12,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs Pi_total by step difference,B,A,0.0,0.0,0.0,,<= 1e-18,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs elastic energy by step difference,B,A,0.0,0.0,0.0,,<= 1e-18,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,max abs fracture energy by step difference,B,A,0.0,0.0,0.0,,<= 1e-18,True,delta_T=0 branch should match no-thermal branch
+B_vs_A,checkpoint availability,B,A,11.0,11.0,0.0,0.0,equal counts and energy reaction available,True,both cases should have all step checkpoints
+C_vs_A,final reaction shift,C,A,133.4361033514142,158.58918195590377,-25.153078604489565,-0.15860526105420897,C should remain lower than A,True,positive thermal strain reduces tensile reaction/stress at fixed displacement
+C_vs_A,final alpha max,C,A,0.07818233966827393,0.3446520268917084,-0.26646968722343445,-0.7731557235471032,C should remain lower than A,True,damage interpretation uses peak/high-threshold metrics
+C_vs_A,final notch-window alpha max,C,A,0.07818233966827393,0.3446520268917084,-0.26646968722343445,-0.7731557235471032,C should remain lower than A,True,notch-tip metric is preferred over diffuse low-level area
+C_vs_A,final HI peak,C,A,0.00945452880114317,0.027083341032266617,-0.017628812231123447,-0.6509098050392228,C should remain lower than A,True,HI remains finite and reduced under +20 K
+C_vs_A,final HII peak,C,A,0.005971277132630348,0.017105262726545334,-0.011133985593914986,-0.6509099434430997,C should remain lower than A,True,HII remains finite and reduced under +20 K

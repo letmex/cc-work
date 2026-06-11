@@ -1,0 +1,15 @@
+# Moderate prescribed-temperature tension damage-evolution probe schedule.
+# Displacements are in mm. This preserves the delta_T=20 K compensation-region
+# resolution near 3.78e-6 mm and extends moderately beyond the prior 1.5e-5 mm
+# endpoint. It is not a through-crack extension schedule.
+1.0e-6
+2.0e-6
+3.0e-6
+3.8e-6
+5.0e-6
+7.5e-6
+1.0e-5
+1.25e-5
+1.5e-5
+1.75e-5
+2.0e-5

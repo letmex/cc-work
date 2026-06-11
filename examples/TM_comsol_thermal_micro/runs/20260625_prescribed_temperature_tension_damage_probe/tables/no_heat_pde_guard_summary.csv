@@ -1,0 +1,10 @@
+guard_item,expected_status,observed_status,passed,comment
+no heat PDE,not implemented or run,prescribed scalar delta_T only; no heat equation entry point was invoked,True,guard satisfied
+no damage-dependent conductivity,not implemented or run,no conductivity model was touched,True,guard satisfied
+no trainable/PDE temperature field,not introduced,thermal fields are prescribed through existing thermal_delta_T arguments,True,guard satisfied
+no D0040,not run,only D0020 tension damage-probe schedule was run,True,guard satisfied
+no seed study,not run,seed 23 only,True,guard satisfied
+no shear extension or S0110,not run,load_case=tension only,True,guard satisfied
+no material/l0/history/loss/boundary changes,unchanged source behavior,"only schedule, project memory, and run package artifacts are generated",True,guard satisfied
+energy-conjugate reaction primary,required,reaction_N_energy from step checkpoints is used as the primary reaction,True,guard satisfied
+no no-thermal project modification,required,validated by git diff guard,True,guard satisfied
