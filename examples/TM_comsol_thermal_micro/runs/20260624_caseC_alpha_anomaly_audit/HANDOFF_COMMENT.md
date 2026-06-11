@@ -7,11 +7,13 @@ Final classification: `caseC diffuse alpha likely plotting-scale artifact plus l
 Commit hash:
 
 - Primary audit commit: `3d97ef4e1ac7981e81fd364ac0fdccba9e26956a` (`Audit Case C alpha distribution`).
-- This handoff file is updated in a follow-up sync commit so reviewers can find the primary audit commit from the repository. The final pushed HEAD for the sync commit is reported in the final Codex response.
+- First handoff sync commit: `ecccf86b67c232cae3e811ca35005259c809d8fa` (`Sync Case C alpha audit handoff`).
+- This file is updated once more for push-status synchronization. The final push-status sync commit hash is reported in the final Codex response because a commit cannot contain its own final hash.
 
 Push status:
 
-- Pending before final `git push`; final Codex response reports whether this handoff sync commit was pushed to `origin/main` and gives the final HEAD hash.
+- Pushed to `origin/main` after the primary audit commit and first handoff sync commit.
+- Final Codex response reports the final pushed HEAD hash and clean/up-to-date branch status after this push-status sync commit is pushed.
 
 ## Package
 
