@@ -1,0 +1,9 @@
+test_id,test_name,command,expected,result,notes
+PT01,constant temperature steady residual,pytest test_constant_k0_heat_pde_patch.py,grad T = 0; steady residual = 0,passed,Covers zero-gradient baseline and autograd constant-gradient handling.
+PT02,linear 1D steady residual and heat flux,pytest test_constant_k0_heat_pde_patch.py,steady residual = 0; q_x = -k0*a,passed,Validates Fourier sign convention.
+PT03,quadratic manufactured steady source,pytest test_constant_k0_heat_pde_patch.py,`-div(k0 grad T) = -2*k0*b`; matching Q cancels residual,passed,Documents residual sign convention.
+PT04,boundary normal heat flux,pytest test_constant_k0_heat_pde_patch.py,`q dot n = -k0 grad(T) dot n`,passed,Checks zero flux for constant T and sign for linear T.
+PT05,transient uniform no-source,pytest test_constant_k0_heat_pde_patch.py,"`dTdt=0`, `grad T=0`, transient residual = 0",passed,Transient utility exists but remains inactive outside tests.
+PT06,transient manufactured residual,pytest test_constant_k0_heat_pde_patch.py,matching Q cancels `rho*c*dTdt - div(k0 grad T)`,passed,Covers rho*c scaling.
+PT07,mm-to-m chain-rule,pytest test_constant_k0_heat_pde_patch.py,mm coordinate residual matches direct meter-coordinate residual,passed,Would fail if 1e3 or 1e6 derivative factors were omitted.
+PT08,no damage-dependent conductivity API,pytest test_constant_k0_heat_pde_patch.py,no alpha/damage/k(d) API inputs or source tokens,passed,Phase 1 remains constant-k0 only.

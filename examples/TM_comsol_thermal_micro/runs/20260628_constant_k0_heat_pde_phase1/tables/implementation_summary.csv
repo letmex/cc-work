@@ -1,0 +1,7 @@
+item,status,details,default_behavior,risk_or_note
+isolated heat PDE module,implemented,"`heat_pde.py` provides constant-k0 SI heat residual, flux, divergence, and mm-to-m conversion utilities.",inactive unless imported directly by focused tests or future approved code,Not threaded into training or mechanics loss.
+steady residual,implemented,`steady_heat_residual_W_per_m3` computes `-div(k0*grad(T)) - Q` through Fourier flux divergence.,"`Q=0`, `k0=418 W/m/K`, coordinates interpreted as mm unless specified otherwise",Uses autograd; input coordinates must require gradients for nonconstant derivative tests.
+transient residual,implemented,`transient_heat_residual_W_per_m3` computes `rho*c*dTdt - div(k0*grad(T)) - Q`.,available as utility only; not used by training,No physical time schedule is introduced.
+mm-to-m conversion,implemented,`coords_mm_to_m` and derivative chain-rule scaling convert gradients from mm input coordinates to K/m.,`coordinate_unit='mm'` explicit default for project mesh coordinates,Patch test checks against direct meter-coordinate computation.
+damage-dependent conductivity,not implemented,"No alpha, damage, degradation, or k(d) inputs exist in the Phase 1 heat PDE API.",constant k0 only,Guard test scans public signatures and source tokens.
+prescribed-temperature mechanics branch,unchanged,Existing thermal strain relation remains in `thermal_prescribed.py` and `compute_energy_mixed_tm.py`.,`thermal_mode=off` remains default,Existing prescribed thermal strain tests still pass.

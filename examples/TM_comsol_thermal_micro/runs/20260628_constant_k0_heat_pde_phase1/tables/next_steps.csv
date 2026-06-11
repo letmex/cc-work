@@ -1,0 +1,4 @@
+step,recommendation,blocked_by,do_not_do
+review Phase 1 package,"Read report, unit conversion table, sign convention table, and tests.",none,Do not start fracture diagnostics from this package alone.
+decide next heat scope,"If approved, choose whether to add solved-temperature representation or additional BC tests next.",reviewer approval,Do not implement damage-dependent conductivity yet.
+preserve fallback,Keep prescribed-temperature branch and `thermal_mode=off` as regression checks.,none,"Do not change material constants, l0, history, mechanics BCs, or reaction route."

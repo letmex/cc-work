@@ -14,7 +14,7 @@ Current state:
 - coordinate normalization: unit-box input
 - reaction policy: checkpointed energy-conjugate `reaction_N_energy`
 - prescribed thermal strain: implemented and default-off
-- heat PDE: not implemented
+- heat PDE: Phase 1 constant-`k0` utilities implemented and default-inactive
 - damage-dependent conductivity: not implemented
 
 Reference scope for future thermal work:
@@ -82,6 +82,37 @@ Current heat PDE planning status:
 - damage-dependent conductivity `k(d)=g(d)k0` remains explicitly deferred until
   constant-conductivity heat PDE and solved-temperature-to-thermal-strain
   coupling are independently validated and separately approved
+
+Current constant-`k0` heat PDE Phase 1 status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260628_constant_k0_heat_pde_phase1`
+- final classification:
+  `constant-k0 heat PDE phase1 implemented and patch tests passed`
+- added isolated utility module:
+  `examples/TM_comsol_thermal_micro/heat_pde.py`
+- added focused analytical patch tests:
+  `examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py`
+- heat PDE utilities use SI heat units internally:
+  temperature in K, heat-gradient length in m, time in s, `rho` in kg/m^3,
+  `c` in J/kg/K, `k0` in W/m/K, `Q` in W/m^3, residual in W/m^3
+- project mesh coordinates supplied in mm are converted explicitly for heat
+  derivatives by `x_m = x_mm * 1e-3`; the mm-to-m chain-rule path is covered by
+  a focused patch test against direct meter-coordinate computation
+- steady residual sign convention:
+  `-div(k0*grad(T)) - Q`, implemented through `q = -k0*grad(T)` and
+  `div(q) - Q`
+- transient residual utility is available for analytical tests:
+  `rho*c*dTdt - div(k0*grad(T)) - Q`
+- default heat source is `Q=0`; conductivity is constant `k0=418 W/m/K`
+- this phase remains default-inactive: no heat residual loss, no solved
+  temperature field, no fracture-training coupling, no checkpoint schema change,
+  no postprocess route change, and no broad thermal-fracture diagnostic
+- existing prescribed thermal strain patch tests still pass; `thermal_mode=off`
+  remains the default fallback route
+- damage-dependent conductivity remains unimplemented and guarded: no alpha,
+  damage, degradation, or `k(d)` conductivity input is present in the Phase 1
+  heat PDE API
 
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:

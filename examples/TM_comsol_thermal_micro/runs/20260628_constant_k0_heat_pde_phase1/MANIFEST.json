@@ -1,0 +1,48 @@
+{
+  "package": "examples/TM_comsol_thermal_micro/runs/20260628_constant_k0_heat_pde_phase1",
+  "generated_at_utc": "2026-06-11T13:59:18.612458+00:00",
+  "classification": "constant-k0 heat PDE phase1 implemented and patch tests passed",
+  "planning_only": false,
+  "heat_pde_phase1_implemented": true,
+  "constant_conductivity_only": true,
+  "damage_dependent_conductivity_implemented": false,
+  "training_run": false,
+  "heat_fracture_diagnostic_run": false,
+  "no_thermal_project_touched": false,
+  "source_files": [
+    "examples/TM_comsol_thermal_micro/heat_pde.py",
+    "examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py",
+    "examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md"
+  ],
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "figures/figure_summary.md",
+    "tables/guard_checks.csv",
+    "tables/heat_residual_sign_convention.csv",
+    "tables/implementation_summary.csv",
+    "tables/next_steps.csv",
+    "tables/patch_test_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/unit_conversion_summary.csv",
+    "tables/validation_results.csv"
+  ],
+  "unit_convention": {
+    "temperature": "K",
+    "length_for_heat_gradients": "m",
+    "input_mesh_coordinates": "mm converted by x_m = x_mm * 1e-3",
+    "time": "s",
+    "rho": "kg/m^3",
+    "c": "J/kg/K",
+    "k0": "W/m/K",
+    "Q": "W/m^3",
+    "residual": "W/m^3"
+  },
+  "validation_summary": {
+    "focused_heat_tests": "8 passed",
+    "prescribed_thermal_strain_tests": "passed",
+    "diff_check": "passed",
+    "no_thermal_guard": "passed"
+  }
+}

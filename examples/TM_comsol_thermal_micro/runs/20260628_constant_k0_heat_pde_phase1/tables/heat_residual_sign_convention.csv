@@ -1,0 +1,5 @@
+expression,implemented_form,unit,test_evidence
+heat flux,`q = -k0 * grad(T)`,W/m^2,linear 1D flux and normal flux tests
+steady residual,"`-div(k0 * grad(T)) - Q`, implemented as `div(q) - Q`",W/m^3,"constant, linear, and quadratic manufactured source tests"
+transient residual,"`rho*c*dTdt - div(k0 * grad(T)) - Q`, implemented as `rho*c*dTdt + div(q) - Q`",W/m^3,uniform transient and transient manufactured source tests
+quadratic source check,"For `T=T0+b*x_m^2`, `-div(k0 grad T) = -2*k0*b`; choose `Q=-2*k0*b` for zero residual.",W/m^3,quadratic manufactured steady source test

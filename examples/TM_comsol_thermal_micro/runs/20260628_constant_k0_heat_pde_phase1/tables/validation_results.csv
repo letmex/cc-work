@@ -1,0 +1,8 @@
+command,result,details
+git status,passed,Clean and up to date before implementation; final status reported in handoff/final response.
+python recursive py_compile under examples/TM_comsol_thermal_micro,passed,All thermal Python files compiled successfully.
+pytest examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py -q,passed,8 passed.
+pytest examples/TM_comsol_thermal_micro/tests/test_prescribed_thermal_strain_patch.py -q,passed,Existing prescribed-temperature fallback tests passed.
+package schema/file existence check,passed,Required files and CSV headers present.
+git diff --check,passed,No whitespace errors.
+git diff --name-only -- examples/TM_comsol_no_thermal_micro,passed,No output.

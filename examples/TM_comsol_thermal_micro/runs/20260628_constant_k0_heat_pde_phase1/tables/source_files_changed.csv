@@ -1,0 +1,5 @@
+path,change_type,purpose,behavior_scope,no_thermal_touched
+examples/TM_comsol_thermal_micro/heat_pde.py,added,Phase 1 constant-k0 SI heat PDE utilities,inactive unless imported directly,false
+examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py,added,Focused analytical patch tests for SI heat PDE utilities,tests only,false
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,Record Phase 1 implementation status and boundaries,documentation only,false
+examples/TM_comsol_thermal_micro/runs/20260628_constant_k0_heat_pde_phase1,added,Implementation report package,documentation and tables only,false

@@ -1,0 +1,6 @@
+guard,expected,result,evidence
+damage-dependent conductivity,not implemented,passed,No alpha/damage/k(d) parameters in public heat_pde API; guard test passed.
+heat PDE training coupling,not implemented,passed,`heat_pde.py` is isolated; training files are unchanged.
+prescribed-temperature fallback,still available and default-off,passed,Existing prescribed thermal strain patch tests passed.
+no-thermal project untouched,no diff under examples/TM_comsol_no_thermal_micro,passed,`git diff --name-only -- examples/TM_comsol_no_thermal_micro` produced no output.
+broad diagnostics,not run,passed,"No D0040, seed, shear, S0110, A/B/C, heat-fracture diagnostic, or training run was performed."

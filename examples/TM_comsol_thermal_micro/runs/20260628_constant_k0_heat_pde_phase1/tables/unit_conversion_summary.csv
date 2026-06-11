@@ -1,0 +1,8 @@
+quantity,implemented_unit,source_or_default,conversion,validation
+temperature T,K,test fields and future heat PDE utilities,none,"constant, linear, quadratic, and transient patch tests"
+coordinate x/y for heat PDE,m internally,project mesh coordinates are mm,`x_m = x_mm * 1e-3`; derivatives divide by `1e-3` for first derivatives,mm-to-m chain-rule patch test against direct meter-coordinate computation
+rho,kg/m^3,`DEFAULT_THERMAL_RHO_KG_PER_M3 = 1040.0`,none inside heat PDE utilities,transient manufactured residual test
+specific heat,J/kg/K,`DEFAULT_THERMAL_C_J_PER_KGK = 170.0`,none inside heat PDE utilities,transient manufactured residual test
+constant conductivity k0,W/m/K,`DEFAULT_THERMAL_K0_W_PER_MK = 418.0`,none inside heat PDE utilities,linear flux and quadratic source patch tests
+heat source Q,W/m^3,`DEFAULT_HEAT_SOURCE_Q_W_PER_M3 = 0.0`,caller must supply SI value,quadratic steady manufactured source and transient manufactured source tests
+heat residual,W/m^3,steady and transient residual utilities,computed fully in SI heat units,focused heat PDE patch test suite
