@@ -6,11 +6,14 @@ Final classification: `prescribed thermal strain stage summary complete`
 
 Commit hash:
 
-- Pending before commit; update once after the primary summary commit is pushed.
+- Primary summary commit: `86c9ff9a02d2401a95d97e95caf8b6338ea7f924` (`Summarize prescribed thermal strain stage`).
+- Handoff sync commit: recorded in final Codex response. This file does not chase its own commit hash.
 
 Push status:
 
-- Pending before commit; update once after the primary summary commit is pushed.
+- Primary summary commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time: `86c9ff9a02d2401a95d97e95caf8b6338ea7f924`.
 
 ## Package
 
