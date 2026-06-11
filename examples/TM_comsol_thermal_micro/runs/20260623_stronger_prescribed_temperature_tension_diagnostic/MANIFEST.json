@@ -1,0 +1,145 @@
+{
+  "package": "examples/TM_comsol_thermal_micro/runs/20260623_stronger_prescribed_temperature_tension_diagnostic",
+  "classification": "strong prescribed-temperature tension diagnostic passed",
+  "scope": {
+    "worked_under": "examples/TM_comsol_thermal_micro",
+    "no_thermal_project_touched": false,
+    "source_code_modified": false,
+    "physics_model_modified": false,
+    "boundary_conditions_modified": false,
+    "material_parameters_modified": false,
+    "l0_modified": false,
+    "history_logic_modified": false,
+    "training_losses_modified": false,
+    "full_heat_pde_implemented_or_activated": false,
+    "damage_dependent_conductivity_implemented_or_activated": false,
+    "legacy_top_sigma_primary_reaction": false
+  },
+  "schedule": {
+    "path": "examples/TM_comsol_thermal_micro/load_schedules/load_schedule_D0015_tension_thermal_compensation.csv",
+    "step_count": 9,
+    "displacements_mm": [1.0e-6, 2.0e-6, 3.0e-6, 3.8e-6, 5.0e-6, 7.5e-6, 1.0e-5, 1.25e-5, 1.5e-5],
+    "final_displacement_mm": 1.5e-5,
+    "purpose": "strong prescribed-temperature tension diagnostic schedule crossing the delta_T=20 K compensation estimate"
+  },
+  "training_settings": {
+    "hidden_layers": 8,
+    "neurons": 400,
+    "seed": 23,
+    "activation": "TrainableReLU",
+    "init_coeff": 3.0,
+    "full": true,
+    "smoke": false,
+    "n_rprop": 300,
+    "n_lbfgs": 1,
+    "load_case": "tension",
+    "checkpointed_training": true
+  },
+  "thermal_compensation": {
+    "alpha_T_1_per_K": 1.89e-5,
+    "delta_T_K": 20.0,
+    "epsilon_th": 0.000378,
+    "effective_height_mm": 0.01,
+    "estimated_Delta_cross_mm": 3.78e-6,
+    "observed_C_reaction_zero_crossing_interval": "between 3e-06 and 3.8e-06 mm",
+    "observed_C_reaction_zero_crossing_interpolated_mm": 3.450374303916948e-6
+  },
+  "cases": [
+    {
+      "case_id": "A",
+      "run_id": "20260623_strong_A_off_seed23",
+      "thermal_mode": "off",
+      "delta_T_K": 0.0,
+      "checkpoint_count": 9,
+      "field_file_count": 9,
+      "energy_reaction_available": true,
+      "final_nominal_stress_MPa": 124.04142180457713,
+      "final_alpha_max": 0.1582225263118744,
+      "classification": "strong no-thermal baseline completed"
+    },
+    {
+      "case_id": "B",
+      "run_id": "20260623_strong_B_deltaT0_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 0.0,
+      "checkpoint_count": 9,
+      "field_file_count": 9,
+      "energy_reaction_available": true,
+      "final_nominal_stress_MPa": 124.04142180457713,
+      "final_alpha_max": 0.1582225263118744,
+      "classification": "deltaT0 branch matches no-thermal baseline under stronger training"
+    },
+    {
+      "case_id": "C",
+      "run_id": "20260623_strong_C_deltaT20_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 20.0,
+      "checkpoint_count": 9,
+      "field_file_count": 9,
+      "energy_reaction_available": true,
+      "final_nominal_stress_MPa": 94.41127767786384,
+      "final_alpha_max": 0.036508958786726,
+      "classification": "positive deltaT branch crosses compensation region with interpretable shift"
+    }
+  ],
+  "files": {
+    "reports": [
+      "REPORT.md",
+      "HANDOFF_COMMENT.md",
+      "MANIFEST.json",
+      "RUN_METADATA.json"
+    ],
+    "tables": [
+      "tables/strong_thermal_case_summary.csv",
+      "tables/strong_thermal_case_comparison.csv",
+      "tables/reaction_stress_by_step.csv",
+      "tables/thermal_compensation_analysis.csv",
+      "tables/thermal_effect_summary.csv",
+      "tables/checkpoint_availability_summary.csv",
+      "tables/damage_drive_summary.csv",
+      "tables/energy_terms_by_step.csv",
+      "tables/training_diagnostics_summary.csv",
+      "tables/no_heat_pde_guard_summary.csv",
+      "tables/changed_files_summary.csv"
+    ],
+    "figures": [
+      "figures/reaction_vs_displacement.png",
+      "figures/nominal_stress_vs_strain.png",
+      "figures/reaction_shift_C_minus_A.png",
+      "figures/alpha_max_vs_step.png",
+      "figures/HI_HII_peaks_vs_step.png",
+      "figures/energy_terms_vs_step.png",
+      "figures/final_alpha_comparison.png",
+      "figures/figure_summary.md"
+    ]
+  },
+  "validation": {
+    "pre_stage": [
+      {
+        "command": "git status --short --branch",
+        "result": "## main...origin/main; new thermal schedule and diagnostic package untracked before staging"
+      },
+      {
+        "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m compileall -q examples\\TM_comsol_thermal_micro",
+        "result": "exit code 0"
+      },
+      {
+        "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m pytest examples\\TM_comsol_thermal_micro\\tests\\test_prescribed_thermal_strain_patch.py -q",
+        "result": "8 passed in 1.65s"
+      },
+      {
+        "command": "package schema/file existence check",
+        "result": "package_check=passed; classification=strong prescribed-temperature tension diagnostic passed"
+      },
+      {
+        "command": "git diff --check",
+        "result": "no output"
+      },
+      {
+        "command": "git diff --name-only -- examples\\TM_comsol_no_thermal_micro",
+        "result": "no output"
+      }
+    ]
+  },
+  "next_recommended_task": "Review this package, then run one moderate non-smoke prescribed-temperature tension diagnostic with a slightly denser schedule around 3.0e-6 to 4.5e-6 mm, still limited to A/B/C and without heat PDE or damage-dependent conductivity."
+}

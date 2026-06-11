@@ -1,0 +1,19 @@
+comparison,metric,case_left,case_right,left_value,right_value,absolute_difference,relative_difference,tolerance_or_interpretation,passed,comment
+A_vs_B_deltaT0_equivalence,max_abs_reaction_N_energy,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B curves are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_nominal_stress_energy_MPa,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B curves are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_Pi_total_kNmm,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B curves are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_elastic_energy_kNmm,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B curves are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_fracture_energy_kNmm,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B curves are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_alpha_max,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B diagnostics are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_HI_max,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B diagnostics are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_HII_max,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B diagnostics are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_loss_total,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B diagnostics are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_mechanics_current_energy,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B diagnostics are identical within table precision
+A_vs_B_deltaT0_equivalence,max_abs_phase_history_energy,A,B,0.0,0.0,0.0,0.0,<=1e-12 deterministic tolerance,True,A and B diagnostics are identical within table precision
+A_vs_C_positive_deltaT,final_nominal_stress_MPa,A,C,124.04142180457713,94.41127767786384,29.63014412671329,0.2388729804580484,expected downward thermoelastic shift and finite damage/history,True,Case C remains tensile but lower than Case A at final displacement
+A_vs_C_positive_deltaT,peak_nominal_stress_MPa,A,C,124.04142180457713,94.41127767786384,29.63014412671329,0.2388729804580484,expected downward thermoelastic shift and finite damage/history,True,Case C peak is lower than Case A
+A_vs_C_positive_deltaT,final_alpha_max,A,C,0.1582225263118744,0.036508958786726,0.12171356752514839,0.7692556196785613,expected downward thermoelastic shift and finite damage/history,True,Case C alpha remains finite and lower in this diagnostic
+A_vs_C_positive_deltaT,final_HI_peak,A,C,0.0096437549218535,0.0041668526828289,0.005476902239024601,0.5679221717480101,expected downward thermoelastic shift and finite damage/history,True,Case C HI remains finite and lower under reduced effective tensile drive
+A_vs_C_positive_deltaT,final_HII_peak,A,C,0.0060907872393727,0.0026316905859857,0.003459096653387,0.5679227524196458,expected downward thermoelastic shift and finite damage/history,True,Case C HII remains finite and lower under reduced effective tensile drive
+A_vs_C_positive_deltaT,C_reaction_zero_crossing_displacement_mm,estimate,C,3.78e-06,3.450374303916948e-06,3.296256960830518e-07,0.08720256510133646,observed should be in compensation region,True,between 3e-06 and 3.8e-06 mm
+A_vs_C_positive_deltaT,energy_reaction_available,A,C,1.0,1.0,0.0,0.0,both true,True,energy-conjugate reaction available in both cases

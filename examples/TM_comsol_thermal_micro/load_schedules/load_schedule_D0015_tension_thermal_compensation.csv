@@ -1,0 +1,12 @@
+# Strong prescribed-temperature tension diagnostic schedule.
+# Displacements are in mm. This crosses the delta_T=20 K compensation estimate
+# near 3.78e-6 mm and is not a fracture-extension schedule.
+1.0e-6
+2.0e-6
+3.0e-6
+3.8e-6
+5.0e-6
+7.5e-6
+1.0e-5
+1.25e-5
+1.5e-5

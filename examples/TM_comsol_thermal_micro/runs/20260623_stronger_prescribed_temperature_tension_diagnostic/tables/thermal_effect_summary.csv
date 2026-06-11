@@ -1,0 +1,8 @@
+item,expected_behavior,observed_behavior,passed,interpretation
+delta_T_zero_matches_no_thermal,uniform delta_T=0 reproduces thermal_mode=off under stronger training,A and B reaction/stress/energy/alpha/HI/HII differences are all 0 within table precision,True,No deltaT0 regression detected under stronger training.
+positive_delta_T_reaction_shift,positive uniform expansion shifts reaction/stress downward at fixed displacement,Final nominal stress shifted from 124.041422 MPa to 94.4112777 MPa; C step-0 stress was -14.7555227 MPa.,True,"Thermal reaction trend is physically interpretable for the top-v prescribed, top-u-free ansatz."
+positive_delta_T_compensation_crossing,Case C crosses from compressive to tensile near compensation displacement,Case C reaction crossed zero between 3e-06 and 3.8e-06 mm; interpolated 3.4503743e-06 mm versus estimate 3.78e-06 mm.,True,Crossing lies in the scheduled compensation region.
+positive_delta_T_damage_shift,alpha/HI/HII remain finite and interpretable,"Final alpha_max A=0.158222526, C=0.0365089588; HI/HII finite.",True,No runaway alpha caused by prescribed thermal strain wiring.
+energy_reaction_available,checkpointed energy-conjugate reaction is computable for all steps,all three cases wrote 9 checkpoints and reaction_metric_availability status energy_conjugate,True,Primary reaction route remained energy-conjugate.
+thermal_branch_does_not_activate_heat_PDE,no heat PDE active,only prescribed delta_T settings were used; no heat residual or temperature solve ran,True,Strictly prescribed-temperature diagnostic.
+thermal_branch_does_not_activate_damage_conductivity,no damage-dependent conductivity active,no k(d)=g(d)k0 coupling was present or used,True,Conductivity coupling remains future work.

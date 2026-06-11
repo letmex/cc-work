@@ -1,0 +1,9 @@
+item,value,unit,source_or_formula,comment
+alpha_T,1.89e-05,1/K,config DEFAULT_ALPHA_T,thermal expansion coefficient
+delta_T,20.0,K,Case C --thermal-delta-T 20,uniform prescribed heating
+epsilon_th,0.00037799999999999997,strain,alpha_T * delta_T,thermal normal strain magnitude
+effective_height,0.01,mm,nominal_strain = Delta / 0.01 mm,project stress-strain convention
+estimated_Delta_cross,3.78e-06,mm,epsilon_th * effective_height,ideal compensation estimate
+observed_C_reaction_zero_crossing_interval,between 3e-06 and 3.8e-06 mm,mm interval,sign change in Case C reaction_N_energy,linear interpolation interval
+observed_C_reaction_zero_crossing_interpolated,3.450374303916948e-06,mm,linear interpolation of reaction_N_energy,observed crossing in compensation region
+interpretation,observed crossing is below the ideal estimate but inside the bracketed compensation region,text,comparison of estimate and observed reaction curve,"difference is interpreted through boundary ansatz, damage/history state, nonlinearity, and training quality; not physical validation"

@@ -1,0 +1,47 @@
+{
+  "package": "examples/TM_comsol_thermal_micro/runs/20260623_stronger_prescribed_temperature_tension_diagnostic",
+  "classification": "strong prescribed-temperature tension diagnostic passed",
+  "schedule": "load_schedules/load_schedule_D0015_tension_thermal_compensation.csv",
+  "training_settings": "hidden_layers=8; neurons=400; seed=23; activation=TrainableReLU; init_coeff=3.0; full mesh; n_rprop=300; n_lbfgs=1; load_case=tension; checkpoints every step",
+  "thermal_compensation": {
+    "alpha_T": 1.89e-05,
+    "delta_T_K": 20.0,
+    "epsilon_th": 0.00037799999999999997,
+    "effective_height_mm": 0.01,
+    "estimated_Delta_cross_mm": 3.78e-06,
+    "observed_C_zero_crossing_interval": "between 3e-06 and 3.8e-06 mm",
+    "observed_C_zero_crossing_interpolated_mm": 3.450374303916948e-06
+  },
+  "cases": [
+    {
+      "case_id": "A",
+      "run_id": "20260623_strong_A_off_seed23",
+      "thermal_mode": "off",
+      "delta_T_K": 0.0,
+      "checkpoint_count": 9,
+      "field_file_count": 9,
+      "energy_reaction_available": true,
+      "classification": "strong no-thermal baseline completed"
+    },
+    {
+      "case_id": "B",
+      "run_id": "20260623_strong_B_deltaT0_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 0.0,
+      "checkpoint_count": 9,
+      "field_file_count": 9,
+      "energy_reaction_available": true,
+      "classification": "deltaT0 branch matches no-thermal baseline under stronger training"
+    },
+    {
+      "case_id": "C",
+      "run_id": "20260623_strong_C_deltaT20_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 20.0,
+      "checkpoint_count": 9,
+      "field_file_count": 9,
+      "energy_reaction_available": true,
+      "classification": "positive deltaT branch crosses compensation region with interpretable shift"
+    }
+  ]
+}
