@@ -1,0 +1,10 @@
+item,value,evidence,conclusion
+source_csv_column,nominal_shear_stress_energy_MPa,tables/shear_stress_strain_by_step.csv in S0050/S0070/S0090 packages,This is the reported nominal shear stress column audited here.
+reaction_column_used,reaction_N_energy,postprocess_results.py build_stress_strain_curve; stress tables,The stress uses the checkpointed energy-conjugate reaction.
+reaction_definition,reaction_N_energy = 1000 * dPi/dDelta_s,postprocess_results.py compute_exact_reaction_rows multiplies grad by 1000,The gradient is in kN and is converted to N before nominal stress is formed.
+reference_area_mm2,0.01,postprocess_results.py REFERENCE_AREA_MM2 and stress table reference_area_mm2,Nominal stress divides by gross unit-thickness area 0.01 mm^2.
+reference_length_mm,0.01,postprocess_results.py REFERENCE_LENGTH_MM and stress table reference_length_mm,Engineering shear strain is Delta_s / 0.01 mm.
+shear_strain_definition,engineering_shear_strain = Delta_s / reference_length_mm,postprocess_results.py build_stress_strain_curve,"The shear curve uses Delta_s, not tensile Delta, for the load parameter."
+stress_formula,nominal_shear_stress_energy_MPa = reaction_N_energy / reference_area_mm2,postprocess_results.py build_stress_strain_curve,"Because 1 N/mm^2 = 1 MPa, no additional conversion is needed after reaction is in N."
+unit_conversion,1 N/mm^2 = 1 MPa,standard N-mm unit convention; model_settings unit_strategy,The MPa label is consistent with N divided by mm^2.
+load_parameter,Delta_s,model_settings load_parameter_name: Delta_s; stress table load_case: shear,The audited shear stress is energy-conjugate to shear displacement Delta_s.

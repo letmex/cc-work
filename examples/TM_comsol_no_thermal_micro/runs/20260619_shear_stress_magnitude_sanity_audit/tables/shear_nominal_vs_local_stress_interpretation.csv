@@ -1,0 +1,6 @@
+question,answer,explanation
+Is the reported value a nominal gross-area stress?,yes,It is reaction_N_energy divided by 0.01 mm^2 gross unit-thickness area.
+Is it energy-conjugate generalized reaction stress?,yes,reaction_N_energy is dPi/dDelta_s converted from kN to N.
+Is it local maximum stress?,no,No local stress field maximum is used in this scalar curve.
+Is it notch-tip stress?,no,The notch-tip fields are separate diagnostics; this curve is global reaction divided by gross area.
+Is it calibrated physical shear strength?,no,No target shear strength or independent calibration was found.

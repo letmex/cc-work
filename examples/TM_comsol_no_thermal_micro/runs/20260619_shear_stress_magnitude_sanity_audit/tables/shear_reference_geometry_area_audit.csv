@@ -1,0 +1,2 @@
+domain_width_mm,domain_height_mm,assumed_thickness_mm,reference_shear_area_mm2,postprocess_reference_area_mm2,area_convention,notch_reduces_reference_area,consistent_with_tension_shear_postprocess_convention,gross_vs_net_ligament_consequence
+0.01,0.01,1.0,0.01,0.01,gross width times unit thickness,False,True,"The reported stress is nominal gross-area shear stress, not local notch-tip stress and not net-ligament shear stress. Using a smaller net ligament area would increase the numerical stress value."

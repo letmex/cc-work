@@ -1,0 +1,8 @@
+item,value,source,conclusion
+target_tensile_strength,,README/config/model_settings search,No explicit target tensile strength was found.
+target_shear_strength,,README/config/model_settings search,No explicit target shear strength was found.
+calibrated_shear_strength_parameter,,normal source and run settings,No calibrated shear strength parameter is present.
+material_E,81.5,config.py COMSOL_E_KN_PER_MM2 and model_settings,Elastic modulus is available for internal slope/unit checks.
+material_nu,0.38,config.py COMSOL_NU and model_settings,Poisson ratio is available for G = E/[2(1+nu)].
+G_c_l0_strength_scale,1141.9281938896158,"rough sqrt(E*Gc/l0) dimensional scale, MPa",G_c and l0 imply only a model strength scale unless a specific phase-field critical-stress formula and calibration target are declared.
+stress_peak_physical_strength_conclusion,29.9647 MPa,S0050/S0070/S0090 stress tables,"No explicit target shear strength was found, so the 29.9647 MPa nominal shear peak can only be judged as internally consistent or inconsistent, not physically calibrated."
