@@ -47,7 +47,8 @@ def write_csv(path, rows, columns):
 
 def write_text(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text.rstrip() + "\n", encoding="utf-8")
+    with open(path, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write(text.rstrip() + "\n")
 
 
 def heat_pde_scope_summary_rows():
@@ -1472,7 +1473,7 @@ def main():
     write_text(PACKAGE_DIR / "HANDOFF_COMMENT.md", handoff_text())
     write_text(FIGURE_DIR / "figure_summary.md", figure_summary_text())
 
-    with open(PACKAGE_DIR / "MANIFEST.json", "w", encoding="utf-8") as handle:
+    with open(PACKAGE_DIR / "MANIFEST.json", "w", encoding="utf-8", newline="\n") as handle:
         json.dump(manifest(), handle, indent=2)
         handle.write("\n")
 

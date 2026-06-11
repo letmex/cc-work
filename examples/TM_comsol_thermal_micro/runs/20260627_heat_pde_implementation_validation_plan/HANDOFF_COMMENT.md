@@ -6,14 +6,14 @@ Final classification: `heat PDE implementation plan complete`
 
 Commit hash:
 
-- Primary plan commit: `PENDING_PRIMARY_COMMIT`.
-- Handoff sync commit: `PENDING_HANDOFF_SYNC_COMMIT`; do not chase this file's own sync hash indefinitely.
+- Primary plan commit: `218b84bdcf019e591a8dcdbdb4fbd437fe3b044d` (`Plan heat PDE implementation`).
+- Handoff sync commit: recorded in final Codex response; this file does not chase its own sync hash.
 
 Push status:
 
-- Primary plan commit push: `PENDING_PUSH_STATUS`.
-- Final status at generation time: `PENDING_FINAL_GIT_STATUS`.
-- Final HEAD known at handoff-sync edit time: `PENDING_FINAL_HEAD`.
+- Primary plan commit push: pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time: `218b84bdcf019e591a8dcdbdb4fbd437fe3b044d`.
 
 ## Package
 
