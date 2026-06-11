@@ -1,0 +1,7 @@
+# Commands Run
+
+```powershell
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 23 TrainableReLU 3.0 --full --n-rprop 300 --n-lbfgs 1 --load-case shear --load-schedule-file load_schedules/load_schedule_S0090_shear.csv --run-suffix seed23_S0090_shear
+D:\anaconda3\envs\torch_env\python.exe postprocess_results.py --model-dir outputs/checkpoints/seed23_S0090_shear --result-dir outputs/results/seed23_S0090_shear --device cpu
+D:\anaconda3\envs\torch_env\python.exe build_shear_longer_connectivity_package.py --cc-root "D:\Desktop\新建文件夹\cc-work"
+```
