@@ -1,0 +1,12 @@
+# Commands Run
+
+```powershell
+# Training command represented by existing outputs:
+D:\anaconda3\envs\torch_env\python.exe main.py 8 400 23 TrainableReLU 3.0 --full --n-rprop 300 --n-lbfgs 1 --load-case shear --load-schedule-file load_schedules/load_schedule_S0070_shear.csv --run-suffix seed23_S0070_shear
+
+# Postprocess command represented by existing curves/figures:
+D:\anaconda3\envs\torch_env\python.exe postprocess_results.py --model-dir outputs/checkpoints/seed23_S0070_shear --result-dir outputs/results/seed23_S0070_shear --device cpu
+
+# Package generation:
+D:\anaconda3\envs\torch_env\python.exe build_shear_connectivity_package.py
+```

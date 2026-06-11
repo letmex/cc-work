@@ -1,0 +1,4 @@
+source=energy_conjugate
+stress_strain_csv=D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro\outputs\results\seed23_S0070_shear\curves\stress_strain_by_step.csv
+selected_seed=23
+primary_metric=nominal_shear_stress_energy_MPa
