@@ -1,0 +1,13 @@
+readiness_item,current_status,ready,blocking_issue,suggested_next_step
+no-thermal baseline stability,Cleaned verified route documented; S0090 and stress audit completed,true,,Freeze current no-thermal route for thermal branch baseline.
+energy-conjugate reaction availability,postprocess_results.py supports checkpointed dPi/dDelta and dPi/dDelta_s,true,,Keep checkpoint saving enabled for thermal patch tests.
+material parameter consistency,"E, nu, Gf0, l0, residual stiffness match current baseline",true,,Do not retune material constants during thermal reintroduction.
+AT2 consistency,AT2 fracture energy class present,true,,Preserve AT2 form and w1=Gc/l0.
+history consistency,HI/HII max-history behavior present,true,,Thermal branch should feed thermoelastic strains into the same history update.
+stress normalization consistency,Stress audit classified nominal shear stress internally consistent,true,,Continue reporting gross-area nominal stress with clear labels.
+COMSOL comp3 thermal strain mapping,Reference formula identified; not yet implemented,partial,Need patch tests for T-Tref convention and plane-stress assumption.,Implement prescribed-temperature thermal-strain branch in a separate task.
+prescribed-temperature branch feasibility,Mechanics energy route has a clear insertion point before TM split,true,,Add fixed temperature field input and test zero-damage thermoelastic response.
+heat PDE branch feasibility,Not implemented and not needed for first thermal-strain branch,partial,"Requires heat residual, units, boundary conditions, and thermal data validation.",Defer until prescribed-temperature mechanics branch passes.
+damage-dependent conductivity feasibility,Not implemented,partial,Requires heat PDE branch and k_d=g(d)*k0 validation.,Defer behind heat PDE conservation tests.
+required patch tests,Not part of this read-only audit,false,Patch tests must be created with the future thermal branch.,"Add tests for uniform DeltaT free expansion, constrained thermal stress, and zero-DeltaT equivalence."
+rollback safety,This package changes only runs/ audit artifacts,true,,Keep thermal work in a separate branch/package and preserve current no-thermal outputs.

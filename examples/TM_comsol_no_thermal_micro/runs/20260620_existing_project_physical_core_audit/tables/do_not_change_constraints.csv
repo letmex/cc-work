@@ -1,0 +1,15 @@
+constraint,observed,evidence_or_comment
+source code modified,false,No production/source model files were changed.
+physics changed,false,"No equations, losses, split, or model parameters were edited."
+boundary condition changed,false,No tension or shear boundary/ansatz code was edited.
+shear ansatz changed,false,Shear ansatz was only reviewed.
+material parameter changed,false,"E, nu, Gf0, GcII, kappa/eta_residual, eps_r were not changed."
+l0 changed,false,l0 remains 1.5e-4 mm.
+history logic changed,false,HI/HII max-history code was not edited.
+training loss changed,false,No loss code was edited.
+new training run,false,No training command was run.
+D0040 run,false,D0040 was not run.
+seed study run,false,No seed study was run.
+heat PDE implemented,false,No heat PDE or conductivity model was implemented.
+COMSOL exact-matching imposed,false,Audit accepts documented platform implementation differences.
+comp4 or TFinal used,false,Reference restricted to comp3 prompt facts.

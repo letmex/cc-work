@@ -1,0 +1,11 @@
+item,current_status,evidence,acceptable_as_baseline,comment
+route,mixedH_TM + tm_source + history,"config.py history_mode, mixed_split_mode, mixed_mechanics_mode",true,This is the cleaned current no-thermal route.
+phase field,AT2,config.py PFF_model_dict; source/pff_model.py damageFun,true,Matches required model class.
+alpha initialization,default alpha initialization; no pre-existing phase-field crack,config.py initial_phase_field_crack_enabled=False; README.md,true,Do not reintroduce alpha-init-intact route.
+coordinate normalization,unit_box network input normalization by default,config.py coord_normalization default; field_computation.network_input,true,"Gradients still use physical x,y."
+tension boundary,"top-u/free default, bottom fixed, left/right free",field_computation.py tension branch,true,Do not alter boundary conditions in this audit.
+shear boundary,"top u=Delta_s, top v free through ansatz, bottom fixed",field_computation.py shear branch; memory shear policy,true,Do not modify shear ansatz.
+history logic,HI/HII max history committed after load steps,history_field_mixed_tm.commit_mixed_history_from_fields,true,Conceptually consistent with COMSOL comp3 history state.
+reaction,energy-conjugate checkpoint derivative primary reaction,postprocess_results.compute_exact_reaction_rows,true,Legacy top-sigma route is not the normal primary output.
+stress normalization,gross-area nominal stress from reaction/reference_area,postprocess_results.build_stress_strain_curve; 20260619 stress audit,true,Internally consistent but not local material strength.
+thermal physics,not implemented in current no-thermal baseline,README.md,true,Expected for this audit; add later via prescribed-temperature patch tests.

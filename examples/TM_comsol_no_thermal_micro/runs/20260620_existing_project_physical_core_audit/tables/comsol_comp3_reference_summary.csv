@@ -1,0 +1,12 @@
+item,value,role_in_physics,required_for_future_thermal_branch,must_match_exactly_in_PINN,comment
+component,comp3 / solid3 / ht3 / phase-field PDE c / state3 / std1,Single-notch thermo-mechanical phase-field reference branch,true,false,Tags identify the reference branch; PINN implementation need not reuse COMSOL tags.
+ignored branch,comp4 and TFinal ignored,Prevents mixing multi-pore or unrelated thermal settings into single-notch route,true,true,Do not use comp4 facts for this baseline.
+plane stress,2D Plane Stress,Constitutive assumption for comp3 solid mechanics,true,false,The physical assumption must be documented; code symbols need not match COMSOL line by line.
+thermal strain exx,exx_e = exx - alpha_T*(T - Tref),Thermoelastic strain correction,true,true,Reference-temperature convention is a physical invariant.
+thermal strain eyy,eyy_e = eyy - alpha_T*(T - Tref),Thermoelastic strain correction,true,true,Using raw T instead of T-Tref would be high risk.
+thermal strain exy,exy_e = exy,No isotropic thermal shear strain,true,true,Shear strain should not receive alpha_T*(T-Tref).
+history,"HI=max(HI,psi_I), HII=max(HII,psi_II), He=HI+(Gf0/GcII)*HII",Irreversible mixed-mode crack drive,true,true,"Implementation details may differ, but max-history physics must be preserved."
+AT2 PDE,"c=Gf0*l0, a=Gf0/l0+2*He, f=2*He",Phase-field damage model class,true,true,Same AT2 class is required; energy vs PDE implementation can differ.
+degradation,g(d)=(1-d)^2+kappa,Residual-stiffness damage degradation,true,true,Parameter and physical form should remain consistent.
+conductivity,k_d=g(d)*k0,Damage-dependent heat transfer in COMSOL,later,false,Not required for first prescribed-temperature thermal-strain branch.
+thermal material constants,"alpha_T=18.9 ppm/K, rho=1040 kg/m^3, k0=418 W/m/K, c=170 J/kg/K, Tref=273.15 K, T0=0 degC",Thermal expansion and heat equation parameters,true,true,Keep units explicit when thermal physics is introduced.
