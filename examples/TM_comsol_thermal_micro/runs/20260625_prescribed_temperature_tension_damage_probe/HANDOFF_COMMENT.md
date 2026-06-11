@@ -6,11 +6,14 @@ Final classification: `moderate prescribed-temperature damage probe passed`
 
 Commit hash:
 
-- Pending before commit; update once after the primary package commit is pushed.
+- Primary diagnostic commit: `e58ee646cd75186c954dcac09cc75fc97b569045` (`Run prescribed temperature tension damage probe`).
+- Handoff sync commit: recorded in final Codex response. This file does not chase its own commit hash.
 
 Push status:
 
-- Pending before commit; update once after the primary package commit is pushed.
+- Primary diagnostic commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time: `e58ee646cd75186c954dcac09cc75fc97b569045`.
 
 ## Package
 
