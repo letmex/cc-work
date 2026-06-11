@@ -1,0 +1,46 @@
+{
+  "D0040_run": false,
+  "classification": "prescribed thermal strain stage summary complete",
+  "damage_dependent_conductivity_implemented": false,
+  "generated_at": "2026-06-11T19:39:01",
+  "heat_pde_implemented": false,
+  "no_thermal_project_touched": false,
+  "package": "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary",
+  "required_outputs": [
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/REPORT.md",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/HANDOFF_COMMENT.md",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/MANIFEST.json",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/figures/figure_summary.md",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/stage_milestone_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/evidence_matrix.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/trusted_findings.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/diagnostic_only_findings.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/limitations_and_open_risks.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/not_implemented_guard_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/source_scope_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/reaction_damage_trend_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/next_decision_gate.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/changed_files_summary.csv"
+  ],
+  "reviewer_next": [
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/REPORT.md",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/evidence_matrix.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/tables/next_decision_gate.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe/REPORT.md",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/REPORT.md"
+  ],
+  "seed_study_run": false,
+  "shear_or_S0110_run": false,
+  "source_code_modified_by_this_task": false,
+  "source_packages": {
+    "audit": "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit",
+    "micro": "examples/TM_comsol_thermal_micro/runs/20260622_prescribed_temperature_micro_notch_diagnostic",
+    "patch": "examples/TM_comsol_thermal_micro/runs/20260621_prescribed_thermal_strain_patch_tests",
+    "probe": "examples/TM_comsol_thermal_micro/runs/20260625_prescribed_temperature_tension_damage_probe",
+    "scaffold": "examples/TM_comsol_thermal_micro/runs/20260620_thermal_subproject_scaffold",
+    "strong": "examples/TM_comsol_thermal_micro/runs/20260623_stronger_prescribed_temperature_tension_diagnostic"
+  },
+  "task_type": "documentation/evidence synthesis only",
+  "trainable_or_pde_temperature_implemented": false,
+  "training_run": false
+}

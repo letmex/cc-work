@@ -1,0 +1,10 @@
+source_area,current_status,changed_in_this_stage,comments
+thermal_prescribed.py,"Provides prescribed delta_T/temperature helpers for off, uniform, and linear_y modes.",yes during prescribed-strain patch stage; no in this summary task,No heat solve or trainable temperature field.
+compute_energy_mixed_tm.py,Applies thermal normal strain before TM split/history/energy route and records thermal fields.,yes during prescribed-strain patch stage; no in this summary task,Reaction route and material constants are not changed here.
+config.py,"Adds CLI/config fields for prescribed thermal mode, delta_T, temperature, alpha_T, and Tref.",yes during prescribed-strain patch stage; no in this summary task,Default thermal_mode is off.
+train_mixed_tm.py,Passes thermal kwargs into existing mixed TM energy calls.,yes during prescribed-strain patch stage; no in this summary task,Loss form and history objective remain the existing route.
+history_field_mixed_tm.py,Mixed HI/HII/He history route retained.,no behavior change identified for summary task,Thermal effect enters through adjusted elastic strain before history update.
+postprocess_results.py,Computes checkpointed energy-conjugate reaction with thermal settings from run metadata.,yes during prescribed-strain patch stage; no in this summary task,Legacy top-sigma is not primary.
+load schedules,"D0003, D0015, and D0020 prescribed-temperature tension schedules exist for diagnostics.",yes across diagnostic stages; no new schedule in this summary task,"No D0040, shear, or S0110 schedule was run for this stage."
+runs/packages,Six prior evidence packages plus this stage-summary package.,"yes, this summary package is new",This package consolidates evidence only.
+original no-thermal project,Frozen baseline.,no,Do not modify examples/TM_comsol_no_thermal_micro for thermal work.

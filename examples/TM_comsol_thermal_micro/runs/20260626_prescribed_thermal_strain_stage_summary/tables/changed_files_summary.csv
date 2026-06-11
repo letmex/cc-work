@@ -1,0 +1,5 @@
+path,change_type,reason,scope
+examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary,new package,Reviewer-readable prescribed thermal strain stage summary.,thermal summary artifacts only
+examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary/build_stage_summary_package.py,new script,"Regenerate summary tables, report, manifest, and handoff from existing package evidence.",documentation/evidence synthesis; no training
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,update,Record current prescribed-temperature stage status and simplified finalization protocol.,thermal project memory only
+examples/TM_comsol_no_thermal_micro,unchanged,Frozen no-thermal baseline must remain untouched.,guarded path

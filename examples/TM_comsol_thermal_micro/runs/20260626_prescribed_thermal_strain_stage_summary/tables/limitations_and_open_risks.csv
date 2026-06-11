@@ -1,0 +1,10 @@
+limitation_or_risk,current_status,consequence,severity,mitigation_or_next_check
+no heat equation yet,not implemented,Temperature is prescribed and cannot evolve from conduction or sources.,high,Hold a decision-gate review before heat PDE planning.
+no k(d)=g(d)k0 yet,not implemented,Damage does not affect thermal conductivity.,high,Defer until heat PDE branch has independent conservation and boundary-condition tests.
+prescribed uniform temperature only,uniform delta_T=20 K used for main diagnostics,No spatially solved thermal gradients are validated.,medium,Use planned heat PDE tests or a separate prescribed-gradient check if explicitly approved.
+no transient thermal loading,not run,No time-dependent heating conclusions are supported.,medium,Keep transient loading out of scope until the steady heat PDE branch is stable.
+no independent seed validation,single seed 23 diagnostics,Robustness of alpha background and damage delay is not statistically established.,medium,Consider one small seed repeat only if the reviewer needs robustness before heat PDE.
+no physical validation,no COMSOL or experiment comparison in this stage,"Stage supports route stability, not physical predictive accuracy.",high,Create a benchmark validation plan before making physical claims.
+low-level alpha background artifact risk,observed in Case C audit and reported as diagnostic only,Diffuse alpha could be overinterpreted from low-range plots.,medium,Use global-scale and high-threshold/notch metrics for damage interpretation.
+COMSOL plane-stress/platform difference caveat,project uses current TM constitutive convention,Line-by-line COMSOL clone behavior is not guaranteed.,medium,Document constitutive convention before any COMSOL comparison.
+"thermal strain implemented in current project constitutive convention, not line-by-line COMSOL clone",accepted scope in THERMAL_REINTRODUCTION_PLAN.md,"Physical meaning can be compared, but implementation details may differ.",medium,Review equations and units before starting heat PDE or benchmark comparison.

@@ -1,0 +1,10 @@
+guard_item,expected_status,observed_status,passed,comment
+full heat PDE,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+damage-dependent conductivity,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+trainable/PDE temperature,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+D0040,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+seed study,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+shear extension,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+S0110,not implemented or not run,not implemented or not run,true,No evidence in completed package reports or current source scope.
+no-thermal baseline modification,not implemented or not run,not implemented or not run,true,examples/TM_comsol_no_thermal_micro is treated as frozen baseline.
+legacy top-sigma primary reaction,not implemented or not run,not primary,true,Energy-conjugate reaction_N_energy remains primary.

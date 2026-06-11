@@ -36,17 +36,37 @@ Current thermal branch:
 - thermal strain enters before the existing TM split/history/energy route
 - no-thermal defaults remain the baseline
 
-Next task: run a small prescribed-temperature micro-notch diagnostic only after
-reviewing the patch-test handoff. Do not start heat PDE or damage-dependent
-conductivity work next.
+Current prescribed-temperature stage status:
 
-Finalization rule for future thermal diagnostic tasks:
+- stage summary package:
+  `examples/TM_comsol_thermal_micro/runs/20260626_prescribed_thermal_strain_stage_summary`
+- final classification:
+  `prescribed thermal strain stage summary complete`
+- patch tests and multiple checkpointed tension diagnostics support preserving
+  the prescribed-temperature mechanics branch as a reviewed baseline candidate
+- `thermal_mode=uniform` with `delta_T=0` reproduces the no-thermal route in
+  completed diagnostics
+- prescribed uniform `delta_T=+20 K` consistently shifts
+  displacement-controlled tension reaction/stress downward
+- the moderate damage probe shows lower notch-tip/high-threshold alpha growth
+  for Case C, within diagnostic scope
+- broad low-level Case C alpha background remains diagnostic-only and is not
+  physical fracture evidence
+- this stage is not physical validation against COMSOL or experiment
+- safest next task: hold a decision-gate review before any heat PDE planning;
+  damage-dependent conductivity remains deferred until heat PDE is stable
+
+Standing simplified finalization protocol for all future Codex tasks in this
+thermal subproject:
 
 - do not use `git add .`
 - do not perform full-repo staging
-- stage exact thermal schedule/package paths only
+- use exact-path staging only
+- stage exact thermal schedule/package/project-memory paths only
 - force-add package PNG figures only when project ignore rules hide required figures
 - always check `examples/TM_comsol_no_thermal_micro` has no unstaged or staged changes
 - run package schema/compile/focused validation once after package generation
+- do not perform repeated full validation after package validation has already
+  passed
 - do not chase self-referential handoff commit hashes indefinitely
 - use at most one handoff-sync commit if the generated handoff still contains pending commit or push status
