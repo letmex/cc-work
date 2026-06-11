@@ -1,6 +1,6 @@
 ## Codex handoff: Shear stress magnitude sanity audit
 
-Commit: TO_BE_FILLED_AFTER_COMMIT
+Commit: 9013725
 Package folder: `examples/TM_comsol_no_thermal_micro/runs/20260619_shear_stress_magnitude_sanity_audit`
 
 ### Source packages reviewed
@@ -23,7 +23,7 @@ Package folder: `examples/TM_comsol_no_thermal_micro/runs/20260619_shear_stress_
 - Material strength context: no explicit target shear strength was found.
 - Peak/final clarification: `23.071 MPa is S0070 final stress, not the maximum stress`; actual S0070/S0090 peak is about `29.9647 MPa`.
 - Final classification: `stress magnitude internally consistent`.
-- Commit pushed: TO_BE_FILLED_AFTER_COMMIT.
+- Commit pushed: pending at handoff-package creation; push status is recorded in the final Codex response.
 
 ### Next recommended action
 Let the reviewer use this audit with the S0050/S0070/S0090 packages to decide whether to stop the single-seed shear diagnostic, request one final controlled extension, or move to geometry/connectivity interpretation. Do not claim physical validation without an explicit target strength or independent calibration.
