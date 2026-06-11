@@ -1,0 +1,16 @@
+variable,meaning,proposed_unit,current_project_unit_or_note,conversion_needed,source_reference,risk_note
+T,absolute temperature field,K,Currently only prescribed scalar/field inputs are supported.,no for temperature difference; yes when combined with transport constants,thermal_prescribed.py; THERMAL_REINTRODUCTION_PLAN.md,Solved representation and checkpoint format are not yet defined.
+Tref,reference temperature for thermal strain,K,273.15 K default,no,thermal_prescribed.DEFAULT_TREF_K,Must remain consistent between prescribed and solved-T routes.
+delta_T,temperature change T - Tref,K,Existing prescribed branch uses K.,no,delta_T_from_temperature,Signs and reference temperature must be preserved.
+alpha_T,isotropic thermal expansion coefficient,1/K,18.9e-6 1/K,no,DEFAULT_ALPHA_T; COMSOL alpha_T = 18.9 ppm/K,Do not change material constants in heat PDE phase 1.
+rho,mass density,kg/m^3 in COMSOL reference,Future transport constant only; mechanics uses kN/mm style quantities.,yes,THERMAL_REINTRODUCTION_PLAN.md,Exact SI-to-project conversion is an implementation blocker.
+c,specific heat capacity,J/kg/K in COMSOL reference,Future transport constant only.,yes,THERMAL_REINTRODUCTION_PLAN.md,Combines with rho and time units in transient residual.
+k0,constant thermal conductivity,W/m/K in COMSOL reference,Future transport constant only.,yes,THERMAL_REINTRODUCTION_PLAN.md,Must be converted consistently with mm geometry and time convention.
+Q,volumetric heat source,W/m^3 in SI if used,Not implemented; start Q=0.,yes for nonzero Q,planned target equation,Nonzero source is deferred to avoid residual scale ambiguity.
+time,thermal time coordinate,s unless reviewer approves another convention,"Current mechanics uses displacement steps, not physical time.",yes for transient coupling,future transient heat PDE,Mapping load steps to physical time is unresolved.
+x/y coordinates,physical coordinates,mm internally,Mesh converted from m to mm; NN input normalized to unit box by default.,yes for thermal gradients using SI constants,config.py model settings; PROJECT_MEMORY.md,Need clear distinction between physical mm and normalized NN coordinates.
+grad T,temperature gradient,K/mm internally or K/m before conversion,Not implemented.,yes,planned heat residual,Incorrect coordinate basis would scale conduction by powers of 1000.
+heat flux,-k0 * grad T,converted project heat flux unit,Not implemented.,yes,Fourier conduction relation,Boundary flux tests must prove sign and magnitude.
+heat PDE residual,rho*c*dT/dt - div(k0*grad T) - Q,converted heat source density unit,Not implemented.,yes,planned target equation,Residual normalization must be documented before training.
+thermal strain,alpha_T * delta_T normal strain,dimensionless,Implemented in prescribed branch.,no,apply_thermal_strain,Must use solved T only after heat solve has passed patch tests.
+energy units if relevant,mechanical and thermal residual normalization scales,project kN-mm mechanics plus converted thermal scales,Mechanical route uses kN/mm material values and mm geometry.,yes,config.py mat_E_kN_per_mm2; Gc_kN_per_mm,Do not mix SI heat energy with kN-mm losses without explicit scaling.

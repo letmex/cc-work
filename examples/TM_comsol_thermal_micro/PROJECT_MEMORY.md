@@ -56,6 +56,33 @@ Current prescribed-temperature stage status:
 - safest next task: hold a decision-gate review before any heat PDE planning;
   damage-dependent conductivity remains deferred until heat PDE is stable
 
+Current heat PDE planning status:
+
+- heat PDE implementation/validation planning package:
+  `examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan`
+- final classification:
+  `heat PDE implementation plan complete`
+- this package is planning-only: it does not implement a heat PDE, trainable
+  temperature field, heat residual loss, boundary-condition code, or
+  damage-dependent conductivity
+- first approved implementation should start with constant-conductivity heat
+  transfer only:
+  `rho*c*dT/dt - div(k0*grad(T)) = Q`
+- initial heat PDE phase should use `Q=0` and constant `k0`; validate constant
+  T, linear steady conduction, insulated flux, unit conversion, and solved
+  uniform-T mechanics patch tests before any notch diagnostic
+- exact SI-to-project unit conversion is an implementation gate, not a solved
+  detail: COMSOL `rho`, `c`, and `k0` are SI constants, while this project uses
+  mm geometry and kN/mm-style mechanics quantities
+- preserve the prescribed-temperature fallback and `thermal_mode=off` default
+  throughout heat PDE work
+- keep material parameters, `l0`, history logic, loss route, mechanical
+  boundary conditions, source model behavior, and checkpointed
+  energy-conjugate reaction unchanged in the first heat PDE phases
+- damage-dependent conductivity `k(d)=g(d)k0` remains explicitly deferred until
+  constant-conductivity heat PDE and solved-temperature-to-thermal-strain
+  coupling are independently validated and separately approved
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

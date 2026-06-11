@@ -1,0 +1,11 @@
+source_file,future_touch_expected,reason,first_phase_change_type,tests_required,risk
+thermal_prescribed.py,possible,May remain as fallback and shared thermal-strain helper.,none in planning; later compatibility helper only if needed,prescribed-temperature fallback regression,Breaking existing delta_T semantics.
+config.py,yes,"Future heat mode flags, constants, BC/IC options, and unit convention.",add options only after unit gate,CLI defaults and no-thermal regression,Changing defaults could activate thermal behavior accidentally.
+train_mixed_tm.py,yes,Future heat residual and T representation integration.,constant-k0 residual plumbing after patch tests,heat residual patch tests and mechanics loss regression,Loss scale or optimization instability.
+compute_energy_mixed_tm.py,yes,Solved T to thermal strain and possibly energy summaries.,read solved T only after heat tests,free expansion and constrained heating with solved T,History/energy route regression.
+history_field_mixed_tm.py,yes,Checkpointed field summaries may need solved T and residual outputs.,metadata/export extension only after schema plan,field save/load smoke and history invariance patch test,Checkpoint compatibility.
+postprocess_results.py,yes,Report solved T while preserving reaction_N_energy.,read T metadata after checkpoint schema update,reaction availability and T field readback,Reaction route could become unavailable.
+new heat PDE module if recommended,yes,"Keep heat residual, BC, IC, and unit utilities isolated.",new module for constant k0 residual,"constant T, linear conduction, zero flux, unit sanity",New abstraction may duplicate existing gradient logic unless scoped carefully.
+tests,yes,Patch tests are the main gate.,focused heat PDE and regression tests,all validation matrix rows relevant to phase,Skipping tests would make coupled diagnostics unreviewable.
+docs/project memory,yes,"Record gates, approvals, and finalization protocol.",planning memory update only in this task,review for scope boundaries,Future tasks may forget deferred features.
+load schedules,later maybe,Thermal transient schedules may need time columns.,none,time convention review before schedule changes,Conflating displacement increments with physical time.

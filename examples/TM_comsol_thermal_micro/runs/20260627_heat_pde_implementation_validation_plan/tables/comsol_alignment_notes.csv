@@ -1,0 +1,10 @@
+topic,COMSOL_comp3_reference,proposed_PINN_plan,exact_match_required,caveat
+alpha_T,18.9 ppm/K,Keep alpha_T = 18.9e-6 1/K.,yes for constant value,Do not change material constants in heat PDE phase 1.
+rho/c/k0,rho=1040 kg/m^3; c=170 J/kg/K; k0=418 W/m/K,Use only after explicit SI-to-project unit conversion approval.,conceptual constants yes; internal unit values need conversion,This is the main implementation blocker.
+Tref/T0,Tref=273.15 K; T0=0 degC,Preserve Tref=273.15 K and document T0 mapping before transient ICs.,yes for Tref; T0 mapping must be explicit,Avoid degC versus K confusion.
+heat PDE,ht3 heat transfer branch,"Start with rho*c*dT/dt - div(k0*grad T)=Q, Q=0, constant k0.",no line-by-line match,Patch tests precede any notch diagnostic.
+k_d,k_d = g(d) * k0 eventually,Explicitly defer until constant-k0 branch is stable.,not in first phase,Guard against accidental k(d) activation.
+thermal strain,Thermal expansion coupled to solid mechanics,Use existing relation delta_T = T-Tref; subtract alpha_T*delta_T from normal strains.,physical relation yes,Current project constitutive convention is not forced into a COMSOL line clone.
+plane stress/platform difference,COMSOL platform conventions may differ.,Keep current TM source split/stress convention unless separately reviewed.,no,Document before any quantitative COMSOL comparison.
+phase-field/history coupling,phase-field PDE c and history state3,Keep AT2 TM history route unchanged in first heat PDE phases.,conceptual only,Do not alter history logic while adding heat residual.
+comp4 ignored,comp4/multi-pore branch excluded,"Ignore comp4, solid2, ht2, c2, state4, TFinal, and multi-pore settings.",yes for exclusion,Only single-notch comp3 scope is relevant.

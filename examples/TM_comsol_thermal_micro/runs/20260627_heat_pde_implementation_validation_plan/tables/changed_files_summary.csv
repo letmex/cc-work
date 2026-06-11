@@ -1,0 +1,8 @@
+path,change_type,purpose,behavior_source_modified,no_thermal_project_touched
+examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan/build_heat_pde_plan_package.py,added,Rebuild planning-only package artifacts.,false,false
+examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan/REPORT.md,added,Reviewer-readable heat PDE implementation and validation plan.,false,false
+examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan/HANDOFF_COMMENT.md,added,"Continuation handoff with scope, validation, and finalization status.",false,false
+examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan/MANIFEST.json,added,Package manifest and schema inventory.,false,false
+examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan/tables/*.csv,added,"Required planning tables for scope, units, phases, validation, risks, COMSOL alignment, source touch plan, and decision gates.",false,false
+examples/TM_comsol_thermal_micro/runs/20260627_heat_pde_implementation_validation_plan/figures/figure_summary.md,added,Documents that no PNG figures were required for this planning package.,false,false
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,"Record heat PDE planning package, constant-k0 recommendation, unit gate, deferred k(d), and finalization protocol.",false,false

@@ -1,0 +1,10 @@
+feature,reason_deferred,prerequisite,risk_if_implemented_now,future_decision_gate
+damage-dependent conductivity k(d)=g(d)k0,Constant-conductivity heat PDE is not yet implemented or validated.,P2 through P5 pass and reviewer approves k(d) plan.,Conflates heat PDE errors with damage coupling.,P6 damage-conductivity planning review.
+thermomechanical heat generation,Requires mechanics-to-heat source law and units.,Stable heat PDE and agreed energy conversion.,Unbounded or mis-scaled source dominates heat residual.,Separate source-term validation plan.
+crack-surface heat transfer,Requires crack geometry/interface treatment not present in first heat phase.,Validated boundary flux and damage field interpretation.,Boundary/source ambiguity at crack surfaces.,Crack heat-transfer scope review.
+temperature-dependent material properties,Would change mechanics material constants.,Validated solved T and material law review.,Violates first-phase no material change invariant.,Material-property sensitivity plan.
+full COMSOL line-by-line matching,Project memory allows platform differences when physical meaning is preserved.,Conceptual comp3 validation case selected.,Overfits COMSOL implementation details before local unit/BC tests pass.,Benchmark comparison plan.
+multi-pore comp4 branch,Out of current single-notch comp3 scope.,Separate reviewer approval.,Mixes unrelated geometry and physics branches.,Comp4 scope decision.
+D0040,Not part of heat PDE planning and expensive diagnostic.,Heat PDE branch passes patch tests and reviewer requests physical diagnostic.,Runtime without resolving implementation blockers.,Post-implementation diagnostic review.
+seed study,Current task is planning only.,Stable heat PDE implementation or specific robustness question.,Consumes runtime before heat PDE exists.,Robustness evidence request.
+shear thermal study,Tension prescribed branch is the current evidence base; heat PDE not implemented.,Thermal transport and solved-T mechanics validated in core route.,Expands mechanics scope while thermal basics are unresolved.,Shear thermal extension plan.
