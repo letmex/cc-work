@@ -1,8 +1,8 @@
 # Handoff Comment: Existing Project Physical-Core Audit
 
 Package folder: `examples/TM_comsol_no_thermal_micro/runs/20260620_existing_project_physical_core_audit`
-Commit hash: `PENDING_HANDOFF_UPDATE`
-Commit pushed: `PENDING_HANDOFF_UPDATE`
+Package commit hash: `df09311e13ffac2a7c0bde116c1f5a09cb97a7a1`
+Commit pushed: `yes`
 
 ## Source Packages and Files Reviewed
 

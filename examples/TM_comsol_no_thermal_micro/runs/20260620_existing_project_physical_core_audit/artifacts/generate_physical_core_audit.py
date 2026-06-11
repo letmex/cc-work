@@ -15,6 +15,8 @@ EXECUTION_TREE = Path(r"D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_
 CLASSIFICATION = (
     "no-thermal physical core acceptable as thermal baseline with documented platform differences"
 )
+PACKAGE_COMMIT = "df09311e13ffac2a7c0bde116c1f5a09cb97a7a1"
+PUSH_STATUS = "yes"
 
 
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) -> None:
@@ -672,8 +674,8 @@ def manifest(status: dict[str, str]) -> dict[str, object]:
         "repo_package_tree": str(REPO_ROOT),
         "evidence_status": status,
         "files": files,
-        "commit_hash": "PENDING_HANDOFF_UPDATE",
-        "pushed": "PENDING_HANDOFF_UPDATE",
+        "commit_hash": PACKAGE_COMMIT,
+        "pushed": PUSH_STATUS,
     }
 
 
@@ -764,8 +766,8 @@ def handoff_md(status: dict[str, str]) -> str:
     return f"""# Handoff Comment: Existing Project Physical-Core Audit
 
 Package folder: `examples/TM_comsol_no_thermal_micro/runs/20260620_existing_project_physical_core_audit`
-Commit hash: `PENDING_HANDOFF_UPDATE`
-Commit pushed: `PENDING_HANDOFF_UPDATE`
+Package commit hash: `{PACKAGE_COMMIT}`
+Commit pushed: `{PUSH_STATUS}`
 
 ## Source Packages and Files Reviewed
 

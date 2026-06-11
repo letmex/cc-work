@@ -1,6 +1,6 @@
 {
   "package": "examples\\TM_comsol_no_thermal_micro\\runs\\20260620_existing_project_physical_core_audit",
-  "created_utc": "2026-06-11T03:54:55.557536+00:00",
+  "created_utc": "2026-06-11T03:56:41.954222+00:00",
   "classification": "no-thermal physical core acceptable as thermal baseline with documented platform differences",
   "scope": "read-only physical-core audit before thermal coupling reintroduction",
   "source_code_modified": false,
@@ -41,6 +41,6 @@
     "tables/do_not_change_constraints.csv",
     "artifacts/generate_physical_core_audit.py"
   ],
-  "commit_hash": "PENDING_HANDOFF_UPDATE",
-  "pushed": "PENDING_HANDOFF_UPDATE"
+  "commit_hash": "df09311e13ffac2a7c0bde116c1f5a09cb97a7a1",
+  "pushed": "yes"
 }
