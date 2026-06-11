@@ -4,7 +4,11 @@
 
 Classification: `prescribed-temperature micro-notch diagnostic passed`
 
-Commit status at initial package creation: pending commit. After push, this file must be updated with the final commit hash and push status in a follow-up handoff sync commit if needed.
+Primary diagnostic commit:
+
+- `29e76d7` (`Run prescribed temperature micro notch diagnostic`)
+
+This handoff update is the follow-up sync change requested by the diagnostic prompt. Final pushed HEAD and push status are reported in the final Codex response after `git push`; the self-hash of this sync commit cannot be known until the commit is created.
 
 ## Package
 
