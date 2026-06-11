@@ -6,14 +6,14 @@ Final classification: `constant-k0 heat PDE phase1 implemented and patch tests p
 
 Commit hash:
 
-- Primary implementation commit: `PENDING_PRIMARY_COMMIT`.
-- Handoff sync commit: `PENDING_HANDOFF_SYNC_COMMIT`; do not chase this file's own sync hash indefinitely.
+- Primary implementation commit: `b289127b664ee0e8770fcbe91e9e8b09ca1908c4` (`Implement constant-k0 heat PDE phase1`).
+- Handoff sync commit: recorded in final Codex response; this file does not chase its own sync hash.
 
 Push status:
 
-- Primary implementation commit push: `PENDING_PUSH_STATUS`.
-- Final status at generation time: `PENDING_FINAL_GIT_STATUS`.
-- Final HEAD known at handoff-sync edit time: `PENDING_FINAL_HEAD`.
+- Primary implementation commit push: pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time: `b289127b664ee0e8770fcbe91e9e8b09ca1908c4`.
 
 ## Package
 
