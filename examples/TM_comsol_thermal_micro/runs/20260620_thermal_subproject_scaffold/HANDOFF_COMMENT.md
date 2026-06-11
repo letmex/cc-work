@@ -3,8 +3,8 @@
 Package folder: `examples/TM_comsol_thermal_micro/runs/20260620_thermal_subproject_scaffold`
 Source project copied from: `D:\ProgramData\PINN\FEM-PINN-main\examples\TM_comsol_no_thermal_micro`
 New project path: `examples/TM_comsol_thermal_micro`
-Commit hash: `PENDING_HANDOFF_UPDATE`
-Commit pushed: `PENDING_HANDOFF_UPDATE`
+Scaffold commit hash: `f8e1d73597fd1ad8592a2ab8ae55ed84feb5fabe`
+Commit pushed: `yes`
 
 ## Status
 
