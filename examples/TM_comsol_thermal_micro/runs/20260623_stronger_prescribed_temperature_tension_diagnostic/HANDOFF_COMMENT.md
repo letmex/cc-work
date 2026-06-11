@@ -4,7 +4,11 @@
 
 Classification: `strong prescribed-temperature tension diagnostic passed`
 
-Commit status at package creation: pending commit. After the primary commit is created, update this file with the commit hash in a follow-up handoff sync commit if needed. Final pushed HEAD and push status are also reported in the final Codex response.
+Primary diagnostic commit:
+
+- `938522b` (`Run stronger prescribed temperature tension diagnostic`)
+
+This handoff update is the follow-up sync change requested by the diagnostic prompt. Final pushed HEAD and push status are reported in the final Codex response after `git push`; the self-hash of this sync commit cannot be known until the commit is created.
 
 ## Package
 
