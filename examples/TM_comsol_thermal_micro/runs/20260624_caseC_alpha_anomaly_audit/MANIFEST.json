@@ -1,0 +1,63 @@
+{
+  "cases": {
+    "A": {
+      "delta_T_K": 0.0,
+      "run_id": "20260623_strong_A_off_seed23",
+      "thermal_mode": "off"
+    },
+    "B": {
+      "delta_T_K": 0.0,
+      "run_id": "20260623_strong_B_deltaT0_seed23",
+      "thermal_mode": "uniform"
+    },
+    "C": {
+      "delta_T_K": 20.0,
+      "run_id": "20260623_strong_C_deltaT20_seed23",
+      "thermal_mode": "uniform"
+    }
+  },
+  "classification": "caseC diffuse alpha likely plotting-scale artifact plus low-amplitude background",
+  "connectivity_method": "Element graph from shared raw mesh triangle edges; components are computed over thresholded element masks.",
+  "figures": [
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/final_alpha_global_scale.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/final_alpha_low_range_scale.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/final_alpha_difference_C_minus_A.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/final_alpha_difference_C_minus_B.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/final_alpha_ratio_or_mask_comparison.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/alpha_threshold_masks.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/alpha_HI_HII_He_alignment_caseC.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/caseC_alpha_evolution_by_step.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/caseC_alpha_histogram_by_step.png",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/figures/sampling_texture_diagnostic.png"
+  ],
+  "generated_at": "2026-06-11T18:07:45",
+  "guards": {
+    "D0040_run": false,
+    "S0110_run": false,
+    "damage_dependent_conductivity_introduced": false,
+    "heat_pde_introduced": false,
+    "new_training_run": false,
+    "no_thermal_project_touched": false,
+    "seed_study_run": false,
+    "shear_extension_run": false,
+    "source_code_modified": false
+  },
+  "notch_seed_window": {
+    "center_x_mm": 0.005,
+    "center_y_mm": 0.005,
+    "half_window_mm": 0.0003
+  },
+  "package": "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit",
+  "source_package": "examples/TM_comsol_thermal_micro/runs/20260623_stronger_prescribed_temperature_tension_diagnostic",
+  "source_results_root": "examples/TM_comsol_thermal_micro/outputs/results",
+  "tables": [
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/alpha_threshold_area_connectivity.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/alpha_distribution_statistics.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/alpha_difference_statistics.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/alpha_drive_spatial_correlation.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/caseC_alpha_evolution_summary.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/plot_scale_audit.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/artifact_risk_assessment.csv",
+    "examples/TM_comsol_thermal_micro/runs/20260624_caseC_alpha_anomaly_audit/tables/no_new_training_guard.csv"
+  ]
+}

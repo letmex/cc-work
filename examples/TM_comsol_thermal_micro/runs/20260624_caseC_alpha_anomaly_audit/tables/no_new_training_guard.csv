@@ -1,0 +1,7 @@
+guard_item,expected_status,observed_status,passed,comment
+no new training,No training or A/B/C rerun.,Audit script only reads existing CSV/NPZ outputs and writes audit artifacts.,True,No training entry point is imported or invoked.
+no source physics changes,No source behavior changes.,Only a new run/audit package is generated.,True,Validation should confirm changed files stay under examples/TM_comsol_thermal_micro/runs.
+no heat PDE,No heat PDE implementation or run.,Existing prescribed-temperature fields are read only.,True,No thermal PDE code was introduced.
+no damage-dependent conductivity,No k(d) conductivity implementation or run.,No conductivity model is touched.,True,This audit does not alter physics.
+no no-thermal project modification,No edits under examples/TM_comsol_no_thermal_micro.,Audit package is under examples/TM_comsol_thermal_micro.,True,Validated separately with git diff name-only guard.
+no legacy top-sigma primary reaction,Keep energy-conjugate reaction as the interpreted reaction metric.,Case C evolution table joins existing reaction_N_energy and nominal_stress_energy_MPa.,True,No legacy reaction route is used.
