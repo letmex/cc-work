@@ -1,0 +1,124 @@
+{
+  "package": "examples/TM_comsol_thermal_micro/runs/20260622_prescribed_temperature_micro_notch_diagnostic",
+  "classification": "prescribed-temperature micro-notch diagnostic passed",
+  "scope": {
+    "worked_under": "examples/TM_comsol_thermal_micro",
+    "no_thermal_project_touched": false,
+    "source_code_modified": false,
+    "physics_model_modified": false,
+    "boundary_model_modified": false,
+    "material_parameters_modified": false,
+    "l0_modified": false,
+    "history_logic_modified": false,
+    "training_losses_modified": false,
+    "full_heat_pde_implemented_or_activated": false,
+    "damage_dependent_conductivity_implemented_or_activated": false,
+    "legacy_top_sigma_primary_reaction": false
+  },
+  "schedule": {
+    "path": "examples/TM_comsol_thermal_micro/load_schedules/load_schedule_D0003_tension_thermal_micro_notch.csv",
+    "step_count": 3,
+    "displacements_mm": [1.0e-6, 2.0e-6, 3.0e-6],
+    "final_displacement_mm": 3.0e-6,
+    "purpose": "small prescribed-temperature micro-notch diagnostic schedule; not a fracture-extension schedule"
+  },
+  "training_settings": {
+    "hidden_layers": 2,
+    "neurons": 20,
+    "seed": 23,
+    "activation": "TrainableReLU",
+    "init_coeff": 3.0,
+    "smoke": true,
+    "n_rprop": 3,
+    "n_lbfgs": 0,
+    "load_case": "tension",
+    "checkpointed_training": true
+  },
+  "cases": [
+    {
+      "case_id": "A",
+      "run_id": "20260622_diag_A_off_seed23",
+      "thermal_mode": "off",
+      "delta_T_K": 0.0,
+      "checkpoint_count": 3,
+      "field_file_count": 3,
+      "energy_reaction_available": true,
+      "final_nominal_stress_MPa": 10.95041079679504,
+      "final_alpha_max": 0.5875001549720764,
+      "classification": "no-thermal baseline diagnostic completed"
+    },
+    {
+      "case_id": "B",
+      "run_id": "20260622_diag_B_deltaT0_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 0.0,
+      "checkpoint_count": 3,
+      "field_file_count": 3,
+      "energy_reaction_available": true,
+      "final_nominal_stress_MPa": 10.95041079679504,
+      "final_alpha_max": 0.5875001549720764,
+      "classification": "deltaT0 branch matches no-thermal baseline"
+    },
+    {
+      "case_id": "C",
+      "run_id": "20260622_diag_C_deltaT20_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 20.0,
+      "checkpoint_count": 3,
+      "field_file_count": 3,
+      "energy_reaction_available": true,
+      "final_nominal_stress_MPa": 5.304048681864515,
+      "final_alpha_max": 0.5875001549720764,
+      "classification": "positive deltaT branch completed with interpretable reaction shift"
+    }
+  ],
+  "files": {
+    "reports": [
+      "REPORT.md",
+      "HANDOFF_COMMENT.md",
+      "MANIFEST.json",
+      "RUN_METADATA.json"
+    ],
+    "tables": [
+      "tables/micro_notch_thermal_case_summary.csv",
+      "tables/micro_notch_thermal_case_comparison.csv",
+      "tables/reaction_stress_by_step.csv",
+      "tables/thermal_effect_summary.csv",
+      "tables/checkpoint_availability_summary.csv",
+      "tables/damage_drive_summary.csv",
+      "tables/no_heat_pde_guard_summary.csv",
+      "tables/changed_files_summary.csv",
+      "tables/thermal_reaction_shift_by_step.csv"
+    ],
+    "figures": [
+      "figures/reaction_vs_displacement.png",
+      "figures/nominal_stress_vs_strain.png",
+      "figures/alpha_max_vs_step.png",
+      "figures/final_alpha_comparison.png",
+      "figures/final_alpha_comparison_spatial.png",
+      "figures/thermal_effect_reaction_shift.png",
+      "figures/figure_summary.md"
+    ]
+  },
+  "validation": {
+    "pre_stage": [
+      {
+        "command": "git status --short --branch",
+        "result": "## main...origin/main; new schedule and package untracked before staging"
+      },
+      {
+        "command": "git diff --name-only -- examples/TM_comsol_no_thermal_micro",
+        "result": "no output"
+      },
+      {
+        "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m compileall -q examples\\TM_comsol_thermal_micro",
+        "result": "exit code 0"
+      },
+      {
+        "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m pytest examples\\TM_comsol_thermal_micro\\tests\\test_prescribed_thermal_strain_patch.py -q",
+        "result": "8 passed in 1.60s"
+      }
+    ]
+  },
+  "next_recommended_task": "Run a slightly less smoke-like prescribed-temperature tension diagnostic in examples/TM_comsol_thermal_micro with the same A/B/C comparison and checkpointed energy reaction, still without heat PDE or damage-dependent conductivity."
+}

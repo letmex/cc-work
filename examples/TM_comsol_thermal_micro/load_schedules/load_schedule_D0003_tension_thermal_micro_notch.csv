@@ -1,0 +1,5 @@
+# Small prescribed-temperature micro-notch diagnostic schedule.
+# Displacements are in mm. This is not a fracture-extension schedule.
+1.0e-6
+2.0e-6
+3.0e-6

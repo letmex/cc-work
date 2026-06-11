@@ -1,0 +1,7 @@
+guard_item,expected_status,observed_status,passed,comment
+heat_equation_residual,absent,absent,True,active Python source scan
+thermal_pde_residual,absent,absent,True,active Python source scan
+temperature_pde,absent,absent,True,active Python source scan
+trainable_temperature,absent,absent,True,active Python source scan
+k_d=g(d)*k0,absent,absent,True,active Python source scan
+damage_dependent_conductivity,absent,absent,True,active Python source scan

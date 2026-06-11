@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "case_id": "A",
+      "run_id": "20260622_diag_A_off_seed23",
+      "thermal_mode": "off",
+      "delta_T_K": 0.0,
+      "classification": "no-thermal baseline diagnostic completed"
+    },
+    {
+      "case_id": "B",
+      "run_id": "20260622_diag_B_deltaT0_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 0.0,
+      "classification": "deltaT0 branch matches no-thermal baseline"
+    },
+    {
+      "case_id": "C",
+      "run_id": "20260622_diag_C_deltaT20_seed23",
+      "thermal_mode": "uniform",
+      "delta_T_K": 20.0,
+      "classification": "positive deltaT branch completed with interpretable reaction shift"
+    }
+  ],
+  "schedule": "load_schedules/load_schedule_D0003_tension_thermal_micro_notch.csv",
+  "training_settings": "hidden_layers=2; neurons=20; seed=23; activation=TrainableReLU; init_coeff=3.0; n_rprop=3; n_lbfgs=0; load_case=tension; smoke mesh; checkpoints every step",
+  "classification": "prescribed-temperature micro-notch diagnostic passed"
+}

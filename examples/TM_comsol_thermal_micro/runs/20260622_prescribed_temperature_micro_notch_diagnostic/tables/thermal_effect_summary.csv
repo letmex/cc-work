@@ -1,0 +1,7 @@
+item,expected_behavior,observed_behavior,passed,interpretation
+delta_T_zero_matches_no_thermal,uniform delta_T=0 reproduces thermal_mode=off within deterministic tolerance,A and B reaction/stress/energy/final alpha comparisons had max absolute difference 0 within table precision,True,No deltaT0 regression detected.
+positive_delta_T_reaction_shift,positive uniform expansion subtracts normal thermal strain and generally shifts tensile response downward at fixed displacement,final nominal stress shifted by -5.64636211 MPa; step-0 shift was -14.6927101 MPa and became compressive.,True,"Thermal reaction trend is physically interpretable for the top-v prescribed, top-u-free ansatz."
+positive_delta_T_damage_shift,no runaway alpha caused purely by prescribed thermal strain wiring,"final alpha_max A=0.587500155, C=0.587500155; HI/HII finite.",True,Alpha/history remained finite in this diagnostic; this is not fracture validation.
+energy_reaction_available,checkpointed energy-conjugate reaction is computable for all steps,all three cases wrote 3 checkpoints and reaction_metric_availability status energy_conjugate,True,Primary reaction route remained energy-conjugate.
+thermal_branch_does_not_activate_heat_PDE,no heat PDE active,only prescribed delta_T settings were used; no heat residual or temperature solve ran,True,Strictly prescribed-temperature diagnostic.
+thermal_branch_does_not_activate_damage_conductivity,no damage-dependent conductivity active,no k(d)=g(d)k0 coupling was present or used,True,Conductivity coupling remains future work.

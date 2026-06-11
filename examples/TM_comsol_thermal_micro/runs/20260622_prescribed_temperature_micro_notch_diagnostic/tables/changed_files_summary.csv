@@ -1,0 +1,3 @@
+file_changed,change_type,reason,affects_no_thermal_default,affects_physics_model,affects_training_loss,comment
+load_schedules/load_schedule_D0003_tension_thermal_micro_notch.csv,added diagnostic input,small three-step tension schedule for seed-23 prescribed-temperature diagnostic,False,False,False,used only when explicitly passed by --load-schedule-file
+runs/20260622_prescribed_temperature_micro_notch_diagnostic/*,added evidence package,"report, tables, figures, and handoff for diagnostic",False,False,False,no model/source behavior change

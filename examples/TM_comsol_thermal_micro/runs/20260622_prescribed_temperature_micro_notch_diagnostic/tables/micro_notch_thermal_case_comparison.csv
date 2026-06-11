@@ -1,0 +1,12 @@
+comparison,metric,case_left,case_right,left_value,right_value,absolute_difference,relative_difference,tolerance_or_interpretation,passed,comment
+A_vs_B_deltaT0_equivalence,max_abs_reaction_N_energy,A,B,0.0,0.0,0.0,0.0,<=1e-12 for this deterministic diagnostic,True,thermal_mode off and uniform delta_T=0 are numerically identical
+A_vs_B_deltaT0_equivalence,max_abs_nominal_stress_energy_MPa,A,B,0.0,0.0,0.0,0.0,<=1e-12 for this deterministic diagnostic,True,thermal_mode off and uniform delta_T=0 are numerically identical
+A_vs_B_deltaT0_equivalence,max_abs_Pi_total_kNmm,A,B,0.0,0.0,0.0,0.0,<=1e-12 for this deterministic diagnostic,True,thermal_mode off and uniform delta_T=0 are numerically identical
+A_vs_B_deltaT0_equivalence,max_abs_elastic_energy_kNmm,A,B,0.0,0.0,0.0,0.0,<=1e-12 for this deterministic diagnostic,True,thermal_mode off and uniform delta_T=0 are numerically identical
+A_vs_B_deltaT0_equivalence,max_abs_fracture_energy_kNmm,A,B,0.0,0.0,0.0,0.0,<=1e-12 for this deterministic diagnostic,True,thermal_mode off and uniform delta_T=0 are numerically identical
+A_vs_B_deltaT0_equivalence,final_alpha_max,A,B,0.5875001549720764,0.5875001549720764,0.0,0.0,<=1e-12 expected,True,final alpha max unchanged
+A_vs_B_deltaT0_equivalence,checkpoint_count,A,B,3.0,3.0,0.0,0.0,equal to 3,True,all expected checkpoints present
+A_vs_C_positive_deltaT,final_nominal_stress_shift_MPa,A,C,10.95041079679504,5.304048681864515,5.646362114930525,0.515630163991939,expected downward thermoelastic shift,True,positive thermal expansion reduces effective tensile elastic strain at fixed displacement
+A_vs_C_positive_deltaT,peak_nominal_stress_shift_MPa,A,C,10.95041079679504,5.304048681864515,5.646362114930525,0.515630163991939,expected lower peak in small diagnostic,True,peak nominal stress shifted downward
+A_vs_C_positive_deltaT,final_alpha_max,A,C,0.5875001549720764,0.5875001549720764,0.0,0.0,same trained alpha range in this small run; no runaway,True,alpha stayed stable; short run did not trigger fracture growth
+A_vs_C_positive_deltaT,energy_reaction_available,A,C,1.0,1.0,0.0,0.0,both true,True,energy-conjugate reaction available in both cases
