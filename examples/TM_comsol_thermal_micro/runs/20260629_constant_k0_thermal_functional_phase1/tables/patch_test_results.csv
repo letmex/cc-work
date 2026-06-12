@@ -1,0 +1,3 @@
+test_file,test_count,result,command
+examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py,18,passed,"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_constant_k0_heat_pde_patch.py -q"
+examples/TM_comsol_thermal_micro/tests/test_prescribed_thermal_strain_patch.py,8,passed,"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_prescribed_thermal_strain_patch.py -q"

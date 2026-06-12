@@ -1,0 +1,8 @@
+guard,status,evidence
+no damage conductivity API,passed,"Functional public signatures do not include alpha, damage, d, g_d, or k_d."
+no k(d) implementation,passed,"Focused source-token guard checks forbidden conductivity tokens."
+no no-thermal modifications,passed,"`git diff --name-only -- examples\TM_comsol_no_thermal_micro` returned empty."
+no training route changes,passed by scope,"Only `heat_pde.py`, focused tests, project memory, and run package are changed."
+strict detach guard,passed,"Detached nonconstant temperature raises ValueError in gradient, residual, and energy calls."
+strict coordinate guard,passed,"Nonconstant temperature with nongrad coordinates raises ValueError."
+constant field fallback,passed,"Constant fields still return zero gradient, residual, and zero-source steady density."

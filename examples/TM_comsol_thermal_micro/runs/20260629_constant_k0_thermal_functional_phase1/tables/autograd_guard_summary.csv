@@ -1,0 +1,6 @@
+case,behavior,test_evidence,note
+constant temperature with nongrad coordinates,returns zero gradient/residual/zero-source density,test_constant_temperature_fields_are_allowed_by_gradient_guard,Allowed only through explicit constant path.
+detached nonconstant temperature,raises ValueError,test_strict_gradient_guard_rejects_detached_nonconstant_temperature,Prevents accidental detach from becoming zero physics.
+nonconstant temperature with nongrad coordinates,raises ValueError,test_strict_gradient_guard_rejects_nonconstant_temperature_with_nongrad_coordinates,Prevents missing requires_grad from being treated as zero gradient.
+linear temperature second derivative,returns zero divergence/residual,existing linear residual test,Higher derivative of constant first derivative is allowed as zero.
+quadratic temperature second derivative,computes expected residual/source sign,existing quadratic residual test,Confirms graph remains connected for nonconstant derivative calls.

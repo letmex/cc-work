@@ -1,0 +1,8 @@
+command,result,notes
+git status,"passed: branch main tracks origin/main with only intended thermal changes before commit","No no-thermal changes present."
+"recursive py_compile under examples\TM_comsol_thermal_micro","passed: py_compile passed for 37 Python files",Run after package creation.
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_constant_k0_heat_pde_patch.py -q","passed: 18 passed","Focused heat PDE functional and residual patch tests."
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_prescribed_thermal_strain_patch.py -q","passed: 8 passed","Prescribed thermal strain fallback preserved."
+package schema/file existence check,"passed: 12 required files present",Run after package creation.
+git diff --check,passed,No whitespace errors reported.
+"git diff --name-only -- examples\TM_comsol_no_thermal_micro",passed: empty,No original no-thermal baseline changes.

@@ -1,0 +1,5 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/heat_pde.py,modified,"Add thermal functional utilities, stricter autograd guard, and diagnostic residual docstrings."
+examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py,modified,"Extend focused patch tests for functional density and strict gradient guards."
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,"Record constant-k0 thermal functional Phase 1 status and simplified finalization protocol."
+examples/TM_comsol_thermal_micro/runs/20260629_constant_k0_thermal_functional_phase1,added,Implementation report package.

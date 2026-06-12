@@ -114,6 +114,37 @@ Current constant-`k0` heat PDE Phase 1 status:
   damage, degradation, or `k(d)` conductivity input is present in the Phase 1
   heat PDE API
 
+Current constant-`k0` thermal functional Phase 1 status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260629_constant_k0_thermal_functional_phase1`
+- final classification:
+  `constant-k0 thermal functional phase1 implemented and tests passed`
+- extended isolated utility module:
+  `examples/TM_comsol_thermal_micro/heat_pde.py`
+- extended focused analytical patch tests:
+  `examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py`
+- added steady thermal functional density:
+  `0.5*k0*|grad_m T|^2 - Q*T`
+- added backward-Euler-style transient incremental thermal functional density:
+  `rho*c/(2*dt)*(T-T_prev)^2 + 0.5*k0*|grad_m T|^2 - Q*T`
+- added pointwise mean helper for patch tests only; it is not mesh quadrature
+  or a domain integral
+- the main future heat loss route is the thermal functional / weak-form route;
+  strong-form residual utilities remain available only for patch-test
+  diagnostics and sign/unit sanity checks
+- stricter autograd guards now raise clear errors for detached nonconstant
+  temperatures and non-gradient coordinates, while explicitly allowing known
+  constant fields to return zero gradients
+- focused heat PDE patch tests pass with 18 tests; prescribed thermal strain
+  fallback patch tests pass with 8 tests
+- this phase remains default-inactive: no heat PDE training loss, no solved
+  temperature field, no fracture-training coupling, no checkpoint schema change,
+  no postprocess route change, and no broad thermal-fracture diagnostic
+- damage-dependent conductivity remains unimplemented and guarded: no `alpha`,
+  `damage`, `d`, `g_d`, `k_d`, degradation, or `k(d)` conductivity input is
+  present in the functional API
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

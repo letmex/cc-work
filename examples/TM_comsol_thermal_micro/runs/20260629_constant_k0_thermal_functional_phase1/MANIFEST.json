@@ -1,0 +1,35 @@
+{
+  "package": "20260629_constant_k0_thermal_functional_phase1",
+  "classification": "constant-k0 thermal functional phase1 implemented and tests passed",
+  "scope": "examples/TM_comsol_thermal_micro only",
+  "no_thermal_project_touched": false,
+  "source_files_changed": [
+    "examples/TM_comsol_thermal_micro/heat_pde.py",
+    "examples/TM_comsol_thermal_micro/tests/test_constant_k0_heat_pde_patch.py",
+    "examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md"
+  ],
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/implementation_summary.csv",
+    "tables/thermal_functional_summary.csv",
+    "tables/autograd_guard_summary.csv",
+    "tables/patch_test_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/guard_checks.csv",
+    "tables/validation_results.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ],
+  "tests": [
+    {
+      "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m pytest examples\\TM_comsol_thermal_micro\\tests\\test_constant_k0_heat_pde_patch.py -q",
+      "result": "18 passed"
+    },
+    {
+      "command": "D:\\anaconda3\\envs\\torch_env\\python.exe -m pytest examples\\TM_comsol_thermal_micro\\tests\\test_prescribed_thermal_strain_patch.py -q",
+      "result": "8 passed"
+    }
+  ]
+}

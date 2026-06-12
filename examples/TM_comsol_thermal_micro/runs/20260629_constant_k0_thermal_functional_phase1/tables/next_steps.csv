@@ -1,0 +1,5 @@
+priority,next_task,reason,guardrail
+1,"Review this implementation package","Confirm functional API, sign convention, and autograd guard behavior before future coupling.","Do not begin heat-fracture diagnostics during review."
+2,"Design solved-temperature representation and weak-form quadrature strategy","Needed before any actual heat training route can use the functional layer.","Do not thread into fracture training yet."
+3,"Plan boundary-condition weak-form tests","Boundary terms should be validated before broad thermal coupling.","Keep constant k0 and Q=0 first."
+4,"Defer damage-dependent conductivity","k(d)=g(d)k0 needs a stable solved-T route first.","Separate approval required."

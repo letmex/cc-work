@@ -1,0 +1,8 @@
+item,status,details,default_behavior,risk_or_note
+steady thermal functional density,implemented,"`steady_thermal_energy_density_J_per_m3` computes `0.5*k0*|grad_m T|^2 - Q*T`.",inactive unless imported directly by focused tests or future approved code,"Function name keeps `J_per_m3`; docstring states the steady expression is W/m^3 density unless scaled."
+transient incremental thermal functional density,implemented,"`transient_thermal_incremental_energy_density_J_per_m3` computes storage plus steady functional density.",inactive unless imported directly by tests or future approved code,`dt_s` must be positive.
+mean functional density helper,implemented,"`mean_thermal_functional_density` averages supplied pointwise densities.",patch-test helper only,Not mesh quadrature or a domain integral.
+strong-form residual policy,updated,"Residual docstrings now classify strong-form residuals as diagnostics and patch-test sanity checks.",residual utilities remain available,Future main heat loss route is thermal functional / weak-form.
+autograd guard,implemented,"Detached nonconstant outputs and nongrad coordinates raise clear `ValueError` exceptions.",constant fields allowed explicitly,Reduces risk of silent zero-gradient physics.
+training integration,not implemented,No heat loss or solved-temperature training was threaded into the project.,default inactive,Separate approval required.
+damage-dependent conductivity,not implemented,"No alpha, damage, d, g_d, k_d, or k(d) conductivity path added.",constant k0 only,Guard tests cover public signatures and source tokens.

@@ -1,0 +1,4 @@
+utility,expression,units_or_interpretation,test_evidence,limitation
+steady_thermal_energy_density_J_per_m3,"0.5*k0*|grad_m T|^2 - Q*T","Steady variational thermal-power density W/m^3; J/m^3-equivalent only after chosen scaling","constant zero-source, linear gradient, quadratic source sign, mm-to-m chain-rule tests",Pointwise density only.
+transient_thermal_incremental_energy_density_J_per_m3,"rho*c/(2*dt)*(T-T_prev)^2 + 0.5*k0*|grad_m T|^2 - Q*T",Incremental variational density using SI heat units,"uniform same temperature, uniform changed temperature, dt guard tests",No physical time schedule introduced.
+mean_thermal_functional_density,mean(pointwise_density),Same units as supplied density,constant zero-source test,Not quadrature and not domain integration.
