@@ -6,13 +6,18 @@ Final classification: `constant-k0 thermal functional phase1 implemented and tes
 
 Commit hash:
 
-- Primary implementation commit: pending until exact-path commit.
-- Handoff sync commit: this file may be updated once after the primary push; do
-  not chase the sync commit self-hash.
+- Primary implementation commit:
+  `e0ee6d8762c11e55691c385653fb6090be00fe21`
+  (`Add constant-k0 thermal functional phase1`).
+- Handoff sync commit: recorded in final Codex response; this file does not
+  chase its own sync hash.
 
 Push status:
 
-- Pending until primary implementation commit is pushed to `origin/main`.
+- Primary implementation commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time:
+  `e0ee6d8762c11e55691c385653fb6090be00fe21`.
 
 ## Package
 
