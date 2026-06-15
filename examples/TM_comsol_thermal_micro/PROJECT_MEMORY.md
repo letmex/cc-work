@@ -145,6 +145,41 @@ Current constant-`k0` thermal functional Phase 1 status:
   `damage`, `d`, `g_d`, `k_d`, degradation, or `k(d)` conductivity input is
   present in the functional API
 
+Current heat-only weak-form patch training status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260630_heat_only_weak_form_patch_training`
+- final classification:
+  `heat-only weak-form patch trainer implemented and tests passed`
+- added independent heat-only modules:
+  `examples/TM_comsol_thermal_micro/thermal_field.py`
+  `examples/TM_comsol_thermal_micro/thermal_quadrature.py`
+  `examples/TM_comsol_thermal_micro/train_heat_only.py`
+- added focused tests:
+  `examples/TM_comsol_thermal_micro/tests/test_heat_only_weak_form_training.py`
+- top-bottom and bottom-only temperature ansatz functions hard-satisfy their
+  Dirichlet boundaries using mm coordinates for the ansatz and normalized
+  `[-1, 1]` network inputs
+- triangle-area quadrature computes centroids in mm, converts triangle areas to
+  m^2, and uses area-weighted thermal functional density as the primary
+  heat-only loss
+- the heat-only trainer uses `heat_pde.steady_thermal_energy_density_J_per_m3`
+  as the loss density; strong-form residuals are post-training diagnostics only
+- H1 top-bottom Dirichlet linear conduction passes focused analytical
+  temperature validation with max error about `4.75e-4 K` and hard boundary
+  errors of `0 K`
+- H2 bottom-only Dirichlet natural-insulation patch passes focused analytical
+  temperature validation with zero reported temperature and flux errors
+- H3 quadrature sanity and H4 transient storage sanity checks pass
+- H1 strong residual diagnostic is high after the lightweight centroid
+  weak-form smoke training; review quadrature/regularization before any
+  solved-temperature mechanics coupling
+- this phase remains independent and default-inactive: no mechanics coupling, no
+  thermal-strain mechanics coupling, no fracture-training coupling, no
+  `train_mixed_tm.py` change, no checkpoint schema change, and no production
+  bottom-cooling run
+- damage-dependent conductivity remains unimplemented and guarded
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

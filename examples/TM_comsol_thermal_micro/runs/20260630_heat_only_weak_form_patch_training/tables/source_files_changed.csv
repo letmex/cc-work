@@ -1,0 +1,7 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/thermal_field.py,added,"Solved-temperature ansatz helpers for heat-only patch cases."
+examples/TM_comsol_thermal_micro/thermal_quadrature.py,added,"Triangle centroid, area, integration, and area-weighted density helpers."
+examples/TM_comsol_thermal_micro/train_heat_only.py,added,"Independent heat-only weak-form patch trainer and sanity cases."
+examples/TM_comsol_thermal_micro/tests/test_heat_only_weak_form_training.py,added,"Focused tests for quadrature, ansatz, H1/H2 training, loss route, and guards."
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,"Record heat-only weak-form patch training status and next task."
+examples/TM_comsol_thermal_micro/runs/20260630_heat_only_weak_form_patch_training,added,"Implementation report package."

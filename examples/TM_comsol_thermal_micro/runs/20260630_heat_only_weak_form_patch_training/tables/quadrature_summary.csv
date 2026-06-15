@@ -1,0 +1,5 @@
+utility,implemented_behavior,unit,test_evidence,limitation
+triangle_centroids_mm,mean of each triangle's three node coordinates,mm,test_triangle_centroids_return_average_node_coordinates_in_mm,Centroid one-point quadrature only.
+triangle_areas_m2,converts mm nodal coordinates to m before triangle area calculation,m^2,test_triangle_areas_convert_square_mm_to_square_meters,No thickness factor.
+area_weighted_mean_density,sum(area*density)/sum(area),same as density,test_area_weighted_mean_density_uses_triangle_area_weights,Requires positive total area.
+integrate_density_2d,sum(area*density),density*m^2,test_quadrature_sanity_case_integrates_constant_density_over_patch_area,2D integral without thickness.

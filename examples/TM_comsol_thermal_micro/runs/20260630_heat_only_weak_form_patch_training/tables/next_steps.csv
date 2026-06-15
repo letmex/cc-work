@@ -1,0 +1,5 @@
+priority,next_task,reason,guardrail
+1,"Review heat-only weak-form package","Confirm ansatz, quadrature, and H1/H2 validation before future coupling.","Do not start mechanics coupling during review."
+2,"Review H1 quadrature and regularization","H1 temperature passes but strong residual diagnostic is high after weak-form smoke training.","Keep strong residual diagnostic-only."
+3,"Design solved-temperature-to-prescribed-thermal-strain coupling plan","Coupling should be separate after heat-only validation review.","Do not modify mechanics/training route in this task."
+4,"Defer damage-dependent conductivity","Conductivity degradation requires a stable solved-temperature route first.","Separate approval required."

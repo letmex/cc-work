@@ -1,0 +1,18 @@
+case,metric,value,unit,pass_or_diagnostic
+H1,max_abs_temperature_error,4.752286448592713e-04,K,pass
+H1,l2_temperature_error,2.846484229769935e-04,K,pass
+H1,bottom_boundary_max_abs_error,0.0,K,pass
+H1,top_boundary_max_abs_error,0.0,K,pass
+H1,final_area_weighted_functional_loss,8.359952464370274e14,W/m^3-equivalent,diagnostic
+H1,max_abs_strong_residual,7.240993859241002e10,W/m^3,diagnostic
+H1,max_temperature_gradient,2000262.419186165,K/m,diagnostic
+H2,max_abs_temperature_error,0.0,K,pass
+H2,l2_temperature_error,0.0,K,pass
+H2,bottom_boundary_max_abs_error,0.0,K,pass
+H2,final_area_weighted_functional_loss,0.0,W/m^3-equivalent,pass
+H2,max_abs_strong_residual,0.0,W/m^3,diagnostic
+H2,max_abs_top_side_flux,0.0,W/m^2,diagnostic
+H3,constant_density_integral,2.5000000000000005e-09,density*m^2,pass
+H3,area_weighted_mean_density,12.5,density unit,pass
+H4,same_temperature_mean_incremental_density,0.0,W/m^3-equivalent,pass
+H4,delta4K_dt2s_mean_incremental_density,707200.0,W/m^3-equivalent,pass

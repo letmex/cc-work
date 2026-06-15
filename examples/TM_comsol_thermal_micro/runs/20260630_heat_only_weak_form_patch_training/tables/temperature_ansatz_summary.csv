@@ -1,0 +1,4 @@
+ansatz,formula,boundary_guarantee,test_evidence
+top-bottom Dirichlet,"T=(1-eta)*T_bottom+eta*T_top+eta*(1-eta)*N_T(x_hat,y_hat)","T(y_min)=T_bottom and T(y_max)=T_top",test_top_bottom_dirichlet_ansatz_hard_satisfies_both_boundaries
+bottom-only Dirichlet,"T=T_bottom+(y-y_min)*N_T(x_hat,y_hat)",T(y_min)=T_bottom,test_bottom_only_dirichlet_ansatz_hard_satisfies_bottom_boundary
+coordinate normalization,"x_hat,y_hat map rectangular mm bounds to [-1,1]",network input bounded for patch rectangle,covered through ansatz tests

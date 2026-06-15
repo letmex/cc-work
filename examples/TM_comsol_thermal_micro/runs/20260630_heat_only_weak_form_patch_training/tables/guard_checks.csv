@@ -1,0 +1,8 @@
+guard,status,evidence
+thermal subproject only,passed by scope,"All changed paths are under examples/TM_comsol_thermal_micro."
+no no-thermal modifications,passed,"`git diff --name-only -- examples\TM_comsol_no_thermal_micro` returned empty."
+primary loss is weak-form functional,passed,"Trainer returns `primary_loss=thermal_functional_area_weighted_mean` and tests inspect source for functional density use."
+strong residual diagnostic only,passed,"Trainer returns `used_strong_residual_as_primary_loss=False`; residual is reported after training."
+no mechanics trainer coupling,passed,"New tests check source does not import `train_mixed_tm` or `compute_energy_mixed_tm`."
+no damage conductivity API,passed,"Public new APIs do not accept alpha, damage, d, g_d, or k_d parameters."
+prescribed fallback preserved,passed,"Prescribed thermal strain patch tests pass."

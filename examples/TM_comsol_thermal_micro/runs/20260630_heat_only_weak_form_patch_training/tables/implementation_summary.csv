@@ -1,0 +1,7 @@
+item,status,details,default_behavior,risk_or_note
+temperature representation,implemented,"`thermal_field.py` provides normalized heat-net coordinates and Dirichlet ansatz helpers.",independent heat-only helpers,Not coupled to mechanics.
+triangle quadrature,implemented,"`thermal_quadrature.py` computes centroids, m^2 triangle areas, area-weighted mean density, and 2D density integral.",patch quadrature only,No thickness handling.
+heat-only trainer,implemented,"`train_heat_only.py` runs H1/H2 patch cases using thermal functional area-weighted loss.",standalone utility,Does not import or call mechanics/fracture trainer.
+H1 top-bottom patch,passed,"Max temperature error `4.752286448592713e-04 K`; L2 error `2.846484229769935e-04 K`.",uses top-bottom Dirichlet ansatz,H1 strong residual diagnostic is high.
+H2 bottom-only patch,passed,"Max temperature error `0.0 K`; L2 error `0.0 K`; top/side flux diagnostic `0.0 W/m^2`.",uses bottom-only Dirichlet ansatz,No transient production route.
+damage-dependent conductivity,not implemented,"No conductivity degradation or k(d) route was added.",constant k0 only,Separate approval required.
