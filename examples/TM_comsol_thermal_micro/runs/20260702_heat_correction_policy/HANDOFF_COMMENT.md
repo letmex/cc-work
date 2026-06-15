@@ -4,9 +4,18 @@
 
 Final classification: `heat correction policy implemented and tests passed`
 
-Primary implementation commit: pending until exact-path commit.
+Primary implementation commit:
 
-Push status: pending until exact-path commit and push.
+- `17e4da0fc9062d8b67a6d87c3254e78ed78ef25a`
+  (`Add heat correction policy`)
+
+Push status:
+
+- Primary implementation commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`.
+- Final HEAD known at handoff-sync edit time:
+  `17e4da0fc9062d8b67a6d87c3254e78ed78ef25a`.
+- This file does not chase the handoff-sync commit's own hash.
 
 ## Package
 
