@@ -6,13 +6,18 @@ Final classification: `heat-only weak-form patch trainer implemented and tests p
 
 Commit hash:
 
-- Primary implementation commit: pending until exact-path commit.
-- Handoff sync commit: this file may be updated once after the primary push; do
-  not chase the sync commit self-hash.
+- Primary implementation commit:
+  `663f3ac86afa34c15a3a1df5cfcefc04538208eb`
+  (`Add heat-only weak-form patch trainer`).
+- Handoff sync commit: recorded in final Codex response; this file does not
+  chase its own sync hash.
 
 Push status:
 
-- Pending until primary implementation commit is pushed to `origin/main`.
+- Primary implementation commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time:
+  `663f3ac86afa34c15a3a1df5cfcefc04538208eb`.
 
 ## Package
 
