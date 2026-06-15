@@ -1,0 +1,26 @@
+{
+  "package": "20260701_h1_quadrature_regularization_review",
+  "classification": "h1 review implemented; trained residual remains high but explained",
+  "scope": "examples/TM_comsol_thermal_micro only",
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/implementation_summary.csv",
+    "tables/h1_no_training_baseline.csv",
+    "tables/h1_quadrature_comparison.csv",
+    "tables/h1_correction_diagnostics.csv",
+    "tables/h1_residual_normalization.csv",
+    "tables/validation_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/guard_checks.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ],
+  "source_files_changed": [
+    "examples/TM_comsol_thermal_micro/thermal_quadrature.py",
+    "examples/TM_comsol_thermal_micro/train_heat_only.py",
+    "examples/TM_comsol_thermal_micro/tests/test_h1_quadrature_regularization_review.py",
+    "examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md"
+  ]
+}

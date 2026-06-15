@@ -1,0 +1,5 @@
+case,max_abs_correction_K,l2_correction_K,max_correction_gradient_K_per_m,mean_correction_gradient_K_per_m,max_abs_temperature_error_K,l2_temperature_error_K,interpretation
+no_training_lift,0.0,0.0,0.0,0.0,0.0,0.0,Exact lift only; no correction and no residual.
+trained_centroid,0.0004752286448592713,0.0002846484229769935,262.4596641292851,150.57294510042425,0.0004752286448592713,0.0002846484229769935,Small learned correction creates curvature diagnostic.
+trained_triangle_3point,0.0003703253884168589,0.00018909598729855144,239.62240061176453,100.23889428555934,0.0003703253884168589,0.00018909598729855144,Three-point quadrature reduces correction but does not eliminate it.
+trained_triangle_3point_corr_l2,0.0003693907176511857,0.000188595360983287,238.9650153550327,99.97039104379286,0.0003693907176511857,0.000188595360983287,Correction L2 gives slight additional reduction.

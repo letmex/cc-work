@@ -1,0 +1,16 @@
+metric,value,unit
+max_abs_temperature_error,0.0,K
+l2_temperature_error,0.0,K
+bottom_boundary_max_abs_error,0.0,K
+top_boundary_max_abs_error,0.0,K
+max_abs_correction,0.0,K
+l2_correction,0.0,K
+max_abs_strong_residual,0.0,W/m^3
+rms_strong_residual,0.0,W/m^3
+max_temperature_gradient,2000000.0,K/m
+mean_temperature_gradient,2000000.0,K/m
+max_correction_gradient,0.0,K/m
+mean_correction_gradient,0.0,K/m
+normalized_residual_max,0.0,dimensionless
+normalized_residual_rms,0.0,dimensionless
+normalization_scale,83600000000000.0,W/m^3

@@ -180,6 +180,37 @@ Current heat-only weak-form patch training status:
   bottom-cooling run
 - damage-dependent conductivity remains unimplemented and guarded
 
+Current H1 quadrature and regularization review status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260701_h1_quadrature_regularization_review`
+- final classification:
+  `h1 review implemented; trained residual remains high but explained`
+- added triangle quadrature point utilities in:
+  `examples/TM_comsol_thermal_micro/thermal_quadrature.py`
+- added H1 diagnostic functions in:
+  `examples/TM_comsol_thermal_micro/train_heat_only.py`
+- added focused review tests:
+  `examples/TM_comsol_thermal_micro/tests/test_h1_quadrature_regularization_review.py`
+- no-training H1 lift baseline has zero temperature error, zero correction, and
+  zero strong residual, proving the exact linear lift, `heat_pde.py`, and
+  mm-to-m scaling are not the cause of the trained residual diagnostic
+- trained H1 residual comes from a small learned nonlinear correction admitted
+  by weak-form training; the correction is small in temperature norm but large
+  in the second-derivative strong residual diagnostic
+- triangle 3-point quadrature and optional `correction_l2` regularization reduce
+  but do not eliminate the H1 strong residual diagnostic in the lightweight
+  smoke setup
+- normalized residual metric is recorded as
+  `abs(residual) / max(k0*|grad_T|/L_m, eps)`, with `L_m=y_height_m`
+- strong residual remains diagnostic-only; no residual loss was added
+- this review does not implement solved-temperature mechanics coupling,
+  thermal-strain mechanics coupling, fracture training with heat, damage-
+  dependent conductivity, or any broad thermal-fracture diagnostics
+- next safest task: decide H1 correction policy before any solved-temperature
+  mechanics coupling, such as exact-lift freeze for pure linear Dirichlet
+  patches, stronger correction regularization, or richer quadrature
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

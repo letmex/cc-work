@@ -1,0 +1,7 @@
+item,status,details,risk_or_note
+H1 no-training lift baseline,implemented,"Evaluates H1 with zero final layer so T=T_lift exactly.",Baseline residual is zero.
+triangle 3-point quadrature,implemented,"Adds barycentric degree-2 3-point triangle rule with area/3 weights.",Used for diagnostics and optional training comparison.
+weighted density helpers,implemented,"Adds weighted mean and weighted integral helpers for arbitrary quadrature weights.",Existing area-weighted helper preserved.
+H1 correction diagnostics,implemented,"Reports correction amplitude, correction gradient, residual, RMS residual, and normalized residual.",Strong residual remains diagnostic-only.
+optional correction_l2 regularization,implemented,"Adds H1-only correction L2 experiment disabled by default.",Not a production default.
+damage conductivity,not implemented,"No k(d), damage, alpha, degradation, or mechanics coupling added.",Separate approval required.

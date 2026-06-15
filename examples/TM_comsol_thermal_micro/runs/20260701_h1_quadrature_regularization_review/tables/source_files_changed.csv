@@ -1,0 +1,6 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/thermal_quadrature.py,modified,"Add centroid/3-point quadrature point and generic weighted density helpers."
+examples/TM_comsol_thermal_micro/train_heat_only.py,modified,"Add H1 no-training baseline, quadrature diagnostics, normalized residual, and optional correction regularization."
+examples/TM_comsol_thermal_micro/tests/test_h1_quadrature_regularization_review.py,added,"Focused H1 baseline, quadrature, correction, normalization, and guard tests."
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,"Record H1 review status and next task."
+examples/TM_comsol_thermal_micro/runs/20260701_h1_quadrature_regularization_review,added,"Implementation and diagnostic review report package."

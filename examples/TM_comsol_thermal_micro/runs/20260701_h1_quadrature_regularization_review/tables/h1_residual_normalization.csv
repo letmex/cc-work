@@ -1,0 +1,5 @@
+case,max_abs_strong_residual_W_per_m3,rms_strong_residual_W_per_m3,normalization_scale_W_per_m3,normalized_residual_max,normalized_residual_rms,formula
+no_training_lift,0.0,0.0,83600000000000.0,0.0,0.0,"abs(residual) / max(k0*|grad_T|/L_m, eps), L_m=y_height_m"
+trained_centroid,72409938592.41002,51367606002.89942,83610969121981.7,0.0008660610491253389,0.0006144137993907728,"abs(residual) / max(k0*|grad_T|/L_m, eps), L_m=y_height_m"
+trained_triangle_3point,48776662018.449715,31653716464.40541,83605259083106.67,0.0005835101016116359,0.00037864696630178013,"abs(residual) / max(k0*|grad_T|/L_m, eps), L_m=y_height_m"
+trained_triangle_3point_corr_l2,48626523709.93762,31564566786.24741,83605244851560.34,0.0005817138620095239,0.0003775804999175871,"abs(residual) / max(k0*|grad_T|/L_m, eps), L_m=y_height_m"

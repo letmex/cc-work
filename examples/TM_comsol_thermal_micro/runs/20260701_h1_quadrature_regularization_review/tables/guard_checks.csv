@@ -1,0 +1,7 @@
+guard,status,evidence
+no no-thermal modifications,passed,"`git diff --name-only -- examples\TM_comsol_no_thermal_micro` returned empty."
+strong residual diagnostic only,passed,"Tests check `used_strong_residual_as_primary_loss=False`; no residual-loss token added."
+no mechanics trainer coupling,passed,"Tests scan train_heat_only source for train_mixed_tm and compute_energy_mixed_tm tokens."
+no damage conductivity,passed,"New public H1 review APIs do not accept alpha, damage, d, g_d, or k_d."
+prescribed fallback preserved,passed,"Prescribed thermal strain patch tests pass."
+exact lift baseline,passed,"No-training H1 baseline has zero correction and zero residual."

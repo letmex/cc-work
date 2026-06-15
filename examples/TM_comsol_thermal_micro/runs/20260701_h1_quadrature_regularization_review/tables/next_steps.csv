@@ -1,0 +1,5 @@
+priority,next_task,reason,guardrail
+1,"Review H1 correction policy","Exact lift baseline is perfect; trained correction creates residual diagnostic.","Do not start mechanics coupling until policy is chosen."
+2,"Decide between correction freeze, stronger regularization, or richer quadrature","3-point quadrature and correction_l2 reduce but do not eliminate residual.","Keep strong residual diagnostic-only unless separately approved."
+3,"If approved, implement a narrow H1 correction-control patch","Could use zero-correction option for pure linear Dirichlet patches or stronger correction penalty.","Do not change fracture/mechanics training route."
+4,"Continue deferring damage-dependent conductivity","k(d)=g(d)k0 remains out of scope.",Separate approval required.

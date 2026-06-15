@@ -134,6 +134,51 @@ def _loss_on_centroids(case_id, net, centroid_coords_mm, area_m2, bounds_mm, T_b
     return thermal_quadrature.area_weighted_mean_density(density, area_m2), density, temperature_K
 
 
+def _h1_loss_on_quadrature_points(
+    net,
+    points_mm,
+    weights_m2,
+    bounds_mm,
+    T_bottom_K,
+    T_top_K,
+    regularization=None,
+    regularization_weight=0.0,
+):
+    y_min_mm = float(bounds_mm[1, 0].detach().cpu())
+    y_max_mm = float(bounds_mm[1, 1].detach().cpu())
+    temperature_K = _evaluate_temperature(
+        "H1",
+        points_mm,
+        net,
+        bounds_mm,
+        T_bottom_K,
+        T_top_K,
+        y_min_mm,
+        y_max_mm,
+    )
+    lift = _exact_top_bottom(points_mm, T_bottom_K, T_top_K, y_min_mm, y_max_mm)
+    correction = temperature_K - lift
+    density = heat_pde.steady_thermal_energy_density_J_per_m3(
+        temperature_K,
+        points_mm,
+        thermal_k0_W_per_mK=heat_pde.DEFAULT_THERMAL_K0_W_PER_MK,
+        heat_source_Q_W_per_m3=0.0,
+        coordinate_unit="mm",
+    )
+    functional_loss = thermal_quadrature.weighted_mean_density(density, weights_m2)
+    regularization_loss = torch.zeros((), device=points_mm.device, dtype=points_mm.dtype)
+    if regularization is None:
+        pass
+    elif regularization == "correction_l2":
+        regularization_loss = regularization_loss + torch.mean(correction * correction)
+    elif regularization == "correction_grad_l2":
+        grad_correction = heat_pde.temperature_gradient_m(correction, points_mm, coordinate_unit="mm")
+        regularization_loss = regularization_loss + torch.mean(torch.sum(grad_correction * grad_correction, dim=1))
+    else:
+        raise ValueError("regularization must be None, 'correction_l2', or 'correction_grad_l2'")
+    return functional_loss + regularization_weight * regularization_loss, functional_loss, regularization_loss
+
+
 def _boundary_coords(bounds_mm, count=9):
     dtype = bounds_mm.dtype
     device = bounds_mm.device
@@ -245,6 +290,78 @@ def _diagnostics(case_id, net, mesh, loss_trace, T_bottom_K, T_top_K):
     return out
 
 
+def _h1_diagnostics(net, mesh, quadrature_rule, loss_trace, regularization=None, regularization_weight=0.0):
+    bounds_mm = mesh["bounds_mm"]
+    T_bottom_K = 300.0
+    T_top_K = 320.0
+    points_base, weights = thermal_quadrature.triangle_quadrature_points_mm(
+        mesh["nodes_mm"],
+        mesh["elements"],
+        rule=quadrature_rule,
+    )
+    points = points_base.detach().clone().requires_grad_(True)
+    y_min_mm = float(bounds_mm[1, 0].detach().cpu())
+    y_max_mm = float(bounds_mm[1, 1].detach().cpu())
+    height_m = (y_max_mm - y_min_mm) * heat_pde.MM_TO_M
+    temperature = _evaluate_temperature("H1", points, net, bounds_mm, T_bottom_K, T_top_K, y_min_mm, y_max_mm)
+    lift = _exact_top_bottom(points, T_bottom_K, T_top_K, y_min_mm, y_max_mm)
+    correction = temperature - lift
+    error = temperature.detach() - lift.detach()
+    residual = heat_pde.steady_heat_residual_W_per_m3(temperature, points, coordinate_unit="mm")
+    grad_T = heat_pde.temperature_gradient_m(temperature, points, coordinate_unit="mm")
+    grad_correction = heat_pde.temperature_gradient_m(correction, points, coordinate_unit="mm")
+    grad_norm = torch.linalg.norm(grad_T, dim=1)
+    correction_grad_norm = torch.linalg.norm(grad_correction, dim=1)
+    scale = heat_pde.DEFAULT_THERMAL_K0_W_PER_MK * torch.clamp(grad_norm, min=1.0e-30) / height_m
+    residual_abs = torch.abs(residual)
+    normalized_residual = residual_abs / torch.clamp(scale, min=1.0e-30)
+
+    total_loss, functional_loss, regularization_loss = _h1_loss_on_quadrature_points(
+        net,
+        points,
+        weights,
+        bounds_mm,
+        T_bottom_K,
+        T_top_K,
+        regularization=regularization,
+        regularization_weight=regularization_weight,
+    )
+
+    bottom, top, _left, _right = _boundary_coords(bounds_mm)
+    with torch.no_grad():
+        bottom_T = _evaluate_temperature("H1", bottom, net, bounds_mm, T_bottom_K, T_top_K, y_min_mm, y_max_mm)
+        top_T = _evaluate_temperature("H1", top, net, bounds_mm, T_bottom_K, T_top_K, y_min_mm, y_max_mm)
+
+    return {
+        "case_id": "H1" if loss_trace else "H1_no_training_lift",
+        "quadrature_rule": quadrature_rule,
+        "regularization": "none" if regularization is None else regularization,
+        "regularization_weight": float(regularization_weight),
+        "primary_loss": PRIMARY_LOSS,
+        "used_strong_residual_as_primary_loss": USED_STRONG_RESIDUAL_AS_PRIMARY_LOSS,
+        "final_total_loss": float(total_loss.detach().cpu()),
+        "final_area_weighted_functional_loss": float(functional_loss.detach().cpu()),
+        "final_regularization_loss_unweighted": float(regularization_loss.detach().cpu()),
+        "loss_trace": [float(v) for v in loss_trace],
+        "max_abs_temperature_error_K": float(torch.max(torch.abs(error)).detach().cpu()),
+        "l2_temperature_error_K": float(torch.sqrt(torch.mean(error * error)).detach().cpu()),
+        "bottom_boundary_max_abs_error_K": float(torch.max(torch.abs(bottom_T - T_bottom_K)).detach().cpu()),
+        "top_boundary_max_abs_error_K": float(torch.max(torch.abs(top_T - T_top_K)).detach().cpu()),
+        "max_abs_correction_K": float(torch.max(torch.abs(correction.detach())).detach().cpu()),
+        "l2_correction_K": float(torch.sqrt(torch.mean(correction.detach() * correction.detach())).detach().cpu()),
+        "max_abs_strong_residual_W_per_m3": float(torch.max(residual_abs).detach().cpu()),
+        "rms_strong_residual_W_per_m3": float(torch.sqrt(torch.mean(residual * residual)).detach().cpu()),
+        "max_temperature_gradient_K_per_m": float(torch.max(grad_norm).detach().cpu()),
+        "mean_temperature_gradient_K_per_m": float(torch.mean(grad_norm).detach().cpu()),
+        "max_correction_gradient_K_per_m": float(torch.max(correction_grad_norm).detach().cpu()),
+        "mean_correction_gradient_K_per_m": float(torch.mean(correction_grad_norm).detach().cpu()),
+        "normalized_residual_max": float(torch.max(normalized_residual).detach().cpu()),
+        "normalized_residual_rms": float(torch.sqrt(torch.mean(normalized_residual * normalized_residual)).detach().cpu()),
+        "normalized_residual_scale_W_per_m3": float(torch.max(scale).detach().cpu()),
+        "residual_normalization_formula": "abs(residual) / max(k0*|grad_T|/L_m, eps), L_m=y_height_m",
+    }
+
+
 def run_steady_heat_patch_case(
     case_id,
     nx=4,
@@ -298,6 +415,67 @@ def run_steady_heat_patch_case(
         loss_trace.append(float(loss.detach().cpu()))
 
     return _diagnostics(case_id, net, mesh, loss_trace, T_bottom_K, T_top_K)
+
+
+def run_h1_no_training_lift_baseline(nx=4, ny=4, dtype=torch.float64, device=None):
+    """Evaluate H1 before optimization with zero final-layer correction."""
+    torch.manual_seed(20260630)
+    mesh = build_rectangular_tri_mesh(nx=nx, ny=ny, dtype=dtype, device=device)
+    net = HeatOnlyMLP(dtype=dtype, device=device)
+    result = _h1_diagnostics(net, mesh, quadrature_rule="centroid", loss_trace=[])
+    result["case_id"] = "H1_no_training_lift"
+    return result
+
+
+def run_h1_quadrature_diagnostic_case(
+    quadrature_rule="centroid",
+    regularization=None,
+    regularization_weight=0.0,
+    nx=4,
+    ny=4,
+    num_epochs=8,
+    learning_rate=1.0e-4,
+    dtype=torch.float64,
+    device=None,
+):
+    """Run H1 with a selected quadrature rule and report correction diagnostics."""
+    torch.manual_seed(20260630)
+    mesh = build_rectangular_tri_mesh(nx=nx, ny=ny, dtype=dtype, device=device)
+    bounds_mm = mesh["bounds_mm"]
+    points_base, weights = thermal_quadrature.triangle_quadrature_points_mm(
+        mesh["nodes_mm"],
+        mesh["elements"],
+        rule=quadrature_rule,
+    )
+    net = HeatOnlyMLP(dtype=dtype, device=device)
+    optimizer = torch.optim.Adam(net.parameters(), lr=learning_rate)
+    loss_trace = []
+
+    for _epoch in range(num_epochs):
+        points = points_base.detach().clone().requires_grad_(True)
+        loss, _functional_loss, _regularization_loss = _h1_loss_on_quadrature_points(
+            net,
+            points,
+            weights,
+            bounds_mm,
+            300.0,
+            320.0,
+            regularization=regularization,
+            regularization_weight=regularization_weight,
+        )
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        loss_trace.append(float(loss.detach().cpu()))
+
+    return _h1_diagnostics(
+        net,
+        mesh,
+        quadrature_rule=quadrature_rule,
+        loss_trace=loss_trace,
+        regularization=regularization,
+        regularization_weight=regularization_weight,
+    )
 
 
 def run_quadrature_sanity_case(
