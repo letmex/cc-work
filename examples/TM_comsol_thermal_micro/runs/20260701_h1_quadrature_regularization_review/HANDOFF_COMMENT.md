@@ -6,13 +6,18 @@ Final classification: `h1 review implemented; trained residual remains high but 
 
 Commit hash:
 
-- Primary implementation commit: pending until exact-path commit.
-- Handoff sync commit: this file may be updated once after the primary push; do
-  not chase the sync commit self-hash.
+- Primary implementation commit:
+  `8835d43a7634a8ee91b8c896462bb1359c0b9cbe`
+  (`Review H1 heat quadrature diagnostics`).
+- Handoff sync commit: recorded in final Codex response; this file does not
+  chase its own sync hash.
 
 Push status:
 
-- Pending until primary implementation commit is pushed to `origin/main`.
+- Primary implementation commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`, ahead/behind `0 0`.
+- Final HEAD known at handoff-sync edit time:
+  `8835d43a7634a8ee91b8c896462bb1359c0b9cbe`.
 
 ## Package
 
