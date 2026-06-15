@@ -1,0 +1,28 @@
+{
+  "package": "20260702_heat_correction_policy",
+  "classification": "heat correction policy implemented and tests passed",
+  "scope": "examples/TM_comsol_thermal_micro only",
+  "no_thermal_project_touched": false,
+  "train_mixed_tm_modified": false,
+  "source_code_modified": true,
+  "source_files_changed": [
+    "examples/TM_comsol_thermal_micro/train_heat_only.py",
+    "examples/TM_comsol_thermal_micro/tests/test_heat_correction_policy.py",
+    "examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md"
+  ],
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/implementation_summary.csv",
+    "tables/correction_policy_summary.csv",
+    "tables/h1_policy_comparison.csv",
+    "tables/h2_policy_summary.csv",
+    "tables/residual_diagnostic_summary.csv",
+    "tables/validation_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/guard_checks.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ]
+}

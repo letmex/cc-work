@@ -1,0 +1,4 @@
+case_label,case_id,correction_policy,is_correction_trainable,regularization,regularization_weight,max_abs_temperature_error_K,l2_temperature_error_K,max_abs_correction_K,l2_correction_K,max_abs_strong_residual_W_per_m3,normalized_residual_max,bottom_boundary_max_abs_error_K,top_boundary_max_abs_error_K,final_area_weighted_functional_loss
+H1_frozen_lift,H1,frozen_lift,false,none,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,836000000000000.1
+H1_trainable_correction,H1,trainable_correction,true,none,0.0,0.0004752286448592713,0.0002846484229769935,0.0004752286448592713,0.0002846484229769935,72409938592.41002,0.0008660610491253389,0.0,0.0,835995246437027.4
+H1_regularized_correction,H1,regularized_correction,true,correction_l2,1000000000000.0,0.00047525331416409244,0.00028464838450450135,0.00047525331416409244,0.00028464838450450135,72410480181.47003,0.0008660675224405754,0.0,0.0,835995246441233.9

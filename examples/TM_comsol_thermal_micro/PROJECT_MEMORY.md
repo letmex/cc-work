@@ -211,6 +211,42 @@ Current H1 quadrature and regularization review status:
   mechanics coupling, such as exact-lift freeze for pure linear Dirichlet
   patches, stronger correction regularization, or richer quadrature
 
+Current heat correction policy status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260702_heat_correction_policy`
+- final classification:
+  `heat correction policy implemented and tests passed`
+- added explicit heat-only correction policies in:
+  `examples/TM_comsol_thermal_micro/train_heat_only.py`
+- supported policies are:
+  `frozen_lift`, `trainable_correction`, and `regularized_correction`
+- `run_steady_heat_patch_case` now defaults to `frozen_lift` for the pure H1
+  linear top-bottom Dirichlet patch and the H2 uniform bottom-only patch
+- for H1 frozen lift, the trainer evaluates `T=T_lift`, does not run optimizer
+  steps, reports zero correction, and preserves the thermal functional and
+  strong-form residual diagnostics
+- for H2 frozen lift, the trainer evaluates `T=T_bottom`, does not run
+  optimizer steps, reports zero correction, zero residual, and zero top/side
+  flux
+- `trainable_correction` remains available only through an explicit override
+  for diagnostics or future nontrivial heat solves
+- `regularized_correction` remains opt-in and adds correction L2
+  regularization; it is not the default H1 or H2 policy
+- added focused correction policy tests in:
+  `examples/TM_comsol_thermal_micro/tests/test_heat_correction_policy.py`
+- strong residual remains diagnostic-only; no residual loss was added and the
+  primary heat objective remains `thermal_functional_area_weighted_mean`
+- prescribed-temperature fallback tests still pass
+- this policy stage does not implement solved-temperature mechanics coupling,
+  thermal-strain mechanics coupling, fracture heat training, heat-fracture
+  diagnostics, damage-dependent conductivity, D0040, seed study, shear
+  extension, S0110, transient production, or bottom-cooling production
+- the original `examples/TM_comsol_no_thermal_micro` baseline remains
+  untouched
+- next safest task: document the frozen-lift default in the user-facing thermal
+  README before any solved-temperature mechanics-coupling work is approved
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

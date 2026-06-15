@@ -1,0 +1,4 @@
+policy,h1_default,h2_default,is_correction_trainable,temperature_form,optimizer_step,regularization,status
+frozen_lift,true,true,false,H1 T=T_lift; H2 T=T_bottom,false,none,default for exact-lift patch cases
+trainable_correction,false,false,true,H1 T=T_lift+eta(1-eta)*N_T; H2 T=T_bottom+(y-y_min)*N_T,true,none,explicit diagnostic override
+regularized_correction,false,false,true,trainable correction plus correction L2,true,correction_l2,opt-in experiment

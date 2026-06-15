@@ -1,0 +1,14 @@
+item,value
+package,20260702_heat_correction_policy
+classification,heat correction policy implemented and tests passed
+scope,examples/TM_comsol_thermal_micro only
+primary_loss,thermal_functional_area_weighted_mean
+strong_residual_role,diagnostic_only
+h1_default_policy,frozen_lift
+h2_default_policy,frozen_lift
+trainable_override,run_steady_heat_patch_case(case_id='H1'; correction_policy='trainable_correction')
+regularized_policy,regularized_correction opt-in with correction_l2
+mechanics_coupling_implemented,false
+fracture_heat_training_implemented,false
+damage_dependent_conductivity_implemented,false
+no_thermal_baseline_touched,false

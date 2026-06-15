@@ -1,0 +1,4 @@
+priority,next_step,reason
+1,Document frozen-lift policy in the thermal README,Make user-facing behavior explicit before future solved-temperature work
+2,Review nontrivial heat-solve activation criteria,Trainable correction should only be enabled for cases that need it
+3,Keep solved-temperature mechanics coupling behind a separate approval gate,Preserve the existing prescribed-temperature fallback and mechanics route

@@ -1,0 +1,5 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/train_heat_only.py,modified,add correction policy gate and policy-aware diagnostics
+examples/TM_comsol_thermal_micro/tests/test_heat_correction_policy.py,added,cover H1/H2 frozen defaults; trainable override; regularized opt-in; guards
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,record heat correction policy status and finalization protocol continuity
+examples/TM_comsol_thermal_micro/runs/20260702_heat_correction_policy,added,review package with report tables handoff manifest and figure summary

@@ -1,0 +1,2 @@
+case_label,case_id,correction_policy,is_correction_trainable,max_abs_temperature_error_K,l2_temperature_error_K,max_abs_correction_K,l2_correction_K,max_abs_strong_residual_W_per_m3,normalized_residual_max,max_abs_top_side_flux_W_per_m2,bottom_boundary_max_abs_error_K,final_area_weighted_functional_loss
+H2_frozen_lift,H2,frozen_lift,false,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,5 @@
+case_label,primary_loss,used_strong_residual_as_primary_loss,max_abs_strong_residual_W_per_m3,normalized_residual_max,interpretation
+H1_frozen_lift,thermal_functional_area_weighted_mean,false,0.0,0.0,exact lift has zero diagnostic residual
+H1_trainable_correction,thermal_functional_area_weighted_mean,false,72409938592.41002,0.0008660610491253389,explicit diagnostic keeps previous trainable correction behavior
+H1_regularized_correction,thermal_functional_area_weighted_mean,false,72410480181.47003,0.0008660675224405754,opt-in correction L2 diagnostic; not default
+H2_frozen_lift,thermal_functional_area_weighted_mean,false,0.0,0.0,uniform patch has zero diagnostic residual and flux
