@@ -4,9 +4,18 @@
 
 Final classification: `solved-temperature mechanics bridge implemented and tests passed`
 
-Primary implementation commit: pending until exact-path commit.
+Primary implementation commit:
 
-Push status: pending until exact-path commit and push.
+- `3586baefbc1a130a531bf7c2bd21d52b264e1a76`
+  (`Add solved temperature mechanics bridge`)
+
+Push status:
+
+- Primary implementation commit pushed to `origin/main`.
+- Final status after primary push: `## main...origin/main`.
+- Final HEAD known at handoff-sync edit time:
+  `3586baefbc1a130a531bf7c2bd21d52b264e1a76`.
+- This file does not chase the handoff-sync commit's own hash.
 
 ## Package
 
