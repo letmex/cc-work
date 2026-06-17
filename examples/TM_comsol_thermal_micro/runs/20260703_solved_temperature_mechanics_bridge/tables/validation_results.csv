@@ -1,0 +1,12 @@
+command,result,details
+git status,PASS,"clean before work; before commit only expected thermal files changed"
+"D:\anaconda3\envs\torch_env\python.exe -c ""import compileall, sys; ok=compileall.compile_dir(r'examples\TM_comsol_thermal_micro', quiet=1); sys.exit(0 if ok else 1)""",PASS,"recursive py_compile succeeded"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_constant_k0_heat_pde_patch.py -q",PASS,"18 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_heat_only_weak_form_training.py -q",PASS,"11 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_h1_quadrature_regularization_review.py -q",PASS,"9 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_heat_correction_policy.py -q",PASS,"7 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_bridge.py -q",PASS,"7 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_prescribed_thermal_strain_patch.py -q",PASS,"8 passed"
+package schema/file existence check,PASS,"all required files exist"
+git diff --check,PASS,"no whitespace errors"
+"git diff --name-only -- examples\TM_comsol_no_thermal_micro",PASS,"empty output"

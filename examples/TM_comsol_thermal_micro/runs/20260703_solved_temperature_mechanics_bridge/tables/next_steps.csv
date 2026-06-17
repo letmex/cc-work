@@ -1,0 +1,4 @@
+priority,next_step,reason
+1,Add a narrow smoke call-site adapter for bridge-produced thermal_delta_T,Exercise the bridge through a cheap mechanics evaluation without changing defaults
+2,Document bridge source modes in the thermal README,Make activation criteria clear before broader solved-temperature use
+3,Keep coupled heat-mechanics training behind a separate approval gate,Current package is only an equivalence bridge

@@ -1,0 +1,9 @@
+test,expected,observed,result
+uniform_temperature_equivalence,DeltaT 20 K everywhere,min 20.0 max 20.0,PASS
+zero_temperature_increment_equivalence,DeltaT 0 K everywhere,max_abs 0.0,PASS
+h1_linear_frozen_lift_deltaT,DeltaT(y)=20*eta,"[0.0;5.0;10.0;20.0]",PASS
+h1_linear_frozen_lift_correction,zero correction,max_abs 0.0,PASS
+h2_frozen_lift_deltaT,zero DeltaT,max_abs 0.0,PASS
+mechanics_prescribed_vs_bridge,selected field differences zero,max_abs 0.0,PASS
+default_modes_unchanged,mechanics thermal defaults remain off,None/None/off defaults preserved,PASS
+guard_tokens,no forbidden heat-fracture or damage-conductivity tokens,no forbidden tokens found,PASS

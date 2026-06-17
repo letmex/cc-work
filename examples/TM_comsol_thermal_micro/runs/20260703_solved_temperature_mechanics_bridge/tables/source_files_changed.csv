@@ -1,0 +1,5 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/thermal_solution_bridge.py,added,convert supported temperature sources into existing thermal_delta_T mechanics input
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_bridge.py,added,test uniform zero H1 H2 and mechanics-level equivalence
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,record bridge status and boundaries
+examples/TM_comsol_thermal_micro/runs/20260703_solved_temperature_mechanics_bridge,added,review package with report tables handoff manifest and figure summary

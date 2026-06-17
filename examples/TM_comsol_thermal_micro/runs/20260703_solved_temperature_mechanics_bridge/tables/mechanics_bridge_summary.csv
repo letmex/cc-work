@@ -1,0 +1,9 @@
+field,max_abs_difference
+thermal_delta_T,0.0
+thermal_eps_xx,0.0
+thermal_eps_yy,0.0
+eps_xx_elastic,0.0
+eps_yy_elastic,0.0
+psi_total,0.0
+sigma_xx_tm_total,0.0
+sigma_yy_tm_total,0.0

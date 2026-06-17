@@ -247,6 +247,44 @@ Current heat correction policy status:
 - next safest task: document the frozen-lift default in the user-facing thermal
   README before any solved-temperature mechanics-coupling work is approved
 
+Current solved-temperature mechanics bridge status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260703_solved_temperature_mechanics_bridge`
+- final classification:
+  `solved-temperature mechanics bridge implemented and tests passed`
+- added a minimal bridge module:
+  `examples/TM_comsol_thermal_micro/thermal_solution_bridge.py`
+- added focused bridge tests:
+  `examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_bridge.py`
+- bridge responsibilities are limited to evaluating supported temperature
+  sources at mechanics/material coordinates, computing `DeltaT = T - Tref`,
+  and returning the same `thermal_delta_T` input consumed by the existing
+  prescribed-temperature mechanics route
+- supported source modes are `prescribed_uniform` and `solved_frozen_lift`
+- H1 `solved_frozen_lift` evaluates the linear top-bottom lift, returns
+  spatial `DeltaT(y) = 20*eta` for the 300 K to 320 K patch, reports zero
+  correction, and does not run network training
+- H2 `solved_frozen_lift` evaluates the uniform bottom lift, returns zero
+  `DeltaT` when `T_bottom=Tref`, reports zero correction, and does not run
+  network training
+- mechanics-level equivalence was checked by passing bridge-produced
+  `thermal_delta_T` to `compute_mixed_tm_fields` and comparing against the
+  prescribed uniform `DeltaT` route; selected thermal strain, elastic strain,
+  stress, and energy fields matched with zero max difference
+- no default mechanics/training mode was switched to solved temperature;
+  `thermal_mode=off` and prescribed-temperature fallback behavior remain
+  unchanged
+- this bridge stage does not implement coupled heat-mechanics training,
+  fracture heat training, heat-fracture diagnostics, damage-dependent
+  conductivity, D0040, seed study, shear extension, S0110, transient
+  production, or bottom-cooling production
+- the original `examples/TM_comsol_no_thermal_micro` baseline remains
+  untouched
+- next safest task: add one narrow call-site adapter that passes
+  bridge-produced `thermal_delta_T` into a cheap smoke mechanics evaluation
+  without changing production defaults
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

@@ -1,0 +1,5 @@
+source_mode,case_id,input,temperature_K,thermal_delta_T_K,correction_policy,network_training_run
+prescribed_uniform,not_applicable,T_ref=300; T=320,320,20,not_applicable,false
+prescribed_uniform,not_applicable,T_ref=300; T=300,300,0,not_applicable,false
+solved_frozen_lift,H1,T_bottom=300; T_top=320; y=[0,0.0025,0.005,0.01],"[300.0;305.0;310.0;320.0]","[0.0;5.0;10.0;20.0]",frozen_lift,false
+solved_frozen_lift,H2,T_bottom=300,300,0,frozen_lift,false
