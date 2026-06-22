@@ -1,0 +1,15 @@
+item,value
+package,20260707_solved_temperature_train_guard
+classification,solved-temperature train guard implemented and tests passed
+scope,examples/TM_comsol_thermal_micro only
+new_flag,--solved-temperature-mechanics-smoke
+default,false
+source_mode,solved_frozen_lift
+case_id,H1
+evaluation_location,element_centroid
+bounds,"[[0.0, 0.01], [0.0, 0.01]]"
+temperature_triplet_K,300/320/300
+train_hook,after fine mesh prep before training_set creation
+adapter_import,module-local guarded import only
+coupled_heat_mechanics_training,false
+no_thermal_baseline_touched,false

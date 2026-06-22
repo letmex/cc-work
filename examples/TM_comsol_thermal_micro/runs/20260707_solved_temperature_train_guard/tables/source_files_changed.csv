@@ -1,0 +1,8 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/config.py,modified,add default-off solved-temperature mechanics smoke flag and fixed H1 settings
+examples/TM_comsol_thermal_micro/train_mixed_tm.py,modified,add guarded local adapter hook after fine mesh prep
+examples/TM_comsol_thermal_micro/README.md,modified,document guarded training flag and boundaries
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,record train guard status and next task
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_train_guard.py,added,test config flag helper guard conflicts fixed settings and local import
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_adapter.py,modified,allow local train adapter import while rejecting module-level import
+examples/TM_comsol_thermal_micro/runs/20260707_solved_temperature_train_guard,added,review package with report tables handoff manifest and figure summary

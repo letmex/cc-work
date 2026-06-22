@@ -15,6 +15,17 @@ from input_data_from_mesh import prep_input_data
 from optim import get_optimizer
 
 
+_SOLVED_TEMPERATURE_SMOKE_FIXED = {
+    "solved_temperature_source_mode": "solved_frozen_lift",
+    "solved_temperature_case_id": "H1",
+    "solved_temperature_evaluation_location": "element_centroid",
+    "solved_temperature_bounds": [[0.0, 0.01], [0.0, 0.01]],
+    "solved_temperature_T_bottom": 300.0,
+    "solved_temperature_T_top": 320.0,
+    "solved_temperature_T_ref": 300.0,
+}
+
+
 def _thermal_energy_kwargs(training_dict):
     training_dict = training_dict or {}
     return {
@@ -27,6 +38,85 @@ def _thermal_energy_kwargs(training_dict):
         "thermal_alpha_T": training_dict.get("thermal_alpha_T", 18.9e-6),
         "thermal_Tref": training_dict.get("thermal_Tref", 273.15),
     }
+
+
+def _validate_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs):
+    if not training_dict.get("solved_temperature_mechanics_smoke", False):
+        return
+
+    if (
+        thermal_kwargs.get("thermal_temperature") is not None
+        or thermal_kwargs.get("thermal_delta_T") is not None
+        or thermal_kwargs.get("thermal_mode", "off") != "off"
+    ):
+        raise ValueError(
+            "solved_temperature_mechanics_smoke cannot be combined with prescribed "
+            "thermal inputs; leave thermal_temperature, thermal_delta_T unset and "
+            "thermal_mode off."
+        )
+
+    for key, expected in _SOLVED_TEMPERATURE_SMOKE_FIXED.items():
+        value = training_dict.get(key, expected)
+        if key == "solved_temperature_bounds":
+            bounds = torch.as_tensor(value)
+            expected_bounds = torch.as_tensor(expected)
+            if bounds.shape != expected_bounds.shape or not torch.allclose(bounds, expected_bounds):
+                raise ValueError(
+                    "solved_temperature_mechanics_smoke only supports fixed H1 "
+                    f"solved_frozen_lift bounds {expected}."
+                )
+        elif value != expected:
+            option = key.removeprefix("solved_temperature_")
+            raise ValueError(
+                "solved_temperature_mechanics_smoke only supports fixed H1 "
+                f"solved_frozen_lift {option}={expected!r}."
+            )
+
+
+def _apply_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs, inp, T_conn):
+    if not training_dict.get("solved_temperature_mechanics_smoke", False):
+        return thermal_kwargs
+
+    _validate_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs)
+    if T_conn is None:
+        return thermal_kwargs
+
+    from thermal_mechanics_adapter import build_mechanics_thermal_kwargs_from_bridge
+
+    bounds = torch.as_tensor(
+        training_dict.get(
+            "solved_temperature_bounds",
+            _SOLVED_TEMPERATURE_SMOKE_FIXED["solved_temperature_bounds"],
+        ),
+        dtype=inp.dtype,
+        device=inp.device,
+    )
+    adapter = build_mechanics_thermal_kwargs_from_bridge(
+        inp,
+        T_conn,
+        source_mode=training_dict.get("solved_temperature_source_mode", "solved_frozen_lift"),
+        case_id=training_dict.get("solved_temperature_case_id", "H1"),
+        bounds_mm=bounds,
+        T_bottom_K=training_dict.get("solved_temperature_T_bottom", 300.0),
+        T_top_K=training_dict.get("solved_temperature_T_top", 320.0),
+        T_ref_K=training_dict.get("solved_temperature_T_ref", 300.0),
+    )
+    merged = dict(thermal_kwargs)
+    merged.update(adapter["thermal_kwargs"])
+    training_dict.update(adapter["thermal_kwargs"])
+
+    delta_T = adapter["diagnostics"]["thermal_delta_T"].detach()
+    training_dict["solved_temperature_mechanics_smoke_diagnostics"] = {
+        "active": True,
+        "network_training_run": bool(adapter["diagnostics"]["network_training_run"]),
+        "evaluation_location": training_dict.get(
+            "solved_temperature_evaluation_location",
+            _SOLVED_TEMPERATURE_SMOKE_FIXED["solved_temperature_evaluation_location"],
+        ),
+        "delta_T_min_K": float(torch.min(delta_T).cpu()),
+        "delta_T_max_K": float(torch.max(delta_T).cpu()),
+    }
+    return merged
 
 
 class EarlyStopping:
@@ -369,6 +459,7 @@ def train_mixed_tm(
     gcII_factor = training_dict.get("GcII_factor", 1.0)
     tm_eps_r = training_dict.get("tm_eps_r", 0.0)
     thermal_kwargs = _thermal_energy_kwargs(training_dict)
+    _validate_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs)
     results_path = training_dict["results_path"]
 
     inp, T_conn, area_T, _ = prep_input_data(
@@ -421,6 +512,12 @@ def train_mixed_tm(
 
     inp, T_conn, area_T, _ = prep_input_data(
         matprop, pffmodel, crack_dict, numr_dict, mesh_file=fine_mesh_file, device=device
+    )
+    thermal_kwargs = _apply_solved_temperature_mechanics_smoke(
+        training_dict,
+        thermal_kwargs,
+        inp,
+        T_conn,
     )
     training_set = _make_training_set(inp, device)
     history_old = initialize_mixed_history_fields(area_T)

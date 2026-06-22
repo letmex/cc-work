@@ -121,6 +121,33 @@ It does not run D0040, seed, shear, S0110, transient, or bottom-cooling producti
 
 The frozen baseline remains `examples/TM_comsol_no_thermal_micro`.
 
+## Guarded Training Flag
+
+The mechanics training entrypoint also exposes a guarded opt-in flag for the
+same reviewed smoke path:
+
+```powershell
+D:\anaconda3\envs\torch_env\python.exe examples\TM_comsol_thermal_micro\main.py --solved-temperature-mechanics-smoke --smoke --n-rprop 1 --n-lbfgs 0 --max-steps 1 --run-suffix solved_temperature_train_guard_smoke
+```
+
+This flag is default-off. When enabled, `train_mixed_tm.py` locally imports the
+element-centroid adapter only after fine-mesh input data and `T_conn` are
+available, then passes adapter-produced element-sized `thermal_delta_T` into the
+existing mechanics thermal-strain route.
+
+The guarded flag is fixed to:
+
+- `source_mode = solved_frozen_lift`
+- `case_id = H1`
+- `evaluation_location = element_centroid`
+- bounds `[[0.0, 0.01], [0.0, 0.01]]`
+- `T_bottom = 300 K`, `T_top = 320 K`, `T_ref = 300 K`
+
+It rejects combinations with `--thermal-temperature-K`, `--thermal-delta-T`, or
+non-`off` `--thermal-mode`. It also rejects attempts to override the fixed H1
+smoke settings. This is a guarded call-site check, not coupled heat-mechanics
+training.
+
 ## COMSOL Reference Scope
 
 The theoretical COMSOL reference branch for future thermal work is:

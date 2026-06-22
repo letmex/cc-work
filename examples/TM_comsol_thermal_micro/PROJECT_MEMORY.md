@@ -391,6 +391,54 @@ Current solved-temperature smoke README documentation status:
   reviewed task with its own opt-in CLI/config tests before touching
   `train_mixed_tm.py`
 
+Current solved-temperature train guard status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260707_solved_temperature_train_guard`
+- final classification:
+  `solved-temperature train guard implemented and tests passed`
+- added guarded default-off CLI/config flag:
+  `--solved-temperature-mechanics-smoke`
+- modified files:
+  `examples/TM_comsol_thermal_micro/config.py`,
+  `examples/TM_comsol_thermal_micro/train_mixed_tm.py`,
+  `examples/TM_comsol_thermal_micro/README.md`,
+  `examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_train_guard.py`,
+  and a narrow update to
+  `examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_adapter.py`
+- `training_dict` now records the default-off boolean plus the fixed reviewed
+  H1 smoke settings: `solved_frozen_lift`, `H1`, `element_centroid`, bounds
+  `[[0.0, 0.01], [0.0, 0.01]]`, and temperatures `300/320/300 K`
+- `train_mixed_tm.py` has no module-level import of
+  `thermal_mechanics_adapter`; adapter import remains local inside the guarded
+  helper
+- the train hook runs only after fine-mesh `prep_input_data(...)` provides
+  `inp` and `T_conn`, and before `training_set` creation
+- when disabled, the helper returns the existing thermal kwargs unchanged and
+  does not import the adapter
+- when enabled, the helper validates fixed H1 settings, rejects prescribed
+  thermal inputs (`thermal_temperature`, `thermal_delta_T`, or non-off
+  `thermal_mode`), rejects malformed or non-fixed bounds, and records scalar
+  diagnostics including `network_training_run=false`,
+  `evaluation_location=element_centroid`, and `DeltaT` min/max
+- focused train guard tests cover default config, opt-in config, conflict
+  rejection, local import behavior, fixed-setting rejection, malformed bounds
+  rejection, H1 centroid `DeltaT` range `[20/3, 40/3] K`, and unchanged
+  `_thermal_energy_kwargs` defaults
+- subagent spec review and code-quality review were used; final quality review
+  approved after adding explicit bounds-shape validation
+- this train guard stage does not implement coupled heat-mechanics training,
+  solved-temperature phase-field fracture coupling, heat PDE loss inside
+  mechanics/fracture training, heat-fracture diagnostics, damage-dependent
+  conductivity, D0040, seed study, shear extension, S0110, transient
+  production, or bottom-cooling production
+- the original `examples/TM_comsol_no_thermal_micro` baseline remains
+  untouched
+- next safest task: run one tiny smoke invocation of `main.py` with
+  `--solved-temperature-mechanics-smoke --smoke --n-rprop 1 --n-lbfgs 0
+  --max-steps 1` and archive only scalar diagnostics, still without broad
+  training
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

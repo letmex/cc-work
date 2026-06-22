@@ -1,0 +1,11 @@
+stage,result,details
+insertion_point_explorer,PASS,"recommended fine mesh prep after inp/T_conn before training_set"
+acceptance_spec_explorer,PASS,"defined default-off opt-in H1 frozen-lift centroid guard"
+worker_implementation,PASS,"implemented flag helper config and tests with TDD"
+spec_review_initial,NEEDS_FIX,"evaluation_location fixed setting was not validated"
+quality_review_initial,NEEDS_FIX,"prescribed thermal inputs could conflict with adapter thermal_delta_T"
+fix_worker,PASS,"added conflict guards fixed-setting validation and AST import test"
+spec_review_final,PASS,"working tree behavior spec compliant; new test requires exact-path staging"
+quality_review_final,NEEDS_FIX,"bounds shape validation allowed broadcastable malformed values"
+main_agent_fix,PASS,"added explicit bounds shape check and malformed bounds tests"
+final_quality_review,PASS,"approved with no findings"

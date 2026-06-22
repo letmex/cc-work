@@ -205,6 +205,12 @@ def _parse_args():
         default=DEFAULT_TREF_K,
         help="Reference temperature for delta_T = T - Tref, in K.",
     )
+    parser.add_argument(
+        "--solved-temperature-mechanics-smoke",
+        action="store_true",
+        default=False,
+        help="Opt-in smoke hook that feeds fixed H1 solved-temperature lift into mechanics.",
+    )
     args, _ = parser.parse_known_args()
     return args
 
@@ -241,6 +247,19 @@ if args.thermal_temperature_K is not None and args.thermal_delta_T is not None:
     raise ValueError("Use either --thermal-temperature-K or --thermal-delta-T, not both")
 if args.thermal_alpha_T < 0.0:
     raise ValueError("--thermal-alpha-T must be non-negative")
+if (
+    args.solved_temperature_mechanics_smoke
+    and (
+        args.thermal_temperature_K is not None
+        or args.thermal_delta_T is not None
+        or args.thermal_mode != "off"
+    )
+):
+    raise ValueError(
+        "solved_temperature_mechanics_smoke cannot be combined with prescribed "
+        "thermal inputs; leave --thermal-temperature-K and --thermal-delta-T unset "
+        "and --thermal-mode off."
+    )
 
 history_mode = "mixedH_TM"
 mixed_split_mode = "tm_source"
@@ -308,6 +327,14 @@ training_dict = {
     "thermal_alpha_T": float(args.thermal_alpha_T),
     "thermal_Tref": float(args.thermal_Tref_K),
     "thermal_T0_C": float(DEFAULT_T0_C),
+    "solved_temperature_mechanics_smoke": bool(args.solved_temperature_mechanics_smoke),
+    "solved_temperature_source_mode": "solved_frozen_lift",
+    "solved_temperature_case_id": "H1",
+    "solved_temperature_evaluation_location": "element_centroid",
+    "solved_temperature_bounds": [[0.0, 0.01], [0.0, 0.01]],
+    "solved_temperature_T_bottom": 300.0,
+    "solved_temperature_T_top": 320.0,
+    "solved_temperature_T_ref": 300.0,
 }
 
 numr_dict = {"alpha_constraint": "nonsmooth", "gradient_type": "numerical"}
@@ -449,6 +476,17 @@ with open(model_path / Path("model_settings.txt"), "w", encoding="utf-8") as fil
     file.write(f"\nthermal_alpha_T_1_per_K: {training_dict['thermal_alpha_T']}")
     file.write(f"\nthermal_Tref_K: {training_dict['thermal_Tref']}")
     file.write(f"\nthermal_T0_C: {training_dict['thermal_T0_C']}")
+    file.write(f"\nsolved_temperature_mechanics_smoke: {training_dict['solved_temperature_mechanics_smoke']}")
+    file.write(f"\nsolved_temperature_source_mode: {training_dict['solved_temperature_source_mode']}")
+    file.write(f"\nsolved_temperature_case_id: {training_dict['solved_temperature_case_id']}")
+    file.write(
+        "\nsolved_temperature_evaluation_location: "
+        f"{training_dict['solved_temperature_evaluation_location']}"
+    )
+    file.write(f"\nsolved_temperature_bounds: {training_dict['solved_temperature_bounds']}")
+    file.write(f"\nsolved_temperature_T_bottom_K: {training_dict['solved_temperature_T_bottom']}")
+    file.write(f"\nsolved_temperature_T_top_K: {training_dict['solved_temperature_T_top']}")
+    file.write(f"\nsolved_temperature_T_ref_K: {training_dict['solved_temperature_T_ref']}")
     file.write(f"\neta_residual: {training_dict['eta_residual']}")
     file.write(f"\nGcII_arg: {args.GcII}")
     file.write(f"\nGcII_factor: {GcII_factor}")

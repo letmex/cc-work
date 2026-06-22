@@ -1,0 +1,11 @@
+check,expected,observed,result
+flag_default,False,False,PASS
+fixed_source_mode,solved_frozen_lift,solved_frozen_lift,PASS
+fixed_case,H1,H1,PASS
+fixed_evaluation_location,element_centroid,element_centroid,PASS
+conflict_guard,reject prescribed thermal inputs,temperature delta_T and non-off mode rejected,PASS
+default_helper_path,no adapter import and unchanged kwargs,unchanged object returned,PASS
+opt_in_deltaT,element-sized 20/3 to 40/3 K,matched two-element fixture,PASS
+fixed_setting_guard,reject overrides before adapter import,source case location bounds and temperatures rejected,PASS
+malformed_bounds_guard,reject broadcastable malformed bounds,"[0,0.01] and [[0,0.01]] rejected",PASS
+local_import_guard,no module-level adapter import,AST verified,PASS

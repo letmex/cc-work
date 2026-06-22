@@ -1,4 +1,5 @@
 from pathlib import Path
+import ast
 import inspect
 import sys
 
@@ -170,8 +171,23 @@ def test_adapter_does_not_change_mechanics_defaults_or_training_entrypoint():
     assert signature.parameters["thermal_delta_T"].default is None
 
     train_source = (ROOT / "train_mixed_tm.py").read_text(encoding="utf-8")
-    assert "thermal_mechanics_adapter" not in train_source
-    assert "build_mechanics_thermal_kwargs_from_bridge" not in train_source
+    tree = ast.parse(train_source)
+    module_imports = [
+        node
+        for node in tree.body
+        if isinstance(node, (ast.Import, ast.ImportFrom))
+        and (
+            (
+                isinstance(node, ast.Import)
+                and any(alias.name == "thermal_mechanics_adapter" for alias in node.names)
+            )
+            or (
+                isinstance(node, ast.ImportFrom)
+                and node.module == "thermal_mechanics_adapter"
+            )
+        )
+    ]
+    assert module_imports == []
 
 
 def test_adapter_source_has_no_forbidden_heat_fracture_or_study_tokens():

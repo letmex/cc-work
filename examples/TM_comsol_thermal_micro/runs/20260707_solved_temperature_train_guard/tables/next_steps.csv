@@ -1,0 +1,5 @@
+priority,next_step,reason
+1,Run one tiny explicit main.py smoke invocation with the guarded flag,Exercise actual entrypoint while keeping training tiny
+2,Archive only scalar diagnostics from that smoke invocation,Avoid broad training and figure churn
+3,Keep broader production call-site behavior behind separate review,Current flag is only a guarded H1 smoke path
+4,Do not add damage-dependent conductivity or heat-fracture diagnostics here,Those remain separate physics tasks

@@ -1,0 +1,29 @@
+{
+  "package": "20260707_solved_temperature_train_guard",
+  "classification": "solved-temperature train guard implemented and tests passed",
+  "scope": "examples/TM_comsol_thermal_micro only",
+  "no_thermal_project_touched": false,
+  "source_code_modified": true,
+  "coupled_heat_mechanics_training_implemented": false,
+  "source_files_changed": [
+    "examples/TM_comsol_thermal_micro/config.py",
+    "examples/TM_comsol_thermal_micro/train_mixed_tm.py",
+    "examples/TM_comsol_thermal_micro/README.md",
+    "examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md",
+    "examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_train_guard.py",
+    "examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_adapter.py"
+  ],
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/implementation_summary.csv",
+    "tables/train_guard_summary.csv",
+    "tables/subagent_review_summary.csv",
+    "tables/validation_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/guard_checks.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ]
+}
