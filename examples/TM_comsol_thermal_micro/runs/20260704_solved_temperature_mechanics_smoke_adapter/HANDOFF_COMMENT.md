@@ -6,11 +6,14 @@ Final classification: `solved-temperature mechanics smoke adapter implemented an
 
 Primary implementation commit:
 
-- pending until this package is committed
+- `cc957fb098ae72ccd429e838171206a9b8a66bd8`
+  (`Add solved temperature mechanics smoke adapter`)
 
 Push status:
 
-- pending until commit/push
+- Pending push at handoff-sync edit time.
+- Final status after primary implementation commit: `## main...origin/main [ahead 1]`.
+- This file does not chase the handoff-sync commit's own hash.
 
 ## Package
 
