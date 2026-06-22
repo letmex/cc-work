@@ -6,11 +6,11 @@ Final classification: `solved-temperature train guard implemented and tests pass
 
 Primary implementation commit:
 
-- pending until this package is committed
+- `81a9b54` (`Add guarded solved temperature train flag`)
 
 Push status:
 
-- pending until commit/push
+- implementation committed locally; push pending for the follow-up handoff sync
 
 ## Package
 
