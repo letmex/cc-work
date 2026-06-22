@@ -1,0 +1,4 @@
+path,change_type,reason
+examples/TM_comsol_thermal_micro/train_mixed_tm.py,modified,persist solved-temperature smoke scalar diagnostics from main entrypoint
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_train_guard.py,modified,red-green test for persisted diagnostics CSV
+examples/TM_comsol_thermal_micro/runs/20260708_solved_temperature_main_smoke,added,archive main.py smoke evidence and scalar summaries

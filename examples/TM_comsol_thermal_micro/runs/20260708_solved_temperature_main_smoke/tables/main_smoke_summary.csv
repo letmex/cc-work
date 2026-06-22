@@ -1,0 +1,30 @@
+metric,value
+classification,main-entrypoint solved-temperature mechanics smoke passed
+run_command,D:\anaconda3\envs\torch_env\python.exe examples\TM_comsol_thermal_micro\main.py 2 20 7 TrainableReLU 3.0 --solved-temperature-mechanics-smoke --smoke --n-rprop 1 --n-lbfgs 0 --max-steps 1 --run-suffix solved_temperature_main_smoke --output-root runs\20260708_solved_temperature_main_smoke\raw_outputs
+entrypoint,examples/TM_comsol_thermal_micro/main.py
+device,cuda
+hidden_layers,2
+neurons,20
+seed,7
+n_rprop,1
+n_lbfgs,0
+max_steps,1
+load_steps_completed,1
+solved_temperature_smoke_active,true
+source_mode,solved_frozen_lift
+case_id,H1
+evaluation_location,element_centroid
+network_training_run,false
+delta_T_min_K,0.227020263671875
+delta_T_max_K,19.773162841796875
+step0_Delta_mm,1e-06
+step0_loss_total,2.0283415956556805e-07
+step0_alpha_max,0.5515962839126587
+step0_He_max,1.4632401871494949e-05
+step0_mechanics_drive_max,1.4632401871494949e-05
+notch_tip_delta_T_mean_K,9.999632835388184
+notch_tip_delta_T_max_K,10.5921630859375
+bottom_right_delta_T_mean_K,0.4020843505859375
+bottom_right_delta_T_max_K,0.5771484375
+raw_output_file_count,37
+raw_output_total_bytes,4629195

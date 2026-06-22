@@ -1,0 +1,4 @@
+priority,next_step,reason
+1,Promote from one-step smoke to a 3-step mini schedule with the same solved-temperature flag,This starts probing evolution rather than just entrypoint wiring
+2,Compare solved-temperature smoke against prescribed linear_y with matched element delta_T statistics,Separates adapter correctness from thermal-strain mechanics response
+3,"Only after mini schedule is stable, add phase-field crack/thermal coupling diagnostics",Avoids hiding coupling bugs behind broad training noise

@@ -1,4 +1,5 @@
 import ast
+import csv
 import importlib
 from pathlib import Path
 import sys
@@ -146,6 +147,42 @@ def test_opt_in_helper_returns_element_delta_t_and_scalar_diagnostics():
     assert diagnostics["evaluation_location"] == training_dict["solved_temperature_evaluation_location"]
     assert diagnostics["delta_T_min_K"] == pytest.approx(20.0 / 3.0)
     assert diagnostics["delta_T_max_K"] == pytest.approx(40.0 / 3.0)
+
+
+def test_opt_in_helper_persists_scalar_diagnostics_csv(tmp_path):
+    import train_mixed_tm
+
+    inp, t_conn = _two_element_fixture()
+    training_dict = {
+        "results_path": tmp_path,
+        "solved_temperature_mechanics_smoke": True,
+        "solved_temperature_source_mode": "solved_frozen_lift",
+        "solved_temperature_case_id": "H1",
+        "solved_temperature_evaluation_location": "element_centroid",
+        "solved_temperature_bounds": [[0.0, 0.01], [0.0, 0.01]],
+        "solved_temperature_T_bottom": 300.0,
+        "solved_temperature_T_top": 320.0,
+        "solved_temperature_T_ref": 300.0,
+    }
+
+    train_mixed_tm._apply_solved_temperature_mechanics_smoke(
+        training_dict,
+        {"thermal_mode": "off", "thermal_delta_T": None},
+        inp,
+        t_conn,
+    )
+
+    path = tmp_path / "solved_temperature_mechanics_smoke_diagnostics.csv"
+    with path.open(newline="", encoding="utf-8") as handle:
+        rows = {row["metric"]: row["value"] for row in csv.DictReader(handle)}
+
+    assert rows["active"] == "true"
+    assert rows["source_mode"] == "solved_frozen_lift"
+    assert rows["case_id"] == "H1"
+    assert rows["evaluation_location"] == "element_centroid"
+    assert float(rows["delta_T_min_K"]) == pytest.approx(20.0 / 3.0)
+    assert float(rows["delta_T_max_K"]) == pytest.approx(40.0 / 3.0)
+    assert rows["network_training_run"] == "false"
 
 
 @pytest.mark.parametrize(

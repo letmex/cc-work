@@ -1,0 +1,9 @@
+command,result,details
+D:\anaconda3\envs\torch_env\python.exe examples\TM_comsol_thermal_micro\main.py 2 20 7 TrainableReLU 3.0 --solved-temperature-mechanics-smoke --smoke --n-rprop 1 --n-lbfgs 0 --max-steps 1 --run-suffix solved_temperature_main_smoke --output-root runs\20260708_solved_temperature_main_smoke\raw_outputs,PASS,main.py completed exit code 0; one smoke load step reached train_mixed_tm loop
+diagnostic CSV existence check,PASS,examples\TM_comsol_thermal_micro\runs\20260708_solved_temperature_main_smoke\raw_outputs\results\solved_temperature_main_smoke\solved_temperature_mechanics_smoke_diagnostics.csv
+diagnostics_mixed_tm_summary.csv delta_T field check,PASS,notch_tip_delta_T_mean and bottom_right_delta_T_mean are nonzero fields from main-entrypoint run
+D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_train_guard.py -q,PASS,23 passed
+D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_smoke_adapter.py examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_bridge.py -q,PASS,13 passed
+D:\anaconda3\envs\torch_env\python.exe -c "import compileall, sys; ok=compileall.compile_dir(r'examples\TM_comsol_thermal_micro', quiet=1); sys.exit(0 if ok else 1)",PASS,recursive compileall under thermal example completed
+git diff --check,PASS,no whitespace errors
+git diff --name-only -- examples\TM_comsol_no_thermal_micro,PASS,empty output

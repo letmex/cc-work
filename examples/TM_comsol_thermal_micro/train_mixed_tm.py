@@ -1,6 +1,7 @@
+from pathlib import Path
+
 import numpy as np
 import torch
-from pathlib import Path
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
@@ -73,6 +74,25 @@ def _validate_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs):
             )
 
 
+def _write_solved_temperature_mechanics_smoke_diagnostics(training_dict):
+    diagnostics = training_dict.get("solved_temperature_mechanics_smoke_diagnostics")
+    results_path = training_dict.get("results_path")
+    if not diagnostics or results_path is None:
+        return None
+
+    path = Path(results_path) / "solved_temperature_mechanics_smoke_diagnostics.csv"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        handle.write("metric,value\n")
+        for key, value in diagnostics.items():
+            if isinstance(value, bool):
+                text = str(value).lower()
+            else:
+                text = str(value)
+            handle.write(f"{key},{text}\n")
+    return path
+
+
 def _apply_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs, inp, T_conn):
     if not training_dict.get("solved_temperature_mechanics_smoke", False):
         return thermal_kwargs
@@ -108,6 +128,8 @@ def _apply_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs, inp
     delta_T = adapter["diagnostics"]["thermal_delta_T"].detach()
     training_dict["solved_temperature_mechanics_smoke_diagnostics"] = {
         "active": True,
+        "source_mode": training_dict.get("solved_temperature_source_mode", "solved_frozen_lift"),
+        "case_id": training_dict.get("solved_temperature_case_id", "H1"),
         "network_training_run": bool(adapter["diagnostics"]["network_training_run"]),
         "evaluation_location": training_dict.get(
             "solved_temperature_evaluation_location",
@@ -116,6 +138,7 @@ def _apply_solved_temperature_mechanics_smoke(training_dict, thermal_kwargs, inp
         "delta_T_min_K": float(torch.min(delta_T).cpu()),
         "delta_T_max_K": float(torch.max(delta_T).cpu()),
     }
+    _write_solved_temperature_mechanics_smoke_diagnostics(training_dict)
     return merged
 
 

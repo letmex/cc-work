@@ -1,0 +1,21 @@
+{
+  "package": "20260708_solved_temperature_main_smoke",
+  "classification": "main-entrypoint solved-temperature mechanics smoke passed",
+  "entrypoint": "examples/TM_comsol_thermal_micro/main.py",
+  "raw_outputs_local_only": "raw_outputs/ contains local generated checkpoints/results/logs; git archive keeps scalar tables and report",
+  "source_files_changed": [
+    "examples/TM_comsol_thermal_micro/train_mixed_tm.py",
+    "examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_train_guard.py"
+  ],
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/main_smoke_summary.csv",
+    "tables/solved_temperature_mechanics_smoke_diagnostics.csv",
+    "tables/validation_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ]
+}

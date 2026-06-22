@@ -1,0 +1,8 @@
+metric,value
+active,true
+source_mode,solved_frozen_lift
+case_id,H1
+network_training_run,false
+evaluation_location,element_centroid
+delta_T_min_K,0.227020263671875
+delta_T_max_K,19.773162841796875
