@@ -1,0 +1,4 @@
+priority,next_step,reason
+1,Implement or select a nontrivial solved heat case that is not reducible to linear_y,Current H1 equivalence is expected; nonlinear spatial heat is needed for real coupling evidence
+2,Repeat this 8-step table workflow for the nontrivial heat case and a fitted prescribed control,Separates heat-solver contribution from mechanics training variance
+3,Then add phase-field heat coupling diagnostics over the same step schedule,Moves from thermoelastic mechanics response toward heat-fracture coupling without broad training noise

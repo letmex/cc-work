@@ -1,0 +1,2 @@
+path,change_type,reason
+examples/TM_comsol_thermal_micro/runs/20260709_solved_vs_prescribed_3step,added,archive 3-step and 8-step main-entrypoint solved/prescribed/no-thermal comparisons

@@ -1,0 +1,4 @@
+caveat,impact
+solved smoke adapter is applied after fine mesh prep; prescribed thermal mode is active during pretraining too,"main mechanics-step delta_T fields match, but full optimization trajectories are not strictly identical"
+H1 frozen lift is exactly linear in y,"this validates entrypoint plumbing and equivalent thermal-strain mechanics response, not a nontrivial heat solve"
+runs use small network and only two RPROP epochs per stage,"results are probes for trend/equivalence, not production-quality convergence"

@@ -1,0 +1,31 @@
+{
+  "package": "20260709_solved_vs_prescribed_3step",
+  "classification": "multistep solved-temperature main-entrypoint comparison completed",
+  "entrypoint": "examples/TM_comsol_thermal_micro/main.py",
+  "run_groups": [
+    "3step",
+    "8step"
+  ],
+  "cases": [
+    "solved",
+    "prescribed_linear_y",
+    "no_thermal"
+  ],
+  "raw_outputs_local_only": "raw_outputs/ contains generated checkpoints/results/logs; committed archive keeps scalar summaries only",
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/stepwise_case_summary.csv",
+    "tables/stepwise_pairwise_differences.csv",
+    "tables/comparison_summary.csv",
+    "tables/final_step_trend_summary.csv",
+    "tables/solved_temperature_mechanics_smoke_diagnostics.csv",
+    "tables/run_commands.csv",
+    "tables/validation_results.csv",
+    "tables/review_caveats.csv",
+    "tables/source_files_changed.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ]
+}

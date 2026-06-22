@@ -1,0 +1,15 @@
+run_group,metric,value
+3step,active,true
+3step,source_mode,solved_frozen_lift
+3step,case_id,H1
+3step,network_training_run,false
+3step,evaluation_location,element_centroid
+3step,delta_T_min_K,0.227020263671875
+3step,delta_T_max_K,19.773162841796875
+8step,active,true
+8step,source_mode,solved_frozen_lift
+8step,case_id,H1
+8step,network_training_run,false
+8step,evaluation_location,element_centroid
+8step,delta_T_min_K,0.227020263671875
+8step,delta_T_max_K,19.773162841796875
