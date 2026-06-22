@@ -1,0 +1,5 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/README.md,modified,document opt-in solved-temperature mechanics smoke CLI command output values and boundaries
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_readme_docs.py,added,guard README command output values opt-in language and train entrypoint boundary
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,record README documentation stage and next boundary
+examples/TM_comsol_thermal_micro/runs/20260706_solved_temperature_smoke_readme_docs,added,review package with report tables handoff manifest and figure summary

@@ -1,0 +1,10 @@
+command,result,details
+"D:\anaconda3\envs\torch_env\python.exe -c ""import compileall, sys; ok=compileall.compile_dir(r'examples\TM_comsol_thermal_micro', quiet=1); sys.exit(0 if ok else 1)""",PASS,"recursive py_compile succeeded"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_readme_docs.py -q",PASS,"2 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_smoke_cli.py -q",PASS,"3 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_smoke_adapter.py -q",PASS,"6 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_solved_temperature_mechanics_bridge.py -q",PASS,"7 passed"
+"D:\anaconda3\envs\torch_env\python.exe -m pytest examples\TM_comsol_thermal_micro\tests\test_prescribed_thermal_strain_patch.py -q",PASS,"8 passed"
+package schema/file existence check,PASS,"all required files exist"
+git diff --check,PASS,"no whitespace errors"
+"git diff --name-only -- examples\TM_comsol_no_thermal_micro",PASS,"empty output"

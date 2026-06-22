@@ -1,0 +1,11 @@
+item,value
+package,20260706_solved_temperature_smoke_readme_docs
+classification,solved-temperature smoke README documentation implemented and tests passed
+scope,examples/TM_comsol_thermal_micro only
+modified_readme,examples/TM_comsol_thermal_micro/README.md
+new_tests,examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_readme_docs.py
+smoke_cli_documented,examples/TM_comsol_thermal_micro/run_solved_temperature_mechanics_smoke.py
+output_table_documented,mechanics_smoke_results.csv
+production_training_changed,false
+train_mixed_tm_modified,false
+no_thermal_baseline_touched,false

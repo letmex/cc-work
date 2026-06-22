@@ -23,8 +23,13 @@ PFF_model = AT2
 ```
 
 A minimal prescribed-temperature thermal-strain branch is available but defaults
-to off. No temperature field PDE, heat equation residual, thermal transport
-solve, or damage-dependent conductivity is implemented.
+to off. A solved-temperature bridge, element-centroid adapter, and explicit
+smoke CLI are available for narrow review checks only. No production training
+default is switched to solved temperature.
+
+No coupled heat-mechanics training, heat equation residual inside mechanics,
+thermal transport production solve, heat-fracture diagnostics, or
+damage-dependent conductivity is implemented.
 
 The current reaction policy remains `reaction_N_energy`, obtained from the saved
 checkpoint mechanics energy derivative `dPi/dDelta` or `dPi/dDelta_s`. This
@@ -68,6 +73,54 @@ Reserved transport constants remain future-work references only:
 - `k0 = 418 W/m/K`
 - `c = 170 J/kg/K`
 
+## Solved-Temperature Mechanics Smoke CLI
+
+The solved-temperature mechanics smoke path is opt-in. It is documented so the
+bridge and element-centroid adapter can be checked without changing the
+training entrypoint.
+
+Run it explicitly from the repository root:
+
+```powershell
+D:\anaconda3\envs\torch_env\python.exe examples\TM_comsol_thermal_micro\run_solved_temperature_mechanics_smoke.py --output-dir examples\TM_comsol_thermal_micro\outputs\solved_temperature_mechanics_smoke
+```
+
+The command writes:
+
+```text
+mechanics_smoke_results.csv
+```
+
+The smoke runner uses one fixed two-element mechanics patch and this call path:
+
+```text
+thermal_mechanics_adapter.build_mechanics_thermal_kwargs_from_bridge
+-> source_mode = solved_frozen_lift
+-> case_id = H1
+-> evaluation_location = element_centroid
+-> compute_mixed_tm_fields(..., thermal_delta_T=...)
+```
+
+The reference package output is stored at:
+
+```text
+examples/TM_comsol_thermal_micro/runs/20260705_solved_temperature_mechanics_smoke_cli/tables/mechanics_smoke_results.csv
+```
+
+Observed values for that fixture:
+
+- `DeltaT` range: `6.666666666666686` K to `13.333333333333371` K
+- `mechanics_max_abs_diff = 0.0`
+- `network_training_run = false`
+- `train_mixed_tm.py remains unmodified`
+
+This smoke CLI does not implement coupled heat-mechanics training.
+It does not add heat-fracture diagnostics.
+It does not add damage-dependent conductivity.
+It does not run D0040, seed, shear, S0110, transient, or bottom-cooling production studies.
+
+The frozen baseline remains `examples/TM_comsol_no_thermal_micro`.
+
 ## COMSOL Reference Scope
 
 The theoretical COMSOL reference branch for future thermal work is:
@@ -82,10 +135,10 @@ target.
 
 ## Next Task
 
-The next safe task is a small prescribed-temperature micro-notch diagnostic
-using the implemented branch. Do not implement the full heat PDE or
-damage-dependent conductivity until separate thermal-mechanics diagnostics are
-reviewed.
+The next safe task is to keep any guarded production call-site flag as a
+separate reviewed task. Do not implement coupled heat-mechanics training,
+heat-fracture diagnostics, full heat PDE coupling, or damage-dependent
+conductivity until separate thermal-mechanics diagnostics are reviewed.
 
 ## Smoke Check
 

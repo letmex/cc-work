@@ -1,0 +1,11 @@
+check,expected,observed,result
+smoke_cli_section,README documents smoke CLI,Solved-Temperature Mechanics Smoke CLI section present,PASS
+command_documented,exact python command documented,run_solved_temperature_mechanics_smoke.py command present,PASS
+output_documented,mechanics_smoke_results.csv documented,output table documented,PASS
+source_mode_documented,solved_frozen_lift documented,source mode present,PASS
+evaluation_documented,element_centroid documented,evaluation location present,PASS
+observed_deltaT_documented,observed DeltaT range documented,"6.666666666666686 to 13.333333333333371",PASS
+mechanics_diff_documented,mechanics max diff documented,mechanics_max_abs_diff = 0.0,PASS
+opt_in_boundary,README says opt-in,opt-in present,PASS
+train_entrypoint_boundary,README says train_mixed_tm remains unmodified,boundary present,PASS
+forbidden_scope_boundary,README lists not-implemented production scopes,boundary present,PASS

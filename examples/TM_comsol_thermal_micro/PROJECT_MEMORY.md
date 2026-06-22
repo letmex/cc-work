@@ -359,6 +359,38 @@ Current solved-temperature mechanics smoke CLI status:
 - next safest task: document the opt-in smoke runner in the thermal README and
   keep any guarded production call-site flag as a separate reviewed task
 
+Current solved-temperature smoke README documentation status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260706_solved_temperature_smoke_readme_docs`
+- final classification:
+  `solved-temperature smoke README documentation implemented and tests passed`
+- updated user-facing README:
+  `examples/TM_comsol_thermal_micro/README.md`
+- added focused README guard tests:
+  `examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_readme_docs.py`
+- README now documents the explicit opt-in smoke command:
+  `D:\anaconda3\envs\torch_env\python.exe examples\TM_comsol_thermal_micro\run_solved_temperature_mechanics_smoke.py --output-dir examples\TM_comsol_thermal_micro\outputs\solved_temperature_mechanics_smoke`
+- README now documents `mechanics_smoke_results.csv`, `solved_frozen_lift`,
+  `H1`, `element_centroid`, observed `DeltaT` range
+  `[6.666666666666686, 13.333333333333371] K`,
+  `mechanics_max_abs_diff = 0.0`, and `network_training_run = false`
+- README now explicitly states that `train_mixed_tm.py remains unmodified` and
+  that the smoke CLI is opt-in only
+- documentation guard also verifies `train_mixed_tm.py` does not import
+  `run_solved_temperature_mechanics_smoke` or reference
+  `mechanics_smoke_results.csv`
+- this README documentation stage does not implement coupled heat-mechanics
+  training, solved-temperature phase-field fracture coupling, heat PDE loss
+  inside mechanics/fracture training, heat-fracture diagnostics,
+  damage-dependent conductivity, D0040, seed study, shear extension, S0110,
+  transient production, or bottom-cooling production
+- the original `examples/TM_comsol_no_thermal_micro` baseline remains
+  untouched
+- next safest task: keep any guarded production call-site flag as a separate
+  reviewed task with its own opt-in CLI/config tests before touching
+  `train_mixed_tm.py`
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

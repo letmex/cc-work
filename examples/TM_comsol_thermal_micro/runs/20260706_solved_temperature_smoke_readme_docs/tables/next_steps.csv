@@ -1,0 +1,4 @@
+priority,next_step,reason
+1,Keep any guarded production call-site flag as a separate reviewed task,README now documents current opt-in smoke path and boundaries
+2,Require opt-in CLI/config tests before touching train_mixed_tm.py,Prevent accidental solved-temperature mechanics activation
+3,Do not add damage-dependent conductivity or heat-fracture diagnostics in this documentation line,Those remain separate physics changes
