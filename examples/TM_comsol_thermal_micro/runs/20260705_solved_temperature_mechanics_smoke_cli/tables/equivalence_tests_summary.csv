@@ -1,0 +1,6 @@
+test,expected,observed,result
+smoke_cli_table,classification emitted,solved-temperature mechanics smoke cli passed,PASS
+explicit_script_run,subprocess writes requested output table,mechanics_smoke_results.csv created,PASS
+adapter_vs_direct_mechanics,selected mechanics fields identical,max_abs 0.0,PASS
+training_entrypoint_unmodified,train_mixed_tm does not import smoke script,no smoke script import or output token found,PASS
+guard_tokens,no forbidden heat-fracture or damage-conductivity tokens,no forbidden tokens found,PASS

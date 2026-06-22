@@ -326,6 +326,39 @@ Current solved-temperature mechanics smoke adapter status:
   result table, still without changing `train_mixed_tm.py` defaults or running
   broad training
 
+Current solved-temperature mechanics smoke CLI status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260705_solved_temperature_mechanics_smoke_cli`
+- final classification:
+  `solved-temperature mechanics smoke cli implemented and tests passed`
+- added an explicit opt-in smoke runner:
+  `examples/TM_comsol_thermal_micro/run_solved_temperature_mechanics_smoke.py`
+- added focused smoke CLI tests:
+  `examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_cli.py`
+- smoke runner responsibilities are limited to constructing one fixed
+  two-element mechanics patch, calling
+  `thermal_mechanics_adapter.build_mechanics_thermal_kwargs_from_bridge` for
+  H1 `solved_frozen_lift`, evaluating `compute_mixed_tm_fields`, and writing
+  `mechanics_smoke_results.csv`
+- generated smoke result table:
+  `examples/TM_comsol_thermal_micro/runs/20260705_solved_temperature_mechanics_smoke_cli/tables/mechanics_smoke_results.csv`
+- actual smoke result:
+  source mode `solved_frozen_lift`, case `H1`, element-centroid sampling,
+  `DeltaT` range `[6.666666666666686, 13.333333333333371] K`, selected-field
+  mechanics max absolute difference `0.0`, and `network_training_run=false`
+- the CLI is opt-in only; it is not imported by `train_mixed_tm.py` and no
+  mechanics/training default was switched to solved temperature
+- this smoke CLI stage does not implement coupled heat-mechanics training,
+  solved-temperature phase-field fracture coupling, heat PDE loss inside
+  mechanics/fracture training, heat-fracture diagnostics, damage-dependent
+  conductivity, D0040, seed study, shear extension, S0110, transient
+  production, or bottom-cooling production
+- the original `examples/TM_comsol_no_thermal_micro` baseline remains
+  untouched
+- next safest task: document the opt-in smoke runner in the thermal README and
+  keep any guarded production call-site flag as a separate reviewed task
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

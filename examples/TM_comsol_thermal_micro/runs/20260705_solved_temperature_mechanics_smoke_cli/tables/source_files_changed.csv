@@ -1,0 +1,5 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/run_solved_temperature_mechanics_smoke.py,added,explicit opt-in smoke runner that writes mechanics_smoke_results.csv
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_cli.py,added,test run_smoke subprocess CLI output table opt-in guard and forbidden-token constraints
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,record smoke CLI status and boundaries
+examples/TM_comsol_thermal_micro/runs/20260705_solved_temperature_mechanics_smoke_cli,added,review package with report tables handoff manifest and figure summary

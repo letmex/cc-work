@@ -1,0 +1,27 @@
+{
+  "package": "20260705_solved_temperature_mechanics_smoke_cli",
+  "classification": "solved-temperature mechanics smoke cli implemented and tests passed",
+  "scope": "examples/TM_comsol_thermal_micro only",
+  "no_thermal_project_touched": false,
+  "source_code_modified": true,
+  "coupled_heat_mechanics_training_implemented": false,
+  "source_files_changed": [
+    "examples/TM_comsol_thermal_micro/run_solved_temperature_mechanics_smoke.py",
+    "examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_cli.py",
+    "examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md"
+  ],
+  "required_outputs": [
+    "REPORT.md",
+    "HANDOFF_COMMENT.md",
+    "MANIFEST.json",
+    "tables/implementation_summary.csv",
+    "tables/mechanics_smoke_results.csv",
+    "tables/smoke_cli_summary.csv",
+    "tables/equivalence_tests_summary.csv",
+    "tables/validation_results.csv",
+    "tables/source_files_changed.csv",
+    "tables/guard_checks.csv",
+    "tables/next_steps.csv",
+    "figures/figure_summary.md"
+  ]
+}

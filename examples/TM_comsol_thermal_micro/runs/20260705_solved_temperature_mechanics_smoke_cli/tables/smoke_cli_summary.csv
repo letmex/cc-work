@@ -1,0 +1,9 @@
+check,expected,observed,result
+cli_is_explicit,opt-in direct script call,script only runs when called directly,PASS
+output_table,mechanics_smoke_results.csv,written under requested output dir,PASS
+source_mode,H1 solved frozen lift,solved_frozen_lift H1,PASS
+evaluation_location,element centroid,element_centroid,PASS
+network_training,no network training,false,PASS
+deltaT_range,20*centroid_y/0.01,"min 6.666666666666686 max 13.333333333333371",PASS
+mechanics_equivalence,zero selected-field max difference,0.0,PASS
+train_entrypoint,train_mixed_tm unchanged,false,PASS

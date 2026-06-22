@@ -1,0 +1,5 @@
+priority,next_step,reason
+1,Document the opt-in smoke runner in the thermal README,Make manual execution path visible without changing training defaults
+2,Keep any guarded production call-site flag as a separate reviewed task,Prevent accidental solved-temperature mechanics activation
+3,Only after review add a small CLI option for alternate supported source modes,Extend smoke coverage without broad training
+4,Keep damage-dependent conductivity and heat-fracture diagnostics behind a separate approval gate,Those remain distinct physics changes

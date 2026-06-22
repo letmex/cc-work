@@ -1,0 +1,15 @@
+metric,value
+classification,solved-temperature mechanics smoke cli passed
+source_mode,solved_frozen_lift
+case_id,H1
+evaluation_location,element_centroid
+network_training_run,false
+correction_policy,frozen_lift
+n_nodes,4
+n_elements,2
+delta_T_min_K,6.666666666666686
+delta_T_max_K,13.333333333333371
+centroid_y_min_mm,0.0033333333333333335
+centroid_y_max_mm,0.006666666666666667
+mechanics_max_abs_diff,0.0
+train_mixed_tm_modified,false
