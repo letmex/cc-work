@@ -6,11 +6,14 @@ Final classification: `solved-temperature smoke README documentation implemented
 
 Primary implementation commit:
 
-- pending until this package is committed
+- `34c17a2a83cdaf2dc9c16690fb507bd2a13271b3`
+  (`Document solved temperature smoke CLI`)
 
 Push status:
 
-- pending until commit/push
+- Pending push at handoff-sync edit time.
+- Final status after primary implementation commit: `## main...origin/main [ahead 1]`.
+- This file does not chase the handoff-sync commit's own hash.
 
 ## Package
 
