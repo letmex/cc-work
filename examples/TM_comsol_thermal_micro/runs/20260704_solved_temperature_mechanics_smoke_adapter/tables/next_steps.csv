@@ -1,0 +1,5 @@
+priority,next_step,reason
+1,Add an explicit opt-in smoke script or small CLI wrapper for one fixture patch,Exercise the adapter outside pytest while still avoiding train_mixed_tm default changes
+2,Document the adapter activation path in the thermal README,Make clear that solved-temperature mechanics remains opt-in
+3,Only after review add a guarded production call-site flag,Prevent accidental broad coupled training activation
+4,Keep damage-dependent conductivity and heat-fracture diagnostics behind a separate approval gate,Those are distinct physics changes beyond this adapter

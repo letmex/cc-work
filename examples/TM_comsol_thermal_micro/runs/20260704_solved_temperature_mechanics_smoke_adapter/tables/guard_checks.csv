@@ -1,0 +1,12 @@
+guard,result,details
+work_scope_limited_to_thermal_project,PASS,only examples/TM_comsol_thermal_micro changed
+no_thermal_project_untouched,PASS,git diff --name-only for examples/TM_comsol_no_thermal_micro is empty
+train_mixed_tm_unmodified,PASS,no train_mixed_tm.py changes
+training_entrypoint_unmodified,PASS,train_mixed_tm does not import or call thermal_mechanics_adapter
+strong_residual_not_training_objective,PASS,adapter does not evaluate or minimize heat residual
+prescribed_temperature_fallback_preserved,PASS,prescribed thermal strain tests pass
+mechanics_defaults_unchanged,PASS,compute_mixed_tm_fields thermal defaults remain off and None
+damage_dependent_conductivity_not_added,PASS,no damage-dependent conductivity API or active source tokens introduced
+heat_fracture_not_added,PASS,no heat-fracture diagnostics or fracture heat training added
+broad_runs_not_executed,PASS,no D0040 seed shear S0110 transient production or bottom-cooling production run
+material_l0_history_reaction_boundary_unchanged,PASS,no material l0 history reaction boundary route changes

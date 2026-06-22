@@ -285,6 +285,47 @@ Current solved-temperature mechanics bridge status:
   bridge-produced `thermal_delta_T` into a cheap smoke mechanics evaluation
   without changing production defaults
 
+Current solved-temperature mechanics smoke adapter status:
+
+- implementation package:
+  `examples/TM_comsol_thermal_micro/runs/20260704_solved_temperature_mechanics_smoke_adapter`
+- final classification:
+  `solved-temperature mechanics smoke adapter implemented and tests passed`
+- added a narrow element-centroid adapter:
+  `examples/TM_comsol_thermal_micro/thermal_mechanics_adapter.py`
+- added focused smoke adapter tests:
+  `examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_adapter.py`
+- adapter responsibilities are limited to computing triangle element centroid
+  coordinates, evaluating the existing solved-temperature bridge at those
+  centroids, and returning element-sized `thermal_delta_T` through
+  `thermal_kwargs` for `compute_mixed_tm_fields`
+- adapter API:
+  `element_centroid_coords_mm`,
+  `build_element_thermal_delta_T_from_bridge`, and
+  `build_mechanics_thermal_kwargs_from_bridge`
+- uniform source smoke check returns element-sized `DeltaT=20 K` for the
+  two-element fixture patch
+- H1 `solved_frozen_lift` smoke check samples
+  `DeltaT(y)=20*eta` at element centroids, reports zero correction, and does
+  not run network training
+- mechanics smoke equivalence was checked by comparing direct element-sized
+  `thermal_delta_T` against adapter-produced `thermal_kwargs`; selected thermal
+  strain, elastic strain, stress, and energy fields matched with zero max
+  difference
+- no default mechanics/training mode was switched to solved temperature;
+  `train_mixed_tm.py` remains unmodified
+- this smoke adapter stage does not implement coupled heat-mechanics training,
+  solved-temperature phase-field fracture coupling, heat PDE loss inside
+  mechanics/fracture training, heat-fracture diagnostics, damage-dependent
+  conductivity, D0040, seed study, shear extension, S0110, transient
+  production, or bottom-cooling production
+- the original `examples/TM_comsol_no_thermal_micro` baseline remains
+  untouched
+- next safest task: add an explicit opt-in smoke script or small CLI wrapper
+  that calls this adapter for one fixture mechanics patch and writes a compact
+  result table, still without changing `train_mixed_tm.py` defaults or running
+  broad training
+
 Standing simplified finalization protocol for all future Codex tasks in this
 thermal subproject:
 

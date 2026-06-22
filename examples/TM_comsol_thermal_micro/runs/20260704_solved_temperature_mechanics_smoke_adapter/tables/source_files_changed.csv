@@ -1,0 +1,5 @@
+path,change_type,purpose
+examples/TM_comsol_thermal_micro/thermal_mechanics_adapter.py,added,sample supported bridge temperature sources at element centroids and return mechanics thermal kwargs
+examples/TM_comsol_thermal_micro/tests/test_solved_temperature_mechanics_smoke_adapter.py,added,test centroid calculation uniform H1 frozen-lift mechanics smoke equivalence defaults and guards
+examples/TM_comsol_thermal_micro/PROJECT_MEMORY.md,modified,record smoke adapter status and boundaries
+examples/TM_comsol_thermal_micro/runs/20260704_solved_temperature_mechanics_smoke_adapter,added,review package with report tables handoff manifest and figure summary

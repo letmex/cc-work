@@ -1,0 +1,9 @@
+check,expected,observed,result
+centroid_count,one centroid per triangle,2 centroids for 2 triangles,PASS
+centroid_values,"[(1,2);(2,4)]","[(1,2);(2,4)]",PASS
+uniform_deltaT_shape,element-sized thermal_delta_T,shape (2,),PASS
+uniform_deltaT_value,20 K on both elements,min 20.0 max 20.0,PASS
+h1_frozen_lift_location,evaluate at element centroid,evaluation_location element_centroid,PASS
+h1_frozen_lift_deltaT,DeltaT=20*centroid_y/0.01,centroid formula matched,PASS
+h1_frozen_lift_correction,zero correction and no training,correction zero network_training_run false,PASS
+mechanics_kwargs,narrow thermal kwargs only,thermal_kwargs contains only thermal_delta_T,PASS

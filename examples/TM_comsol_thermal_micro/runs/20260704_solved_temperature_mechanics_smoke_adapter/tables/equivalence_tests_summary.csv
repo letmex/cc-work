@@ -1,0 +1,13 @@
+test,expected,observed,result
+adapter_vs_direct_mechanics,selected mechanics fields identical,max_abs 0.0,PASS
+thermal_delta_T,zero difference,0.0,PASS
+thermal_eps_xx,zero difference,0.0,PASS
+thermal_eps_yy,zero difference,0.0,PASS
+eps_xx_elastic,zero difference,0.0,PASS
+eps_yy_elastic,zero difference,0.0,PASS
+psi_total,zero difference,0.0,PASS
+sigma_xx_tm_total,zero difference,0.0,PASS
+sigma_yy_tm_total,zero difference,0.0,PASS
+defaults_unchanged,mechanics thermal defaults remain off,None/None/off defaults preserved,PASS
+training_entrypoint_unmodified,train_mixed_tm does not import adapter,no adapter import or call found,PASS
+guard_tokens,no forbidden heat-fracture or damage-conductivity tokens,no forbidden tokens found,PASS
