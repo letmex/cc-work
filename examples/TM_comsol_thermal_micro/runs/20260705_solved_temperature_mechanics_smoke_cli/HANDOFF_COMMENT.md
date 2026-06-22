@@ -6,11 +6,14 @@ Final classification: `solved-temperature mechanics smoke cli implemented and te
 
 Primary implementation commit:
 
-- pending until this package is committed
+- `49f6df7033b35a2fb12e4ae7f2b5cefbb4f919b8`
+  (`Add solved temperature mechanics smoke CLI`)
 
 Push status:
 
-- pending until commit/push
+- Pending push at handoff-sync edit time.
+- Final status after primary implementation commit: `## main...origin/main [ahead 1]`.
+- This file does not chase the handoff-sync commit's own hash.
 
 ## Package
 
